@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const ContactForm = ({ t }) => {
 
@@ -59,7 +59,7 @@ const ContactForm = ({ t }) => {
         {/* button */}
         <button className="flex justify-center items-center w-full md:w-[15.125rem] h-[3rem] py-[0.625rem] px-[1.25rem] rounded-[0.625rem] bg-primary-50">
           <div className="button1 text-white text-center">
-            Gửi ngay
+            {t.contact.sendNow}
           </div>
         </button>
       </div>
