@@ -3,16 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .fl-c-ns{
-    @apply flex flex-col items-start
-  }
-  .th-fl{
-    @apply flex justify-center items-center
-  }
-  .bd{
-    @apply border border-black
-  }
-
+  
   .h4{
     @apply text-[1.5rem] leading-[1.2] tracking-[-0.0075rem]
   }
@@ -27,10 +18,12 @@
   .label1{
     @apply text-[0.875rem] leading-[1] tracking-[0.00875rem]
   }
+
+
   .title {
     @apply text-[3rem] font-extrabold leading-[1.2] -tracking-[0.03rem] text-primary-50;
   }
-    .title-mobile {
+  .title-mobile {
     @apply text-[2rem] font-extrabold leading-[1.3] -tracking-[0.04rem] text-primary-60;
   }
 

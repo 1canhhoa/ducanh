@@ -3,9 +3,9 @@ import Image from 'next/image'
 import CardOffice from './CardOffice'
 const OfficeInformation = ({ t }) => {
   return (
-    <div className='fl-c-ns w-full space-y-[1.5rem]'>
+    <div className='flex flex-col items-start w-full space-y-[1.5rem]'>
       <div className="flex items-center space-x-[0.5rem]">
-        <Image alt="sss" src={'/images/contact/dot.svg'} width={9999} height={9999} className="size-[0.5rem]" />
+        <Image alt="svg-next-title" src={'/images/contact/dot.svg'} width={10} height={10} className="size-[0.5rem]" />
         <div className="text-greyscaletext-70 text-[1rem] font-bold uppercase">
           {t.contact.office}
         </div>

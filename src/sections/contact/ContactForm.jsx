@@ -21,7 +21,7 @@ const ContactForm = ({ t }) => {
             {t.contact.firstAndLastName}
           </div>
           <div className="border-b border-linear-l9 w-full">
-            <input type="text" className="flex bd items-center py-[0.625rem] self-stretch border-none " />
+            <input type="text" className="flex items-center py-[0.625rem] self-stretch border-none " />
           </div>
         </div>
         <div className="flex flex-col items-start space-y-[0.25rem] self-stretch">
@@ -29,7 +29,7 @@ const ContactForm = ({ t }) => {
             {t.contact.firstAndLastName}
           </div>
           <div className="border-b border-linear-l9 w-full">
-            <input type="text" className="flex bd items-center py-[0.625rem] self-stretch border-none " />
+            <input type="text" className="flex items-center py-[0.625rem] self-stretch border-none " />
           </div>
         </div>
         <div className="flex flex-col items-start space-y-[0.25rem] self-stretch">
@@ -37,7 +37,7 @@ const ContactForm = ({ t }) => {
             {t.contact.firstAndLastName}
           </div>
           <div className="border-b border-linear-l9 w-full">
-            <input type="text" className="flex bd items-center py-[0.625rem] self-stretch border-none " />
+            <input type="text" className="flex items-center py-[0.625rem] self-stretch border-none " />
           </div>
         </div>
         <div className="flex flex-col items-start space-y-[0.25rem] self-stretch">
@@ -45,7 +45,7 @@ const ContactForm = ({ t }) => {
             {t.contact.firstAndLastName}
           </div>
           <div className="border-b border-linear-l9 w-full">
-            <input type="text" className="flex bd items-center py-[0.625rem] self-stretch border-none " />
+            <input type="text" className="flex items-center py-[0.625rem] self-stretch border-none " />
           </div>
         </div>
         <div className="flex flex-col items-start space-y-[0.25rem] self-stretch">
@@ -53,11 +53,11 @@ const ContactForm = ({ t }) => {
             {t.contact.firstAndLastName}
           </div>
           <div className="border-b border-linear-l9 w-full">
-            <input type="text" className="flex bd items-center py-[0.625rem] self-stretch border-none " />
+            <input type="text" className="flex items-center py-[0.625rem] self-stretch border-none " />
           </div>
         </div>
         {/* button */}
-        <button className="th-fl w-full bd md:w-[15.125rem] h-[3rem] py-[0.625rem] px-[1.25rem] rounded-[0.625rem] bg-primary-50">
+        <button className="flex justify-center items-center w-full md:w-[15.125rem] h-[3rem] py-[0.625rem] px-[1.25rem] rounded-[0.625rem] bg-primary-50">
           <div className="button1 text-white text-center">
             Gửi ngay
           </div>
