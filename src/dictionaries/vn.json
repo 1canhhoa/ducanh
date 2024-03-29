@@ -1,3 +1,16 @@
 {
-  "hello":"xin chao okhub"
+  "hello": "xin chao okhub",
+  "contact": {
+    "title": "Kết nối với chúng tôi",
+    "firstAndLastName": "Họ và tên*",
+    "email": "Email",
+    "phone": "phone",
+    "dateOfBirth": "Ngày tháng năm sinh",
+    "yourCity": "Thành phố bạn đang ở",
+    "whatYouNeed": "Thông tin bạn cần tư vấn*",
+    "sendNow": "Gửi ngay",
+    "officesAndCentersLanguage": "Công ty Tư vấn Du học và Dịch thuật Đức Anh",
+    "office": "Thông tin văn phòng",
+    "centersLanguage": "Trung tâm ngoại ngữ"
+  }
 }
