@@ -29,7 +29,11 @@
   "about_us": {
     "legal": "Pháp nhân",
     "ceo": "Ban giám đốc",
-    "business": "lĩnh vực kinh doanh chính",
-    "credo": "Tôn chỉ"
+    "business": "3 lĩnh vực kinh doanh chính",
+    "credo": "Tôn chỉ",
+    "achievement": "Thành tựu công ty",
+    "office": "Văn phòng",
+    "centersLanguage": "Trung tâm ngoại ngữ",
+    "staff": "Nhân Viên"
   }
 }

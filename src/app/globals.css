@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-  .bd{
-    @apply border border-black
-  }
   .h4{
     @apply text-[1.5rem] leading-[1.2] tracking-[-0.0075rem]
   }
@@ -15,8 +12,18 @@
     @apply text-[0.875rem] leading-[1]
   }
 
+  .body14{
+    @apply text-[0.875rem] leading-[1.5]
+  }
   .body16{
     @apply text-[1rem] leading-[1.5]
+  }
+
+  .sub18{
+    @apply text-[1.125rem] leading-[1.6]
+  }
+  .sub20{
+    @apply text-[1.25rem] tracking-[-0.0125rem] leading-[1.5]
   }
   .sub24{
     @apply text-[1.5rem] tracking-[-0.015rem] leading-[1.5]
@@ -95,3 +102,32 @@ body {
 .font-feature-settings{
     font-feature-settings:   'clig' off, 'liga' off;
 }
+.tonchi-business .text_linear_l6{
+text-align: right;
+font-family: "Plus Jakarta Sans";
+font-size: 3.75rem;
+font-style: normal;
+font-weight: 800;
+line-height: 120%;
+letter-spacing: -0.0375rem;
+text-transform: uppercase;
+background: var(--LINEAR-L6, linear-gradient(170deg, #2E6BC6 10.78%, #29A4EA 81.3%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.tonchi-business .text_linear_l2{
+  text-align: right;
+font-family: "Plus Jakarta Sans";
+font-size: 3.75rem;
+font-style: normal;
+font-weight: 800;
+line-height: 120%; /* 4.5rem */
+letter-spacing: -0.0375rem;
+text-transform: uppercase;
+background: var(--LINEAR-L2, linear-gradient(94deg, #CB2128 -1.03%, #CB2128 36.82%, #FC4D54 88.7%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+

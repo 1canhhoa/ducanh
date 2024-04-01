@@ -43,16 +43,23 @@ module.exports = {
         'primary-60': '#132B7D',
         'primary-70': '#082072',
         'secondary-40': '#ED4343',
+        'secondary-50': '#BE3136',
+        'secondary-60': '#A21A20',
         'greyscaletext-5': '#ECECEC',
         'greyscaletext-10': '#C5C5C5',
         'greyscaletext-20': '#A9A9A9',
         'greyscaletext-30': '#828282',
         'greyscaletext-40': '#6A6A6A',
         'greyscaletext-50': '#454545',
+        'greyscaletext-60': '#3F3F3F',
         'greyscaletext-70': '#313131',
         'greyscaletext-80': '#262626',
         'linear-l9': '#6196F6',
+        'linear-l6': 'linear-gradient(170deg, #2E6BC6 10.78%, #29A4EA 81.3%)',
       },
+      backgroundImage: (theme) => ({
+        lll: 'linear-gradient(89deg, rgba(80,150,255,0.12) 0.43%, rgba(41,164,234,0.06) 99.57%)',
+      }),
       keyframes: {
         'accordion-down': {
           from: {height: '0'},
