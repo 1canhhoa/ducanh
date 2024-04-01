@@ -1,6 +1,6 @@
 import AsidePrimary from '@/layout/asidePrimary/AsidePrimary'
-import { headers } from 'next/headers'
-export default function AsideLayout({ children }) {
+import {headers} from 'next/headers'
+export default function AsideLayout({children}) {
   const headersList = headers()
   const userAgent = headersList.get('user-agent')
   const isMobile =
