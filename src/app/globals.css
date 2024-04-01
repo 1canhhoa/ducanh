@@ -13,6 +13,14 @@
     @apply text-[0.875rem] leading-[1]
   }
 
+  .body16 {
+    @apply text-[1rem] leading-[1.5]
+  }
+
+  .sub24 {
+    @apply text-[1.5rem] tracking-[-0.015rem] leading-[1.5]
+  }
+
 
 
   .label1 {
@@ -29,7 +37,7 @@
   }
 
   .button1 {
-    @apply text-[0.875rrem] font-bold leading-[1] tracking-[0.01313rem] uppercase;
+    @apply text-[0.875rrem] font-bold leading-[1] tracking-[0.01313rem];
   }
 
   .button2 {
@@ -70,19 +78,27 @@ textarea {
 
 button {
   cursor: pointer;
-  background-color: transparent;
   outline: none;
-  border: 0;
+  /* background-color: transparent;
+  border: 0; */
 }
 
 html {
   font-size: 1vw;
-
 }
 
 @media (max-width: 767px) {
   html {
     font-size: 4.26666vw;
+
+    @media (max-width: 767px) {
+      font-size: 4.26666vw;
+    }
+
+    @media (min-width:1900px) {
+      font-size: 16px;
+
+    }
   }
 }
 
@@ -90,6 +106,10 @@ body {
   background: white;
   color: black;
   scroll-behavior: smooth;
+}
+
+.font-feature-settings {
+  font-feature-settings: 'clig' off, 'liga' off;
 }
 
 .font-feature-settings {

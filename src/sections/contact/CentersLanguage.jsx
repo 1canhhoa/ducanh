@@ -5,7 +5,7 @@ const CentersLanguage = ({ t }) => {
   return (
     <div className='flex w-full flex-col items-start !mt-[1.5rem] space-y-[1.5rem] self-stretch'>
       <div className="flex items-center space-x-[0.5rem]">
-        <Image alt="anh-next-title" src={'/images/contact/dot.svg'} width={10} height={10} className="size-[0.5rem]" />
+        <Image priority alt="icon xanh đỏ bên cạnh title" src={'/images/contact/dot.svg'} width={10} height={10} className="size-[0.5rem]" />
         <div className="text-greyscaletext-70 text-[1rem] font-bold uppercase">
           {t.contact.centersLanguage}
         </div>

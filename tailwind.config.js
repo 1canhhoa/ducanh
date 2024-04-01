@@ -33,6 +33,9 @@ module.exports = {
         plus: ['var(--font-plus-jakarta-sans)'],
       },
       colors: {
+        // div- blue - 6020, rgba(19, 43, 125, 0.20) #132B7D33
+        'divblue-6020': '#132B7D33',
+        'primary-5': '#F0FAFF',
         'primary-10': '#B8DDFF',
         'primary-30': '#4E91F6',
         'primary-40': '#3468CD',
@@ -43,6 +46,7 @@ module.exports = {
         'greyscaletext-5': '#ECECEC',
         'greyscaletext-10': '#C5C5C5',
         'greyscaletext-20': '#A9A9A9',
+        'greyscaletext-30': '#828282',
         'greyscaletext-40': '#6A6A6A',
         'greyscaletext-50': '#454545',
         'greyscaletext-70': '#313131',

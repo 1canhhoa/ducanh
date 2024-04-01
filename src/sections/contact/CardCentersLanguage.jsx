@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 const CardCentersLanguage = () => {
   return (
@@ -21,7 +20,7 @@ const CardCentersLanguage = () => {
         </div>
       </div>
       <div className="absolute top-[0.2rem] right-[1rem] size-[2.5rem] shrink-0 flex justify-center items-center rounded-[0.25rem] bg-white border border-[rgba(52,104,205,0.40)] ">
-        <Image alt="svg-ban-do" src={'/images/contact/Frame.svg'} width={30} height={40}
+        <Image priority alt="icon vị trí trên bản đồ" src={'/images/contact/Frame.svg'} width={30} height={40}
           className="w-[1.6875rem] h-[1.875rem] shrink-0 size-[0.5rem]" />
       </div>
     </div>
