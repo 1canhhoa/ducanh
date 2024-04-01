@@ -13,6 +13,16 @@
     "office": "Thông tin văn phòng",
     "centersLanguage": "Trung tâm ngoại ngữ"
   },
+  "student": {
+    "student": "Học viên",
+    "goAlong": "Đức Anh song hành cùng",
+    "outstandingStudents": "Các học sinh tiêu biểu",
+    "viewDetail": "Xem chi tiết",
+    "allStudent": "Tất cả học sinh",
+    "textBanner1": "Học viên",
+    "textBannerName": "Đức Anh Educonnect",
+    "textBanner2": "Nói gì?"
+  },
   "recruitment": {
     "title": "Tuyển dụng",
     "title_banner_1": "Cơ hội đang mở ra tại Du học Đức Anh",
@@ -29,11 +39,23 @@
   "about_us": {
     "legal": "Pháp nhân",
     "ceo": "Ban giám đốc",
-    "business": "3 lĩnh vực kinh doanh chính",
+"business": "3 lĩnh vực kinh doanh chính",
     "credo": "Tôn chỉ",
     "achievement": "Thành tựu công ty",
     "office": "Văn phòng",
     "centersLanguage": "Trung tâm ngoại ngữ",
     "staff": "Nhân Viên"
+  },
+  "scholarship": {
+    "nationInfor": "Nước Anh nằm ở phía Tây Bắc của châu Âu, được hợp thành bởi 4 phần: North Ireland, Wales, England và Scotland.",
+    "capital": {
+      "key": "Thủ đô",
+      "value": "London"
+    },
+    "h2_reason": "Vì sao chọn du học Anh",
+    "h2_education_system": "Hệ thống giáo dục đất nước",
+    "h2_secondary_schools": "Các trường phổ thông tại Anh",
+    "h2_training_institutes": "Các viện đào tạo nghề tại Anh",
+    "h2_related_posts": "Bài viết liên quan"
   }
 }
