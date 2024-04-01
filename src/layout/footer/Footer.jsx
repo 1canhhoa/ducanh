@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className='h-[28.875rem] bg-primary-40 text-white'>
+    <footer className='h-[28.875rem] mt-[5rem] bg-primary-40 text-white'>
       <Image
         className='object-cover size-full'
         src={'/images/footer/demo.jpg'}
