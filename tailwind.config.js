@@ -40,6 +40,8 @@ module.exports = {
         'primary-60': '#132B7D',
         'primary-70': '#082072',
         'secondary-40': '#ED4343',
+        'greyscaletext-5': '#ECECEC',
+        'greyscaletext-10': '#C5C5C5',
         'greyscaletext-20': '#A9A9A9',
         'greyscaletext-40': '#6A6A6A',
         'greyscaletext-50': '#454545',

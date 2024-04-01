@@ -12,5 +12,15 @@
     "officesAndCentersLanguage": "Công ty Tư vấn Du học và Dịch thuật Đức Anh",
     "office": "Thông tin văn phòng",
     "centersLanguage": "Trung tâm ngoại ngữ"
+  },
+  "student": {
+    "student": "Học viên",
+    "goAlong": "Đức Anh song hành cùng",
+    "outstandingStudents": "Các học sinh tiêu biểu",
+    "viewDetail": "Xem chi tiết",
+    "allStudent": "Tất cả học sinh",
+    "textBanner1": "Học viên",
+    "textBannerName": "Đức Anh Educonnect",
+    "textBanner2": "Nói gì?"
   }
 }
