@@ -1,18 +1,18 @@
-import Image from 'next/image'
-import {getDictionary} from '../../dictionaries'
-import StudentItem from './StudentItem'
-import GridImageItem from './GridImageItem'
-import Banner from './Banner'
-import StudenSlide from './StudenSlide'
+import {getDictionary} from '@/dictionaries'
+import StudentItem from '@/sections/hoc-vien-duc-anh/StudentItem'
+import GridImageItem from '@/sections/hoc-vien-duc-anh/GridImageItem'
+import Banner from '@/sections/hoc-vien-duc-anh/Banner'
+import StudenSlide from '@/sections/hoc-vien-duc-anh/StudenSlide'
 
-export default async function HocVienDucAnh({params}) {
+export default async function HocVienDucAnhPage({params}) {
   const t = await getDictionary(params.lang)
   // console.log(params)
   const myPageLang = t.student
   return (
     <div className='px-[0.75rem] md:px-[11rem] pt-[9.69rem]'>
-      <h1 className='hidden md:block w-full title pb-[3rem] text-primary-50 text-[3rem] font-bold leading-[120%] tracking-[-0.03rem]'>
-        {myPageLang.student}&nbsp;Đức Anh
+      <h1 className='hidden md:flex w-full items-baseline title pb-[3rem] text-primary-50 text-[3rem] font-bold leading-[120%] tracking-[-0.03rem]'>
+        {myPageLang.student}&nbsp;Đức Anh{' '}
+        <span className='bg-secondary-40 w-[0.625rem] ml-[0.5rem] h-[0.625rem] block'></span>
       </h1>
       <Banner
         lang={myPageLang}
@@ -34,8 +34,11 @@ export default async function HocVienDucAnh({params}) {
             <span className='text-greyscaletext-80 md:text-greyscaletext-40 text-[0.875rem] md:text-[1.125rem] font-bold leading-[150%] md:leading-[130%] uppercase'>
               {myPageLang.goAlong}
             </span>
-            <span className='text-primary-60 font-bold w-[14rem] md:w-[unset] text-[2rem] md:text-[3rem] leading-[130%] md:leading-[120%] tracking-[-0.04rem] md:tracking-[-0.03rem]'>
-              {myPageLang.outstandingStudents}
+            <span className='text-primary-60 flex font-bold text-[2rem] md:text-[3rem] leading-[130%] md:leading-[120%] tracking-[-0.04rem] md:tracking-[-0.03rem]'>
+              <span className='inline-flex items-baseline w-[14rem] md:w-[unset]'>
+                {myPageLang.outstandingStudents} {/* uncomplete */}
+                <span className='bg-secondary-50 block hidden w-[0.8rem] md:ml-[0.5rem] h-[0.8rem]'></span>
+              </span>
             </span>
           </h2>
           {/* slide */}

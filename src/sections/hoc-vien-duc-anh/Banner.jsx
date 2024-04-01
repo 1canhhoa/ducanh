@@ -8,6 +8,7 @@ const Banner = ({lang, data}) => {
         height={413}
         priority
         className='w-[62rem] h-[41.3rem] absolute bottom-[-8.63rem] right-0 opacity-5'
+        alt='hoc-vien-duc-anh'
       />
       <Image
         src='/images/hoc-vien-duc-anh/student img.png'
@@ -15,6 +16,7 @@ const Banner = ({lang, data}) => {
         height={531}
         priority
         className='w-[26rem] h-[33.1875rem] object-contain absolute bottom-0 left-[30rem]'
+        alt='hoc-vien-duc-anh'
       />
       {/* text 1 */}
       <div className='absolute top-[2.94rem] left-[29rem] w-[12.7rem] h-[7.1rem]'>
@@ -24,6 +26,7 @@ const Banner = ({lang, data}) => {
           height={70}
           priority
           className='w-full h-full object-contain absolute top-0 left-0 z-10'
+          alt='hoc-vien-duc-anh'
         />
         <div className='relative left-[0.6rem] w-[9rem] top-[0.81rem] z-20'>
           <div className='flex items-center mb-[0.88rem]'>
@@ -39,6 +42,7 @@ const Banner = ({lang, data}) => {
                     height={100}
                     priority
                     className='w-full h-full top-0 left-0'
+                    alt='hoc-vien-duc-anh'
                   />
                 </div>
               ))}
@@ -49,7 +53,7 @@ const Banner = ({lang, data}) => {
               height={100}
               priority
               className='w-[0.75rem] h-[0.75rem] object-cover ml-auto'
-              alt=''
+              alt='hoc-vien-duc-anh'
             />
           </div>
           <p className='z-20 w-full h-[6rem] text-greyscaletext-80 text-justify text-[0.4375rem] font-normal leading-[160%] tracking-[-0.03125rem]'>
@@ -65,6 +69,7 @@ const Banner = ({lang, data}) => {
           height={153}
           priority
           className='w-full h-full object-contain absolute top-0 left-0 z-10'
+          alt='hoc-vien-duc-anh'
         />
         <div className='relative left-[1.13rem] w-[14.6rem] top-[0.81rem] z-20'>
           <div className='flex items-center mb-[0.88rem]'>
@@ -80,6 +85,7 @@ const Banner = ({lang, data}) => {
                     height={100}
                     priority
                     className='w-full h-full top-0 left-0'
+                    alt='hoc-vien-duc-anh'
                   />
                 </div>
               ))}
@@ -90,7 +96,7 @@ const Banner = ({lang, data}) => {
               height={100}
               priority
               className='w-[0.75rem] h-[0.75rem] object-cover ml-auto'
-              alt=''
+              alt='hoc-vien-duc-anh'
             />
           </div>
           <p className='z-20 w-full h-[6rem] text-greyscaletext-80 text-justify text-[0.75rem] font-normal leading-[160%] tracking-[-0.03125rem]'>
@@ -106,6 +112,7 @@ const Banner = ({lang, data}) => {
           height={153}
           priority
           className='w-full h-full object-contain absolute top-0 left-0 z-10'
+          alt='hoc-vien-duc-anh'
         />
         <div className='relative left-[6.6rem] w-[12.6rem] top-[0.81rem] z-20'>
           <div className='flex items-center mb-[0.88rem]'>
@@ -121,6 +128,7 @@ const Banner = ({lang, data}) => {
                     height={100}
                     priority
                     className='w-full h-full top-0 left-0'
+                    alt='hoc-vien-duc-anh'
                   />
                 </div>
               ))}
@@ -131,7 +139,7 @@ const Banner = ({lang, data}) => {
               height={100}
               priority
               className='w-[0.75rem] h-[0.75rem] object-cover ml-auto'
-              alt=''
+              alt='hoc-vien-duc-anh'
             />
           </div>
           <p className='w-full text-greyscaletext-80 text-justify text-[0.75rem] font-normal leading-[160%] tracking-[-0.03125rem]'>

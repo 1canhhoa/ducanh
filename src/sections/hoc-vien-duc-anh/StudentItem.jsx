@@ -13,19 +13,19 @@ const StudentItem = ({studentData}) => {
           height={100}
           priority
           className='w-[1rem] z-20 h-[1rem] object-cover rounded-lg absolute right-[1.75rem] bottom-[4rem]'
-          alt=''
+          alt='hoc-vien-duc-anh'
         />
         <p className='absolute z-10 w-[17rem] left-[1.81rem] line-clamp-[7] overflow-hidden text-[1rem] top-[1.75rem] text-greyscaletext-80 font-feature-settings font-normal leading-[150%]'>
           {studentData.text}
         </p>
-        <div class='w-[2rem] h-[2rem] absolute bottom-[-1rem] left-[-0.25rem]'>
+        <div className='w-[2rem] h-[2rem] absolute bottom-[-1rem] left-[-0.25rem]'>
           <Image
             src={'/images/hoc-vien-duc-anh/triangle-right.svg'}
             width={100}
             height={100}
             priority
             className='w-full h-full object-cover'
-            alt=''
+            alt='hoc-vien-duc-anh'
           />
         </div>
         <div className='absolute w-[1.44rem] top-[0.05rem] h-full bg-white'></div>
@@ -38,7 +38,7 @@ const StudentItem = ({studentData}) => {
             height={100}
             priority
             className='w-[3rem] h-[3rem] object-cover rounded-lg'
-            alt=''
+            alt='hoc-vien-duc-anh'
           />
         </div>
         <div className='flex flex-col'>

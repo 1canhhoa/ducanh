@@ -17,17 +17,21 @@ const StudenSlide = ({items = []}) => {
         // onSwiper={(swiper) => console.log(swiper)}
         pagination={{clickable: true}}
         className='w-screen md:w-[36rem] md:!ml-0'
+        autoplay={{delay: 3000}}
       >
-        {Array.from({length: 3}).map((item) => {
+        {Array.from({length: 3}).map((item, index) => {
           return (
-            <SwiperSlide className='pl-[0.75rem]'>
+            <SwiperSlide
+              className='pl-[0.75rem]'
+              key={index}
+            >
               <div className='flex flex-col md:flex-row'>
                 <Image
                   src={'/images/hoc-vien-duc-anh/quote.svg'}
                   width={40}
                   height={60}
                   priority
-                  alt=''
+                  alt='hoc-vien-duc-anh'
                   className='w-[2rem] md:w-[4.0625rem] h-[1.5rem] md:h-[6.2rem] my-[1rem] md:mt-[-2.2rem]'
                 />
                 <div className='md:ml-[0.94rem]'>
@@ -57,6 +61,7 @@ const StudenSlide = ({items = []}) => {
         {Array.from({length: 3}).map((paginationItem, index) => {
           return (
             <span
+              key={index}
               className={clsx(
                 'rounded-full w-[0.375rem] h-[0.375rem] ml-0 duration-100',
                 {'bg-greyscaletext-10': activeIndex !== index},

@@ -41,5 +41,17 @@
     "ceo": "Ban giám đốc",
     "business": "lĩnh vực kinh doanh chính",
     "credo": "Tôn chỉ"
+  },
+  "scholarship": {
+    "nationInfor": "Nước Anh nằm ở phía Tây Bắc của châu Âu, được hợp thành bởi 4 phần: North Ireland, Wales, England và Scotland.",
+    "capital": {
+      "key": "Thủ đô",
+      "value": "London"
+    },
+    "h2_reason": "Vì sao chọn du học Anh",
+    "h2_education_system": "Hệ thống giáo dục đất nước",
+    "h2_secondary_schools": "Các trường phổ thông tại Anh",
+    "h2_training_institutes": "Các viện đào tạo nghề tại Anh",
+    "h2_related_posts": "Bài viết liên quan"
   }
 }

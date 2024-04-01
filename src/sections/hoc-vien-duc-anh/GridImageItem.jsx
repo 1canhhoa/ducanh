@@ -12,7 +12,7 @@ const GridImageItem = ({src, index}) => {
           height={160}
           priority
           className='w-full h-full object-cover rounded-[0.5rem]'
-          alt='student image - du hoc duc anh'
+          alt='hoc-vien-duc-anh'
         />
       </div>
     )
@@ -26,7 +26,7 @@ const GridImageItem = ({src, index}) => {
           height={160}
           priority
           className='w-full h-full object-cover rounded-lg'
-          alt='student image - du hoc duc anh'
+          alt='hoc-vien-duc-anh'
         />
       </div>
     )
@@ -42,7 +42,7 @@ const GridImageItem = ({src, index}) => {
             height={160}
             priority
             className='w-full h-full object-cover rounded-lg'
-            alt='student image - du hoc duc anh'
+            alt='hoc-vien-duc-anh'
           />
         </div>
       </div>
@@ -58,7 +58,7 @@ const GridImageItem = ({src, index}) => {
             height={160}
             priority
             className='w-full h-full object-cover rounded-lg'
-            alt='student image - du hoc duc anh'
+            alt='hoc-vien-duc-anh'
           />
         </div>
         <div
@@ -80,7 +80,7 @@ const GridImageItem = ({src, index}) => {
             height={160}
             priority
             className='w-full h-full object-cover rounded-lg'
-            alt='student image - du hoc duc anh'
+            alt='hoc-vien-duc-anh'
           />
         </div>
       </div>
@@ -94,7 +94,7 @@ const GridImageItem = ({src, index}) => {
         height={160}
         priority
         className='w-full h-full object-cover rounded-lg'
-        alt='student image - du hoc duc anh'
+        alt='hoc-vien-duc-anh'
       />
     </div>
   )
