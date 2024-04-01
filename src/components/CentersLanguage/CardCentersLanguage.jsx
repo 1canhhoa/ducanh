@@ -1,7 +1,7 @@
 import Image from 'next/image'
 const CardCentersLanguage = () => {
   return (
-    <div className=' flex w-full flex-col relative items-start justify-start space-y-[0.75rem]  p-[1.5rem] stify-center rounded-[0.75rem] bg-white  border border-[rgba(52,104,205,0.40)]'>
+    <div className=' flex w-full flex-col relative items-start justify-start space-y-[0.75rem]  p-[1.5rem] rounded-[0.75rem] bg-white  border border-[rgba(52,104,205,0.40)]'>
       <div className="text-primary-60 text-[1rem] pr-[5rem] font-extrabold uppercase " >
         PTE ACADEMIC, Hồ Chí Minh
       </div>
