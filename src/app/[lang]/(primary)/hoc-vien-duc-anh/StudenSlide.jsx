@@ -3,15 +3,18 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 import Image from 'next/image'
 import 'swiper/css'
 import 'swiper/css/pagination'
+import {useState} from 'react'
+import clsx from 'clsx'
 const StudenSlide = ({items = []}) => {
+  const [activeIndex, setActiveIndex] = useState(0)
   return (
     <div className='ml-[-0.75rem] md:ml-0'>
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
         loop
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+        // onSwiper={(swiper) => console.log(swiper)}
         pagination={{clickable: true}}
         className='w-screen md:w-[36rem] md:!ml-0'
       >
@@ -51,9 +54,17 @@ const StudenSlide = ({items = []}) => {
         })}
       </Swiper>
       <div className='ml-[0.75rem] md:ml-0 md:hidden slide-pagination flex items-center w-full justify-center space-x-[0.25rem]'>
-        <span className='bg-greyscaletext-10 rounded-full w-[0.375rem] h-[0.375rem] ml-0'></span>
-        <span className='bg-primary-60 rounded-full w-[0.375rem] h-[0.375rem]'></span>
-        <span className='bg-greyscaletext-10 rounded-full w-[0.375rem] h-[0.375rem]'></span>
+        {Array.from({length: 3}).map((paginationItem, index) => {
+          return (
+            <span
+              className={clsx(
+                'rounded-full w-[0.375rem] h-[0.375rem] ml-0 duration-100',
+                {'bg-greyscaletext-10': activeIndex !== index},
+                {'bg-primary-60': activeIndex === index},
+              )}
+            ></span>
+          )
+        })}
       </div>
     </div>
   )
