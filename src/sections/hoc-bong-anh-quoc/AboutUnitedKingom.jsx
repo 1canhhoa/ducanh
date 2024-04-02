@@ -1,7 +1,7 @@
 import Image from 'next/image'
-const AboutUnitedKingom = ({lang}) => {
+const AboutUnitedKingom = ({lang, id}) => {
   return (
-    <section id='about-united-kingom'>
+    <section id={id}>
       <div className='w-full h-[44.5rem] md:h-[32.6rem] rounded-xl bg-primary-10 flex flex-col md:flex-row'>
         <div className='flex-1'>
           <div className='relative w-full h-full'>

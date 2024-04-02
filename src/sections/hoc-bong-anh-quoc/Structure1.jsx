@@ -23,7 +23,7 @@ const Structure1 = ({h3Text, listText = [], separatorClass = ''}) => {
               width={125}
               height={125}
               alt='hoc-bong-anh-quoc'
-              className='w-[1.25rem] h-[1.25rem] object-contain mr-[0.62rem]'
+              className='xmd:w-[1rem] xmd:h-[1rem] w-[1.25rem] h-[1.25rem] object-contain mr-[0.62rem]'
             ></Image>
             <span className='text-[1rem] font-semibold xmd:font-bold leading-[150%] xmd:text-greyscaletext-80 text-greyscaletext-60'>
               {text}

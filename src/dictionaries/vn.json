@@ -39,7 +39,7 @@
   "about_us": {
     "legal": "Pháp nhân",
     "ceo": "Ban giám đốc",
-"business": "3 lĩnh vực kinh doanh chính",
+    "business": "3 lĩnh vực kinh doanh chính",
     "credo": "Tôn chỉ",
     "achievement": "Thành tựu công ty",
     "office": "Văn phòng",
@@ -52,10 +52,24 @@
       "key": "Thủ đô",
       "value": "London"
     },
+    "h2_about_united_kingdom": "Thông tin chung về Anh Quốc",
     "h2_reason": "Vì sao chọn du học Anh",
+    "h2_reason_mb": "Vì sao du học tại Anh Quốc",
     "h2_education_system": "Hệ thống giáo dục đất nước",
     "h2_secondary_schools": "Các trường phổ thông tại Anh",
+    "h2_secondary_schools_mb": "Các trường phổ thông tại Anh Quốc",
     "h2_training_institutes": "Các viện đào tạo nghề tại Anh",
+    "h2_training_institutes_mb": "Các viện đào tạo nghề tại Anh Quốc",
+    "h2_university_schools": "Các trường đại học tại Anh",
+    "h2_university_schools_mb": "Các trường đại học tại Anh Quốc",
+    "h2_register_study": "Đăng ký xin học tại Anh",
+    "h2_register_study_mb": "Đăng ký xin học tại Anh Quốc",
+    "h2_visa_study": "Visa du học - Làm việc - Định cư",
+    "h2_visa_study_mb": "Visa du học Anh Quốc",
+    "h2_scholarship_en": "Học bổng du học tại Anh",
+    "h2_scholarship_en_mb": "Học bổng tại Anh Quốc",
+    "h2_job_settled": "Việc làm - Định cư tại Anh",
+    "h2_job_settled_mb": "Việc làm định cư tại Anh Quốc",
     "h2_related_posts": "Bài viết liên quan"
   }
 }

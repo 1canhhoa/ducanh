@@ -3,14 +3,20 @@ import SectionWrapper from './SectionWrapper'
 import Structure1 from './Structure1'
 import Structure2 from './Structure2'
 import Paragraph from './Paragraph'
-const EducationSystem = ({lang}) => {
+const EducationSystem = ({lang, id}) => {
   return (
     <SectionWrapper
-      id='education-system'
+      id={id}
       h2Text={lang.h2_education_system}
     >
-      <div className='bg-primary-40 xmd:h-[33.4rem] h-[18rem] rounded-xl px-[3rem] py-[2.3rem] mt-[1.25rem] mb-[1.5rem] relative overflow-hidden'>
-        <p className='w-[30.1rem] text-white text-[1.25rem] font-semibold leading-[150%]'>
+      <div
+        className='bg-primary-40 xmd:h-[33.4rem] h-[18rem] rounded-xl xmd:px-[0.84rem] xmd:py-[0.81rem] px-[3rem]
+       py-[2.3rem] mt-[1.25rem] mb-[1.5rem] relative overflow-hidden'
+      >
+        <p
+          className='xmd:w-full w-[30.1rem] text-white xmd:text-[1.125rem] text-[1.25rem] font-semibold xmd:leading-[160%]
+         leading-[150%]'
+        >
           Giáo dục phổ cập tại Anh dành cho tất cả trẻ em cho tới 16 tuổi. Anh
           có hai hệ thống giáo dục Anh quốc khác biệt về khóa học đào tạo và
           bằng cấp được cấp, tuy nhiên hai hệ thống này tương thích với nhau. Hệ
@@ -20,7 +26,7 @@ const EducationSystem = ({lang}) => {
         <picture>
           <source
             media='(max-width:767px)'
-            srcset='/images/hoc-bong-anh-quoc/en_flag_mobile.jpg'
+            srcSet='/images/hoc-bong-anh-quoc/en_flag_mobile.png'
           />
           <Image
             src={'/images/hoc-bong-anh-quoc/cơ anh 1.png'}
@@ -28,7 +34,8 @@ const EducationSystem = ({lang}) => {
             height={2000}
             priority
             alt='hoc-bong-anh-quoc'
-            className='h-[18rem] w-[30rem] top-0 right-[-0.5rem] object-cover absolute'
+            className='xmd:h-[16.75rem] h-[18rem] xmd:w-[27.3rem] w-[30rem] xmd:bottom-0 md:top-0 xmd:right-0 right-[-0.5rem] 
+            object-cover absolute'
           ></Image>
         </picture>
       </div>

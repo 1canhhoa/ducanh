@@ -2,8 +2,8 @@ import {Button} from '@/components/ui/button'
 import Image from 'next/image'
 const RelatedPosts = ({lang}) => {
   return (
-    <section className='w-full'>
-      <div className='w-full my-[1.25rem] md:my-[2.25rem] border-t-[0.0625rem] border-[rgba(52, 104, 205, 0.40)]'></div>
+    <section className='xmd:mx-[0.75rem]'>
+      <div className='md:w-full my-[1.25rem] xmd:mx-[0.75rem] md:my-[2.25rem] border-t-[0.0625rem] border-[rgba(52,_104,_205,_0.40)]'></div>
       <h2 className='text-[1.5rem] text-center md:text-left text-primary-50 font-bold leading-[130%] mt-[1.25rem] md:mt-[2.25rem] mb-[1.5rem]'>
         {lang.h2_related_posts}
       </h2>
@@ -25,7 +25,9 @@ const RelatedPosts = ({lang}) => {
             ></Image>
             <div className='ml-[0.5rem] md:ml-[1.5rem] flex flex-1 flex-col h-full'>
               <h2 className='text-primary-60 text-[1rem] font-bold leading-[150%]'>
-                Học bổng toàn phần khối ngành STEM dành cho nữ giới
+                <a href='#'>
+                  Học bổng toàn phần khối ngành STEM dành cho nữ giới
+                </a>
               </h2>
               <p className='hidden md:block line-clamp-4 overflow-hidden mt-[1rem] mb-auto'>
                 Bạn là nữ giới, đã có bằng Cử nhân chuyên ngành STEM và có niềm

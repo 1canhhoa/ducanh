@@ -4,10 +4,10 @@ import Structure2 from './Structure2'
 import Paragraph from './Paragraph'
 import SectionWrapper from './SectionWrapper'
 
-const Reason = ({lang}) => {
+const Reason = ({lang, id}) => {
   return (
     <SectionWrapper
-      id='reason'
+      id={id}
       h2Text={lang.h2_reason}
       shortMargin
     >
@@ -50,8 +50,8 @@ const Reason = ({lang}) => {
         bottomImage={{
           enabled: true,
           src: '/images/hoc-bong-anh-quoc/image 108873.jpg',
-          width: 709,
-          height: 375,
+          width: 700,
+          height: 400,
           className: 'w-full',
         }}
       >
