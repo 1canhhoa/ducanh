@@ -2,12 +2,12 @@ import Image from 'next/image'
 const AboutUnitedKingom = ({lang}) => {
   return (
     <section id='about-united-kingom'>
-      <div className='w-full h-[32.6rem] rounded-xl bg-primary-10 flex flex-col md:flex-row'>
+      <div className='w-full h-[44.5rem] md:h-[32.6rem] rounded-xl bg-primary-10 flex flex-col md:flex-row'>
         <div className='flex-1'>
           <div className='relative w-full h-full'>
             <h1
-              className='absolute top-[1.5rem] left-[2rem] uppercase text-white text-[2.1rem]
-       font-extrabold leading-[120%] w-[10.5rem]'
+              className='absolute top-[0.94rem] left-[0.75rem] md:top-[1.5rem] md:left-[2rem] uppercase text-white text-[1.5rem] md:text-[2.1rem]
+       font-extrabold leading-[120%] w-[7.6rem] md:w-[10.5rem]'
             >
               United kingdom
             </h1>
@@ -16,11 +16,12 @@ const AboutUnitedKingom = ({lang}) => {
               width={160}
               height={320}
               alt='hoc-bong-anh-quoc'
-              className='absolute bottom-[2rem] left-[13.25rem] w-[16rem] h-[32.6rem] object-contain'
+              className='absolute bottom-[0] md:bottom-[2rem] left-[6.88rem] md:left-[13.25rem] w-[9.61063rem] h-[18.81263rem] md:w-[16rem] 
+              md:h-[32.6rem] object-contain'
             ></Image>
           </div>
         </div>
-        <div className='flex-1 my-[0.8rem] mr-[0.8rem] p-[1.5rem] rounded-lg bg-white'>
+        <div className='flex-1 my-[0.8rem] mx-[0.75rem] md:ml-0 mr-[0.8rem] p-[1.5rem] rounded-lg bg-white'>
           <p className='flex items-baseline text-greyscaletext-50 text-[1rem] italic font-normal leading-[150%]'>
             <Image
               src={'/images/hoc-vien-duc-anh/Group 1000005614.svg'}
@@ -39,14 +40,14 @@ const AboutUnitedKingom = ({lang}) => {
           </ul>
         </div>
       </div>
-      <p className='mt-[1.5rem] text-[1rem] font-medium leading-[150%] text-greyscaletext-60'>
+      <p className='mt-[1.5rem] xmd:mt-[1rem] text-[1rem] font-medium leading-[150%] text-greyscaletext-60 xmd:px-[0.75rem]'>
         Chỉ tính riêng về giáo dục, ngay lập tức sau Brexit, nước Anh đã quay
         lại chính sách cho phép sinh viên quốc tế ở lại làm việc 02 năm sau khi
         học xong & định cư khi đủ điều kiện, đồng thời, nới lỏng phần nào các
         chính sách về giáo dục, di trú… thuận lợi hơn cho du học sinh quốc tế
         vào.
       </p>
-      <p className='mt-[1rem] text-[1rem] font-medium leading-[150%] mb-[1.5rem] text-greyscaletext-60'>
+      <p className='mt-[1rem] xmd:mt-[1rem] text-[1rem] font-medium leading-[150%] mb-[1.5rem] xmd:mb-[2.62rem] text-greyscaletext-60 xmd:px-[0.75rem]'>
         Với việc rời Cộng đồng châu Âu vào ngày 1/2/2020 nước Anh trở thành một
         quốc gia độc lập theo đuổi các mục tiêu kinh tế, chính trị, giáo dục,
         quân sự, ngoại giao… mà không bị ràng buộc bởi các quy định chung của
@@ -54,7 +55,7 @@ const AboutUnitedKingom = ({lang}) => {
         linh hoạt và có vẻ hiệu quả hơn, các quyết định được đưa ra nhanh và kịp
         thời hơn…
       </p>
-      <div className='py-[2rem] px-[1.5rem] border border-primary-30 rounded-xl'>
+      <div className='py-[2rem] px-[1.5rem] border border-primary-30 rounded-xl xmd:mx-[0.75rem]'>
         <p className='text-greyscaletext-60 text-[0.875rem] font-semibold leading-[160%] mb-[1.5rem]'>
           Vui lòng tham khảo các thông tin trên Wikipedia về nước Anh như dưới
           đây:

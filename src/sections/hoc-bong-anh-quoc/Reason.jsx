@@ -9,6 +9,7 @@ const Reason = ({lang}) => {
     <SectionWrapper
       id='reason'
       h2Text={lang.h2_reason}
+      shortMargin
     >
       <Structure1
         separatorClass={'mt-[0.75rem] mb-[1rem]'}
@@ -117,7 +118,7 @@ const Reason = ({lang}) => {
           Tier 5 (Religious Worker): Dành cho người làm các công việc như thuyết giáo và giúp việc trong các tổ chức tôn giáo.[]
           Tier 5 (Charity Worker): Dành cho người sang Anh làm công tác từ thiện không hưởng lương.`}
         />
-        <span className='text-primary-50 text-[1rem] font-medium leading-[150%] mt-[1.5rem] inline-block'>
+        <span className='text-primary-50 text-[1rem] font-medium leading-[150%] xmd:mt-0 mt-[1.5rem] inline-block'>
           Vui lòng{' '}
           <a
             href='#'

@@ -9,7 +9,7 @@ const EducationSystem = ({lang}) => {
       id='education-system'
       h2Text={lang.h2_education_system}
     >
-      <div className='bg-primary-40 h-[18rem] rounded-xl px-[3rem] py-[2.3rem] mt-[1.25rem] mb-[1.5rem] relative overflow-hidden'>
+      <div className='bg-primary-40 xmd:h-[33.4rem] h-[18rem] rounded-xl px-[3rem] py-[2.3rem] mt-[1.25rem] mb-[1.5rem] relative overflow-hidden'>
         <p className='w-[30.1rem] text-white text-[1.25rem] font-semibold leading-[150%]'>
           Giáo dục phổ cập tại Anh dành cho tất cả trẻ em cho tới 16 tuổi. Anh
           có hai hệ thống giáo dục Anh quốc khác biệt về khóa học đào tạo và
@@ -17,14 +17,20 @@ const EducationSystem = ({lang}) => {
           thống thứ nhất được dùng tại England, xứ Wales và Bắc Ireland. Hệ
           thống thứ hai được dùng tại Scotland.
         </p>
-        <Image
-          src={'/images/hoc-bong-anh-quoc/cơ anh 1.png'}
-          width={4000}
-          height={2000}
-          priority
-          alt='hoc-bong-anh-quoc'
-          className='h-[18rem] w-[30rem] top-0 right-[-0.5rem] object-cover absolute'
-        ></Image>
+        <picture>
+          <source
+            media='(max-width:767px)'
+            srcset='/images/hoc-bong-anh-quoc/en_flag_mobile.jpg'
+          />
+          <Image
+            src={'/images/hoc-bong-anh-quoc/cơ anh 1.png'}
+            width={4000}
+            height={2000}
+            priority
+            alt='hoc-bong-anh-quoc'
+            className='h-[18rem] w-[30rem] top-0 right-[-0.5rem] object-cover absolute'
+          ></Image>
+        </picture>
       </div>
       <Structure1
         h3Text={'Về cơ bản học sinh sẽ học:'}
