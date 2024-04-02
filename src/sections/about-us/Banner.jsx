@@ -4,11 +4,11 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 const Banner = ({ t }) => {
   return (
-    <div className=' flex flex-col items-start space-y-[2.5rem] px-[11.56rem]'>
+    <div className=' flex flex-col items-start space-y-[2.5rem] w-[77rem]'>
       <Title title={t.legal} />
-      <div className=" flex flex-col justify-end space-y-[2.875rem]">
+      <div className=" flex flex-col justify-end  space-y-[2.875rem]">
         <Image priority className="min-w-full h-full relative" alt='ảnh banner về công ty du học đức anh' src="/images/about_us/banner_3.jpg" width={1250} height={500} />
-        <div className='flex justify-center items-center absolute top-[71%] left-[55%] space-x-[7.31rem]'>
+        <div className='flex justify-center items-center absolute top-[62%] left-[52%] space-x-[7.31rem]'>
           <div className="inline-flex flex-col items-start space-y-[0.25rem]">
             <div className='text-[rgba(255,255,255,0.70)] font-feature-settings text-[0.875rem] font-bold leading-[1.6] uppercase '>
               Tên Tiếng Anh
