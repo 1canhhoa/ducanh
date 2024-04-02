@@ -6,9 +6,10 @@ const Banner = ({ t }) => {
   return (
     <div className=' flex flex-col items-start space-y-[2.5rem] w-[77rem]'>
       <Title title={t.legal} />
-      <div className=" flex flex-col justify-end  space-y-[2.875rem]">
-        <Image priority className="min-w-full h-full relative" alt='ảnh banner về công ty du học đức anh' src="/images/about_us/banner_3.jpg" width={1250} height={500} />
-        <div className='flex justify-center items-center absolute top-[62%] left-[52%] space-x-[7.31rem]'>
+      <div className=" flex flex-col justify-end space-y-[2.875rem]">
+        <div className="relative">
+          <Image priority className="min-w-full h-full" alt='ảnh banner về công ty du học đức anh' src="/images/about_us/banner_3.jpg" width={1250} height={500} />
+          <div className='flex justify-center items-center absolute top-[75%] left-[52%] space-x-[7.31rem]'>
           <div className="inline-flex flex-col items-start space-y-[0.25rem]">
             <div className='text-[rgba(255,255,255,0.70)] font-feature-settings text-[0.875rem] font-bold leading-[1.6] uppercase '>
               Tên Tiếng Anh
@@ -22,10 +23,12 @@ const Banner = ({ t }) => {
               THÀNH LẬP
             </div>
             <div className="text-white body16 font-bold ">
-              Năm 2000
+                Năm 2000
+              </div>
             </div>
           </div>
         </div>
+
         <div className=" flex items-start space-x-[2.6875rem]">
           <div className=" pt-[2.38rem] pl-[2.25rem] w-full h-[16.9375rem] rounded-[1.25rem] border border-[rgba(52,104,205,0.40)]">
             <div className="inline-flex flex-col items-start space-y-[1.5rem]">

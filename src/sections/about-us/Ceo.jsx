@@ -2,7 +2,7 @@ import Title from '@/components/Title'
 import React from 'react'
 import Image from 'next/image'
 const Section = ({ title, subTitle }) => {
-  return <div className="flex justify-center items-start pt-[1.125rem] pb-[1.10631rem] pr-[0.87513rem] pl-[1.8125rem] rounded-[1rem] space-x-[0.25rem] bg-linear-l9  ">
+  return <div className="flex justify-center items-start pt-[1.125rem] pb-[1.10631rem] pr-[0.87513rem] pl-[0.8125rem] rounded-[1rem] space-x-[0.25rem] bg-linear-l9  ">
     <div className="flex flex-col justify-center items-start space-y-[0.0625rem]">
       <div className="body14 text-primary-5 font-feature-settings text-center">
         {subTitle}
@@ -15,12 +15,12 @@ const Section = ({ title, subTitle }) => {
   </div>
 }
 const Section1 = ({ title }) => {
-  return <div className="flex items-center w-[10.375rem] space-x-[0.5rem]">
+  return <div className="flex items-center w-[10.775rem] space-x-[0.5rem]">
     <svg className='size-[0.75rem]' xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
       <rect y="6.5" width="6" height="6" fill="#2B46A8" />
       <rect x="6" y="0.5" width="6" height="6" fill="#ED4343" />
     </svg>
-    <div className="text-[1rem] whitespace-nowrap font-bold leading-[1.2] text-secondary-60 tracking-[0.01rem]">
+    <div className="text-[1rem] font-bold leading-[1.2] text-secondary-60 tracking-[0.01rem]">
       {title}
     </div>
   </div>

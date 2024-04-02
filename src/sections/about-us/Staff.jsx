@@ -2,7 +2,6 @@ import Title from '@/components/Title'
 import React from 'react'
 import Image from 'next/image'
 const Staff = ({ t }) => {
-  console.log('tttt', t);
   return (
     <div className='w-[77rem] flex items-start space-x-[7.56rem]'>
       <div className="">

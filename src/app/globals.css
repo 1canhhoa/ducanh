@@ -1,8 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+  .bd{
+    @apply border border-black
+  }
 @layer components {
+
   .h4{
     @apply text-[1.5rem] leading-[1.2] tracking-[-0.0075rem]
   }
