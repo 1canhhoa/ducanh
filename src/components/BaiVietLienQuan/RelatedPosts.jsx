@@ -1,11 +1,11 @@
 import {Button} from '@/components/ui/button'
 import Image from 'next/image'
-const RelatedPosts = ({lang}) => {
+const RelatedPosts = ({lang, items = []}) => {
   return (
     <section className='xmd:mx-[0.75rem]'>
       <div className='md:w-full my-[1.25rem] xmd:mx-[0.75rem] md:my-[2.25rem] border-t-[0.0625rem] border-[rgba(52,_104,_205,_0.40)]'></div>
       <h2 className='text-[1.5rem] text-center md:text-left text-primary-50 font-bold leading-[130%] mt-[1.25rem] md:mt-[2.25rem] mb-[1.5rem]'>
-        {lang.h2_related_posts}
+        {lang.related_posts}
       </h2>
       <div className='w-full grid grid-rows-6 grid-cols-1 md:grid-rows-3 md:grid-cols-2 gap-x-0 md:gap-x-[1.5rem] gap-y-[0.75rem] md:gap-y-[1.88rem]'>
         {Array.from({length: 6}).map((item, index) => (

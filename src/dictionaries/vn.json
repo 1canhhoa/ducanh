@@ -1,5 +1,6 @@
 {
   "hello": "xin chao okhub",
+  "related_posts": "Bài viết liên quan",
   "contact": {
     "title": "Kết nối với chúng tôi",
     "firstAndLastName": "Họ và tên*",
@@ -69,7 +70,7 @@
     "h2_scholarship_en": "Học bổng du học tại Anh",
     "h2_scholarship_en_mb": "Học bổng tại Anh Quốc",
     "h2_job_settled": "Việc làm - Định cư tại Anh",
-    "h2_job_settled_mb": "Việc làm định cư tại Anh Quốc",
-    "h2_related_posts": "Bài viết liên quan"
-  }
+    "h2_job_settled_mb": "Việc làm định cư tại Anh Quốc"
+  },
+  "study_abroad_guide": {}
 }
