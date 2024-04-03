@@ -1,4 +1,4 @@
-import {getDictionary} from '@/dictionaries'
+import {getDictionary} from '@/app/[lang]/dictionaries'
 import StudentItem from '@/sections/hoc-vien-duc-anh/StudentItem'
 import GridImageItem from '@/sections/hoc-vien-duc-anh/GridImageItem'
 import Banner from '@/sections/hoc-vien-duc-anh/Banner'
@@ -29,15 +29,15 @@ export default async function HocVienDucAnhPage({params}) {
         }}
       />
       <section className='flex flex-col md:flex-row mb-[1.5rem] md:mb-[4.5rem]'>
-        <div className='w-full mr-auto'>
+        <div className='xmd:w-full mr-auto'>
           <h2 className='flex flex-col mb=[1rem] md:mb-[4rem]'>
             <span className='text-greyscaletext-80 md:text-greyscaletext-40 text-[0.875rem] md:text-[1.125rem] font-bold leading-[150%] md:leading-[130%] uppercase'>
               {myPageLang.goAlong}
             </span>
             <span className='text-primary-60 flex font-bold text-[2rem] md:text-[3rem] leading-[130%] md:leading-[120%] tracking-[-0.04rem] md:tracking-[-0.03rem]'>
-              <span className='inline-flex items-baseline w-[14rem] md:w-[unset]'>
-                {myPageLang.outstandingStudents} {/* uncomplete */}
-                <span className='bg-secondary-50 block hidden w-[0.8rem] md:ml-[0.5rem] h-[0.8rem]'></span>
+              <span className='inline-flex items-baseline w-[14rem] md:w-[unset] relative'>
+                {myPageLang.outstandingStudents}
+                <span className='bg-secondary-50 block md:hidden absolute bottom-[0.5rem] right-[4.5rem] w-[0.8rem] md:ml-[0.5rem] h-[0.8rem]'></span>
               </span>
             </span>
           </h2>
