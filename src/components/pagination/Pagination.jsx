@@ -14,6 +14,8 @@ const Pagination = ({page = 1, perpage = 4, total}) => {
             width={100}
             height={100}
             className='w-[1rem] h-[1rem]'
+            priority
+            alt='prev-btn'
           />
         </button>
         <button className='rounded-lg bg-primary-60 border border-[rgba(19, 43, 125, 0.20)] mr-[0.5rem] p-[0.625rem] flex items-center'>
@@ -40,6 +42,8 @@ const Pagination = ({page = 1, perpage = 4, total}) => {
             width={100}
             height={100}
             className='w-[1rem] h-[1rem]'
+            priority
+            alt='next-btn'
           />
         </button>
       </nav>
