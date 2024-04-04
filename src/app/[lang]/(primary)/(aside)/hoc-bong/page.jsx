@@ -1,8 +1,8 @@
 import {getDictionary} from '@/app/[lang]/dictionaries'
-import NgheHot from '@/components/nghehot'
+import HocBong from '@/components/hocbong'
 
 export default async function page({params}) {
   console.log('🚀 ~ HomePage ~ params:', params)
   const t = await getDictionary(params?.lang)
-  return <NgheHot t={t} />
+  return <HocBong t={t} />
 }

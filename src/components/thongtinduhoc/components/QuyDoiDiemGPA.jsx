@@ -1,11 +1,11 @@
 import Image from 'next/image'
 
-export default function QuyDoiDiemGPA() {
+export default function QuyDoiDiemGPA({text}) {
   return (
-    <section className='w-full '>
-      <div className='flex flex-col items-start space-y-[2rem] lg:w-[76.4375rem] mx-auto'>
-        <h1 className='title relative w-fit mb-[2.05rem]'>
-          Chuẩn bị cho du học
+    <section className='w-full'>
+      <div className='flex flex-col items-start space-y-[2rem] lg:w-[76.4375rem] lg:mx-auto xmd:px-[0.75rem]'>
+        <h1 className='title relative xmd:mb32 w-fit mb-[2.05rem] xmd:mb-[1.5rem]'>
+          {text.information.title_3}
           <div className='size-[0.625rem] bg-secondary-40 absolute bottom-[0.625rem] right-[-1.125rem]'></div>
         </h1>
         <ul className='flex flex-col items-start space-y-[1rem]'>
@@ -24,6 +24,7 @@ export default function QuyDoiDiemGPA() {
           </li>
         </ul>
         <Image
+          className='h-[40.48813rem] w-[76.4375rem] xmd:w-[21.9375rem] xmd:h-[12.9375rem] rounded-[0.75rem]'
           alt='ảnh quy đổi GPA'
           src={'/images/thongtinduhoc/imgGpa.jpg'}
           width={1223}

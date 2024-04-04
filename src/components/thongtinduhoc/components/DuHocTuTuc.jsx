@@ -1,23 +1,17 @@
-export default function DuHocTuTuc() {
+export default function DuHocTuTuc({text}) {
   return (
-    <section className='w-full mt-[5rem]'>
-      <div className='w-full space-y-[2.06rem] h-[29.5rem] px-[11.62rem] bg-background-elevation-10 flex flex-col justify-center items-start'>
-        <h1 className='title relative w-fit mb-[2.05rem]'>
-          Du học tự túc
+    <section className='w-full mt-[5rem] xmd:mt-[2rem]'>
+      <div className='w-full space-y-[2.06rem] lg:h-[29.5rem] xmd:px-[0.75rem] px-[11.62rem] bg-background-elevation-10 flex flex-col justify-center items-start'>
+        <h1 className='title xmd:mb32 relative w-fit mb-[2.05rem] xmd:mb-[1rem]'>
+          {text.information.title_5.title}
           <div className='size-[0.625rem] bg-secondary-40 absolute bottom-[0.625rem] right-[-1.125rem]'></div>
         </h1>
-        <div className='flex justify-between w-full'>
-          <p className='w-[36rem] text-[1.5rem] font-bold text-primary-50 leading-[1.5]'>
-            Hiện nay, du học sinh có thể lựa chọn du học toàn phần (học toàn bộ
-            thời gian ở nước ngoài), du học bán phần (học một phần ở Việt Nam và
-            một phần ở nước khác), học tại một nước trong suốt quá trình du học
-            hoặc học chuyển tiếp giữa các nước…
+        <div className='flex xmd:flex-col xmd:space-y-[1rem] justify-between w-full'>
+          <p className='w-[36rem] xmd:w-[21.9375rem] xmd:body16 text-[1.5rem] font-bold text-primary-50 leading-[1.5]'>
+            {text.information.title_5.text1}
           </p>
-          <p className='w-[31.625rem] body16 text-greyscaletext-60'>
-            Với loại hình du học này, học sinh có quyền quyết định tương lai của
-            mình: học tại nước nào, trường nào và chương trình nào, chi bao
-            nhiêu tiền cho khóa học, học xong làm gì, ở đâu… So với du học học
-            bổng, số lượng du học sinh tự túc lớn hơn rất nhiều lần.
+          <p className='lg:w-[31.625rem] body16 text-greyscaletext-60'>
+            {text.information.title_5.text2}
           </p>
         </div>
       </div>

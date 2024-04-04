@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function ItemCard() {
   return (
-    <div className='flex max-md:flex-col justify-between lg:space-x-[4.625rem] w-full'>
-      <div className='flex items-start space-x-[0.5rem] max-md:mb-[0.75rem]'>
+    <div className='flex xmd:flex-col justify-between lg:space-x-[4.625rem] w-full'>
+      <div className='flex items-start space-x-[0.5rem] xmd:mb-[0.75rem]'>
         <Image
           className='pt-[0.5rem]'
           alt='dot'
@@ -11,9 +11,9 @@ export default function ItemCard() {
           width={12}
           height={12}
         />
-        <span className='sub24 max-md:body16'>Về tuyển sinh du học</span>
+        <span className='sub24 xmd:body16'>Về tuyển sinh du học</span>
       </div>
-      <p className='w-[31.375rem] max-md:w-[21.875rem] body16 max-md:body14 max-md:text-greyscaletext-60 flex justify-start text-start max-md:mb-[1rem]'>
+      <p className='w-[31.375rem] xmd:w-[21.875rem] body16 xmd:body14 xmd:text-greyscaletext-60 flex justify-start text-start xmd:mb-[1rem]'>
         Các bạn có thể hợp tác cùng chúng tôi để tuyển du học sinh: chúng tôi
         welcome các tổ chức và cá nhân giới thiệu học sinh, người thân, người
         quen tới chúng tôi để được tư vấn/ làm hồ sơ du học. Với hơn 20 năm kinh
@@ -24,7 +24,7 @@ export default function ItemCard() {
         thế mạnh.
       </p>
       <Image
-        className='rounded-[0.75rem] max-md:w-[21.9375rem] h-[13.75rem]'
+        className='rounded-[0.75rem] xmd:w-[21.9375rem] h-[13.75rem]'
         src={'/images/hoptac/itemCard.png'}
         alt='tuyensinh'
         width={325.482}
