@@ -6,7 +6,7 @@ const Structure1 = ({h3Text, listText = [], separatorClass = ''}) => {
     <div className=''>
       <h3
         className={clsx(
-          'text-[1rem] font-semibold leading-[170%] text-primary-50',
+          'text-[1rem] font-semibold xmd:leading-[150%] leading-[170%] text-primary-50',
           separatorClass,
         )}
       >
@@ -23,9 +23,9 @@ const Structure1 = ({h3Text, listText = [], separatorClass = ''}) => {
               width={125}
               height={125}
               alt='hoc-bong-anh-quoc'
-              className='w-[1.25rem] h-[1.25rem] object-contain mr-[0.62rem]'
+              className='xmd:w-[1rem] xmd:h-[1rem] w-[1.25rem] h-[1.25rem] object-contain mr-[0.62rem]'
             ></Image>
-            <span className='text-[1rem] font-semibold leading-[150%] text-greyscaletext-60'>
+            <span className='text-[1rem] font-semibold xmd:font-bold leading-[150%] xmd:text-greyscaletext-80 text-greyscaletext-60'>
               {text}
             </span>
           </li>

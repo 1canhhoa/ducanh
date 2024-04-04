@@ -57,6 +57,7 @@ module.exports = {
         'greyscaletext-80': '#262626',
         'secondary-5': '#FFF2F3',
         'background-elevation-10': '#FAFAFA',
+        'background-elevation-tag-chip': '#EBF5FA',
         'linear-l9': '#6196F6',
         'linear-l6': 'linear-gradient(170deg, #2E6BC6 10.78%, #29A4EA 81.3%)',
       },

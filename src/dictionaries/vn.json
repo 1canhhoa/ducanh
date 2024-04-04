@@ -1,5 +1,6 @@
 {
   "hello": "xin chao okhub",
+  "related_posts": "Bài viết liên quan",
   "contact": {
     "title": "Kết nối với chúng tôi",
     "firstAndLastName": "Họ và tên*",
@@ -52,9 +53,12 @@
       "key": "Thủ đô",
       "value": "London"
     },
+    "h2_about_united_kingdom": "Thông tin chung về Anh Quốc",
     "h2_reason": "Vì sao chọn du học Anh",
+    "h2_reason_mb": "Vì sao du học tại Anh Quốc",
     "h2_education_system": "Hệ thống giáo dục đất nước",
     "h2_secondary_schools": "Các trường phổ thông tại Anh",
+    "h2_secondary_schools_mb": "Các trường phổ thông tại Anh Quốc",
     "h2_training_institutes": "Các viện đào tạo nghề tại Anh",
     "h2_related_posts": "Bài viết liên quan"
   },
@@ -219,5 +223,14 @@
     "title": "Hợp tác với chúng tôi",
     "banner": "Công ty du học Đức Anh hoan nghênh các ý định hợp tác trong các lĩnh vực chúng tôi hiện có, với tinh thần hợp tác chuyên nghiệp, đảm bảo đạo đức nghề nghiệp, tuân thủ pháp luật và các bên cùng có lợi.",
     "tu_van": "Tư vấn du học"
+  },
+  "hoc_bong": {
+    "title": "Học Bổng",
+    "description": "Đức Anh EduConnect trân trọng thông báo chương trình học bổng du học 10-100% học phí tại các nước:",
+    "note": {
+      "text1": "Các thí sinh cần ",
+      "text2": "liên hệ",
+      "text3": "với chúng tôi sớm nhất để kịp làm hồ sơ và xin học bổng du học cho các kỳ nhập học 2023-2024."
+    }
   }
 }

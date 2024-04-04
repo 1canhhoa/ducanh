@@ -3,52 +3,22 @@ import SectionWrapper from './SectionWrapper'
 import Structure1 from './Structure1'
 import Structure2 from './Structure2'
 import Paragraph from './Paragraph'
-const EducationSystem = ({lang}) => {
+const SecondarySchools = ({lang, id}) => {
   return (
     <SectionWrapper
-      id='education-system'
-      h2Text={lang.h2_education_system}
+      id={id}
+      h2Text={lang.h2_secondary_schools}
     >
-      <div className='bg-primary-40 h-[18rem] rounded-xl px-[3rem] py-[2.3rem] mt-[1.25rem] mb-[1.5rem] relative overflow-hidden'>
-        <p className='w-[30.1rem] text-white text-[1.25rem] font-semibold leading-[150%]'>
-          Giáo dục phổ cập tại Anh dành cho tất cả trẻ em cho tới 16 tuổi. Anh
-          có hai hệ thống giáo dục Anh quốc khác biệt về khóa học đào tạo và
-          bằng cấp được cấp, tuy nhiên hai hệ thống này tương thích với nhau. Hệ
-          thống thứ nhất được dùng tại England, xứ Wales và Bắc Ireland. Hệ
-          thống thứ hai được dùng tại Scotland.
-        </p>
-        <Image
-          src={'/images/hoc-bong-anh-quoc/cơ anh 1.png'}
-          width={4000}
-          height={2000}
-          priority
-          alt='hoc-bong-anh-quoc'
-          className='h-[18rem] w-[30rem] top-0 right-[-0.5rem] object-cover absolute'
-        ></Image>
-      </div>
-      <Structure1
-        h3Text={'Về cơ bản học sinh sẽ học:'}
-        listText={[
-          'Phổ thông: 13 năm nếu học chương trình A level (đa số) và 12 năm nếu học chương trình IB ',
-          'Cao đẳng: 1-2 năm',
-          'Cử nhân: 3-4-5 năm',
-          'Thạc sỹ: 1 năm',
-          'Tiến sỹ: 3-5 năm',
-        ]}
-        separatorClass='mb-[0.5rem]'
-      />
-      <Structure1
-        h3Text={'Về cơ bản học sinh sẽ học:'}
-        listText={[
-          'Phổ thông: 13 năm nếu học chương trình A level (đa số) và 12 năm nếu học chương trình IB ',
-          'Cao đẳng: 1-2 năm',
-          'Cử nhân: 3-4-5 năm',
-          'Thạc sỹ: 1 năm',
-          'Tiến sỹ: 3-5 năm',
-        ]}
-        separatorClass='mb-[0.5rem] mt-[1.5rem]'
-      />
-      <Structure2 h3Text={'1. Phổ thông'}>
+      <p className='text-[1rem] font-semibold leading-[170%] text-primary-50 my-[1.25rem]'>
+        Như đã đề cập, chương trình phổ thông tại Anh có thể 13 năm (A-level)
+        hoặc 12 năm (IB). Kết thúc 2 chương trình này, học sinh sẽ học lên năm
+        thứ nhất đại học ở bất cứ nước nào trên thế giới. Chi tiết các chương
+        trình như dưới đây:
+      </p>
+      <Structure2
+        h3Text={'1. Danh sách các trường phổ thông tại Anh'}
+        marginTop={false}
+      >
         <Paragraph
           text='Chương trình mẫu giáo dành cho các học sinh từ 3-4 tuổi;
 Chương trình tiểu học dành cho các học sinh từ 5-11 tuổi;
@@ -62,7 +32,7 @@ Dự bị đại học và các khóa học liên thông lên đại học. Là
 Bằng tổng hợp/ kết hợp (Combining qualifications). Sinh viên có thể học kết hợp bằng nghề và chứng chỉ AS hoặc A level, hoặc kết hợp với các chương trình đào tạo khác.'
         />
       </Structure2>
-      <Structure2 h3Text={'2. Cao đẳng'}>
+      <Structure2 h3Text={'2. Thông tin chung về chương trình phổ thông'}>
         <Paragraph
           text='Chương trình đào tạo nghề được dạy ở các trường phổ thông trung học song song với chương trình phổ thông, hoặc trong các trường cao đẳng chuyên đào tạo nghề và cấp các loại bằng cấp:
 Bằng tổng hợp/ kết hợp (Combining qualifications). Sinh viên có thể học kết hợp bằng nghề và chứng chỉ AS hoặc A level, hoặc kết hợp với các chương trình đào tạo khác.'
@@ -72,4 +42,4 @@ Bằng tổng hợp/ kết hợp (Combining qualifications). Sinh viên có th�
   )
 }
 
-export default EducationSystem
+export default SecondarySchools

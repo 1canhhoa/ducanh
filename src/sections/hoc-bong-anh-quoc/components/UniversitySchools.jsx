@@ -3,11 +3,11 @@ import SectionWrapper from './SectionWrapper'
 import Structure1 from './Structure1'
 import Structure2 from './Structure2'
 import Paragraph from './Paragraph'
-const SecondarySchools = ({lang}) => {
+const TrainingInstitutes = ({lang, id}) => {
   return (
     <SectionWrapper
-      id='secondary-school'
-      h2Text={lang.h2_secondary_schools}
+      id={id}
+      h2Text={lang.h2_university_schools}
     >
       <p className='text-[1rem] font-semibold leading-[170%] text-primary-50 my-[1.25rem]'>
         Như đã đề cập, chương trình phổ thông tại Anh có thể 13 năm (A-level)
@@ -42,4 +42,4 @@ Bằng tổng hợp/ kết hợp (Combining qualifications). Sinh viên có th�
   )
 }
 
-export default SecondarySchools
+export default TrainingInstitutes

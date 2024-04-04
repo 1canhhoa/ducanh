@@ -6,7 +6,7 @@ const Paragraph = ({text = '', listDisc = false}) => {
       className={clsx(
         'text-[1rem] font-medium leading-[150%] text-greyscaletext-60',
         listDisc && 'list-disc',
-        !listDisc && 'mb-[0.5rem] last:mb-0',
+        !listDisc && 'xmd:mb-[1rem] mb-[0.5rem] last:mb-0',
       )}
     >
       {text}
