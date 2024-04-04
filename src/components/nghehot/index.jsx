@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import ListNghe from './components/ListNghe'
-import PostCard from './components/PostCard'
+import RelatedPosts from '@/components/BaiVietLienQuan/RelatedPosts'
 
 const data = [
   {
@@ -78,7 +78,7 @@ export default function NgheHot({t}) {
             </span>
           </div>
         </div>
-        <div className='flex flex-col items-start space-y-[1.5rem] xmd:space-y-[0.75rem] lg:py-[1.5rem] lg:w-[71.0625rem] border-y-[1px] border-solid border-greyscaletext-5'>
+        <div className='flex flex-col items-start space-y-[1.5rem] xmd:space-y-[0.75rem] lg:py-[1.5rem] lg:w-[71.0625rem] lg:border-y-[1px] border-solid border-greyscaletext-5'>
           <span className='text-[1.25rem] xmd:w-[21.9375rem] font-bold text-primary-50 leading-[1.6] xmd:body16 xmd:font-semibold xmd:leading-[1.5]'>
             {t.nghe_hot.support_title}
           </span>
@@ -102,7 +102,7 @@ export default function NgheHot({t}) {
             ))}
           </div>
         </div>
-        <div className='mt-[1.5rem] w-full flex flex-col items-start space-y-[1.7rem] py-[1.5rem]'>
+        <div className='mt-[1.5rem] w-full flex flex-col items-start space-y-[1.7rem] py-[1.5rem] xmd:border-b-[1px] border-solid border-greyscaletext-5'>
           <span className='text-[1.25rem] xmd:w-[22.125rem] font-bold leading-[1.6] text-primary-50 xmd:body16'>
             {t.nghe_hot.list_hot}
           </span>
@@ -118,48 +118,14 @@ export default function NgheHot({t}) {
             </div>
           ))}
         </div>
-        <div className='mt-[4.38rem] xmd:mt-[2.38rem] flex flex-col w-full items-start justify-center lg:space-y-[1.5rem]'>
+        <div className='mt-[4.38rem] xmd:mt-[2.38rem] flex flex-col w-full items-start justify-center lg:space-y-[1.5rem] xmd:space-y-[1.19rem]'>
           <h5 className='w-[32.6875rem] xmd:w-[21.9375rem] text-primary-60 font-bold text-[1.5rem] xmd:body16'>
             {t.nghe_hot.tham_khao.title}
           </h5>
           <p className='w-[64.375rem] xmd:mb-[2rem] xmd:w-[21.9375rem] text-[1rem] xmd:text-[0.875rem] xmd:font-normal font-medium leading-[1.6] text-greyscaletext-80'>
             {t.nghe_hot.tham_khao.description}
           </p>
-          <div className='flex xmd:flex-col lg:flex-wrap justify-start w-full'>
-            {new Array(6).fill(0).map((e, index) => (
-              <PostCard key={index} />
-            ))}
-          </div>
-          <div className='w-full xmd:mt-[2.07rem] flex justify-center space-x-[0.75rem]'>
-            <button className='size-[3rem] p-[0.875rem] flex justify-center items-center rounded-[0.5rem]'>
-              <Image
-                alt='left'
-                src={'/images/nghehot/left.svg'}
-                width={20}
-                height={20}
-              />
-            </button>
-            <button className='size-[3rem] p-[0.875rem] flex justify-center items-center rounded-[0.5rem] border-[1px] border-solid border-primary-10 bg-primary-5'>
-              1
-            </button>
-            <button className='size-[3rem] p-[0.875rem] flex justify-center items-center rounded-[0.5rem] border-[1px] border-solid border-primary-10 bg-white'>
-              2
-            </button>
-            <button className='size-[3rem] p-[0.875rem] flex justify-center items-center rounded-[0.5rem] border-[1px] border-solid border-primary-10 bg-white'>
-              ...
-            </button>
-            <button className='size-[3rem] p-[0.875rem] flex justify-center items-center rounded-[0.5rem] border-[1px] border-solid border-primary-10 bg-white'>
-              9
-            </button>
-            <button className='size-[3rem] p-[0.875rem] flex justify-center items-center rounded-[0.5rem]'>
-              <Image
-                alt='right'
-                src={'/images/nghehot/right.svg'}
-                width={20}
-                height={20}
-              />
-            </button>
-          </div>
+          <RelatedPosts lang={t} />
         </div>
       </div>
     </section>

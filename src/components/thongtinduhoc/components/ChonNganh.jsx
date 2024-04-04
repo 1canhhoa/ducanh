@@ -8,7 +8,7 @@ import PhanTrang from './PhanTrang'
 
 export default function ChonNganh({text}) {
   return (
-    <section className='w-full mt-[5rem]'>
+    <section className='w-full mt-[5rem] xmd:mt-[3rem]'>
       <div className='w-full xmd:px-[0.75rem] px-[11.62rem] flex flex-col justify-center items-start'>
         <h1 className='title xmd:mb32 relative w-fit mb-[2.05rem] xmd:mb-[1rem] xmd:flex xmd:items-end'>
           {text.information.title_6.title}
@@ -161,7 +161,7 @@ export default function ChonNganh({text}) {
           </div>
         </div>
       </div>
-      <div className='w-full pt-[5rem] xmd:px-[0.75rem] px-[11.62rem] flex flex-col items-start lg:space-y-[2.25rem]'>
+      <div className='w-full lg:pt-[5rem] xmd:px-[0.75rem] px-[11.62rem] flex flex-col items-start lg:space-y-[2.25rem]'>
         <h2 className='desktop32 text-primary-50 flex mb-[1.5rem]'>
           <Image
             className='size-[0.75rem] mr-[0.5rem] mt-[1rem]'

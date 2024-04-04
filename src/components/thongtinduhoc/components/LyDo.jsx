@@ -6,7 +6,7 @@ import CradDrop from './CardDrop'
 export default function LyDoChonDucAnh({text}) {
   return (
     <>
-      <section className='flex xmd:flex-col lg:space-x-[7.75rem] mb-[4.38rem] w-full lg:px-[11.75rem] relative'>
+      <section className='flex xmd:flex-col lg:space-x-[7.75rem] mb-[4.38rem] xmd:mb-[1.5rem] w-full lg:px-[11.75rem] relative'>
         <div className='flex flex-col items-start lg:w-[31.3125rem]'>
           <div className='lg:w-[31.3125rem] xmd:w-[23.4375rem] xmd:px-[0.75rem] flex flex-col'>
             <h1 className='title relative w-fit xmd:mb32'>
@@ -42,7 +42,7 @@ export default function LyDoChonDucAnh({text}) {
           </span>
         </div>
       </section>
-      <section className='w-full z-30 relative lg:h-[85.5rem] bg-[#FAFAFA] lg:pl-[11.81rem] lg:pt-[6.25rem]'>
+      <section className='w-full xmd:z-30 z-10 relative lg:h-[85.5rem] lg:bg-[#FAFAFA] lg:pl-[11.81rem] lg:pt-[6.25rem]'>
         <div className='flex xmd:w-[23.4375rem] xmd:px-[0.75rem] xmd:flex-col xmd:space-y-[1.5rem] h-full w-[31.125rem] flex-col items-start space-y-[2.25rem]'>
           <h1 className='text_gradient text-[1.875rem] w-full font-extrabold leading-[1.5] bg-gradient-to-b from-[#2E6BC6] to-[#29A4EA] !bg-clip-text'>
             {text.information.title_1_h2}
@@ -57,7 +57,7 @@ export default function LyDoChonDucAnh({text}) {
               </span>
             </div>
             <Image
-              className='lg:absolute xmd:h-[21.68888rem] xmd:w-[22.15869rem] top-[-14.88rem] right-[9rem]'
+              className='lg:absolute xmd:h-[21.68888rem] xmd:w-[22.15869rem] right-[9rem]'
               alt='banner1'
               src={'/images/thongtinduhoc/banner2.png'}
               width={626}

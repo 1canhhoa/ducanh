@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 
-import Title from '@/components/Title'
 import CradDrop from './CardDrop'
 
 import {
@@ -85,180 +84,248 @@ export default function Support({text}) {
         </div>
       </div>
       <div className='xmd:w-full w-[76.6875rem] xmd:flex xmd:flex-col xmd:px-[0.75rem] lg:h-[54.375rem]'>
-        <h1 className='title xmd:mb32 relative w-fit xmd:w-[18.25rem]'>
+        <p className='title xmd:mb32 relative w-fit xmd:w-[18.25rem]'>
           {text.information.support.title2}
-          <p className='size-[0.625rem] bg-secondary-40 absolute bottom-[0.625rem] right-[-1.125rem] xmd:right-[4.875rem]'></p>
-        </h1>
-        <div className='xmd:relative xmd:w-[22.625rem] xmd:h-[10.5rem] xmd:overflow-hidden mt-[3.75rem] xmd:mt-[1rem]'>
-          <div className='xmd:absolute xmd:h-[10.5rem] xmd:overflow-x-auto xmd:overflow-y-hidden lg:flex xmd:flex-col w-full justify-start lg:space-x-[6rem]'>
-            <div className='flex lg:flex-col xmd:h-[10.5rem] xmd:space-x-[0.75rem] lg:space-y-[1rem] lg:w-[25.4375rem]'>
-              <button
-                onClick={() => {
-                  if (indexActive == 1) {
-                    return
-                  }
-                  setIndexActive(1)
-                }}
-                className={clsx(
-                  'xmd:h-full duration-300 transition-all py-[1.5rem] px-[2.5rem] xmd:px-[1.12rem] xmd:pt-[1.47rem] xmd:pb-[2.53rem] flex flex-col items-start xmd:space-y-[0.53rem] space-y-[0.25rem] rounded-[0.5rem] border-[1px] border-solid border-[rgba(52,104,205,0.40)] bg-white',
-                  indexActive == 1 && 'xmd:bg-primary-50',
-                )}
-              >
-                <div
+          <span className='size-[0.625rem] bg-secondary-40 lg:absolute bottom-[0.625rem] right-[-1.125rem] '></span>
+        </p>
+        <div className='flex xmd:flex-col lg:space-x-[6rem] lg:mt-[3.75rem]'>
+          <div className='xmd:relative xmd:mb-[1rem] xmd:w-[22.625rem] xmd:h-[10.5rem] xmd:overflow-hidden xmd:mt-[1rem]'>
+            <div className='xmd:absolute xmd:h-[10.5rem] xmd:overflow-x-auto xmd:overflow-y-hidden lg:flex xmd:flex-col w-full justify-start lg:space-x-[6rem]'>
+              <div className='flex lg:flex-col xmd:h-[10.5rem] xmd:space-x-[0.75rem] lg:space-y-[1rem] lg:w-[25.4375rem]'>
+                <button
+                  onClick={() => {
+                    if (indexActive == 1) {
+                      return
+                    }
+                    setIndexActive(1)
+                  }}
                   className={clsx(
-                    'lg:h-[6.375rem] xmd:flex py-[0.625rem] pr-[1.5625rem] text-center flex items-center justify-center xmd:sub18 sub24 font-bold text-primary-50',
-                    indexActive == 1 ? 'xmd:text-white' : 'xmd:text-primary-50',
-                  )}
-                >
-                  <Image
-                    className='lg:hidden'
-                    alt='hướng dẫn khi lên máy bay'
-                    src={'/images/thongtinduhoc/iconbeformaybay.svg'}
-                    height={24}
-                    width={23}
-                  />
-                  {text.information.support.before.title}
-                </div>
-                <span
-                  className={clsx(
-                    'body14 xmd:body12 text-start font-medium text-greyscaletext-50 xmd:w-[16.5rem]',
+                    'xmd:h-full duration-300 transition-all py-[1.5rem] px-[2.5rem] xmd:px-[1.12rem] xmd:pt-[1.47rem] xmd:pb-[2.53rem] flex flex-col items-start xmd:space-y-[0.53rem] space-y-[0.25rem] rounded-[0.5rem] border-[1px] border-solid border-[rgba(52,104,205,0.40)] bg-white',
                     indexActive == 1
-                      ? 'xmd:text-white'
-                      : 'xmd:text-greyscaletext-50',
+                      ? 'xmd:bg-primary-50 lg:opacity-100'
+                      : 'lg:opacity-[0.4]',
                   )}
                 >
-                  {text.information.support.before.text}
-                </span>
-              </button>
-              <button
-                onClick={() => {
-                  if (indexActive == 2) {
-                    return
-                  }
-                  setIndexActive(2)
-                }}
-                className={clsx(
-                  'xmd:h-full duration-300 transition-all py-[1.5rem] px-[2.5rem] xmd:px-[1.12rem] xmd:pt-[1.47rem] xmd:pb-[2.53rem] flex flex-col items-start xmd:space-y-[0.53rem] space-y-[0.25rem] rounded-[0.5rem] border-[1px] border-solid border-[rgba(52,104,205,0.40)] bg-white',
-                  indexActive == 2 && 'xmd:bg-primary-50',
-                )}
-              >
-                <div
+                  <div
+                    className={clsx(
+                      'lg:h-[6.375rem] xmd:flex py-[0.625rem] pr-[1.5625rem] text-center flex items-center justify-center xmd:sub18 sub24 font-bold text-primary-50',
+                      indexActive == 1
+                        ? 'xmd:text-white'
+                        : 'xmd:text-primary-50',
+                    )}
+                  >
+                    <Image
+                      className='lg:hidden'
+                      alt='hướng dẫn khi lên máy bay'
+                      src={'/images/thongtinduhoc/iconbeformaybay.svg'}
+                      height={24}
+                      width={23}
+                    />
+                    {text.information.support.before.title}
+                  </div>
+                  <span
+                    className={clsx(
+                      'body14 xmd:body12 text-start font-medium text-greyscaletext-50 xmd:w-[16.5rem]',
+                      indexActive == 1
+                        ? 'xmd:text-white'
+                        : 'xmd:text-greyscaletext-50',
+                    )}
+                  >
+                    {text.information.support.before.text}
+                  </span>
+                </button>
+                <button
+                  onClick={() => {
+                    if (indexActive == 2) {
+                      return
+                    }
+                    setIndexActive(2)
+                  }}
                   className={clsx(
-                    'lg:h-[6.375rem] xmd:flex py-[0.625rem] pr-[1.5625rem] text-center flex items-center justify-center xmd:sub18 sub24 font-bold text-primary-50',
-                    indexActive == 2 ? 'xmd:text-white' : 'xmd:text-primary-50',
-                  )}
-                >
-                  <Image
-                    className='lg:hidden'
-                    alt='hướng dẫn khi lên máy bay'
-                    src={'/images/thongtinduhoc/iconbeformaybay.svg'}
-                    height={24}
-                    width={23}
-                  />
-                  {text.information.support.flying.title}
-                </div>
-                <span
-                  className={clsx(
-                    'body14 xmd:body12 text-start font-medium text-greyscaletext-50 xmd:w-[16.5rem]',
+                    'xmd:h-full duration-300 transition-all py-[1.5rem] px-[2.5rem] xmd:px-[1.12rem] xmd:pt-[1.47rem] xmd:pb-[2.53rem] flex flex-col items-start xmd:space-y-[0.53rem] space-y-[0.25rem] rounded-[0.5rem] border-[1px] border-solid border-[rgba(52,104,205,0.40)] bg-white',
                     indexActive == 2
-                      ? 'xmd:text-white'
-                      : 'xmd:text-greyscaletext-50',
+                      ? 'xmd:bg-primary-50 lg:opacity-100'
+                      : 'lg:opacity-[0.4]',
                   )}
                 >
-                  {text.information.support.flying.text}
-                </span>
-              </button>
-              <button
-                onClick={() => {
-                  if (indexActive == 3) {
-                    return
-                  }
-                  setIndexActive(3)
-                }}
-                className={clsx(
-                  'xmd:h-full duration-300 transition-all py-[1.5rem] px-[2.5rem] xmd:px-[1.12rem] xmd:pt-[1.47rem] xmd:pb-[2.53rem] flex flex-col items-start xmd:space-y-[0.53rem] space-y-[0.25rem] rounded-[0.5rem] border-[1px] border-solid border-[rgba(52,104,205,0.40)] bg-white',
-                  indexActive == 3 && 'xmd:bg-primary-50',
-                )}
-              >
-                <div
+                  <div
+                    className={clsx(
+                      'lg:h-[6.375rem] xmd:flex py-[0.625rem] pr-[1.5625rem] text-center flex items-center justify-center xmd:sub18 sub24 font-bold text-primary-50',
+                      indexActive == 2
+                        ? 'xmd:text-white'
+                        : 'xmd:text-primary-50',
+                    )}
+                  >
+                    <Image
+                      className='lg:hidden'
+                      alt='hướng dẫn khi lên máy bay'
+                      src={'/images/thongtinduhoc/iconmaybay.svg'}
+                      height={24}
+                      width={23}
+                    />
+                    {text.information.support.flying.title}
+                  </div>
+                  <span
+                    className={clsx(
+                      'body14 xmd:body12 text-start font-medium text-greyscaletext-50 xmd:w-[16.5rem]',
+                      indexActive == 2
+                        ? 'xmd:text-white'
+                        : 'xmd:text-greyscaletext-50',
+                    )}
+                  >
+                    {text.information.support.flying.text}
+                  </span>
+                </button>
+                <button
+                  onClick={() => {
+                    if (indexActive == 3) {
+                      return
+                    }
+                    setIndexActive(3)
+                  }}
                   className={clsx(
-                    'lg:h-[6.375rem] xmd:flex py-[0.625rem] pr-[1.5625rem] text-center flex items-center justify-center xmd:sub18 sub24 font-bold text-primary-50',
-                    indexActive == 3 ? 'xmd:text-white' : 'xmd:text-primary-50',
-                  )}
-                >
-                  <Image
-                    className='lg:hidden'
-                    alt='hướng dẫn khi lên máy bay'
-                    src={'/images/thongtinduhoc/iconbeformaybay.svg'}
-                    height={24}
-                    width={23}
-                  />
-                  {text.information.support.after.title}
-                </div>
-                <span
-                  className={clsx(
-                    'body14 xmd:body12 text-start font-medium text-greyscaletext-50 xmd:w-[16.5rem]',
+                    'xmd:h-full duration-300 transition-all py-[1.5rem] px-[2.5rem] xmd:px-[1.12rem] xmd:pt-[1.47rem] xmd:pb-[2.53rem] flex flex-col items-start xmd:space-y-[0.53rem] space-y-[0.25rem] rounded-[0.5rem] border-[1px] border-solid border-[rgba(52,104,205,0.40)] bg-white',
                     indexActive == 3
-                      ? 'xmd:text-white'
-                      : 'xmd:text-greyscaletext-50',
+                      ? 'xmd:bg-primary-50 lg:opacity-100'
+                      : 'lg:opacity-[0.4]',
                   )}
                 >
-                  {text.information.support.after.text}
-                </span>
-              </button>
+                  <div
+                    className={clsx(
+                      'lg:h-[6.375rem] xmd:flex py-[0.625rem] pr-[1.5625rem] text-center flex items-center justify-center xmd:sub18 sub24 font-bold text-primary-50',
+                      indexActive == 3
+                        ? 'xmd:text-white'
+                        : 'xmd:text-primary-50',
+                    )}
+                  >
+                    <Image
+                      className='lg:hidden'
+                      alt='hướng dẫn khi lên máy bay'
+                      src={'/images/thongtinduhoc/iconbeformaybay.svg'}
+                      height={24}
+                      width={23}
+                    />
+                    {text.information.support.after.title}
+                  </div>
+                  <span
+                    className={clsx(
+                      'body14 xmd:body12 text-start font-medium text-greyscaletext-50 xmd:w-[16.5rem]',
+                      indexActive == 3
+                        ? 'xmd:text-white'
+                        : 'xmd:text-greyscaletext-50',
+                    )}
+                  >
+                    {text.information.support.after.text}
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
+          {indexActive == 1 && (
+            <Accordion
+              className='flex-1 transition-all duration-700'
+              type='single'
+              collapsible
+            >
+              <AccordionItem value='item-1'>
+                <AccordionTrigger className='text-primary-50 h6'>
+                  Giấy tờ
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className='flex flex-col'>
+                    <li className='body font-normal text-greyscaletext-40'>
+                      Tùy thân: CMT, hộ chiếu, visa, vé máy bay, thông tin nhà
+                      ở, số điện thoại liên hệ tại nước bạn và VN, giấy/ thẻ bảo
+                      hiểm y tế.
+                    </li>
+                    <li className='body font-normal text-greyscaletext-40'>
+                      Học tập: bản gốc bằng, học bạ hoặc bảng điểm, chứng chỉ
+                      tiếng Anh, thư giới thiệu, bằng khen, cup các giải thưởng…
+                      và: thư mời học, Ecoe- I.20- CAS…;
+                    </li>
+                    <li className='body font-normal text-greyscaletext-40'>
+                      Y tế: giấy tiêm chủng, xác nhận nhóm máu, bệnh án nếu có…
+                    </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value='item-2'>
+                <AccordionTrigger className='text-primary-50 h6'>
+                  Giấy tờ 1
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className='flex flex-col'>
+                    <li className='body font-normal text-greyscaletext-40'>
+                      Tùy thân: CMT, hộ chiếu, visa, vé máy bay, thông tin nhà
+                      ở, số điện thoại liên hệ tại nước bạn và VN, giấy/ thẻ bảo
+                      hiểm y tế.
+                    </li>
+                    <li className='body font-normal text-greyscaletext-40'>
+                      Học tập: bản gốc bằng, học bạ hoặc bảng điểm, chứng chỉ
+                      tiếng Anh, thư giới thiệu, bằng khen, cup các giải thưởng…
+                      và: thư mời học, Ecoe- I.20- CAS…;
+                    </li>
+                    <li className='body font-normal text-greyscaletext-40'>
+                      Y tế: giấy tiêm chủng, xác nhận nhóm máu, bệnh án nếu có…
+                    </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          )}
+          {indexActive == 2 && (
+            <Accordion
+              className='flex-1 transition-all duration-700'
+              type='single'
+              collapsible
+            >
+              <AccordionItem value='item-1'>
+                <AccordionTrigger className='text-primary-50 h6'>
+                  Giấy tờ
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className='flex flex-col'>
+                    <li className='body font-normal text-greyscaletext-40'>
+                      Tùy thân: CMT, hộ chiếu, visa, vé máy bay, thông tin nhà
+                      ở, số điện thoại liên hệ tại nước bạn và VN, giấy/ thẻ bảo
+                      hiểm y tế.
+                    </li>
+                    <li className='body font-normal text-greyscaletext-40'>
+                      Học tập: bản gốc bằng, học bạ hoặc bảng điểm, chứng chỉ
+                      tiếng Anh, thư giới thiệu, bằng khen, cup các giải thưởng…
+                      và: thư mời học, Ecoe- I.20- CAS…;
+                    </li>
+                    <li className='body font-normal text-greyscaletext-40'>
+                      Y tế: giấy tiêm chủng, xác nhận nhóm máu, bệnh án nếu có…
+                    </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value='item-2'>
+                <AccordionTrigger className='text-primary-50 h6'>
+                  Giấy tờ 2
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className='flex flex-col'>
+                    <li className='body font-normal text-greyscaletext-40'>
+                      Tùy thân: CMT, hộ chiếu, visa, vé máy bay, thông tin nhà
+                      ở, số điện thoại liên hệ tại nước bạn và VN, giấy/ thẻ bảo
+                      hiểm y tế.
+                    </li>
+                    <li className='body font-normal text-greyscaletext-40'>
+                      Học tập: bản gốc bằng, học bạ hoặc bảng điểm, chứng chỉ
+                      tiếng Anh, thư giới thiệu, bằng khen, cup các giải thưởng…
+                      và: thư mời học, Ecoe- I.20- CAS…;
+                    </li>
+                    <li className='body font-normal text-greyscaletext-40'>
+                      Y tế: giấy tiêm chủng, xác nhận nhóm máu, bệnh án nếu có…
+                    </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          )}
         </div>
-        <Accordion
-          className='flex-1'
-          type='single'
-          collapsible
-        >
-          <AccordionItem value='item-1'>
-            <AccordionTrigger className='xmd:text-primary-50 xmd:h6'>
-              Giấy tờ
-            </AccordionTrigger>
-            <AccordionContent>
-              <ul className='flex flex-col'>
-                <li className='body font-normal text-greyscaletext-40'>
-                  Tùy thân: CMT, hộ chiếu, visa, vé máy bay, thông tin nhà ở, số
-                  điện thoại liên hệ tại nước bạn và VN, giấy/ thẻ bảo hiểm y
-                  tế.
-                </li>
-                <li className='body font-normal text-greyscaletext-40'>
-                  Học tập: bản gốc bằng, học bạ hoặc bảng điểm, chứng chỉ tiếng
-                  Anh, thư giới thiệu, bằng khen, cup các giải thưởng… và: thư
-                  mời học, Ecoe- I.20- CAS…;
-                </li>
-                <li className='body font-normal text-greyscaletext-40'>
-                  Y tế: giấy tiêm chủng, xác nhận nhóm máu, bệnh án nếu có…
-                </li>
-              </ul>
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value='item-2'>
-            <AccordionTrigger className='xmd:text-primary-50 xmd:h6'>
-              Giấy tờ
-            </AccordionTrigger>
-            <AccordionContent>
-              <ul className='flex flex-col'>
-                <li className='body font-normal text-greyscaletext-40'>
-                  Tùy thân: CMT, hộ chiếu, visa, vé máy bay, thông tin nhà ở, số
-                  điện thoại liên hệ tại nước bạn và VN, giấy/ thẻ bảo hiểm y
-                  tế.
-                </li>
-                <li className='body font-normal text-greyscaletext-40'>
-                  Học tập: bản gốc bằng, học bạ hoặc bảng điểm, chứng chỉ tiếng
-                  Anh, thư giới thiệu, bằng khen, cup các giải thưởng… và: thư
-                  mời học, Ecoe- I.20- CAS…;
-                </li>
-                <li className='body font-normal text-greyscaletext-40'>
-                  Y tế: giấy tiêm chủng, xác nhận nhóm máu, bệnh án nếu có…
-                </li>
-              </ul>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
       </div>
     </section>
   )

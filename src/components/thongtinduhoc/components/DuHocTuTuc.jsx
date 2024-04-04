@@ -1,7 +1,7 @@
 export default function DuHocTuTuc({text}) {
   return (
     <section className='w-full mt-[5rem] xmd:mt-[2rem]'>
-      <div className='w-full space-y-[2.06rem] lg:h-[29.5rem] xmd:px-[0.75rem] px-[11.62rem] bg-background-elevation-10 flex flex-col justify-center items-start'>
+      <div className='w-full lg:space-y-[2.06rem] lg:h-[29.5rem] xmd:px-[0.75rem] px-[11.62rem] lg:bg-background-elevation-10 flex flex-col justify-center items-start'>
         <h1 className='title xmd:mb32 relative w-fit mb-[2.05rem] xmd:mb-[1rem]'>
           {text.information.title_5.title}
           <div className='size-[0.625rem] bg-secondary-40 absolute bottom-[0.625rem] right-[-1.125rem]'></div>

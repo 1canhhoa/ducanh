@@ -16,7 +16,7 @@ export default function Item() {
       onClick={() => {
         setToggle(!toggle)
       }}
-      className='flex w-[72.375rem] flex-col items-start cursor-pointer shadow-[0px_3px_24px_0px_rgba(0,132,255,0.04),0px_0px_32px_0px_rgba(0,119,229,0.04)]'
+      className='flex xmd:w-[21.9375rem] w-[72.375rem] flex-col items-start cursor-pointer shadow-[0px_3px_24px_0px_rgba(0,132,255,0.04),0px_0px_32px_0px_rgba(0,119,229,0.04)]'
     >
       <div
         className={`${
@@ -65,7 +65,7 @@ export default function Item() {
                 key={index}
                 className='flex flex-col'
               >
-                <div className='flex mb-[1rem]'>
+                <div className='flex xmd:flex-col mb-[1rem] xmd:space-y-[0.62rem]'>
                   <span className='flex-1 text-[1rem] font-bold leading-[1.3] text-primary-50'>
                     1. Northumbria University:
                   </span>
@@ -84,7 +84,7 @@ export default function Item() {
                     className='flex space-x-[1rem] items-center'
                   >
                     <div className='size-[0.5rem] rounded-full bg-greyscaletext-30'></div>
-                    <p className='text-[1rem] font-medium leading-[1.5] text-greyscaletext-30'>
+                    <p className='flex-1 text-[1rem] font-medium leading-[1.5] text-greyscaletext-30'>
                       Học bổng £3,000 – Northumbria Undergraduate Global
                       Scholarship: dành cho bậc cử nhân ở năm học đầu tiên, yêu
                       cầu: đủ điểm đầu vào của khóa học;

@@ -28,12 +28,12 @@ export default function HopTac({t}) {
             {t.hop_tac.banner}
           </p>
         </div>
-        <div className='flexx flex-col w-full space-y-[3rem]'>
+        <div className='flexx flex-col w-full space-y-[3rem] xmd:space-y-[1.5rem]'>
           {new Array(3).fill(0).map((e, index) => (
             <ItemCard key={index} />
           ))}
         </div>
-        <div className='w-full h-[19.4375rem] relative flex justify-start lg:px-[4.75rem] pt-[4.53rem] xmd:pl-[1.63rem] xmd:pt-[2.03rem] rounded-[0.75rem] border-[1px] border-solid border-[rgba(52,104,205,0.40)] bg-white'>
+        <div className='w-full xmd:w-[21.9375rem] h-[19.4375rem] relative flex justify-start lg:px-[4.75rem] pt-[4.53rem] xmd:pl-[1.63rem] xmd:pt-[2.03rem] rounded-[0.75rem] border-[1px] border-solid border-[rgba(52,104,205,0.40)] bg-white'>
           <Image
             alt='tu van'
             src={'/images/hoptac/bg-tuvan.png'}
@@ -66,33 +66,33 @@ export default function HopTac({t}) {
                 </span>
               </div>
               <div className='flex justify-start w-full space-x-[1rem]'>
-                <div className='flex body16 text-greyscaletext-80 xmd:text-linear-l9 font-bold space-x-[1rem]'>
+                <div className='flex body16 text-greyscaletext-80 xmd:text-linear-l9 font-semibold space-x-[1rem]'>
                   <Image
                     alt='phone'
-                    src={'/images/hoptac/phone.svg'}
+                    src={'/images/hoptac/skype.svg'}
                     width={16}
                     height={16}
                     className='pt-[0.25rem] mr-[0.5rem]'
                   />
-                  Phone:
+                  Skype:
                 </div>
                 <span className='body16 xmd:text-greyscaletext-80 text-linear-l9 font-semibold'>
-                  +84 9887 09698
+                  lucyhn8899
                 </span>
               </div>
               <div className='flex justify-start w-full space-x-[1rem]'>
                 <div className='flex body16 text-greyscaletext-80 xmd:text-linear-l9 font-bold space-x-[1rem]'>
                   <Image
                     alt='phone'
-                    src={'/images/hoptac/phone.svg'}
+                    src={'/images/hoptac/email.svg'}
                     width={16}
                     height={16}
                     className='pt-[0.25rem] mr-[0.5rem]'
                   />
-                  Phone:
+                  Email:
                 </div>
                 <span className='body16 xmd:text-greyscaletext-80 text-linear-l9 font-semibold'>
-                  +84 9887 09698
+                  lycy@ducanh.edu.vn
                 </span>
               </div>
             </div>
