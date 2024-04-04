@@ -72,5 +72,7 @@
     "h2_job_settled": "Việc làm - Định cư tại Anh",
     "h2_job_settled_mb": "Việc làm định cư tại Anh Quốc"
   },
-  "study_abroad_guide": {}
+  "study_abroad_guide": {
+    "main_content": "Nội dung chính"
+  }
 }

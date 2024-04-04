@@ -11,6 +11,7 @@ const CamNangDuHocPage = async ({params}) => {
     <AbroadGuideIndex
       lang={t}
       res={res}
+      paramsLang={params.lang}
     />
   )
 }
