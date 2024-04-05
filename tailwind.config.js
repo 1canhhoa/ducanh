@@ -20,6 +20,7 @@ module.exports = {
       xxl: {max: '1366px'},
       x2xl: {max: '1599px'},
       x3xl: {max: '1799px'},
+      tablet: {min: '768px', max: '1023px'},
     },
     container: {
       center: true,

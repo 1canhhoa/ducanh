@@ -1,9 +1,35 @@
+'use client'
 import StudentItem from '@/sections/hoc-vien-duc-anh/components/StudentItem'
 import GridImageItem from '@/sections/hoc-vien-duc-anh/components/GridImageItem'
 import Banner from '@/sections/hoc-vien-duc-anh/components/Banner'
-import StudenSlide from '@/sections/hoc-vien-duc-anh/components/StudentSlide'
+import StudentSlide from '@/sections/hoc-vien-duc-anh/components/StudentSlide'
+import {useEffect, useState} from 'react'
 
 export default function StudentIndex({lang}) {
+  const [activeIndex, setActiveIndex] = useState(0)
+  const [pictures, setPictures] = useState([
+    'https://this-person-does-not-exist.com/img/avatar-gena0f2bc9209c7c43f14ab4e8bd8981c98.jpg',
+    'https://this-person-does-not-exist.com/img/avatar-gen11440776fd51cf13fc059d4bbb9ed123.jpg',
+    'https://this-person-does-not-exist.com/img/avatar-gen5975021542fa0c280179bedac6dc1a28.jpg',
+    'https://this-person-does-not-exist.com/img/avatar-gen1187c6d03e3052fcb9e28eeaf1cc96c8.jpg',
+    'https://this-person-does-not-exist.com/img/avatar-gen7b3018304435abbb234fa37ae2406255.jpg',
+    'https://this-person-does-not-exist.com/img/avatar-gen9e4eb1b10a1287fbb25419ae40e31cc8.jpg',
+    'https://this-person-does-not-exist.com/img/avatar-gen1174912f2832183bdeed43eb1500e7f5.jpg',
+    'https://this-person-does-not-exist.com/img/avatar-gen1182d18720932245dc8de8765578d802.jpg',
+  ])
+  console.log(activeIndex)
+  const handleActiveIndexChange = (index) => {
+    setActiveIndex(index)
+  }
+  useEffect(() => {
+    const subPictures = pictures.slice(1)
+    const firstPic = pictures.shift()
+    console.log({length: subPictures.length})
+    setPictures((prevPictures) => {
+      return [...subPictures, firstPic]
+    })
+    // console.log(pictures)
+  }, [activeIndex])
   return (
     <div className='px-[0.75rem] md:px-[11rem] pt-[9.69rem]'>
       <h1 className='hidden md:flex w-full items-baseline title pb-[3rem] text-primary-50 text-[3rem] font-bold leading-[120%] tracking-[-0.03rem]'>
@@ -38,14 +64,18 @@ export default function StudentIndex({lang}) {
             </span>
           </h2>
           {/* slide */}
-          <StudenSlide items={[]} />
+          <StudentSlide
+            items={[0, 1, 2, 3, 4, 5, 6]}
+            slideChange={handleActiveIndexChange}
+          />
         </div>
         <div className='grid grid-cols-4 gap-[0.4rem] md:gap-[0.62rem] mt-[1.5rem] md:mt-0'>
-          {[0, 1, 2, 3, 4, 5, 6].map((gridItem, index) => (
+          {pictures.map((pictureSrc, index) => (
             <GridImageItem
-              src={'/images/hoc-vien-duc-anh/grid-demo.jpg'}
+              src={pictureSrc}
               index={index}
-              key={gridItem}
+              key={index}
+              // isActive={activeIndex === index}
             />
           ))}
         </div>

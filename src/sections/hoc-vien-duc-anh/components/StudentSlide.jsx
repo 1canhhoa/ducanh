@@ -7,7 +7,7 @@ import {useState} from 'react'
 import clsx from 'clsx'
 import {Button} from '@/components/ui/button'
 import {Autoplay} from 'swiper/modules'
-const StudenSlide = ({items = []}) => {
+const StudenSlide = ({items = [], slideChange}) => {
   const [activeIndex, setActiveIndex] = useState(0)
   return (
     <div className='ml-[-0.75rem] md:ml-0'>
@@ -16,13 +16,16 @@ const StudenSlide = ({items = []}) => {
         spaceBetween={50}
         slidesPerView={1}
         loop
-        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+        onSlideChange={(swiper) => {
+          setActiveIndex(swiper.realIndex)
+          slideChange(swiper.realIndex)
+        }}
         // onSwiper={(swiper) => console.log(swiper)}
         pagination={{clickable: true}}
         className='w-screen md:w-[36rem] md:!ml-0'
         autoplay={{delay: 3000}}
       >
-        {Array.from({length: 3}).map((item, index) => {
+        {items.map((item, index) => {
           return (
             <SwiperSlide
               className='pl-[0.75rem]'
@@ -71,7 +74,7 @@ const StudenSlide = ({items = []}) => {
           )
         })}
       </div>
-      <div className='flex items-center mt-[1rem] md:mt-[1.81rem] xmd:justify-between'>
+      <div className='flex items-center mt-[1rem] md:mt-[1.81rem] xmd:justify-between md:ml-[5rem]'>
         <Button className='text-[0.875rem] md:mr-[0.81rem] font-bold leading-[120%] w-[10.5625rem] md:h-[3rem] md:w-[9.4rem] p-[0.9375rem_1.875rem] h-[2.5rem] bg-primary-50 text-white ml-[0.75rem] capitalize'>
           Xem chi tiết
         </Button>
