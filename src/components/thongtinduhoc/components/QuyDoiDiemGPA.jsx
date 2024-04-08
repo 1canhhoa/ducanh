@@ -2,7 +2,10 @@ import Image from 'next/image'
 
 export default function QuyDoiDiemGPA({text}) {
   return (
-    <section className='w-full'>
+    <section
+      id='dich_vu'
+      className='w-full'
+    >
       <div className='flex flex-col items-start space-y-[2rem] lg:w-[76.4375rem] lg:mx-auto xmd:px-[0.75rem] xlg:px-[5.3rem] '>
         <h1 className='title relative xmd:mb32 w-fit mb-[2.05rem] xmd:mb-[1.5rem]'>
           {text.information.title_3}

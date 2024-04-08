@@ -6,7 +6,10 @@ import BoxCard from './BoxCard'
 
 export default function HocBong({text}) {
   return (
-    <section className='w-full mt-[8.12rem] xmd:mt-[3rem]'>
+    <section
+      id='hoc_bong'
+      className='w-full mt-[8.12rem] xmd:mt-[3rem]'
+    >
       <div className='flex flex-col xmd:px-[0.75rem] items-start lg:w-[76.875rem] lg:mx-auto xlg:px-[5.3rem]'>
         <div className='h-[27.125rem] xlg:w-full w-[76.875rem] xmd:h-[16.45313rem] xmd:w-[21.9375rem] mb-[4.12rem] xmd:mb-[1.5rem]'>
           <Image

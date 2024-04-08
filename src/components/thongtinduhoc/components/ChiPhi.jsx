@@ -6,7 +6,10 @@ import TableDuDoanMb from './TableDuDoanMb'
 
 export default function ChiPhi({text, isMobile}) {
   return (
-    <section className='w-full mt-[8.13rem] xmd:mt-[3rem] flex justify-center'>
+    <section
+      id='chi_phi'
+      className='w-full mt-[8.13rem] xmd:mt-[3rem] flex justify-center'
+    >
       <div className='lg:w-[76.875rem] w-full xmd:px-[0.75rem] flex flex-col items-start xlg:px-[5.3rem]'>
         <h1 className='title xmd:mb32 relative w-fit mb-[2.8rem] xmd:mb-[1.5rem]'>
           {text.information.title_7.title}

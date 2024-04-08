@@ -6,7 +6,10 @@ import CradDrop from './CardDrop'
 export default function LyDoChonDucAnh({text}) {
   return (
     <>
-      <section className='flex xmd:flex-col lg:space-x-[7.75rem] mb-[4.38rem] xmd:mb-[1.5rem] w-full xmd:px-0 px-[11.75rem] relative'>
+      <section
+        id='ly_do'
+        className='flex xmd:flex-col lg:space-x-[7.75rem] mb-[4.38rem] xmd:mb-[1.5rem] w-full xmd:px-0 px-[11.75rem] relative'
+      >
         <div className='flex flex-col items-start lg:w-[31.3125rem]'>
           <div className='w-[31.3125rem] xmd:w-[23.4375rem] xmd:px-[0.75rem] flex flex-col'>
             <h1 className='title relative w-fit xmd:mb32'>

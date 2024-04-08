@@ -8,7 +8,10 @@ import PhanTrang from './PhanTrang'
 
 export default function ChonNganh({text}) {
   return (
-    <section className='w-full mt-[5rem] xmd:mt-[3rem]'>
+    <section
+      id='chon_nganh'
+      className='w-full mt-[5rem] xmd:mt-[3rem]'
+    >
       <div className='w-full xmd:px-[0.75rem] xlg:px-[5.3rem] px-[11.62rem] flex flex-col justify-center items-start'>
         <h1 className='title xmd:mb32 relative w-fit mb-[2.05rem] xmd:mb-[1rem] xmd:flex xmd:items-end'>
           {text.information.title_6.title}

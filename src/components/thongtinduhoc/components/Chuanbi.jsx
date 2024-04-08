@@ -2,7 +2,10 @@ import Image from 'next/image'
 
 export default function ChuanBi({text}) {
   return (
-    <section className='lg:w-[76.875rem] w-full lg:mx-auto mb-[8.12rem] xmd:mb-[3rem]'>
+    <section
+      id='chuan_bi'
+      className='lg:w-[76.875rem] w-full lg:mx-auto mb-[8.12rem] xmd:mb-[3rem]'
+    >
       <div className='flex flex-col items-start xmd:w-full xmd:px-[0.75rem]'>
         <h1 className='title xmd:mb32 relative w-fit xmd:mb-[1.75rem] mb-[2.05rem] xlg:pl-[5.3rem] xmd:pl-0'>
           {text.information.title_2}
