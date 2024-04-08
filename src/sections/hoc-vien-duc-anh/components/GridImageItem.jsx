@@ -5,7 +5,7 @@ const GridImageItem = ({src, index}) => {
   const heightClass = 'h-[5.16rem] md:h-[8.1rem]'
   if (index === 0) {
     return (
-      <div className='col-span-2 row-span-2 w-[10.7rem] h-[10.7rem] md:w-[16.8rem] md:h-[16.8rem] rounded-[0.58565rem] overflow-hidden'>
+      <div className='col-span-2 row-span-2 w-[10.7rem] h-[10.7rem] duration-200 md:w-[16.8rem] md:h-[16.8rem] rounded-[0.58565rem] overflow-hidden'>
         <Image
           src={src}
           width={160}

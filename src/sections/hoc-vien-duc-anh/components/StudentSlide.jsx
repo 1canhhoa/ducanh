@@ -61,7 +61,7 @@ const StudenSlide = ({items = [], slideChange}) => {
       </Swiper>
       {/* pagination */}
       <div className='ml-[0.75rem] xmd:mt-[1rem] xmd:mb-[1.5rem] md:ml-0 md:hidden slide-pagination flex items-center w-full justify-center space-x-[0.25rem]'>
-        {Array.from({length: 3}).map((paginationItem, index) => {
+        {items.map((paginationItem, index) => {
           return (
             <span
               key={index}

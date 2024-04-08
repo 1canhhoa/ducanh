@@ -4,6 +4,7 @@ import GridImageItem from '@/sections/hoc-vien-duc-anh/components/GridImageItem'
 import Banner from '@/sections/hoc-vien-duc-anh/components/Banner'
 import StudentSlide from '@/sections/hoc-vien-duc-anh/components/StudentSlide'
 import {useEffect, useState} from 'react'
+import ContactBar from '@/components/contactBar'
 
 export default function StudentIndex({lang}) {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -36,6 +37,7 @@ export default function StudentIndex({lang}) {
         {lang.student}&nbsp;Đức Anh{' '}
         <span className='bg-secondary-40 w-[0.625rem] ml-[0.5rem] h-[0.625rem] block'></span>
       </h1>
+      <ContactBar />
       <Banner
         lang={lang}
         data={{
@@ -65,7 +67,7 @@ export default function StudentIndex({lang}) {
           </h2>
           {/* slide */}
           <StudentSlide
-            items={[0, 1, 2, 3, 4, 5, 6]}
+            items={Array.from({length: pictures.length})}
             slideChange={handleActiveIndexChange}
           />
         </div>
