@@ -2,25 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-  }
-}
-
 @layer components {
   .h4 {
-    @apply text-[1.5rem] leading-[1.2] tracking-[-0.0075rem];
+    @apply text-[1.5rem] leading-[1.2] tracking-[-0.0075rem]
   }
 
   .sub1 {

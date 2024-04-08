@@ -22,7 +22,7 @@ export default async function ContactPage({ params, searchParams }) {
   const isMobile = viewport?.includes('mobile')
   const t = await getDictionary(params.lang)
   return <div className="flex flex-col items-start md:space-y-[6.6875rem]">
-      <div className="flex xmd:flex-col items-start md:w-[68.6875rem] md:relative">
+    <div className="flex xmd:flex-col items-start md:w-[68.6875rem] md:relative">
         <ContactForm t={t} />
       <Image priority alt="ảnh mũ cử nhân du học đức anh" src={'/images/contact/img.png'} width={510} height={445} className="w-screen xmd:hidden md:w-[31.4375rem] absolute top-[4rem] right-0" />
       <Image priority alt="ảnh mũ cử nhân du học đức anh mobile" src={'/images/contact/img2.png'} width={500} height={280} className="w-screen pb-[1rem] object-contain md:hidden" />
@@ -33,7 +33,7 @@ export default async function ContactPage({ params, searchParams }) {
       <TitleAndLinkWebsite t={t} />
 
       {/* coponent chung với page about-us*/}
-      <div>
+      <div className="w-full">
         <TitleOfficeOrLanguage t={t} />
         <OfficeInformation t={t} />
       </div>
