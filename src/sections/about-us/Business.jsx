@@ -30,34 +30,38 @@ const data = [
 ]
 
 const CardBuisiness = ({ d }) => {
-  return <div className='flex justify-between items-start w-[76.875rem]'>
+  return <div className='flex justify-between items-start xmd:flex-col xmd:space-y-[1.125rem] md:w-[76.875rem]'>
     <Image priority alt="ảnh" src={d.img} width={380} height={370} className=" shrink-0" />
-    <div className='flex flex-col items-start w-[46.875rem] space-y-[1rem] rounded-[0.75rem] shrink-0'>
-      <div className="text-secondary-50 font-feature-settings text-[1,5rem] font-extrabold leading-[1.25] uppercase">
+    <div className='flex flex-col items-start md:w-[46.875rem] xmd:space-y-[0.5rem] space-y-[1rem] rounded-[0.75rem] shrink-0'>
+      <div className="text-secondary-50 font-feature-settings xmd:text-[1.25rem] text-[1.5rem] font-extrabold xmd:leading-[1.5] leading-[1.25] uppercase">
         {d.mainTitle}
       </div>
-      <div className="sub24 text-primary-50 font-semibold ">
+      <div className="sub24 xmd:text-[1.125rem] xmd:leading-[1.5] text-primary-50 font-semibold ">
         {d.desc}
       </div>
       <div className="text-[0.875rem] text-greyscaletext-70 font-normal leading-[1.7] self-stretch">
         {d.content}
       </div>
-      <Button className='h-[2.5rem] py-[0.75rem] normal-case px-[1.5rem] border-primary-50 text-primary-50 text-[1rem] font-semibold'>
+      <Button className='xmd:leading-[1.2] h-[2.5rem] xmd:w-full py-[0.75rem] md:normal-case px-[1.5rem] border-primary-50 text-primary-50 text-[1rem] font-semibold'>
         xem thêm
       </Button>
     </div>
   </div>
 }
-const Business = ({ t }) => {
+const Business = ({ t, isMobile }) => {
   return (
-    <div className='flex flex-col items-start space-y-[2.5rem] w-[77rem]'>
-      <Title title={t.business} />
-      <div className="flex flex-col items-start space-y-[5.25rem]">
+    <section className='flex flex-col xmd:px-[0.5rem] items-start space-y-[2.5rem] xmd:space-y-[0.75rem] md:w-[77rem]'>
+      <Title title={isMobile ? t.business_mobile : t.business} />
+      <div className="flex flex-col items-start space-y-[5.25rem] xmd:space-y-[2rem]">
         {data.map((d, i) => (
-          <CardBuisiness d={d} key={i} />
+          <>
+            <CardBuisiness d={d} key={i} />
+            {i != data.length - 1 && <div className="md:hidden mx-auto w-[21.9375rem] h-[0.0625rem] bg-[rgba(97,150,246,0.20)]">
+            </div >}
+          </>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 
