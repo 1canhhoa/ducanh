@@ -63,7 +63,7 @@ export default function NgheHot({t}) {
             height={360}
           />
           <Image
-            className='size-full absolute top-0 left-0 lg:hidden'
+            className='size-full absolute top-0 left-0 xmd:block xlg:hidden lg:hidden'
             alt='banner'
             src={'/images/nghehot/banner-mb.jpg'}
             width={351}
@@ -78,8 +78,8 @@ export default function NgheHot({t}) {
             </span>
           </div>
         </div>
-        <div className='flex flex-col items-start space-y-[1.5rem] xmd:space-y-[0.75rem] lg:py-[1.5rem] lg:w-[71.0625rem] lg:border-y-[1px] border-solid border-greyscaletext-5'>
-          <span className='text-[1.25rem] xmd:w-[21.9375rem] font-bold text-primary-50 leading-[1.6] xmd:body16 xmd:font-semibold xmd:leading-[1.5]'>
+        <div className='flex flex-col xlg:w-full items-start space-y-[1.5rem] xmd:space-y-[0.75rem] lg:py-[1.5rem] lg:w-[71.0625rem] lg:border-y-[1px] border-solid border-greyscaletext-5'>
+          <span className='text-[1.25rem] xmd:text-[1.25rem] xlg:text-[1.5rem] xmd:w-[21.9375rem] font-bold text-primary-50 leading-[1.6] xmd:body16 xmd:font-semibold xmd:leading-[1.5]'>
             {t.nghe_hot.support_title}
           </span>
           <div className='flex flex-col items-start justify-center space-y-[0.75rem]'>
@@ -95,7 +95,7 @@ export default function NgheHot({t}) {
                   width={20}
                   height={20}
                 />
-                <span className='body16 xmd:text-[0.875rem] xmd:leading-[1.7] font-medium text-greyscaletext-50 xmd:text-greyscaletext-60'>
+                <span className='body16 flex-1 xlg:text-[1.5rem] xmd:text-[0.875rem] xmd:leading-[1.7] font-medium text-greyscaletext-50 xmd:text-greyscaletext-60'>
                   {e}
                 </span>
               </div>
@@ -103,7 +103,7 @@ export default function NgheHot({t}) {
           </div>
         </div>
         <div className='mt-[1.5rem] w-full flex flex-col items-start space-y-[1.7rem] py-[1.5rem] xmd:border-b-[1px] border-solid border-greyscaletext-5'>
-          <span className='text-[1.25rem] xmd:w-[22.125rem] font-bold leading-[1.6] text-primary-50 xmd:body16'>
+          <span className='text-[1.25rem] xlg:text-[1.5rem] xmd:w-[22.125rem] font-bold leading-[1.6] text-primary-50 xmd:body16'>
             {t.nghe_hot.list_hot}
           </span>
           {data.map((e, index) => (
@@ -122,7 +122,7 @@ export default function NgheHot({t}) {
           <h5 className='w-[32.6875rem] xmd:w-[21.9375rem] text-primary-60 font-bold text-[1.5rem] xmd:body16'>
             {t.nghe_hot.tham_khao.title}
           </h5>
-          <p className='w-[64.375rem] xmd:mb-[2rem] xmd:w-[21.9375rem] text-[1rem] xmd:text-[0.875rem] xmd:font-normal font-medium leading-[1.6] text-greyscaletext-80'>
+          <p className='w-[64.375rem] xmd:mb-[2rem] xmd:w-[21.9375rem] text-[1rem] xlg:text-[1.5rem] xmd:text-[0.875rem] xmd:font-normal font-medium leading-[1.6] text-greyscaletext-80'>
             {t.nghe_hot.tham_khao.description}
           </p>
           <RelatedPosts lang={t} />

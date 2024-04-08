@@ -43,7 +43,7 @@ export default async function TableChiPhiMb({text}) {
       </div>
       <div className='w-full flex justify-center items-center'>
         <button className='h-[3.3125rem] flex flex-col items-center space-y-[0.375rem]'>
-          <div className='w-[0.98719rem] flex justify-center items-center h-[1.75rem] pt-[0.76294rem]'>
+          <div className='w-[0.98719rem] xem_them flex justify-center items-center h-[1.75rem]'>
             <Image
               alt='xem thêm chi phí'
               src={'/images/thongtinduhoc/doubleDown.svg'}

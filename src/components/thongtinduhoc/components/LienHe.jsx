@@ -3,16 +3,16 @@ import Image from 'next/image'
 export default function LienHe({text}) {
   return (
     <section className='w-full xmd:mt-[1.19rem]'>
-      <div className='w-full relative flex justify-center items-center xmd:px-[0.75rem] px-[11.5625rem] pt-[3.62rem] pb-[5.62rem] h-[34.25rem]'>
+      <div className='w-full relative flex justify-center items-center xmd:px-[0.75rem] xlg:px-[5.3rem] px-[11.5625rem] pt-[3.62rem] pb-[5.62rem] h-[34.25rem]'>
         <Image
-          className='xmd:hidden w-[76.875rem] h-[25rem]'
+          className='xmd:hidden xlg:w-full w-[76.875rem] h-[25rem]'
           alt='ảnh liên hệ tư vấn'
           src={'/images/thongtinduhoc/lienhe.jpg'}
           height={400}
           width={1230}
         />
         <Image
-          className='lg:hidden w-[21.9375rem] h-[33.625rem]'
+          className='hidden xmd:block w-[21.9375rem] h-[33.625rem]'
           alt='ảnh liên hệ tư vấn'
           src={'/images/thongtinduhoc/lienhemb.jpg'}
           height={351}
@@ -26,11 +26,11 @@ export default function LienHe({text}) {
             tương lai
           </span>
         </div>
-        <div className='absolute xmd:w-[19.4375rem] xmd:left-[2rem] xmd:top-[1.25rem] lg:right-[19.46rem] lg:space-y-[0.75rem] z-10 xmd:p-[1.25rem] p-[1.5rem] flex flex-col items-start justify-center rounded-[0.5rem] bg-white'>
+        <div className='absolute xmd:w-[19.4375rem] xmd:left-[2rem] xmd:top-[1.25rem] right-[19.46rem] xmd:space-y-0 space-y-[0.75rem] z-10 xmd:p-[1.25rem] p-[1.5rem] flex flex-col items-start justify-center rounded-[0.5rem] bg-white'>
           <h5 className='sub24 xmd:sub18 text-primary-50 font-semibold xmd:mb-[0.25rem]'>
             {text.information.contact.title}
           </h5>
-          <span className='lg:w-[21.6875rem] body16 xmd:body14 font-normal text-greyscaletext-70'>
+          <span className='xmd:w-auto w-[21.6875rem] body16 xmd:body14 font-normal text-greyscaletext-70'>
             {text.information.contact.text1}
           </span>
           <button className='w-full xmd:mt-[1.25rem] h-[3rem] py-[0.6875rem] pl-[1.875rem] pr-[1.25rem] rounded-[0.625rem] bg-primary-50 flex items-center'>

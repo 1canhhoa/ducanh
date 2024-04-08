@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function ChiTieu({text}) {
   return (
-    <section className='w-full lg:mt-[4.8rem] xmd:px-[0.75rem] px-[11.625rem] flex justify-start items-start lg:bg-background-elevation-10'>
-      <div className='flex w-full flex-col items-start mt-[5.9rem] xmd:mt-[2.5rem] relative'>
+    <section className='w-full lg:mt-[4.8rem] xmd:px-[0.75rem] xlg:px-[5.3rem] px-[11.625rem] flex justify-start items-start lg:bg-background-elevation-10'>
+      <div className='flex w-full flex-col items-start xlg:mt-[3rem] mt-[5.9rem] xmd:mt-[2.5rem] relative'>
         <h1 className='title xmd:mb32 relative w-fit mb-[2.8rem] xmd:mb-[1.12rem]'>
           {text.information.spending.title}
           <div className='size-[0.625rem] bg-secondary-40 absolute bottom-[0.625rem] right-[-1.125rem]'></div>
@@ -12,7 +12,7 @@ export default function ChiTieu({text}) {
         <p className='w-[44.6875rem] xmd:w-[21.9375rem] mt-[2rem] text-primary-50 text-[1.25rem] font-medium leading-[1.5]'>
           {text.information.spending.text1}
         </p>
-        <div className='h-[20.0625rem] w-[28.478rem] xmd:w-[21.9375rem] xmd:h-[15.45481rem] relative lg:absolute lg:right-0 lg:top-[-3rem]'>
+        <div className='h-[20.0625rem] w-[28.478rem] xmd:w-[21.9375rem] xmd:h-[15.45481rem] xmd:relative absolute right-0 xmd:top-0 top-[-3rem]'>
           <Image
             className='size-full '
             alt='anh cách chi tiêu'
@@ -24,7 +24,7 @@ export default function ChiTieu({text}) {
             {text.information.spending.maxim}
           </span>
         </div>
-        <div className='flex xmd:flex-col xmd:space-y-[0.75rem] xmd:mt-[1.19rem] mt-[4.44rem] justify-between w-full'>
+        <div className='flex xmd:flex-col xmd:space-y-[0.75rem] xmd:space-x-0 xlg:space-x-[2rem] xmd:mt-[1.19rem] mt-[4.44rem] justify-between w-full'>
           {new Array(3).fill(0).map((e, index) => (
             <div
               className={

@@ -7,12 +7,12 @@ import TableDuDoanMb from './TableDuDoanMb'
 export default function ChiPhi({text, isMobile}) {
   return (
     <section className='w-full mt-[8.13rem] xmd:mt-[3rem] flex justify-center'>
-      <div className='lg:w-[76.875rem] w-full xmd:px-[0.75rem] flex flex-col items-start'>
+      <div className='lg:w-[76.875rem] w-full xmd:px-[0.75rem] flex flex-col items-start xlg:px-[5.3rem]'>
         <h1 className='title xmd:mb32 relative w-fit mb-[2.8rem] xmd:mb-[1.5rem]'>
           {text.information.title_7.title}
           <div className='size-[0.625rem] bg-secondary-40 absolute bottom-[0.625rem] right-[-1.125rem]'></div>
         </h1>
-        <div className='relative rounded-[0.75rem] flex xmd:pl-[1.44rem] xmd:pt-[2.3rem] pl-[4.05rem] lg:items-center justify-start xmd:h-[38.5625rem] xmd:w-[21.9375rem] h-[28.875rem] w-[76.875rem]'>
+        <div className='relative rounded-[0.75rem] flex xmd:pl-[1.44rem] xmd:pt-[2.3rem] pl-[4.05rem] xmd:items-start items-center justify-start xmd:h-[38.5625rem] xlg:w-full xmd:w-[21.9375rem] h-[28.875rem] w-[76.875rem]'>
           <Image
             className='xmd:hidden absolute top-0 left-0 size-full rounded-[0.75rem]'
             alt='Chi phí du học'
@@ -21,7 +21,7 @@ export default function ChiPhi({text, isMobile}) {
             width={1230}
           />
           <Image
-            className='lg:hidden absolute top-0 left-0 size-full rounded-[0.75rem]'
+            className='lg:hidden xlg:hidden xmd:block absolute top-0 left-0 size-full rounded-[0.75rem]'
             alt='Chi phí du học'
             src={'/images/thongtinduhoc/bannerChiphimb.jpg'}
             height={617}

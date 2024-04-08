@@ -2,13 +2,13 @@ import Title from '@/components/Title'
 
 export default function VieclamDinhcu({text}) {
   return (
-    <section className='mt-[8.12rem] xmd:mt-[3rem] xmd:px-[0.75rem] w-full flex justify-center'>
+    <section className='mt-[8.12rem] xlg:mt-[3rem] xlg:px-[5.3rem] xmd:px-[0.75rem] w-full flex justify-center'>
       <div className='flex flex-col lg:w-[76.6875rem] w-full items-start'>
         <h1 className='title xmd:mb32 relative w-fit mb-[2.8rem] xmd:mb-[1.5rem]'>
           {text.information.job.title}
           <p className='size-[0.625rem] bg-secondary-40 absolute bottom-[0.625rem] right-[-1.125rem] xmd:right-[17rem]'></p>
         </h1>
-        <span className='lg:w-[76.6875rem] w-[21.9375rem] mb-[1.88rem] lg:mt-[2.5rem] body16 xmd:body14 font-medium text-greyscaletext-60 xmd:text-[#2B46A8]'>
+        <span className='lg:w-[76.6875rem] xlg:w-full xmd:w-[21.9375rem] mb-[1.88rem] lg:mt-[2.5rem] body16 xmd:body14 font-medium text-greyscaletext-60 xmd:text-[#2B46A8]'>
           {text.information.job.text1}
         </span>
         {/* content / list */}
@@ -38,7 +38,7 @@ export default function VieclamDinhcu({text}) {
             </p>
           </div>
         </div>
-        <span className='w-[76.6875rem] xmd:w-full lg:mb-[1.88rem] mt-[2.5rem] xmd:mt-[1.5rem] body16 xmd:body14 font-medium text-greyscaletext-60 xmd:text-[#2B46A8]'>
+        <span className='w-[76.6875rem] xlg:w-full lg:mb-[1.88rem] mt-[2.5rem] xmd:mt-[1.5rem] body16 xmd:body14 font-medium text-greyscaletext-60 xmd:text-[#2B46A8]'>
           {text.information.job.text2}
         </span>
       </div>

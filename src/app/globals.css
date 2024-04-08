@@ -228,3 +228,16 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.xem_them {
+  animation: up_down 1s linear 1s infinite alternate;
+}
+
+@keyframes up_down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}

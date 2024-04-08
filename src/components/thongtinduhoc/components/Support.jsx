@@ -16,8 +16,8 @@ import clsx from 'clsx'
 export default function Support({text}) {
   const [indexActive, setIndexActive] = useState(1)
   return (
-    <section className='w-full lg:space-y-[5rem] pt-[4.05rem] flex flex-col items-center'>
-      <div className='w-full xmd:px-[0.75rem] px-[11.675rem] py-[4rem] flex flex-col items-start lg:bg-background-elevation-10'>
+    <section className='w-full lg:space-y-[5rem] lg:pt-[4.05rem] flex flex-col items-center'>
+      <div className='w-full xmd:px-[0.75rem] xlg:px-[5.3rem] px-[11.675rem] py-[4rem] flex flex-col items-start lg:bg-background-elevation-10'>
         <h1 className='title xmd:mb32 relative w-fit'>
           {text.information.support.title1}
           <p className='size-[0.625rem] bg-secondary-40 absolute bottom-[0.625rem] right-[-1.125rem]'></p>
@@ -60,8 +60,8 @@ export default function Support({text}) {
             </span>
           </div>
         </div>
-        <div className='w-full flex xmd:flex-col items-start lg:space-x-[5rem]'>
-          <div className='flex justify-center mt-[3.3rem] relative w-[26.375rem] h-[27.125rem] xmd:w-[21.9375rem] xmd:h-[25.375rem] xmd:rounded-[0.375rem] rounded-[0.49825rem]'>
+        <div className='w-full flex xmd:flex-col items-start xmd:space-x-0 space-x-[5rem]'>
+          <div className='flex justify-center mt-[2.5rem] relative w-[26.375rem] h-[27.125rem] xmd:w-[21.9375rem] xmd:h-[25.375rem] xmd:rounded-[0.375rem] rounded-[0.49825rem]'>
             <Image
               className='absolute size-full top-0 left-0 rounded-[0.49825rem]'
               alt='banner hỗ trợ du học sinh'
@@ -83,15 +83,15 @@ export default function Support({text}) {
           </div>
         </div>
       </div>
-      <div className='xmd:w-full w-[76.6875rem] xmd:flex xmd:flex-col xmd:px-[0.75rem] lg:h-[54.375rem]'>
+      <div className='xlg:w-full lg:w-[76.6875rem] xlg:px-[5.3rem] xmd:flex xmd:flex-col xmd:px-[0.75rem] lg:h-[54.375rem]'>
         <p className='title xmd:mb32 relative w-fit xmd:w-[18.25rem]'>
           {text.information.support.title2}
           <span className='size-[0.625rem] bg-secondary-40 lg:absolute bottom-[0.625rem] right-[-1.125rem] '></span>
         </p>
-        <div className='flex xmd:flex-col lg:space-x-[6rem] lg:mt-[3.75rem]'>
+        <div className='flex xmd:flex-col xmd:space-x-0 xmd:mt-0 space-x-[6rem] mt-[3.75rem]'>
           <div className='xmd:relative xmd:mb-[1rem] xmd:w-[22.625rem] xmd:h-[10.5rem] xmd:overflow-hidden xmd:mt-[1rem]'>
-            <div className='xmd:absolute xmd:h-[10.5rem] xmd:overflow-x-auto xmd:overflow-y-hidden lg:flex xmd:flex-col w-full justify-start lg:space-x-[6rem]'>
-              <div className='flex lg:flex-col xmd:h-[10.5rem] xmd:space-x-[0.75rem] lg:space-y-[1rem] lg:w-[25.4375rem]'>
+            <div className='xmd:absolute xmd:h-[10.5rem] xmd:overflow-x-auto xmd:overflow-y-hidden flex xmd:flex-col w-full justify-start xmd:space-x-0 space-x-[6rem]'>
+              <div className='flex xmd:flex-row flex-col xmd:h-[10.5rem] xmd:space-x-[0.75rem] xmd:space-y-0 space-y-[1rem] w-[25.4375rem]'>
                 <button
                   onClick={() => {
                     if (indexActive == 1) {
@@ -102,8 +102,8 @@ export default function Support({text}) {
                   className={clsx(
                     'xmd:h-full duration-300 transition-all py-[1.5rem] px-[2.5rem] xmd:px-[1.12rem] xmd:pt-[1.47rem] xmd:pb-[2.53rem] flex flex-col items-start xmd:space-y-[0.53rem] space-y-[0.25rem] rounded-[0.5rem] border-[1px] border-solid border-[rgba(52,104,205,0.40)] bg-white',
                     indexActive == 1
-                      ? 'xmd:bg-primary-50 lg:opacity-100'
-                      : 'lg:opacity-[0.4]',
+                      ? 'xmd:bg-primary-50 opacity-100'
+                      : 'opacity-[0.4] xmd:opacity-100',
                   )}
                 >
                   <div
@@ -115,7 +115,10 @@ export default function Support({text}) {
                     )}
                   >
                     <Image
-                      className='lg:hidden'
+                      className={clsx(
+                        'hidden xmd:block brightness-100',
+                        indexActive == 1 ? 'invert-0' : 'invert',
+                      )}
                       alt='hướng dẫn khi lên máy bay'
                       src={'/images/thongtinduhoc/iconbeformaybay.svg'}
                       height={24}
@@ -144,8 +147,8 @@ export default function Support({text}) {
                   className={clsx(
                     'xmd:h-full duration-300 transition-all py-[1.5rem] px-[2.5rem] xmd:px-[1.12rem] xmd:pt-[1.47rem] xmd:pb-[2.53rem] flex flex-col items-start xmd:space-y-[0.53rem] space-y-[0.25rem] rounded-[0.5rem] border-[1px] border-solid border-[rgba(52,104,205,0.40)] bg-white',
                     indexActive == 2
-                      ? 'xmd:bg-primary-50 lg:opacity-100'
-                      : 'lg:opacity-[0.4]',
+                      ? 'xmd:bg-primary-50 opacity-100'
+                      : 'opacity-[0.4] xmd:opacity-100',
                   )}
                 >
                   <div
@@ -157,9 +160,12 @@ export default function Support({text}) {
                     )}
                   >
                     <Image
-                      className='lg:hidden'
+                      className={clsx(
+                        'hidden xmd:block brightness-100',
+                        indexActive == 2 ? 'invert-0' : 'invert',
+                      )}
                       alt='hướng dẫn khi lên máy bay'
-                      src={'/images/thongtinduhoc/iconmaybay.svg'}
+                      src={'/images/thongtinduhoc/iconbeformaybay.svg'}
                       height={24}
                       width={23}
                     />
@@ -186,8 +192,8 @@ export default function Support({text}) {
                   className={clsx(
                     'xmd:h-full duration-300 transition-all py-[1.5rem] px-[2.5rem] xmd:px-[1.12rem] xmd:pt-[1.47rem] xmd:pb-[2.53rem] flex flex-col items-start xmd:space-y-[0.53rem] space-y-[0.25rem] rounded-[0.5rem] border-[1px] border-solid border-[rgba(52,104,205,0.40)] bg-white',
                     indexActive == 3
-                      ? 'xmd:bg-primary-50 lg:opacity-100'
-                      : 'lg:opacity-[0.4]',
+                      ? 'xmd:bg-primary-50 opacity-100'
+                      : 'opacity-[0.4] xmd:opacity-100',
                   )}
                 >
                   <div
@@ -199,7 +205,10 @@ export default function Support({text}) {
                     )}
                   >
                     <Image
-                      className='lg:hidden'
+                      className={clsx(
+                        'hidden xmd:block brightness-100',
+                        indexActive == 3 ? 'invert-0' : 'invert',
+                      )}
                       alt='hướng dẫn khi lên máy bay'
                       src={'/images/thongtinduhoc/iconbeformaybay.svg'}
                       height={24}

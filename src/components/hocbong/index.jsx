@@ -5,7 +5,7 @@ import RelatedPosts from '@/components/BaiVietLienQuan/RelatedPosts'
 export default function HocBong({t, isMobile}) {
   return (
     <section className='lg:flex-1 xmd:w-full'>
-      <div className='w-full flex flex-col items-start xmd:px-[0.75rem]'>
+      <div className='w-full flex flex-col items-start xmd:px-[0.75rem] xlg:space-y-[1.5rem]'>
         <h1 className='title xmd:text-[1.375rem] xmd:font-extrabold xmd:leading-[1.2] xmd:text-primary-50 relative w-fit mb-[1rem] xmd:mb-[0.75rem] uppercase'>
           {t.hoc_bong.title}
           <div className='size-[0.625rem] bg-secondary-40 absolute bottom-[0.625rem] right-[-1.125rem]'></div>

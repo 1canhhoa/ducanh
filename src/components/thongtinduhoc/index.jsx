@@ -29,16 +29,16 @@ export default async function ThongTindh({text, isMobile}) {
         <LienHe text={text} />
         <VieclamDinhcu text={text} />
         <Support text={text} />
-        <div className='w-full relative xmd:mt-[4.12rem] h-[18rem] xmd:h-[22.875rem] xmd:w-[23.4375rem] lg:pl-[11.63rem] pl-[0.75rem] flex xmd:items-start xmd:pt-[2rem] items-center'>
+        <div className='w-full relative xlg:mt-[4.12rem] h-[18rem] xmd:h-[22.875rem] xmd:w-[23.4375rem] xlg:pl-[5.3rem] lg:pl-[11.63rem] xmd:pl-[0.75rem] flex xmd:items-start xmd:pt-[2rem] items-center'>
           <Image
-            className='size-full absolute top-0 left-0'
+            className='size-full xmd:hidden absolute top-0 left-0'
             alt='lien hệ với đức anh'
             src={'/images/thongtinduhoc/contact.jpg'}
             width={1600}
             height={288}
           />
           <Image
-            className='size-full absolute top-0 left-0'
+            className='size-full hidden xmd:block absolute top-0 left-0'
             alt='lien hệ với đức anh'
             src={'/images/thongtinduhoc/contactmb.jpg'}
             width={375}
