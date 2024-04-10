@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 
 const TinTucNoiBat = () => {
@@ -34,7 +33,7 @@ const TinTucNoiBat = () => {
             Những lợi ích lớn nhất khi làm hồ sơ du học qua Duc Anh EduConnect là chúng tôi: giúp bạn gạt bỏ hoàn toàn các mối lo về giấy tờ, hồ sơ, thủ tục...
           </div>
         </div>
-        <Image priority alt='ss' src='/images/homepage/card.png'
+        <Image loading='lazy' alt='ảnh minh họa thẻ tin tức ' src='/images/homepage/card.png'
           className='xmd:w-[20.0625rem] xmd:h-[12.6875rem] w-[27.375rem] h-[17.375rem] rounded-[0.5rem] shrink-0' width={440} height={280} />
       </div>
     </div>

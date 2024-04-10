@@ -4,9 +4,9 @@ import NavigationCustom from '@/components/navigationcustom'
 import { country } from '@/lib/data'
 import { Swiper, SwiperSlide, } from "swiper/react";
 import { Navigation, EffectFade } from 'swiper/modules'
-import React, { useState, useRef } from 'react'
+import { useState, useRef } from 'react'
 import "swiper/css";
-import 'swiper/css/effect-fade'
+
 import Align from '@/components/icon/Align';
 
 const data_mini_menu = [
@@ -16,7 +16,7 @@ const data_mini_menu = [
   { img: '/images/homepage/dinhcu.svg', title: 'Định cư' },
   { img: '/images/homepage/e-learning.svg', title: 'E-learning' },
 ]
-const BannerHome = ({ isMobile }) => {
+const BannerHome = () => {
 
   const swiperRef = useRef(null)
   const [indexSlider, setIndexSlider] = useState(0)
@@ -47,25 +47,24 @@ const BannerHome = ({ isMobile }) => {
           bạn muốn du học ?
         </div>
 
-        <ul className='xmd:grid-cols-2 xmd:grid gap-x-[0.5rem] gap-y-[0.38rem]'>
+        <ul className='xmd:grid-cols-2 xmd:grid gap-x-[0.5rem] gap-y-[0.38rem] '>
           {country.map((d, i) => (
             <>
               <li key={i} className=" 
-              flex items-center gap-[1rem] 
+              flex items-center gap-[1rem] overflow-hidden 
               group md:w-[21.8125rem] md:h-[3.12rem] md:relative  md:px-[1.5rem] md:py-[0.5]rem]
               xmd:w-[10.6875rem]  xmd:gap-1.5 xmd:self-stretch xmd:p-5 xmd:rounded-[0.5rem]
               xmd:shadow-[0px_3px_24px_0px_rgba(0,132,255,0.04),0px_0px_32px_0px_rgba(0,119,229,0.04)]
-              xmd:bg-white
-                          ">
+              xmd:bg-white">
 
-                <Image className="xmd:hidden group-hover:opacity-0 duration-500 opacity-100 z-[1] size-[2rem]" priority alt="ảnh la co" src={d.img} width={32} height={32} />
+                <Image className="xmd:hidden group-hover:opacity-0 duration-500 opacity-100 z-[1] size-[2rem]" priority alt="ảnh lá cờ hình tròn" src={d.img} width={32} height={32} />
 
                 <div className='xmd:hidden group-hover:opacity-0 duration-700 opacity-100 flex-1 z-[1] button1 text-primary-60 uppercase'>{d.tittle}</div>
 
                 <svg className='xmd:hidden z-[1] group-hover:opacity-0 duration-700 opacity-100 size-[1.25rem]' xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                   <path d="M7.5 4.78125L13.3333 10.6146L7.5 16.4479" stroke="#132B7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <Image priority alt="ảnh" src={d.bg} width={360} height={60}
+                <Image priority alt="ảnh background lá cờ " src={d.bg} width={360} height={60}
                   className="xmd:hidden absolute top-0 w-full h-full group-hover:opacity-100  custom-transition opacity-0 left-0 right-0 bottom-0" />
 
                 <div className='
@@ -80,14 +79,14 @@ const BannerHome = ({ isMobile }) => {
         </ul>
       </div>
 
-      {/* IMAGE AND MINI_MENU */}
+      {/* IMAGE AND MINI_MENU MOBI*/}
       <div className="md:hidden flex md:h-[23.1875rem] flex-col items-center space-y-[0.75rem]">
-        <Image priority alt='ss' src='/images/navPrimary/banner-mobi.png'
+        <Image loading='lazy' alt='ảnh banner mobile' src='/images/homepage/banner-mobi.png'
           className='w-full md:hidden xmd:w-[23.4375rem] shrink-0' width={380} height={195} />
         <div className="flex w-[21.9375rem] justify-center items-end space-x-[1rem] shrink-0 shadow-[2px_4px_32px_0px_rgba(37,168,224,0.04),0px_0px_36px_0px_rgba(0,106,218,0.06)] pt-[0.375rem] pb-[0.75rem] px-0 rounded-[0.75rem]">
           {data_mini_menu.map((d, i) => (
             <div key={i} className="pt-[0.5rem] flex w-[4rem] space-y-[0.5rem] flex-col items-center shrink-0">
-              <Image priority alt="ảnh" src={d.img} width={20} height={14} className=" shrink-0" />
+              <Image loading='lazy' alt={` icon ${d.title} `} src={d.img} width={20} height={14} className=" size-[1.25rem] shrink-0" />
               <div className="text-[0.625rem] font-semibold text_gradient bg-gradient-to-r bg-clip-text
               from-[#082072] from-[0%] to-[#2B46A8] to-[100%]
               ">{d.title}</div>
@@ -111,8 +110,8 @@ const BannerHome = ({ isMobile }) => {
         >
           <SwiperSlide>
             <div className='relative'>
-              <Image priority alt='ss' src='/images/navPrimary/banner.png'
-                className='w-full xmd:hidden h-[38.4375rem] rounded-[0.78969rem] shrink-0' width={9999} height={9999} />
+              <Image priority alt='ảnh banner web 2' src='/images/navPrimary/banner.png'
+                className='w-full xmd:hidden h-[38.4375rem] rounded-[0.78969rem] shrink-0' width={1100} height={615} />
               <button className='absolute left-[6.44rem] top-[15.19rem] bg-linear-l1 inline-flex justify-center items-center h-[2.5rem] py-[0.625rem] px-[1.25rem] gap-[0.625rem] shrink-0 rounded-[0.625rem]'>
                 <Align />
                 <div className='text-greyscaletext0 text-center text-[1rem] text-white not-italic font-bold leading-[150%]'>
@@ -125,8 +124,8 @@ const BannerHome = ({ isMobile }) => {
           </SwiperSlide>
           <SwiperSlide>
             <div className='relative'>
-              <Image alt='ss' src='/images/navPrimary/banner2.png'
-                className='w-full h-[38.4375rem] rounded-[0.78969rem] shrink-0' width={9999} height={9999} />
+              <Image alt='ảnh banner web 2' src='/images/navPrimary/banner2.png'
+                className='w-full h-[38.4375rem] rounded-[0.78969rem] shrink-0' width={1100} height={615} />
             </div>
           </SwiperSlide>
         </Swiper>

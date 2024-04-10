@@ -1,4 +1,3 @@
-import React from 'react'
 import { data_table } from '@/lib/data'
 import { cn } from '@/lib/utils';
 const Table = ({ isMobile }) => {
@@ -8,12 +7,9 @@ const Table = ({ isMobile }) => {
     var thang = parts[1];
     return ngay + '/' + thang;
   }
-
-
-
   const className = {
+    th_text: "xmd:mx-auto text-white  font-semibold  xmd:text-[0.875rem] xmd:leading-[130%] text-[1rem] w-max leading-[1.5]",
     wrap: "md:!border min-w-full md:!border-primary-50 bg-white xmd:rounded-[0.5rem] rounded-[0.75rem]",
-    th_text: "xmd:mx-auto text-white  font-semibold  xmd:text-[0.875rem] xmd:leading-[130%] text-[1rem] w-max leading-[150%]",
     td_boder: "md:border-none  xmd:!text-greyscaletext-40 xmd:!text-[0.75rem]"
   }
   return (
@@ -21,29 +17,29 @@ const Table = ({ isMobile }) => {
       <table className=' min-w-full' >
         <thead>
           <tr className="bg-linear-l5">
-            <th className={cn(className.td_boder, "  border-b border-r  xmd:px-[0rem]  px-[1.25rem] xmd:h-[3.175rem] h-[3.875rem] ")}>
+            <th className={cn(className.td_boder, " w-[3.875rem]  border-b border-r  xmd:px-[0rem]  px-[1.25rem] xmd:h-[3.175rem] h-[3.875rem] ")}>
               <div className={cn("", className.th_text)}>
                 {isMobile ? 'Ngày' : 'Ngày - Giờ'}
               </div>
             </th>
 
-            {isMobile && <th className={cn(className.td_boder, "  border-b border-r  ")}>
+            {isMobile && <th className={cn(className.td_boder, " w-[3.8125rem]  border-b border-r  ")}>
               <div className={cn("", className.th_text)}>
                 Giờ
               </div>
             </th>}
 
-            <th className={cn(className.td_boder, " border-b border-r xmd:px-[0rem] px-[0.5rem]")}>
+            <th className={cn(className.td_boder, "xmd:w-[5.1875rem] border-b border-r xmd:px-[0rem] px-[0.5rem]")}>
               <div className={cn("", className.th_text)}>
                 Địa điểm
               </div>
             </th>
-            <th className={cn(className.td_boder, " border-b border-r xmd:px-[0rem]  px-[1rem] ")}>
+            <th className={cn(className.td_boder, " xmd:w-[5.96875rem] border-b border-r xmd:px-[0rem]  px-[1rem] ")}>
               <div className={cn("", className.th_text)}>
                 Đất nước
               </div>
             </th>
-            <th className={cn(className.td_boder, "  border-b border-r xmd:px-[0rem]  px-[1.5rem] ")}>
+            <th className={cn(className.td_boder, "xmd:w-[24rem]  border-b border-r xmd:px-[0rem]  px-[1.5rem] ")}>
               <div className={cn("", className.th_text)}>
                 Sự kiện
               </div>
@@ -80,7 +76,7 @@ const Table = ({ isMobile }) => {
                 </div>
               </td>
               <td className={cn(className.td_boder, " text-center border-b border-r  xmd:px-[0rem] px-[1rem]              text-[0.875rem] font-medium leading-[150%]")}>{data.country}</td>
-              <td className={cn(className.td_boder, "xmd:max-w-[15rem] border-b border-r  xmd:px-[0.75rem] px-[1.5rem] text-primary-50 text-[0.875rem] font-semibold leading-[150%]")}>{data.event} </td>
+              <td className={cn(className.td_boder, " border-b border-r  xmd:px-[0.75rem] px-[1.5rem] text-primary-50 text-[0.875rem] font-semibold leading-[150%]")}>{data.event} </td>
               <td className={cn(className.td_boder, " border-b text-sm not-italic font-semibold leading-[130%] ")}>
                 <button className='mx-auto  flex h-[2rem] items-center text-primary-40 md:border md:border-primary-40 md:px-[1rem] md:py-[0.625rem] rounded-[0.5rem] border-solid'>
                   {!isMobile ? "chi tiết" :

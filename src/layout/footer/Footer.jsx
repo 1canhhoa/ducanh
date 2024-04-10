@@ -1,4 +1,4 @@
-import { data } from 'autoprefixer'
+
 import Image from 'next/image'
 import Link from 'next/link'
 const data_section = [
@@ -6,6 +6,14 @@ const data_section = [
 ]
 const data1_section = [
   "THI PTE ACADEMY", "HỌC TIẾNG ANH", "VIỆC LÀM - ĐỊNH CƯ"
+]
+const data_section1 = [
+  { place: "Hà Nội", place_detail: "54 - 56 Tuệ Tĩnh", number: "+94 906 225 454" },
+  { place: "TP. Hồ Chí Minh", place_detail: "172 Bùi Thị Xuân, Q.1", number: "+94 963 049 860" },
+  { place: "Vinh", place_detail: "172 Bùi Thị Xuân, Q.1", number: "+ 94 906 225 454" },
+  { place: "Quảng ngãi", place_detail: "01 Trần Thị Hiệp", number: "+94 906 225 454" },
+  { place: "Viêng chăn", place_detail: "Tòa nhà Iconic, Phonxay", number: "+94 906 225 454" },
+  { place: "melbourne", place_detail: "276 Flinders Street", number: "+94 906 225 454" }
 ]
 const Section = ({ data }) => {
   return <div className="flex flex-col items-start space-y-8">
@@ -17,18 +25,10 @@ const Section = ({ data }) => {
 
   </div>
 }
-
-const data_section1 = [
-  { place: "Hà Nội", place_detail: "54 - 56 Tuệ Tĩnh", number: "+94 906 225 454" },
-  { place: "TP. Hồ Chí Minh", place_detail: "172 Bùi Thị Xuân, Q.1", number: "+94 963 049 860" },
-  { place: "Vinh", place_detail: "172 Bùi Thị Xuân, Q.1", number: "+ 94 906 225 454" },
-  { place: "Quảng ngãi", place_detail: "01 Trần Thị Hiệp", number: "+94 906 225 454" },
-  { place: "Viêng chăn", place_detail: "Tòa nhà Iconic, Phonxay", number: "+94 906 225 454" },
-  { place: "melbourne", place_detail: "276 Flinders Street", number: "+94 906 225 454" }
-]
 export default function Footer() {
   return (
-    <footer className='w-screen xmd:px-[1.5rem] relative md:h-[28.875rem] shrink-0 bg-primary-40 mt-[6rem]'>
+    <footer className='w-full relative  xmd:px-[1.5rem] shrink-0 bg-primary-40 mt-[6rem]'>
+      {/* logo,name */}
       <div className='md:absolute md:top-[2.5rem] md:left-1/2 md:-translate-x-1/2 flex flex-col xmd:flex-col-reverse xmd:gap-[1.5rem] space-y-[2.81rem] items-center'>
         <div className='xmd:w-[19rem] xmd:text-white text-primary-10 text-center xmd:text-[1.125rem] text-xl not-italic font-bold xmd:leading-[160%] leading-[120%] xmd:tracking-normal tracking-[-0.00313rem]'>
           CÔNG TY TƯ VẤN DU HỌC & DỊCH THUẬT ĐỨC ANH
@@ -37,10 +37,11 @@ export default function Footer() {
           id='logo_nav'
           href='/'
         >
-          <Image priority alt="ảnh logo du học đức anh" src={'/images/footer/logo.png'} width={235} height={69}
+          <Image loading='lazy' alt="ảnh logo du học đức anh" src={'/images/footer/logo.png'} width={235} height={69}
             className="md:mr-12  xmd:w-[14.5625rem] xmd:h-[4.271rem]  xlg:w-[19rem] xlg:h-[6.9375rem]   w-[14.5625rem] h-[4.271rem]" />
         </Link>
       </div>
+      {/* thong tin va chi nhanh */}
       <div className='flex  xmd:flex-col justify-between items-start md:px-[3.75rem] xmd:space-y-[2.63rem] xmd:pt-[3.42rem] pt-[6.75rem]'>
         <div className='inline-flex xmd:flex-col items-start xmd:space-y-[2rem] md:space-x-[3.4375rem]'>
           <Section data={data_section} />
@@ -72,9 +73,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
-      <div className='flex xmd:flex-col-reverse justify-start xmd:items-start items-end md:space-x-[12.3rem] md:ml-[3.75rem]'>
-        <div className="inline-flex items-start space-x-[0.75rem]">
+      {/* social and  hotline contact */}
+      <div className='flex xmd:flex-col-reverse xmd:space-y-[2.25rem] justify-start xmd:items-start items-end md:space-x-[12.3rem] md:ml-[3.75rem]'>
+        <div className="inline-flex items-start xmd:mt-[2.25rem] space-x-[0.75rem]">
           <svg className='size-[1.5rem]' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <g clip-path="url(#clip0_401_23428)">
               <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#F0FAFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -96,46 +97,68 @@ export default function Footer() {
             <path d="M2.25 12.0001C2.25 14.8041 2.53781 16.4485 2.75719 17.2941C2.8152 17.5242 2.92694 17.7371 3.08322 17.9156C3.23951 18.094 3.43589 18.2329 3.65625 18.3207C6.79875 19.5329 12 19.5001 12 19.5001C12 19.5001 17.2012 19.5329 20.3438 18.3207C20.5648 18.2334 20.7619 18.0947 20.9189 17.9163C21.0759 17.7378 21.1882 17.5246 21.2466 17.2941C21.4659 16.4504 21.7537 14.8041 21.7537 12.0001C21.7537 9.19602 21.4659 7.55165 21.2466 6.70602C21.1888 6.47477 21.0768 6.26059 20.9198 6.08126C20.7628 5.90192 20.5653 5.76257 20.3438 5.67477C17.2012 4.46727 12 4.50009 12 4.50009C12 4.50009 6.79875 4.46727 3.65625 5.67946C3.43466 5.76726 3.23718 5.9066 3.08017 6.08594C2.92317 6.26528 2.81116 6.47945 2.75344 6.71071C2.53781 7.55071 2.25 9.19602 2.25 12.0001Z" stroke="#F0FAFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </div>
-        <div className="inline-flex xmd:flex-col-reverse items-start md:space-x-[12rem]">
-          <div className="flex flex-col items-start space-y-[0.25rem]">
-            <div className="text-[1rem] text-white">
-              Tel: 024 3971 6229
+        <div className="inline-flex xmd:space-y-[2.25rem] xmd:flex-col items-start md:space-x-[12rem]">
+          <div className=''>
+            <div className=" md:hidden flex items-center gap-[0.5625rem]">
+              <svg className='size-[1.5rem]' xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M1.5 7.3125C1.5 5.8635 2.676 4.6875 4.125 4.6875H19.875C21.324 4.6875 22.5 5.8635 22.5 7.3125V17.0625C22.5 17.7587 22.2234 18.4264 21.7312 18.9187C21.2389 19.4109 20.5712 19.6875 19.875 19.6875H4.125C3.42881 19.6875 2.76113 19.4109 2.26884 18.9187C1.77656 18.4264 1.5 17.7587 1.5 17.0625V7.3125ZM4.125 6.1875C3.82663 6.1875 3.54048 6.30603 3.3295 6.517C3.11853 6.72798 3 7.01413 3 7.3125V17.0625C3 17.6835 3.504 18.1875 4.125 18.1875H19.875C20.1734 18.1875 20.4595 18.069 20.6705 17.858C20.8815 17.647 21 17.3609 21 17.0625V7.3125C21 7.01413 20.8815 6.72798 20.6705 6.517C20.4595 6.30603 20.1734 6.1875 19.875 6.1875H4.125ZM14.25 9.1875C14.0511 9.1875 13.8603 9.26652 13.7197 9.40717C13.579 9.54782 13.5 9.73859 13.5 9.9375C13.5 10.1364 13.579 10.3272 13.7197 10.4678C13.8603 10.6085 14.0511 10.6875 14.25 10.6875H18.75C18.9489 10.6875 19.1397 10.6085 19.2803 10.4678C19.421 10.3272 19.5 10.1364 19.5 9.9375C19.5 9.73859 19.421 9.54782 19.2803 9.40717C19.1397 9.26652 18.9489 9.1875 18.75 9.1875H14.25ZM14.25 13.6875C14.0511 13.6875 13.8603 13.7665 13.7197 13.9072C13.579 14.0478 13.5 14.2386 13.5 14.4375C13.5 14.6364 13.579 14.8272 13.7197 14.9678C13.8603 15.1085 14.0511 15.1875 14.25 15.1875H18.75C18.9489 15.1875 19.1397 15.1085 19.2803 14.9678C19.421 14.8272 19.5 14.6364 19.5 14.4375C19.5 14.2386 19.421 14.0478 19.2803 13.9072C19.1397 13.7665 18.9489 13.6875 18.75 13.6875H14.25ZM7.8915 11.7585C8.15881 11.7585 8.42349 11.7059 8.67045 11.6036C8.91741 11.5013 9.1418 11.3513 9.33082 11.1623C9.51983 10.9733 9.66976 10.7489 9.77206 10.502C9.87435 10.255 9.927 9.99031 9.927 9.723C9.927 9.45569 9.87435 9.19101 9.77206 8.94405C9.66976 8.69709 9.51983 8.4727 9.33082 8.28368C9.1418 8.09467 8.91741 7.94474 8.67045 7.84244C8.42349 7.74015 8.15881 7.6875 7.8915 7.6875C7.35165 7.6875 6.83391 7.90195 6.45218 8.28368C6.07045 8.66541 5.856 9.18315 5.856 9.723C5.856 10.2628 6.07045 10.7806 6.45218 11.1623C6.83391 11.544 7.35165 11.7585 7.8915 11.7585ZM5.787 12.7755C5.44567 12.7755 5.11831 12.9111 4.87695 13.1525C4.63559 13.3938 4.5 13.7212 4.5 14.0625C4.50005 14.6211 4.68682 15.1637 5.03063 15.604C5.37444 16.0443 5.85555 16.357 6.3975 16.4925L6.477 16.5135C7.407 16.746 8.3775 16.746 9.306 16.5135L9.387 16.494C9.92895 16.3585 10.4101 16.0458 10.7539 15.6055C11.0977 15.1652 11.2845 14.6226 11.2845 14.064C11.2847 13.8949 11.2516 13.7273 11.187 13.571C11.1224 13.4147 11.0276 13.2727 10.9081 13.153C10.7885 13.0333 10.6466 12.9384 10.4904 12.8736C10.3341 12.8088 10.1666 12.7755 9.9975 12.7755H5.787Z" fill="white" />
+              </svg>
+              <div className="body14 font-bold text-white ">Liên hệ</div>
             </div>
-            <div className="text-[1rem] text-white">
-              Tel: 028 3929 3995
+            <div className="mt-[0.45rem] md:hidden w-[20.4375rem] md:w-[26.125rem] h-[0.0625rem] bg-[#4E91F6]"></div>
+            <div className="mt-[1em] flex flex-col items-start space-y-[0.25rem]">
+              <div className="text-[1rem] xmd:leading-[1.875rem] text-white">
+                Hotline chung: 098 870 9698
+              </div>
+              <div className="text-[1rem] xmd:leading-[1.875rem] text-white">
+                Email: duhoc@ducanh.edu.vn
+              </div>
             </div>
           </div>
-          <div className="flex flex-col items-start space-y-[0.25rem]">
-            <div className="text-[1rem] text-white">
-              Hotline chung: 098 870 9698
+          <div className=''>
+            <div className=" md:hidden flex items-center gap-[0.5625rem]">
+              <svg className='size-[1.25rem]' xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                <path d="M20 10.1875C19.9995 7.5355 18.9457 4.99227 17.0705 3.11702C15.1952 1.24177 12.652 0.18803 10 0.1875V2.1875C11.5821 2.18786 13.1286 2.65714 14.4441 3.53604C15.7596 4.41494 16.7851 5.66403 17.391 7.1255C17.7931 8.09627 18.0001 9.13674 18 10.1875H20ZM0 8.1875V3.1875C0 2.92228 0.105357 2.66793 0.292893 2.48039C0.48043 2.29286 0.734784 2.1875 1 2.1875H6C6.26522 2.1875 6.51957 2.29286 6.70711 2.48039C6.89464 2.66793 7 2.92228 7 3.1875V7.1875C7 7.45272 6.89464 7.70707 6.70711 7.89461C6.51957 8.08214 6.26522 8.1875 6 8.1875H4C4 10.3092 4.84285 12.3441 6.34315 13.8444C7.84344 15.3446 9.87827 16.1875 12 16.1875V14.1875C12 13.9223 12.1054 13.6679 12.2929 13.4804C12.4804 13.2929 12.7348 13.1875 13 13.1875H17C17.2652 13.1875 17.5196 13.2929 17.7071 13.4804C17.8946 13.6679 18 13.9223 18 14.1875V19.1875C18 19.4527 17.8946 19.7071 17.7071 19.8946C17.5196 20.0821 17.2652 20.1875 17 20.1875H12C5.373 20.1875 0 14.8145 0 8.1875Z" fill="white" />
+                <path d="M15.543 7.8915C15.8449 8.61933 16.0002 9.39956 16 10.1875H14.2C14.2001 9.63591 14.0916 9.0897 13.8806 8.58007C13.6695 8.07045 13.3602 7.60739 12.9701 7.21736C12.5801 6.82733 12.1171 6.51796 11.6074 6.30694C11.0978 6.09591 10.5516 5.98737 10 5.9875V4.1875C11.1867 4.18756 12.3466 4.5395 13.3333 5.1988C14.3199 5.8581 15.0889 6.79517 15.543 7.8915Z" fill="white" />
+              </svg>
+              <div className="body14 font-bold text-white ">Hotline</div>
             </div>
-            <div className="text-[1rem] text-white">
-              Email: duhoc@ducanh.edu.vn
+            <div className="mt-[0.45rem] md:hidden w-[20.4375rem] md:w-[26.125rem] h-[0.0625rem] bg-[#4E91F6]"></div>
+            <div className="mt-[1em] flex flex-col items-start space-y-[0.25rem]">
+              <div className="text-[1rem] xmd:leading-[1.875rem] text-white">
+                Tel: 024 3971 6229
+              </div>
+              <div className="text-[1rem] xmd:leading-[1.875rem] text-white">
+                Tel: 028 3929 3995
+              </div>
             </div>
           </div>
         </div>
       </div>
-      {/* <div className="mt-[2.25rem] w-[92.5rem] h-[0.03125rem] shrink-0 bg-primary-10"></div>
-      <div className='flex pt-[1.03rem] px-[3.75rem] justify-between items-center'>
+      <div className="xmd:mt-[1rem] mt-[2.25rem] xmd:w-full md:mx-auto w-[92.5rem] h-[0.03125rem] shrink-0 bg-primary-10"></div>
+      {/* madeIn and policy */}
+      <div className='flex relative pb-[0.73rem] pt-[1.03rem] md:px-[3.75rem] justify-between items-center'>
         <div className="inline-flex items-start space-x-[1.5rem]">
           <div className="sub2 text-white">
             @2023 DucAnh Educonnect
           </div>
           <div className="sub2 text-white">
-            @2023 DucAnh Educonnect
+            Made by OKHUB Agency
           </div>
         </div>
-        <div className=" inline-flex items-center space-x-[2rem]">
+        <div className=" xmd:absolute bottom-[3.55rem] right-[0rem] inline-flex items-center space-x-[2rem]">
           <div className="button2 text-white">Policy</div>
           <div className="flex h-[1.5rem] justify-center items-center space-x-[0.625rem] rounded-[0.625rem]">
-            <div className="button2 text-white">Policy</div>
-            <svg className='size-[1.5rem]' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <div className="button2 text-white">Back to top</div>
+            <svg className='xmd:hidden size-[1.5rem]' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M5 16L12 9L19 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg className='md:hidden size-[1.5rem]' xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+              <path d="M12 19.1875V5.1875M12 5.1875L6 11.1875M12 5.1875L18 11.1875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div>
         </div>
-      </div> */}
-
+      </div>
     </footer>
   )
 }

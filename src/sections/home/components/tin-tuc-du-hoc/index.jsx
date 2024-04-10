@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef, useState } from 'react'
+import { useRef } from 'react'
 import { tintucduhoc } from '@/lib/data'
 import Title from '@/components/Title'
 import NavigationCustom from '@/components/navigationcustom'
@@ -7,12 +7,6 @@ import SlideTinTucNoiBat from './SlideTinTucNoiBat'
 import SLideBaiViet from './SLideBaiViet'
 const TinTicDuHoc = () => {
   const swiperRef = useRef(null)
-  // const [indexSlider, setIndexSlider] = useState(0)
-
-  const handleSlideChange = (swiper) => {
-    // setIndexSlider(swiper.realIndex)
-  }
-
   const handleNextSlide = () => {
     swiperRef.current?.slideNext()
   }
@@ -20,10 +14,10 @@ const TinTicDuHoc = () => {
     swiperRef.current?.slidePrev()
   }
   return (
-    <div className='relative flex-col px-[3.75rem] space-y-[1.5625rem] xmd:space-y-[0em] z-10 mt-[2.5rem] w-screen flex justify-center items-center xmd:bg-elevation-blue bg-white'>
-      <div className='w-full xmd:pl-[1rem] xmd:w-screen flex flex-col items-start xmd:space-y-[1.375rem] space-y-[1.5rem]'>
-        <Title title={'Tin tức du học'} />
-        <div className='w-full hidden-scrollbar xmd:overflow-x-auto relative flex items-end gap-[0.75rem] md:self-stretch'>
+    <div className='relative pt-[2.5rem] flex-col  space-y-[1.5625rem] xmd:space-y-[0em] z-10 w-full flex justify-center items-center xmd:bg-elevation-blue bg-white'>
+      <div className='w-full md:px-[3.75rem] xmd:w-full flex flex-col items-start xmd:space-y-[1.375rem] space-y-[1.5rem]'>
+        <Title className={'xmd:pl-[1rem] '} title={'Tin tức du học'} />
+        <div className='w-full xmd:pl-[1rem] hidden-scrollbar xmd:overflow-x-auto relative flex items-end gap-[0.75rem] md:self-stretch'>
           <div className=" xmd:w-max flex items-start gap-[0.5rem] flex-[1_0_0]">
             {tintucduhoc.map((t, i) => (
               <button key={i} className={`flex xmd:w-max justify-center items-center 
@@ -47,8 +41,8 @@ const TinTicDuHoc = () => {
           </div>
         </div>
       </div>
-      <div className="">
-        <div className=" flex bg-elevation-blue xmd:flex-col justify-start items-center w-screen">
+      <div className="w-full ">
+        <div className=" flex bg-elevation-blue xmd:flex-col justify-start items-center w-full">
           <SlideTinTucNoiBat />
           <SLideBaiViet swiperRef={swiperRef} />
         </div>
@@ -67,13 +61,3 @@ const TinTicDuHoc = () => {
 }
 
 export default TinTicDuHoc
-  // < div className = "overflow-x-auto hidden-scrollbar w-full" >
-  //   <div className="w-max pb-2  flex items-start  gap-[0.87848rem]">
-  //     <RelatedButton text='mới nhất' bg='#153454' color='white' />
-  //     <RelatedButton text='ipad' bg='' color='' />
-  //     <RelatedButton text='bút cảm ứng' bg='' color='' />
-  //     <RelatedButton text='camara' bg='' color='' />
-  //     <RelatedButton text='camara' bg='' color='' />
-  //     <RelatedButton text='camara' bg='' color='' />
-  //   </div>
-  // </ >

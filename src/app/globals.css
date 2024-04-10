@@ -22,7 +22,7 @@
     @apply text-[0.75rem] leading-[1.2];
   }
   .body14 {
-    @apply text-[0.875rem] leading-[1.7];
+    @apply text-[0.875rem] leading-[1.2];
   }
   .body16 {
     @apply text-[1rem] leading-[1.5];
@@ -107,12 +107,9 @@ textarea {
 button {
   cursor: pointer;
   outline: none;
-  /* background-color: transparent;
-  border: 0; */
 }
 
 html {
-  /* overflow-x: hidden; */
   font-size: 1vw;
 }
 
@@ -121,11 +118,6 @@ html {
     font-size: 4.26666vw;
   }
 }
-/* @media (min-width: 1900px) {
-  html{
-    font-size: 16px;
-  };
-} */
 
 body {
   background: white;
