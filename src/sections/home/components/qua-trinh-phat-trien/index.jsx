@@ -105,9 +105,9 @@ const QuaTrinhPhatTrien = ({ isMobile }) => {
           </div>
 
           {/* WEB */}
-          <Image alt="mouse cursor" className="xmd:hidden absolute w-[2.56356rem] h-[2.71663rem] top-[30.37rem] left-[18.9rem]" loading='lazy'
+          <Image alt="mouse cursor" className="xmd:hidden absolute w-[2.56356rem] h-[2.71663rem] top-[30.27rem] left-[16.5rem]" loading='lazy'
             src={'/images/homepage/mouse-cursor.png'} width={50} height={50} />
-          <Image alt="ảnh hiệu ứng Hover" className={`xmd:hidden absolute w-[3.96356rem] h-[3.91663rem] top-[28.57rem] left-[17.7rem] circle  opacity-100 size-[3.8rem] `} loading='lazy' src={'/images/homepage/hover-title.svg'} width={92} height={92} />
+          <Image alt="ảnh hiệu ứng Hover" className={`xmd:hidden absolute w-[3.96356rem] h-[3.91663rem] top-[28.57rem] left-[14.7rem] circle  opacity-100 size-[3.8rem] `} loading='lazy' src={'/images/homepage/hover-title.svg'} width={92} height={92} />
 
           {/* WEB */}
           <Image className="xmd:hidden absolute -bottom-[1.1rem] z-[-1] left-28 w-[78.875rem] h-[9.1875rem]" loading='lazy' alt="ảnh sáng tam giác" src={'/images/homepage/bg-quatrinh1.png'} width={1300} height={150} />
@@ -120,7 +120,7 @@ const QuaTrinhPhatTrien = ({ isMobile }) => {
                 onMouseEnter={() => !isMobile ? handleHover(i) : () => { }}
                 onMouseLeave={() => !isMobile ? handleLeave(i) : () => { }}
                 className="relative group cursor-pointer flex items-end gap-[0.4375rem]">
-                <Image className={` ${hover && index === i ? 'circle !opacity-100' : ''} opacity-0 size-[3.8rem] absolute -left-[1.2rem] top-[1.55rem] `} loading='lazy' alt={d} src={'/images/homepage/hover-title.svg'} width={92} height={92} />
+                <Image className={` ${hover && index === i ? 'circle !opacity-100' : ''} opacity-0 size-[3.8rem] absolute -left-[1.53rem] top-[1.75rem] `} loading='lazy' alt={d} src={'/images/homepage/hover-title.svg'} width={92} height={92} />
                 <div className={' w-[0.5rem] h-[0.5rem] bg-secondary-40 rounded-full duration-300 ease-linear absolute xmd:bottom-[0.06rem] xmd:left-[0.04rem] bottom-[0.06rem] left-[0.04rem] xmd:scale-0 scale-50' + (hover && index === i ? 'scale-100 circle1' : '')}></div>
 
                 <div className={' xmd:size-[0.22425rem] size-[0.625rem] bg-secondary-40 absolute xmd:bottom-0 xmd:left-[0.5rem] bottom-0 left-0 duration-300 ease-linear  opacity-100 ' + (hover && index === i ? "translate-x-10 !opacity-0 " : "")}></div>

@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide, } from "swiper/react";
 import { Navigation, EffectFade } from 'swiper/modules'
 import { useState, useRef } from 'react'
 import "swiper/css";
-
+import 'swiper/css/effect-fade';
 import Align from '@/components/icon/Align';
 
 const data_mini_menu = [
@@ -57,14 +57,14 @@ const BannerHome = () => {
               xmd:shadow-[0px_3px_24px_0px_rgba(0,132,255,0.04),0px_0px_32px_0px_rgba(0,119,229,0.04)]
               xmd:bg-white">
 
-                <Image className="xmd:hidden group-hover:opacity-0 duration-500 opacity-100 z-[1] size-[2rem]" priority alt="ảnh lá cờ hình tròn" src={d.img} width={32} height={32} />
+                <Image loading='lazy' className="xmd:hidden group-hover:opacity-0 duration-500 opacity-100 z-[1] size-[2rem]" alt={`ảnh lá cờ ${d.tittle} `} src={d.img} width={32} height={32} />
 
                 <div className='xmd:hidden group-hover:opacity-0 duration-700 opacity-100 flex-1 z-[1] button1 text-primary-60 uppercase'>{d.tittle}</div>
 
                 <svg className='xmd:hidden z-[1] group-hover:opacity-0 duration-700 opacity-100 size-[1.25rem]' xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                   <path d="M7.5 4.78125L13.3333 10.6146L7.5 16.4479" stroke="#132B7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <Image priority alt="ảnh background lá cờ " src={d.bg} width={360} height={60}
+                <Image loading='lazy' alt={`ảnh background lá cờ ${d.tittle} `} src={d.bg} width={360} height={60}
                   className="xmd:hidden absolute top-0 w-full h-full group-hover:opacity-100  custom-transition opacity-0 left-0 right-0 bottom-0" />
 
                 <div className='
