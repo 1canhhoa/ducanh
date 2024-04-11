@@ -86,8 +86,8 @@ const DichVuDucAnh = ({ t, isMobile }) => {
   }, [])
   const renderItems = () => {
     const result = [];
-    for (let i = 0; i < lenght; i += width) {
-      const group = isMobile ? buttonDuhoc.slice(i, i + width) : buttonDuhoc; // Lấy group phần tử theo width
+    for (let a = 0; a < lenght; a += width) {
+      const group = isMobile ? buttonDuhoc.slice(a, a + width) : buttonDuhoc; // Lấy group phần tử theo width
       const checkIsGroupOpen = group.find((f) => f.id === currentItem.id) 
       result.push(
         <div className='flex xmd:flex-col items-center'>
@@ -95,6 +95,7 @@ const DichVuDucAnh = ({ t, isMobile }) => {
             {group.map((b, i) => {
               const translateYValue = `-${i * 2.8}rem`;
               const check = hover != -1 && i === hover && checkIsGroupOpen
+
               return (
                 <a
                   className={' dichvuducanh2 z-10'}
@@ -108,12 +109,7 @@ const DichVuDucAnh = ({ t, isMobile }) => {
                       setCurrentItem(b)
                     } : () => { }}
                     onMouseEnter={isMobile ? () => { } : () => { setHover(i) }}
-                    onMouseLeave={() => {
-                      setHover(0)
-                      setInterval(() => {
-
-                      })
-                    }}
+                    onMouseLeave={() => { setHover(0) }}
                     className={(check ? '' : ' ') + ' cursor-pointer duration-300 ease-in-out  dichvuducanh3 relative  w-[11.5rem] h-[5.4375rem] '}>
 
                     <Image
@@ -132,7 +128,7 @@ const DichVuDucAnh = ({ t, isMobile }) => {
                       className={'z-0 shrink-0  absolute xmd:top-2 duration-700 w-[11.5rem] h-[5.4375rem] ease-in-out ' +
                         (check ? 'opacity-100 ' : 'opacity-0')}
                       width={185} height={90} />
-                    <MouseButton check={check} />
+                    <MouseButton index={i} check={check} />
 
                     <div className={(check ? '' : ' z-[-1] xmd:shadow-[0px_4px_8px_0px_rgba(0,0,0,0.08)] xmd:rounded-2xl bg-white') + " md:hidden  absolute top-2 left-2  w-[10.59375rem] h-[4.6875rem]"}></div>
                     <div className={' dichvuducanh4 absolute top-3 '}>
@@ -179,7 +175,7 @@ const DichVuDucAnh = ({ t, isMobile }) => {
 
   return (
     <div className='xmd:mt-[3rem] xmd:h-[40rem] z-[10]  w-full relative'>
-      <div className="flex flex-col xmd:px-[0.75rem] md:absolute top-20 left-20 z-[-1] items-start space-y-[0.5rem]">
+      <div className="flex z-[1] flex-col xmd:px-[0.75rem] md:absolute top-20 left-20 items-start space-y-[0.5rem]">
         <div className="text-greyscaletext-40 xmd:text-primary-40 text-center xmd:text-[0.875rem] text-[1rem] not-italic font-bold leading-[normal] uppercase">
           Đồng hành với học sinh
         </div>

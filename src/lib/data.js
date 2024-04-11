@@ -579,7 +579,7 @@ export const buttonDuhoc = [
 export const hocsinhnoibat = [
   {
     id: 0,
-    image: '/images/homepage/em-thao.png',
+    image: '/images/homepage/man.png',
     person: 'Lê Minh',
     comment: 'sasasacsEm tin rằng tất cả mọi người có thể làm được giống em',
     info: 'Cựu học sinh Amsterdam',
@@ -587,7 +587,7 @@ export const hocsinhnoibat = [
   },
   {
     id: 0,
-    image: '/images/homepage/em-thao.png',
+    image: '/images/homepage/man1.png',
     person: 'Lê Minh',
     comment: 'Em tin rằng tất cả mọi người có thể làm được giống em',
     info: 'Cựu học sinh Amsterdam',
@@ -595,7 +595,7 @@ export const hocsinhnoibat = [
   },
   {
     id: 0,
-    image: '/images/homepage/em-thao.png',
+    image: '/images/homepage/man.png',
     person: 'Darwin Nunez',
     comment: 'Trấn động ông nông dân trồng mít lên tiếng cực gắt',
     info: 'Cựu học sinh Amsterdam',
@@ -611,7 +611,7 @@ export const hocsinhnoibat = [
   },
   {
     id: 0,
-    image: '/images/homepage/em-thao.png',
+    image: '/images/homepage/man1.png',
     person: 'Darwin Nunez',
     comment: 'Trấn động ông nông dân trồng mít lên tiếng cực gắt',
     info: 'Cựu học sinh Amsterdam',

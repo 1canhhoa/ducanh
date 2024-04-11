@@ -1,10 +1,9 @@
 "use client"
 import Image from 'next/image'
 import { country_truonglk } from '@/lib/data'
-import React, { useState } from 'react';
+import { useState } from 'react';
 const TruongLienKet = () => {
-
-  const [data, setData] = useState(country_truonglk)
+  const [displayData, setDisplayData] = useState(country_truonglk);
 
 
   return (
@@ -24,9 +23,9 @@ const TruongLienKet = () => {
         trường học liên kết
       </div>
       <div
-        className='xmd:mt-[2rem] overflow-x-auto hidden-scrollbar absolute xmd:top-[8rem] md:bottom-0 hidden-scrollbar w-full'>
+        className='xmd:mt-[2rem] overflow-x-hidden hidden-scrollbar absolute xmd:top-[8rem] md:bottom-0 hidden-scrollbar w-full'>
         <div className=" contentlk marquee md:flex md:items-center w-max xmd:grid xmd:grid-rows-2 xmd:grid-flow-col xmd:grid-cols-3 xmd:gap-x-[2.7rem] xmd:pl-[1.4rem] ">
-          {data.map((d, i) => (
+          {displayData.map((d, i) => (
             <div key={i} className="flex  flex-col space-y-[0.75rem] md:w-40 md:h-[9.1875rem] justify-center items-center  py-[1.4375rem] md:px-[2.65625rem]">
               <Image loading='lazy' alt={`ảnh quốc gia ${d}`} src={d?.img} width={60} height={60} className="size-[3.625rem]" />
               <div className="text-primary-60 text-center xmd:text-[1rem] text-xl not-italic xmd:font-medium font-semibold leading-[150%] xmd:tracking-normal tracking-[-0.0125rem]">

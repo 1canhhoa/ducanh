@@ -4,13 +4,15 @@ import Image from 'next/image'
 import { hocsinhnoibat } from '@/lib/data';
 import NavigationCustom from '@/components/navigationcustom';
 const HocSinhTieuBieu = ({ isMobile }) => {
+  const [moveClass, setMoveClass] = useState('');
+
   const itemsRef = useRef([]);
+  const [datHocsinh, setDatHocsinh] = useState(hocsinhnoibat);
   const [active, setActive] = useState(3);
   const [divHeight, setDivHeight] = useState(null);
   const divRef = useRef(null);
-  console.log('divHeight', divHeight);
   useEffect(() => {
-    setDivHeight(document.querySelector(".text-item-" + active).clientHeight)
+    setDivHeight(document.querySelector(".text-item-" + active)?.clientHeight)
   }, [active]);
 
   useEffect(() => {
@@ -22,61 +24,50 @@ const HocSinhTieuBieu = ({ isMobile }) => {
     let items = document.querySelectorAll('.slider-hocsinh .item');
     let stt = 0;
     items[active].style.transform = `none`;
-    items[active].style.zIndex = 1;
-    items[active].style.color = 'red';
-    items[active].style.filter = 'none';
-    items[active].style.opacity = 1;
-    items[active].style.width = isMobile ? '21rem' : '25rem';
-    items[active].style.height = isMobile ? '35.8125rem' : '37.8125rem';
-    isMobile ? null : items[active].style.left = '35rem'
+    items[active].style.width = isMobile ? '21rem' : '33rem';
+    items[active].style.height = isMobile ? '35.8125rem' : '45.8125rem';
+    isMobile ? null : items[active].style.left = '32rem'
     for (var i = active + 1; i < items.length; i++) {
       stt += 3;
-      items[i].style.color = 'black';
-      items[i].style.width = '12rem';
-      items[i].style.height = '20.5rem';
+      items[i].style.width = '17rem';
+      items[i].style.height = '25.5rem';
       isMobile ? null : items[i].style.left = '40rem'
-
       items[i].style.transform = `translateX(${6.875 * stt}rem)`;
     }
 
     stt = 0;
     for (var i = active - 1; i >= 0; i--) {
       stt += 3;
-      items[i].style.color = 'black';
-      items[i].style.width = '12rem';
-      items[i].style.height = '20.5rem';
-      isMobile ? null : items[i].style.left = '15rem'
-
-      items[i].style.transform = `translateX(${-5.625 * stt}rem)`;
+      items[i].style.width = '17rem';
+      items[i].style.height = '25.5rem';
+      isMobile ? null : items[i].style.left = '15rem';
+      items[i].style.transform = `translateX(${-6.225 * stt}rem)`;
     }
-
   }
   const handleNext = () => {
+    setMoveClass('next')
     setActive(prevActive => (prevActive + 1 < itemsRef.current.length ? prevActive + 1 : prevActive));
     loadShow();
   }
 
   const handlePrev = () => {
+    setMoveClass('prev')
     setActive(prevActive => (prevActive - 1 >= 0 ? prevActive - 1 : prevActive));
     loadShow();
+
   }
 
-  // autoplay
-  const [autoplay, setAutoPlay] = useState('next')
-  useEffect(() => {
-    if (active === hocsinhnoibat.length - 1) {
-      setAutoPlay('prev')
-    }
-    if (active === 0) {
-      setAutoPlay('next')
-    }
-  }, [active]);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      autoplay === 'prev' ? handlePrev() : handleNext()
-    }, 8000);
-    return () => clearInterval(interval);
-  }, [autoplay]);
+  // const shiftPrev = (copy) => {
+  //   let lastcard = copy.pop();
+  //   copy.splice(0, 0, lastcard);
+  //   setDatHocsinh(copy);
+  // }
+
+  // const shiftNext = (copy) => {
+  //   let firstcard = copy.shift();//cat dau
+  //   copy.splice(copy.length, 0, firstcard);
+  //   setDatHocsinh(copy);
+  // }
   return (
     <div className='w-full xmd:mt-[3rem] mt-[6rem] relative'>
 
@@ -103,12 +94,12 @@ const HocSinhTieuBieu = ({ isMobile }) => {
           top: `calc(3.8rem + 1.8125rem + 1rem + ${divHeight}px)`
         }}
         className=" flex md:hidden absolute top-[10.5rem]  left-1/2 -translate-x-1/2 z-[1000] items-center space-x-[0.4rem]">
-        {hocsinhnoibat.map((_, i) => (
+        {datHocsinh.map((_, i) => (
           <div key={i} className={(active === i ? " bg-[#FFF] " : " opacity-40 bg-[#FFF]") + " w-1.5 h-1.5 rounded-full"}></div>
         ))}
       </div>
-      {hocsinhnoibat.map((c, index) => (
-        <div key={index} className={"inline-flex absolute xmd:flex-col xmd:space-y-[1rem] xmd:top-[2.81rem] top-[22%] xmd:left-[1.25rem] md:left-1/2 md:-translate-x-1/2  items-start  md:p-[1.8125rem] duration-300 ease-linear " + (index !== active ? "opacity-0" : " opacity-100")}>
+      {datHocsinh.map((c, index) => (
+        <div key={index} className={"inline-flex absolute xmd:flex-col xmd:space-y-[1rem] xmd:top-[2.81rem] top-[22%] xmd:left-[1.25rem] md:left-[48%] md:-translate-x-1/2  items-start  md:p-[1.8125rem] duration-300 ease-linear " + (index !== active ? "opacity-0" : " opacity-100")}>
           <Image loading='lazy' alt='dấu quotes trích dẫn' src='/images/homepage/quotes.png'
             className='w-[2.5rem] h-[1.75rem] shrink-0' width={40} height={28} />
           <div className='xmd:hidden w-5 z-50 h-[16rem]'>
@@ -136,7 +127,7 @@ const HocSinhTieuBieu = ({ isMobile }) => {
         style={{
           top: !isMobile ? `calc(11.8rem + 1.8125rem + 1rem + ${divHeight}px)` : `calc(5.8rem + 1.8125rem + 1rem + ${divHeight}px)`
         }}
-        className=" duration-300 ease-linear absolute top-[10.5rem] xmd:left-1/2  left-[47.5%] -translate-x-1/2 flex items-start self-stretch space-x-[0.8125rem]">
+        className=" duration-300 ease-linear absolute top-[10.5rem] xmd:left-1/2  left-[45.6%] -translate-x-1/2 flex items-start self-stretch space-x-[0.8125rem]">
         <button className=' relative flex justify-center items-center xmd:h-[2.6rem] h-[3rem] xmd:py-[0.9375rem] py-[0.75rem] xmd:px-[2.5rem] px-[1.875rem] rounded-[0.625rem]  bg-linear-l5  '>
           <div className='flex justify-center items-center absolute xmd: xmd:h-[92%] top-1/2  -translate-y-1/2 left-1/2 -translate-x-1/2 h-[2.7rem] w-[97%] rounded-[0.525rem] bg-white   '>
           </div>
@@ -157,12 +148,10 @@ const HocSinhTieuBieu = ({ isMobile }) => {
           </div>
         </button>
       </div>
-      <div className=" slider-hocsinh">
-        <Image loading='lazy' width={392} height={730} alt="ảnh học sinh 1" className="item xmd:!bottom-[-5.1rem] !bottom-[-3.1rem]" ref={el => itemsRef.current[0] = el} src="/images/homepage/man.png" />
-        <Image loading='lazy' width={392} height={730} alt="ảnh học sinh 2" className="item xmd:!bottom-[-3.5rem] !bottom-[-3.1rem]" ref={el => itemsRef.current[1] = el} src="/images/homepage/man1.png" />
-        <Image loading='lazy' width={392} height={730} alt="ảnh học sinh 3" className="item xmd:!bottom-[-5.1rem] !bottom-[-3.1rem]" ref={el => itemsRef.current[2] = el} src="/images/homepage/man.png" />
-        <Image loading='lazy' width={392} height={730} alt="ảnh học sinh 4" className="item xmd:!bottom-[-3.5rem] !bottom-[-3.1rem]" ref={el => itemsRef.current[3] = el} src="/images/homepage/man1.png" />
-        <Image loading='lazy' width={392} height={730} alt="ảnh học sinh 5" className="item xmd:!bottom-[-5.1rem] !bottom-[-3.1rem]" ref={el => itemsRef.current[4] = el} src="/images/homepage/man.png" />
+      <div className=" slider-hocsinh" >
+        {datHocsinh.map((d, i) => (
+          <Image key={i} loading='lazy' width={392} height={730} alt={`ảnh học sinh ${i}`} className="item xmd:!bottom-[-5.1rem] !bottom-[-3.1rem]" ref={el => itemsRef.current[i] = el} src={d.image} />
+        ))}
       </div>
       <div className='  absolute h-full w-[6.7rem] xmd:top-[50%] top-[35%] -translate-y-1/2 xmd:right-[2rem] right-[5rem] z-[100] pointer-events-none'>
         <NavigationCustom
