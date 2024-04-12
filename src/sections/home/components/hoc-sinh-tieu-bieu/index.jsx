@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
 import { hocsinhnoibat } from '@/lib/data';
 import NavigationCustom from '@/components/navigationcustom';
 const HocSinhTieuBieu = ({ isMobile }) => {
@@ -22,7 +22,7 @@ const HocSinhTieuBieu = ({ isMobile }) => {
   // next prev active
   function loadShow() {
     let items = document.querySelectorAll('.slider-hocsinh .item');
-    let stt = 0;
+    let stt = 0;  
     items[active].style.transform = `none`;
     items[active].style.width = isMobile ? '21rem' : '33rem';
     items[active].style.height = isMobile ? '35.8125rem' : '45.8125rem';
@@ -54,7 +54,6 @@ const HocSinhTieuBieu = ({ isMobile }) => {
     setMoveClass('prev')
     setActive(prevActive => (prevActive - 1 >= 0 ? prevActive - 1 : prevActive));
     loadShow();
-
   }
 
   // const shiftPrev = (copy) => {
@@ -68,6 +67,24 @@ const HocSinhTieuBieu = ({ isMobile }) => {
   //   copy.splice(copy.length, 0, firstcard);
   //   setDatHocsinh(copy);
   // }
+  const carouselRef = useRef(null);
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    const firstCardWidth = carousel?.querySelector(".item").offsetWidth;
+    // const carouselChildrens = [...carousel?.children];
+    console.log('carousel', carousel?.length);
+    // let cardPerView = Math.round(carousel?.offsetWidth / firstCardWidth);
+
+    // // Insert copies of the last few cards to beginning of carousel for infinite scrolling
+    // carouselChildrens?.slice(-cardPerView)?.reverse()?.forEach(card => {
+    //   carousel?.insertAdjacentHTML("afterbegin", card.outerHTML);
+    // });
+
+    // // Insert copies of the first few cards to end of carousel for infinite scrolling
+    // carouselChildrens?.slice(0, cardPerView)?.forEach(card => {
+    //   carousel?.insertAdjacentHTML("beforeend", card.outerHTML);
+    // });
+  }, [])
   return (
     <div className='w-full xmd:mt-[3rem] mt-[6rem] relative'>
 
@@ -148,9 +165,10 @@ const HocSinhTieuBieu = ({ isMobile }) => {
           </div>
         </button>
       </div>
-      <div className=" slider-hocsinh" >
+      <div ref={carouselRef} className=" slider-hocsinh" >
         {datHocsinh.map((d, i) => (
-          <Image key={i} loading='lazy' width={392} height={730} alt={`ảnh học sinh ${i}`} className="item xmd:!bottom-[-5.1rem] !bottom-[-3.1rem]" ref={el => itemsRef.current[i] = el} src={d.image} />
+          <Image key={i} loading='lazy' width={392} height={730} alt={`ảnh học sinh ${i}`}
+            className="bd item xmd:!bottom-[-5.1rem] !bottom-[-3.1rem]" ref={el => itemsRef.current[i] = el} src={d.image} />
         ))}
       </div>
       <div className='  absolute h-full w-[6.7rem] xmd:top-[50%] top-[35%] -translate-y-1/2 xmd:right-[2rem] right-[5rem] z-[100] pointer-events-none'>

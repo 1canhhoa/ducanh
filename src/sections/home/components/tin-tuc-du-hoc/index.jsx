@@ -5,7 +5,7 @@ import Title from '@/components/Title'
 import NavigationCustom from '@/components/navigationcustom'
 import SlideTinTucNoiBat from './SlideTinTucNoiBat'
 import SLideBaiViet from './SLideBaiViet'
-const TinTicDuHoc = () => {
+const TinTicDuHoc = ({ dataTintucNoibat }) => {
   const swiperRef = useRef(null)
   const handleNextSlide = () => {
     swiperRef.current?.slideNext()
@@ -41,11 +41,9 @@ const TinTicDuHoc = () => {
           </div>
         </div>
       </div>
-      <div className="w-full ">
-        <div className=" flex bg-elevation-blue xmd:flex-col justify-start items-center w-full">
-          <SlideTinTucNoiBat />
-          <SLideBaiViet swiperRef={swiperRef} />
-        </div>
+      <div className=" flex bg-elevation-blue xmd:flex-col justify-start items-start w-full">
+        <SlideTinTucNoiBat dataTintucNoibat={dataTintucNoibat} />
+        <SLideBaiViet swiperRef={swiperRef} />
       </div>
       <div className=' md:hidden relative w-[6.7rem] pt-[5rem] z-50 pointer-events-none'>
         <NavigationCustom
