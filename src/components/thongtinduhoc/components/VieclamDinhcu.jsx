@@ -2,7 +2,10 @@ import Title from '@/components/Title'
 
 export default function VieclamDinhcu({text}) {
   return (
-    <section className='mt-[8.12rem] xlg:mt-[3rem] xlg:px-[5.3rem] xmd:px-[0.75rem] w-full flex justify-center'>
+    <section
+      id='viec_lam'
+      className='mt-[8.12rem] xlg:mt-[3rem] xlg:px-[5.3rem] xmd:px-[0.75rem] w-full flex justify-center'
+    >
       <div className='flex flex-col lg:w-[76.6875rem] w-full items-start'>
         <h1 className='title xmd:mb32 relative w-fit mb-[2.8rem] xmd:mb-[1.5rem]'>
           {text.information.job.title}

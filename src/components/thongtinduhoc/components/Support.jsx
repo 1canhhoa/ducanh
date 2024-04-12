@@ -16,7 +16,10 @@ import clsx from 'clsx'
 export default function Support({text}) {
   const [indexActive, setIndexActive] = useState(1)
   return (
-    <section className='w-full lg:space-y-[5rem] lg:pt-[4.05rem] flex flex-col items-center'>
+    <section
+      id='ho_tro'
+      className='w-full lg:space-y-[5rem] lg:pt-[4.05rem] flex flex-col items-center'
+    >
       <div className='w-full xmd:px-[0.75rem] xlg:px-[5.3rem] px-[11.675rem] py-[4rem] flex flex-col items-start lg:bg-background-elevation-10'>
         <h1 className='title xmd:mb32 relative w-fit'>
           {text.information.support.title1}
@@ -83,7 +86,10 @@ export default function Support({text}) {
           </div>
         </div>
       </div>
-      <div className='xlg:w-full lg:w-[76.6875rem] xlg:px-[5.3rem] xmd:flex xmd:flex-col xmd:px-[0.75rem] lg:h-[54.375rem]'>
+      <div
+        id='huong_dan'
+        className='xlg:w-full lg:w-[76.6875rem] xlg:px-[5.3rem] xmd:flex xmd:flex-col xmd:px-[0.75rem] lg:h-[54.375rem]'
+      >
         <p className='title xmd:mb32 relative w-fit xmd:w-[18.25rem]'>
           {text.information.support.title2}
           <span className='size-[0.625rem] bg-secondary-40 lg:absolute bottom-[0.625rem] right-[-1.125rem] '></span>
@@ -236,7 +242,7 @@ export default function Support({text}) {
               type='single'
               collapsible
             >
-              <AccordionItem value='item-1'>
+              <AccordionItem value={1}>
                 <AccordionTrigger className='text-primary-50 h6'>
                   Giấy tờ
                 </AccordionTrigger>
@@ -258,7 +264,7 @@ export default function Support({text}) {
                   </ul>
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem value='item-2'>
+              <AccordionItem value={2}>
                 <AccordionTrigger className='text-primary-50 h6'>
                   Giấy tờ 1
                 </AccordionTrigger>
