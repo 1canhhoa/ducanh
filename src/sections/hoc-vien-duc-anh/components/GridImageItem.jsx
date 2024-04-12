@@ -25,7 +25,7 @@ const GridImageItem = ({src, index}) => {
           heightClass,
         ])}
       >
-        <div className='bg-[#0629A799] absolute top-0 left-0 h-full w-full'></div>
+        <div className='bg-[rgba(6,41,167,0.6)] absolute top-0 left-0 h-full w-full'></div>
         <Image
           src={src}
           width={160}
@@ -44,7 +44,7 @@ const GridImageItem = ({src, index}) => {
         <div
           className={clsx(widthClass, 'relative overflow-hidden rounded-lg')}
         >
-          <div className='bg-[#0629A799] absolute top-0 left-0 h-full w-full'></div>
+          <div className='bg-[rgba(6,41,167,0.6)] absolute top-0 left-0 h-full w-full'></div>
           <Image
             src={src}
             width={160}
@@ -63,7 +63,7 @@ const GridImageItem = ({src, index}) => {
         <div
           className={clsx(widthClass, 'relative overflow-hidden rounded-lg')}
         >
-          <div className='bg-[#0629A799] absolute top-0 left-0 h-full w-full'></div>
+          <div className='bg-[rgba(6,41,167,0.6)] absolute top-0 left-0 h-full w-full'></div>
           <Image
             src={src}
             width={160}
@@ -91,7 +91,7 @@ const GridImageItem = ({src, index}) => {
             widthClass,
           )}
         >
-          <div className='bg-[#0629A799] absolute top-0 left-0 h-full w-full'></div>
+          <div className='bg-[rgba(6,41,167,0.6)] absolute top-0 left-0 h-full w-full'></div>
           <Image
             src={src}
             width={160}
@@ -112,7 +112,7 @@ const GridImageItem = ({src, index}) => {
         'overflow-hidden rounded-lg relative',
       ])}
     >
-      <div className='bg-[#0629A799] absolute top-0 left-0 h-full w-full'></div>
+      <div className='bg-[rgba(6,41,167,0.6)] absolute top-0 left-0 h-full w-full'></div>
       <Image
         src={src}
         width={160}

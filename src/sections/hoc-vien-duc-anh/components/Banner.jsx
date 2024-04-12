@@ -17,11 +17,15 @@ const Banner = ({lang, data}) => {
         width={416}
         height={531}
         priority
-        className='xmd:w-[8rem] xmd:h-[10rem] w-[26rem] h-[33.1875rem] object-contain absolute bottom-0 xmd:left-[8.5rem] left-[30rem]'
+        className='xmd:w-[8rem] xmd:h-[10rem] w-[26rem] h-[33.1875rem] object-contain absolute bottom-0 xmd:left-[8.5rem] tablet:left-[44rem] left-[30rem]'
         alt='hoc-vien-duc-anh'
       />
       {/* text 1 */}
-      <div className='bg-white rounded-[0.875rem] absolute top-[2.94rem] xmd:left-[7.5rem] xmd:top-[-1.5rem] xmd:w-[4rem] left-[26rem] w-[11rem] min-h-[7.2rem]'>
+      <div
+        className='bg-white rounded-[0.875rem] absolute top-[2.94rem] xmd:left-[7.5rem] xmd:top-[-1.5rem] xmd:w-[4rem]
+        tablet:top-[4rem] tablet:left-[38rem]
+        left-[26rem] w-[11rem] min-h-[7.2rem]'
+      >
         <Image
           src={'/images/hoc-vien-duc-anh/frame1.png'}
           alt={'hoc-vien-duc-anh'}
@@ -67,7 +71,7 @@ const Banner = ({lang, data}) => {
         </div>
       </div>
       {/* text 2 */}
-      <div className='bg-white absolute rounded-[0.875rem] xmd:top-0 xmd:left-0 xmd:w-[8rem] top-[2.94rem] left-[54.83rem] w-[16.5rem] min-h-[11.6rem]'>
+      <div className='bg-white absolute rounded-[0.875rem] xmd:top-0 xmd:left-0 xmd:w-[8rem] top-[2.94rem] tablet:left-[66.83rem] left-[54.83rem] w-[16.5rem] min-h-[11.6rem]'>
         <Image
           src={'/images/hoc-vien-duc-anh/frame2.png'}
           alt={'hoc-vien-duc-anh'}

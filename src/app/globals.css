@@ -2,21 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+.bd {
+  @apply border border-black
+}
+
 @layer components {
   .h4 {
-    @apply text-[1.5rem] leading-[1.2] tracking-[-0.0075rem]
+    @apply text-[1.5rem] leading-[1.2] tracking-[-0.0075rem];
   }
 
   .sub1 {
     @apply text-[0.875rem] leading-[1];
   }
 
+  .sub2 {
+    @apply text-[0.75rem] leading-[1];
+  }
+
+  .body12 {
+    @apply text-[0.75rem] leading-[1.2];
+  }
+
   .body14 {
-    @apply text-[0.875rem] leading-[1.5];
+    @apply text-[0.875rem] leading-[1.7];
   }
 
   .body16 {
     @apply text-[1rem] leading-[1.5];
+  }
+
+  .body18 {
+    @apply text-[1.125rem] leading-[1.6];
   }
 
   .sub18 {
@@ -31,16 +47,20 @@
     @apply text-[1.5rem] tracking-[-0.015rem] leading-[1.5];
   }
 
+  .caption2 {
+    @apply text-[0.625rem] leading-[1];
+
+  }
+
+
   .label1 {
     @apply text-[0.875rem] leading-[1] tracking-[0.00875rem];
   }
 
+
+
   .title {
     @apply text-[3rem] font-extrabold leading-[1.2] -tracking-[0.03rem] text-primary-50;
-  }
-
-  .body18 {
-    @apply text-[1.125rem] leading-[1.6];
   }
 
   .title-mobile {
@@ -48,7 +68,7 @@
   }
 
   .button1 {
-    @apply text-[0.875rrem] font-bold leading-[1] tracking-[0.01313rem];
+    @apply text-[0.875rem] font-bold leading-[1] tracking-[0.01313rem];
   }
 
   .button2 {
@@ -103,22 +123,21 @@ button {
 }
 
 html {
+  /* overflow-x: hidden; */
   font-size: 1vw;
 }
 
 @media (max-width: 767px) {
   html {
     font-size: 4.26666vw;
-
-    @media (max-width: 767px) {
-      font-size: 4.26666vw;
-    }
-
-    @media (min-width: 1900px) {
-      font-size: 16px;
-    }
   }
 }
+
+/* @media (min-width: 1900px) {
+  html{
+    font-size: 16px;
+  };
+} */
 
 body {
   background: white;
@@ -173,4 +192,8 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }

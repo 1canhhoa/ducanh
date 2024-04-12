@@ -10,16 +10,16 @@ module.exports = {
   prefix: '',
   theme: {
     screens: {
-      md: '768px',
-      lg: '1024px',
-      xl: '1367px',
-      '2xl': '1600px',
       '3xl': '1800px',
-      xmd: {max: '767px'},
-      xlg: {max: '1023px'},
-      xxl: {max: '1366px'},
-      x2xl: {max: '1599px'},
+      '2xl': '1600px',
+      xl: '1367px',
+      lg: '1024px',
+      md: '768px',
       x3xl: {max: '1799px'},
+      x2xl: {max: '1599px'},
+      xxl: {max: '1366px'},
+      xlg: {max: '1023px'},
+      xmd: {max: '767px'},
       tablet: {min: '768px', max: '1023px'},
     },
     container: {
@@ -57,14 +57,21 @@ module.exports = {
         'greyscaletext-70': '#313131',
         'greyscaletext-80': '#262626',
         'secondary-5': '#FFF2F3',
+        'secondary-10': '#FFDDDE',
         'background-elevation-10': '#FAFAFA',
         'background-elevation-tag-chip': '#EBF5FA',
+        'elevation-tag-chip': '#EBF5FA',
+        'elevation-blue': '#FBFBFF',
+        'elevation-20': '#F8F8F8',
         'linear-l9': '#6196F6',
         'linear-l6': 'linear-gradient(170deg, #2E6BC6 10.78%, #29A4EA 81.3%)',
       },
-      backgroundImage: (theme) => ({
-        lll: 'linear-gradient(89deg, rgba(80,150,255,0.12) 0.43%, rgba(41,164,234,0.06) 99.57%)',
-      }),
+      backgroundImage: {
+        'linear-l5':
+          'linear-gradient(95deg, #2E6BC6 9.83%, #2E6BC6 35.38%, #29A4EA 86.69%)',
+        'linear-l1':
+          'linear-gradient(95deg, #FC4D54 -29.92%, #CB2128 38.6%, #CB2128 85.49%)',
+      },
       keyframes: {
         'accordion-down': {
           from: {height: '0'},
