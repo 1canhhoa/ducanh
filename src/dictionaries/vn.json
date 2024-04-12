@@ -60,6 +60,7 @@
     "h2_secondary_schools": "Các trường phổ thông tại Anh",
     "h2_secondary_schools_mb": "Các trường phổ thông tại Anh Quốc",
     "h2_training_institutes": "Các viện đào tạo nghề tại Anh",
+
     "h2_related_posts": "Bài viết liên quan",
     "h2_scholarship_en": "Học bổng du học tại Anh",
     "h2_job_settled": "Việc làm-Định cư tại Anh"
@@ -236,6 +237,7 @@
     }
   },
   "study_abroad_guide": {
-    "main_content": "Nội dung ch"
+    "main_content": "Nội dung chính",
+    "h2_related_posts": "Bài viết liên quan"
   }
 }
