@@ -6,7 +6,7 @@ const Pagination = ({page = 1, perpage = 4, total}) => {
     pages.push(i)
   }
   return (
-    <section className='p-[1.3125rem_2rem_0rem_2rem] bg-white mt-[2.4rem]'>
+    <section className='p-[1.3125rem_2rem_0rem_2rem] bg-white mt-[2.4rem] w-full'>
       <nav className='pagination-wrapper flex items-center justify-center'>
         <button className='p-[0.69269rem] grid place-items-center mr-[0.5rem]'>
           <Image
@@ -18,12 +18,12 @@ const Pagination = ({page = 1, perpage = 4, total}) => {
             alt='prev-btn'
           />
         </button>
-        <button className='rounded-lg bg-primary-60 border border-[rgba(19, 43, 125, 0.20)] mr-[0.5rem] p-[0.625rem] flex items-center'>
-          <div className='w-[1.125rem] h-[1.125rem] text-white text-[0.875rem] font-bold uppercase leading-[1.125rem]'>
+        <button className='rounded-lg bg-primary-5 border border-primary-10 mr-[0.5rem] p-[0.625rem] flex items-center'>
+          <div className='w-[1.125rem] h-[1.125rem] text-primary-50 text-[0.875rem] font-bold uppercase leading-[1.125rem]'>
             1
           </div>
         </button>
-        <button className='rounded-lg bg-white border border-[rgba(19, 43, 125, 0.20)] mr-[0.5rem] p-[0.625rem] flex items-center'>
+        <button className='rounded-lg bg-white border border-primary-10 mr-[0.5rem] p-[0.625rem] flex items-center'>
           <div className='w-[1.125rem] h-[1.125rem] text-primary-50 text-[0.875rem] font-bold uppercase leading-[1.125rem]'>
             2
           </div>
@@ -31,7 +31,7 @@ const Pagination = ({page = 1, perpage = 4, total}) => {
         <span className='inline-block mr-[0.5rem] p-[0.625rem] text-primary-50 text-[0.875rem] font-bold uppercase leading-[1.125rem]'>
           ...
         </span>
-        <button className='rounded-lg bg-white border border-[rgba(19, 43, 125, 0.20)] mr-[0.5rem] p-[0.625rem] flex items-center'>
+        <button className='rounded-lg bg-white border border-primary-10 mr-[0.5rem] p-[0.625rem] flex items-center'>
           <div className='w-[1.125rem] h-[1.125rem] text-primary-50 text-[0.875rem] font-bold uppercase leading-[1.125rem]'>
             3
           </div>

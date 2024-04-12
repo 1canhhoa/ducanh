@@ -4,12 +4,13 @@ import Structure2 from './Structure2'
 import Paragraph from './Paragraph'
 import SectionWrapper from './SectionWrapper'
 
-const Reason = ({lang, id}) => {
+const Reason = ({lang, id = 'reason'}) => {
   return (
     <SectionWrapper
       id={id}
-      h2Text={lang.h2_reason}
+      title={lang.h2_reason}
       shortMargin
+      className='mt-0'
     >
       <Structure1
         separatorClass={'mt-[0.75rem] mb-[1rem]'}

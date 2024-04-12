@@ -15,7 +15,7 @@ const TitleOfficeOrLanguage = ({ t }) => {
 }
 
 const Office = ({ t }) => {
-  return <div className="w-[77rem]  flex flex-col items-start space-y-[1.81rem]">
+  return <section className="md:w-[77rem]  flex flex-col items-start space-y-[1.81rem]">
     <Title title={t.office} />
     <div className="flex flex-col items-start space-y-[2rem] w-full">
       <OfficeInformation t={t} />
@@ -24,7 +24,7 @@ const Office = ({ t }) => {
         <CentersLanguage />
       </div>
     </div>
-  </div>
+  </section>
 
 }
 

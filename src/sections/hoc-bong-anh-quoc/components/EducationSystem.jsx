@@ -7,7 +7,7 @@ const EducationSystem = ({lang, id}) => {
   return (
     <SectionWrapper
       id={id}
-      h2Text={lang.h2_education_system}
+      title={lang.h2_education_system}
     >
       <div
         className='bg-primary-40 xmd:h-[33.4rem] h-[18rem] rounded-xl xmd:px-[0.84rem] xmd:py-[0.81rem] px-[3rem]
