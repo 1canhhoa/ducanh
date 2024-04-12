@@ -8,7 +8,7 @@ import {
 } from '@/components/ui/accordion'
 import clsx from 'clsx'
 
-export default function CradDrop({index, width, column}) {
+export default function CradDrop({index, only = false, width, column}) {
   return (
     <Accordion
       className={clsx('accor', width ? `w-[${width}rem]` : 'w-full')}
@@ -17,7 +17,7 @@ export default function CradDrop({index, width, column}) {
     >
       <AccordionItem
         className='border-[1px] border-[rgba(52,104,205,0.40)] py-[1rem] pl-[1.5rem] pr-[1rem] border-solid rounded-[0.75rem]'
-        value='item-1'
+        value={index + 1}
       >
         <AccordionTrigger className='accortrigger text-primary-50 sub18 xmd:text-[1.125rem] xlg:text-[1.5rem] font-bold p-0'>
           {column ? index + column : index + 1}. Năng lực hỗ trợ sinh viên tốt:

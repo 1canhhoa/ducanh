@@ -14,8 +14,8 @@ export default function LyDoChonDucAnh({text}) {
           <div className='w-[31.3125rem] xmd:w-[23.4375rem] xmd:px-[0.75rem] flex flex-col'>
             <h1 className='title relative w-fit xmd:mb32'>
               {text.information.title_1}
-              <div className='size-[0.625rem] bg-secondary-40 absolute bottom-[0.625rem] right-[-1.125rem]'></div>
             </h1>
+            <div className=''></div>
             <p className='lg:w-[31.3125rem] mb-[1rem] mt-[1.5rem] body16 xmd:text-[1rem] xlg:text-[1.5rem] font-bold text-greyscaletext-50'>
               {text.information.text_title_1.text1}
             </p>
@@ -92,7 +92,7 @@ export default function LyDoChonDucAnh({text}) {
           width={677.139}
           height={446.75}
         />
-        <div className='flex relative mt-[10rem] xmd:mt-[2rem] z-10 flex-col justify-center items-center'>
+        <div className=' hidden relative mt-[10rem] xmd:mt-[2rem] z-10 flex-col justify-center items-center'>
           <Image
             className='xmd:h-[1.5625rem] xmd:w-[2.125rem]'
             alt='icon'

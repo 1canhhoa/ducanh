@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function QuyDoiDiemGPA({text}) {
   return (
     <section
-      id='dich_vu'
+      id='quy_doi'
       className='w-full'
     >
       <div className='flex flex-col items-start space-y-[2rem] lg:w-[76.4375rem] lg:mx-auto xmd:px-[0.75rem] xlg:px-[5.3rem] '>

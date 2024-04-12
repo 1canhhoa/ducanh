@@ -2,7 +2,10 @@ import Image from 'next/image'
 
 export default function LienHe({text}) {
   return (
-    <section className='w-full xmd:mt-[1.19rem]'>
+    <section
+      id='lien_he'
+      className='w-full xmd:mt-[1.19rem]'
+    >
       <div className='w-full relative flex justify-center items-center xmd:px-[0.75rem] xlg:px-[5.3rem] px-[11.5625rem] pt-[3.62rem] pb-[5.62rem] h-[34.25rem]'>
         <Image
           className='xmd:hidden xlg:w-full w-[76.875rem] h-[25rem]'

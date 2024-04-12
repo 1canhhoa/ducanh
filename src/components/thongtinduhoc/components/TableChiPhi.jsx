@@ -4,7 +4,7 @@ export default async function TableChiPhi({text}) {
       <h2 className='sub24 font-bold text-center text-primary-50'>
         {text.information.h2_related_costs.title}
       </h2>
-      <div className='w-full border-[1px] border-solid border-primary-50 rounded-[0.75rem]'>
+      <div className='xmd:overflow-x-auto w-full border-[1px] border-solid border-primary-50 rounded-[0.75rem]'>
         <table
           id='table_chiphi'
           className=''
@@ -17,7 +17,7 @@ export default async function TableChiPhi({text}) {
               <th className='w-[23.6875rem] h-full py-[1rem] p-[1rem] flex justify-start items-center leading-[1.3] body16 font-bold text-white '>
                 {text.information.h2_related_costs.title2_table}
               </th>
-              <th className='flex-1 h-full py-[1rem] pr-[1rem] pl-[2rem] flex justify-start items-center leading-[1.3] body16 font-bold text-white '>
+              <th className='flex-1 xmd:w-[27rem] h-full py-[1rem] pr-[1rem] pl-[2rem] flex justify-start items-center leading-[1.3] body16 font-bold text-white '>
                 {text.information.h2_related_costs.title3_table}
               </th>
             </tr>
@@ -33,7 +33,7 @@ export default async function TableChiPhi({text}) {
                   Tự chi hoặc ủy quyền cho công ty Đức Anh thực hiện
                 </p>
               </td>
-              <td className='flex-1 h-[5.375rem] py-[1rem] px-[2rem] flex flex-col items-center justify-center'>
+              <td className='flex-1 xmd:w-[27rem] h-[5.375rem] py-[1rem] px-[2rem] flex flex-col items-center justify-center'>
                 <p className='text-greyscaletext-70 font-normal text-[0.875rem] flex-1'>
                   Chi trả cho các loại giao dịch bằng điện thoại, email, thư từ,
                   khác... đến các nơi liên quan đến hồ sơ du học: trường, học
@@ -53,7 +53,7 @@ export default async function TableChiPhi({text}) {
                   Tự chi hoặc ủy quyền cho công ty Đức Anh thực hiện
                 </p>
               </td>
-              <td className='flex-1 h-[5.375rem] py-[1rem] px-[2rem] flex flex-col items-center justify-center'>
+              <td className='flex-1 xmd:w-[27rem] h-[5.375rem] py-[1rem] px-[2rem] flex flex-col items-center justify-center'>
                 <p className=' text-greyscaletext-70 font-normal text-[0.875rem] flex-1'>
                   Chi trả cho các loại giao dịch bằng điện thoại, email, thư từ,
                   khác... đến các nơi liên quan đến hồ sơ du học: trường, học
@@ -73,7 +73,7 @@ export default async function TableChiPhi({text}) {
                   Tự chi hoặc ủy quyền cho công ty Đức Anh thực hiện
                 </p>
               </td>
-              <td className='flex-1 h-[5.375rem] py-[1rem] px-[2rem] flex flex-col items-center justify-center'>
+              <td className='flex-1 xmd:w-[27rem] h-[5.375rem] py-[1rem] px-[2rem] flex flex-col items-center justify-center'>
                 <p className=' text-greyscaletext-70 font-normal text-[0.875rem] flex-1'>
                   Chi trả cho các loại giao dịch bằng điện thoại, email, thư từ,
                   khác... đến các nơi liên quan đến hồ sơ du học: trường, học

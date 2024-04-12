@@ -34,17 +34,17 @@ export default function ChiPhi({text, isMobile}) {
             {text.information.title_7.text_banner}
           </p>
         </div>
-        {!isMobile ? (
+        <TableChiPhi text={text} />
+        <TableDuDoan text={text} />
+        {/* {!isMobile ? (
           <>
-            <TableChiPhi text={text} />
-            <TableDuDoan text={text} />
           </>
         ) : (
           <>
             <TableChiPhiMb text={text} />
             <TableDuDoanMb text={text} />
           </>
-        )}
+        )} */}
       </div>
     </section>
   )

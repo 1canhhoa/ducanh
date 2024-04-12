@@ -4,7 +4,7 @@ export default function TableDuDoan({text}) {
       <h2 className='sub24 font-bold text-center text-primary-50'>
         {text.information.h2_predicted_costs.title}
       </h2>
-      <div className='w-full border-[1px] border-solid border-primary-50 rounded-[0.75rem]'>
+      <div className='xmd:overflow-x-auto w-full border-[1px] border-solid border-primary-50 rounded-[0.75rem]'>
         <table
           id='table_dudoan'
           className='w-full'
@@ -26,7 +26,7 @@ export default function TableDuDoan({text}) {
               <th className='w-[11.875rem] h-full py-[1rem] pr-[1rem] pl-[2rem] flex justify-center items-center leading-[1.3] body16 font-bold text-white '>
                 {text.information.h2_predicted_costs.title3_table}
               </th>
-              <th className='flex-1 h-full py-[1rem] pr-[1rem] pl-[2rem] flex justify-center items-center leading-[1.3] body16 font-bold text-white '>
+              <th className='flex-1 xmd:w-[11.875rem] h-full py-[1rem] pr-[1rem] pl-[2rem] flex justify-center items-center leading-[1.3] body16 font-bold text-white '>
                 {text.information.h2_predicted_costs.title3_table}
               </th>
             </tr>
@@ -56,7 +56,7 @@ export default function TableDuDoan({text}) {
                   12.000-30.000
                 </p>
               </td>
-              <td className='flex-1 h-[3.5rem] py-[1rem] px-[2rem] flex flex-col items-center justify-center'>
+              <td className='flex-1 xmd:w-[11.875rem] h-[3.5rem] py-[1rem] px-[2rem] flex flex-col items-center justify-center'>
                 <p className='text-greyscaletext-70 font-normal text-[0.875rem] flex-1'>
                   12.000-30.000
                 </p>
@@ -65,11 +65,11 @@ export default function TableDuDoan({text}) {
           </tbody>
         </table>
       </div>
-      <div className='flex flex-col items-start justify-center mt-[1.5rem]'>
-        <span className='w-[76.875rem] text-[0.875rem] font-medium leading-[1.7] text-primary-50'>
+      <div className='flex xmd:w-full flex-col items-start justify-center mt-[1.5rem]'>
+        <span className='w-[76.875rem] xmd:w-full text-[0.875rem] font-medium leading-[1.7] text-primary-50'>
           {text.information.h2_predicted_costs.note1}
         </span>
-        <span className='w-[76.875rem] text-[0.875rem] font-medium leading-[1.7] text-primary-50'>
+        <span className='w-[76.875rem] xmd:w-full text-[0.875rem] font-medium leading-[1.7] text-primary-50'>
           {text.information.h2_predicted_costs.note2}
         </span>
       </div>
