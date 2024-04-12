@@ -7,7 +7,7 @@ const TrainingInstitutes = ({lang, id}) => {
   return (
     <SectionWrapper
       id={id}
-      h2Text={lang.h2_visa_study}
+      title={lang.h2_visa_study}
     >
       <p className='text-[1rem] font-semibold leading-[170%] text-primary-50 my-[1.25rem]'>
         Như đã đề cập, chương trình phổ thông tại Anh có thể 13 năm (A-level)

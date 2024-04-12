@@ -1,6 +1,12 @@
-const SuggestedSection = ({tags = [], suggests = []}) => {
+import clsx from 'clsx'
+
+const SuggestedSection = ({
+  tags = [],
+  suggests = [],
+  className = 'mt-[2.25rem]',
+}) => {
   return (
-    <section className='mt-[2.25rem] xmd:mx-[0.75rem]'>
+    <section className={clsx('xmd:mx-[0.75rem]', className)}>
       <div className='flex items-center xmd:py-0 py-[1rem] xmd:mb-[1.31rem] mb-[1rem] md:border-t border-greyscaletext-5'>
         <span className='inline-block xmd:mr-[0.5rem] xmd:text-[0.75rem] text-[0.875rem] xmd:font-semibold font-medium xmd:leading-[120%] leading-[150%] text-greyscaletext-80'>
           Tags:
@@ -29,7 +35,7 @@ const SuggestedSection = ({tags = [], suggests = []}) => {
               key={index}
               className='list-disc ml-[2rem] text-[0.875rem] font-medium leading-[150%] text-primary-50 underline'
             >
-              Học tập tại Bắc Ireland
+              <a href='#'>Học tập tại Bắc Ireland</a>
             </li>
           ))}
         </ul>

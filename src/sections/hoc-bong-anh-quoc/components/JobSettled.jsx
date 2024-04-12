@@ -1,15 +1,54 @@
+'use client'
 import Image from 'next/image'
 import SectionTabs from './SectionTabs'
 import SectionWrapper from './SectionWrapper'
-
-const JobSettled = ({lang, id}) => {
+import CustomTable from './CustomTable'
+const TEMP_TAB = [
+  {
+    id: 0,
+    title: 'Làm thêm',
+    slug: 'overtime',
+  },
+  {
+    id: 1,
+    title: 'Ở lại làm việc sau khi tốt nghiệp',
+    slug: 'stay-to-work-after-graduation',
+  },
+  {
+    id: 2,
+    title: 'Định cư',
+    slug: 'settled',
+  },
+]
+const TEMP_TBODYS = [
+  ['<h2>Offer of job by approved sponsor</h2>', 'Mandatory', '20'],
+  ['<h2>Job at appropriate skill level</h2>', 'Mandatory', '20'],
+  ['<h2>Speaks English at required level</h2>', 'Mandatory', '10'],
+  [
+    '<h2>The applicant’s salary equals or exceeds all of the following:</h2><ul><li>£26,200 per year;</li><li>£10.75 per hour;and</li><li>the going rate for the occupation code</li></ul>',
+    'Tradeable',
+    '20',
+  ],
+  ['<h2>Offer of job by approved sponsor</h2>', 'Mandatory', '20'],
+]
+const JobSettled = ({lang, id = 'job-settled'}) => {
+  const selectChangeCallBack = () => {}
   return (
     <SectionWrapper
-      h2Text={lang.h2_job_settled}
+      title={lang.h2_job_settled}
       id={id}
       mobileMargin={false}
     >
-      <SectionTabs className='mt-[1.25rem] xmd:mt-[1.06rem] mb-[2.25rem] xmd:mb-[0.75rem]' />
+      <SectionTabs
+        items={TEMP_TAB}
+        selectChange={selectChangeCallBack}
+        className='mt-[1.25rem] xmd:mt-[1.06rem] mb-[2.25rem] xmd:mb-[0.75rem]'
+      />
+      {/* table */}
+      <CustomTable
+        theads={['Characteristics', 'Mandatory/Tradeable', 'Points']}
+        tbodys={TEMP_TBODYS}
+      />
       <h3 className='hidden md:block text-[1.5rem] font-bold leading-[130%] text-primary-50'>
         Làm thêm
       </h3>
@@ -34,6 +73,7 @@ const JobSettled = ({lang, id}) => {
         width={7000}
         height={3500}
         className='xmd:w-[calc(100%-0.75rem*2)] w-full xmd:h-[13.8rem] h-[35.4rem] xmd:rounded-xl object-cover xmd:my-[1.31rem] my-[1rem] mx-[0.75rem]'
+        alt='viec lam dinh cu tai Anh Quoc'
       />
       <h4 className='text-[1rem] font-bold leading-[150%] text-primary-50 mt-[0.5rem] mx-[0.75rem] '>
         b. Làm thế nào để được làm thêm hợp pháp

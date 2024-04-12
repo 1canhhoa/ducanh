@@ -1,18 +1,55 @@
+'use client'
+
+import {useState} from 'react'
 import ScholarshipItem from './ScholarshipItem'
 import SectionSearch from './SectionSearch'
 import SectionTabs from './SectionTabs'
 import SectionWrapper from './SectionWrapper'
-
-const ScholarshipEngland = ({lang, id}) => {
+const TEMP_TAB = [
+  {
+    id: 0,
+    title: 'Trường Đại học (Cử nhân, Thạc sỹ, Tiến sỹ)',
+    slug: 'university',
+    search: true,
+  },
+  {
+    id: 1,
+    title: 'Dự bị Đại học, Cao đẳng',
+    slug: 'preparation',
+    search: true,
+  },
+  {
+    id: 2,
+    title: 'Lưu ý quan trọng về trường học',
+    slug: 'important-note',
+  },
+]
+const ScholarshipEngland = ({lang, id = 'scholarship-england'}) => {
+  const [search, setSearch] = useState({
+    enabled: true,
+    slug: TEMP_TAB[0].slug,
+  })
+  const tabCallBack = (tabItem) => {
+    setSearch({
+      enabled: tabItem.search,
+      slug: tabItem.slug,
+    })
+  }
   return (
     <SectionWrapper
       id={id}
       lang={lang}
-      h2Text={lang.h2_scholarship_en}
+      title={lang.h2_scholarship_en}
       mobileMargin={false}
     >
-      <SectionTabs className='mt-[1.25rem] xmd:mt-[0.75rem]' />
-      <SectionSearch className='mt-[1.25rem] xmd:mt-[0] xmd:mx-[0.75rem]' />
+      <SectionTabs
+        items={TEMP_TAB}
+        className='mt-[1.25rem] xmd:mt-[0.75rem]'
+        selectChange={tabCallBack}
+      />
+      {search.enabled && (
+        <SectionSearch className='mt-[1.25rem] xmd:mt-[0] xmd:mx-[0.75rem]' />
+      )}
       {Array.from({length: 4}).map((item, index) => (
         <ScholarshipItem
           key={index}

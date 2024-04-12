@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.bd {
+  @apply border border-black
+}
+
 @layer utilities {
+
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
@@ -30,6 +35,18 @@
     @apply text-[0.875rem] leading-[1];
   }
 
+  .sub2 {
+    @apply text-[0.75rem] leading-[1];
+  }
+
+  .body12 {
+    @apply text-[0.75rem] leading-[1.2];
+  }
+
+  .body14 {
+    @apply text-[0.875rem] leading-[1.7];
+  }
+
   .sub10 {
     @apply text-[1.125rem] leading-[1.5];
   }
@@ -50,6 +67,10 @@
     @apply text-[1rem] leading-[1.5];
   }
 
+  .body18 {
+    @apply text-[1.125rem] leading-[1.6];
+  }
+
   .sub18 {
     @apply text-[1.125rem] leading-[1.6];
   }
@@ -62,16 +83,20 @@
     @apply text-[1.5rem] tracking-[-0.015rem] leading-[1.5];
   }
 
+  .caption2 {
+    @apply text-[0.625rem] leading-[1];
+
+  }
+
+
   .label1 {
     @apply text-[0.875rem] leading-[1] tracking-[0.00875rem];
   }
 
+
+
   .title {
     @apply text-[3rem] font-extrabold leading-[1.2] -tracking-[0.03rem] text-primary-50;
-  }
-
-  .body18 {
-    @apply text-[1.125rem] leading-[1.6];
   }
 
   .title-mobile {
@@ -95,7 +120,7 @@
   }
 
   .button1 {
-    @apply text-[0.875rrem] font-bold leading-[1] tracking-[0.01313rem];
+    @apply text-[0.875rem] font-bold leading-[1] tracking-[0.01313rem];
   }
 
   .button2 {
@@ -154,22 +179,21 @@ button {
 }
 
 html {
+  /* overflow-x: hidden; */
   font-size: 1vw;
 }
 
 @media (max-width: 767px) {
   html {
     font-size: 4.26666vw;
-
-    @media (max-width: 767px) {
-      font-size: 4.26666vw;
-    }
-
-    @media (min-width: 1900px) {
-      font-size: 16px;
-    }
   }
 }
+
+/* @media (min-width: 1900px) {
+  html{
+    font-size: 16px;
+  };
+} */
 
 body {
   background: white;
@@ -188,6 +212,7 @@ body {
 .wrap_hocbong:nth-child(3n) {
   margin: 1.5rem 0 0 0;
 }
+
 .font-feature-settings {
   font-feature-settings: 'clig' off, 'liga' off;
 }
@@ -201,10 +226,8 @@ body {
   line-height: 120%;
   letter-spacing: -0.0375rem;
   text-transform: uppercase;
-  background: var(
-    --LINEAR-L6,
-    linear-gradient(170deg, #2e6bc6 10.78%, #29a4ea 81.3%)
-  );
+  background: var(--LINEAR-L6,
+      linear-gradient(170deg, #2e6bc6 10.78%, #29a4ea 81.3%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -220,10 +243,8 @@ body {
   /* 4.5rem */
   letter-spacing: -0.0375rem;
   text-transform: uppercase;
-  background: var(
-    --LINEAR-L2,
-    linear-gradient(94deg, #cb2128 -1.03%, #cb2128 36.82%, #fc4d54 88.7%)
-  );
+  background: var(--LINEAR-L2,
+      linear-gradient(94deg, #cb2128 -1.03%, #cb2128 36.82%, #fc4d54 88.7%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -237,6 +258,7 @@ body {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(0.5rem);
   }

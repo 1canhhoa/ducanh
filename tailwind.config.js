@@ -10,6 +10,8 @@ module.exports = {
   prefix: '',
   theme: {
     screens: {
+<<<<<<< HEAD
+=======
       // md: '768px',
       // lg: '1024px',
       // xl: '1367px',
@@ -21,6 +23,7 @@ module.exports = {
       // x2xl: {max: '1599px'},
       // x3xl: {max: '1799px'},
 
+>>>>>>> 47f1bc6b5542d2f3f2b5a7215bedbb01848aa407
       '3xl': '1800px',
       '2xl': '1600px',
       xl: '1367px',
@@ -31,6 +34,10 @@ module.exports = {
       xxl: {max: '1366px'},
       xlg: {max: '1023px'},
       xmd: {max: '767px'},
+<<<<<<< HEAD
+      tablet: {min: '768px', max: '1023px'},
+=======
+>>>>>>> 47f1bc6b5542d2f3f2b5a7215bedbb01848aa407
     },
     container: {
       center: true,
@@ -67,14 +74,21 @@ module.exports = {
         'greyscaletext-70': '#313131',
         'greyscaletext-80': '#262626',
         'secondary-5': '#FFF2F3',
+        'secondary-10': '#FFDDDE',
         'background-elevation-10': '#FAFAFA',
         'background-elevation-tag-chip': '#EBF5FA',
+        'elevation-tag-chip': '#EBF5FA',
+        'elevation-blue': '#FBFBFF',
+        'elevation-20': '#F8F8F8',
         'linear-l9': '#6196F6',
         'linear-l6': 'linear-gradient(170deg, #2E6BC6 10.78%, #29A4EA 81.3%)',
       },
-      backgroundImage: (theme) => ({
-        lll: 'linear-gradient(89deg, rgba(80,150,255,0.12) 0.43%, rgba(41,164,234,0.06) 99.57%)',
-      }),
+      backgroundImage: {
+        'linear-l5':
+          'linear-gradient(95deg, #2E6BC6 9.83%, #2E6BC6 35.38%, #29A4EA 86.69%)',
+        'linear-l1':
+          'linear-gradient(95deg, #FC4D54 -29.92%, #CB2128 38.6%, #CB2128 85.49%)',
+      },
       keyframes: {
         'accordion-down': {
           from: {height: '0'},

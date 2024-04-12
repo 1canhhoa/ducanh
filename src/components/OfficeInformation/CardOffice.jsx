@@ -15,7 +15,7 @@ const CardOffice = () => {
         <div className="inline-flex flex-col items-start space-y-[0.5rem]">
           <div className="flex items-center space-x-[0.4375rem]">
             <svg className='size-[1rem]' xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-              <path d="M6.61622 2.83815C6.41374 2.33193 5.92346 2 5.37826 2H3.54441C2.84679 2 2.28125 2.5654 2.28125 3.26302C2.28125 9.19281 7.08844 14 13.0182 14C13.7159 14 14.2813 13.4344 14.2813 12.7368L14.2816 10.9026C14.2816 10.3574 13.9497 9.86724 13.4435 9.66475L11.6859 8.96196C11.2312 8.78007 10.7134 8.86193 10.3372 9.17546L9.8836 9.55378C9.35383 9.99526 8.57434 9.96015 8.08671 9.47252L6.8094 8.19404C6.32177 7.70641 6.28574 6.92756 6.72721 6.39779L7.10547 5.9442C7.41899 5.56797 7.50158 5.05011 7.31969 4.59539L6.61622 2.83815Z" stroke="#454545" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M6.61622 2.83815C6.41374 2.33193 5.92346 2 5.37826 2H3.54441C2.84679 2 2.28125 2.5654 2.28125 3.26302C2.28125 9.19281 7.08844 14 13.0182 14C13.7159 14 14.2813 13.4344 14.2813 12.7368L14.2816 10.9026C14.2816 10.3574 13.9497 9.86724 13.4435 9.66475L11.6859 8.96196C11.2312 8.78007 10.7134 8.86193 10.3372 9.17546L9.8836 9.55378C9.35383 9.99526 8.57434 9.96015 8.08671 9.47252L6.8094 8.19404C6.32177 7.70641 6.28574 6.92756 6.72721 6.39779L7.10547 5.9442C7.41899 5.56797 7.50158 5.05011 7.31969 4.59539L6.61622 2.83815Z" stroke="#454545" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <div className="label1 font-semibold text-greyscaletext-50 ">
               024 3971 6229
@@ -23,8 +23,8 @@ const CardOffice = () => {
           </div>
           <div className="flex items-center space-x-[0.4375rem]">
             <svg className='size-[1rem]' xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-              <path d="M2.28125 5L8.54212 9L14.2812 5" stroke="#454545" stroke-linecap="round" stroke-linejoin="round" />
-              <rect x="2.28125" y="4" width="12" height="9" rx="1" stroke="#454545" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M2.28125 5L8.54212 9L14.2812 5" stroke="#454545" strokeLinecap="round" strokeLinejoin="round" />
+              <rect x="2.28125" y="4" width="12" height="9" rx="1" stroke="#454545" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <div className="label1 font-semibold text-greyscaletext-50 ">
               duhoc@ducanh.edu.vn
