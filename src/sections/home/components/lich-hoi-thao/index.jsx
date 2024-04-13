@@ -4,8 +4,8 @@ import NavigationCustom from '@/components/navigationcustom'
 import { Button } from '@/components/ui/button'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from 'swiper/modules'
-import { useRef } from 'react'
-
+import { useEffect, useRef, useState } from 'react'
+import useSWR from 'swr'
 import "swiper/css";
 import Image from 'next/image'
 import Table from './Table'
@@ -18,14 +18,48 @@ const Pagination = ({ className, content }) => {
     </div>
   </div>
 }
-const LichHoiThao = ({ t, isMobile }) => {
+const LichHoiThao = ({ t, isMobile, dataCountries, dataLocations, dataLichHoithaos }) => {
+
+const [currentPage,setCurrentPage] = useState(1)
+  const [loadingLichHoithao, setLoadingLichHoithao] = useState(false)
+  const [dataLichHoithaosClient, setDataLichHoithaosClient] = useState(null);
+  const [apiUrl, setApiUrl] = useState(null);
+
+  
   const swiperRef = useRef(null)
   const handleNextSlide = () => {
+    setApiUrl('click')
+    setCurrentPage(prev=>prev+1)
     swiperRef.current?.slideNext()
   }
   const handlePrevSlide = () => {
+    
+    if(currentPage>1){
+      setApiUrl('click')
+      setCurrentPage(prev=>prev-1)
+    }
     swiperRef.current?.slidePrev()
   }
+
+  const fetcher = url => fetch(url).then(r => r.json())
+  const { data, error, isLoading } = useSWR(
+    apiUrl?`${process.env.NEXT_PUBLIC_API}/events?page=${currentPage}&per_page=10`:null,
+    fetcher, {
+    revalidateIfStale: false,
+    revalidateOnFocus: false,//Option này ngăn useSWR tự động gọi lại API khi cửa sổ hoặc tab của trình duyệt được focus lại
+    revalidateOnReconnect: false//Option này ngăn useSWR tự động gọi lại API khi kết nối internet được thiết lập lại sau khi mất kết nối
+  }
+  );
+  useEffect(() => {
+    setLoadingLichHoithao(isLoading)
+    if (data) {
+      setDataLichHoithaosClient(data?.events);
+    }
+    if (error) {
+      console.error('Error fetching data:', error);
+    }
+  }, [data, error, isLoading]);
+
   return (
     <div className='flex flex-col w-fit items-start xmd:space-y-[1rem] space-y-[1.875rem] '>
       <div className="flex flex-col items-start space-y-[3rem] xmd:px-[0.625rem] ">
@@ -67,11 +101,15 @@ const LichHoiThao = ({ t, isMobile }) => {
             }}
           >
             <SwiperSlide className=' xmd:pr-[1rem]'>
-              <Table isMobile={isMobile} />
+              <Table
+                dataLichHoithaos={dataLichHoithaosClient?.length > 0 ? dataLichHoithaosClient :dataLichHoithaos }
+                dataCountries={dataCountries}
+                dataLocations={dataLocations}
+                isMobile={isMobile} />
             </SwiperSlide>
-            <SwiperSlide className=' xmd:pr-[1rem]'>
+            {/* <SwiperSlide className=' xmd:pr-[1rem]'>
               <Table isMobile={isMobile} />
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
 

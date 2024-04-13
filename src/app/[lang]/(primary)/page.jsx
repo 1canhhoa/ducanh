@@ -6,12 +6,17 @@ export default async function HomePage({ searchParams, params }) {
   const t = await getDictionary(params.lang)
   const { posts, categories } = await getData(`/first-new-on-home`)
   const dataNoibat = await getData(`/posts-by-category/36`)// get hoặc nhiều bài viết nổi bật
-  const data = await getData(`/posts-by-category/36`)
+  const dataLocations = await getData(`/locations`)
+  const dataCountries = await getData(`/countries`)
+  const {events} = await getData(`/events?page=1&per_page=10`)
   const { viewport } = searchParams
   const isMobile = viewport?.includes('mobile')
   return <IndexHome
     t={t}
+    dataLichHoithaos={events}
     categories={categories}
+    dataLocations={dataLocations}
+    dataCountries={dataCountries}
     dataNoibat={dataNoibat}
     dataTintucs={posts}
     isMobile={isMobile}

@@ -1,11 +1,19 @@
 import { data_table } from '@/lib/data'
 import { cn } from '@/lib/utils';
-const Table = ({ isMobile }) => {
+const Table = ({ isMobile,dataLichHoithaos }) => {
   function catChuoiNgayThang(ngayThang) {
     var parts = ngayThang.split('/');
     var ngay = parts[0];
     var thang = parts[1];
     return ngay + '/' + thang;
+  }
+  function layGioTuThoiGian(thoiGian) {
+    const gio = thoiGian.split(' ')[1];
+    return gio;
+  }
+  function layNgayTuThoiGian(thoiGian) {
+    const ngay = thoiGian.split(' ')[0];
+    return ngay;
   }
   const className = {
     th_text: "xmd:mx-auto text-white  font-semibold  xmd:text-[0.875rem] xmd:leading-[130%] text-[1rem] w-max leading-[1.5]",
@@ -52,31 +60,31 @@ const Table = ({ isMobile }) => {
           </tr>
         </thead>
         <tbody>
-          {data_table?.map((data, i) => (
+          {dataLichHoithaos?.map((data, i) => (
 
             <tr key={i} className={i % 2 === 1 ? " bg-[rgba(134,189,253,0.10)] md:bg-[#FBFBFB]" : ""}>
               <td className={cn(className.td_boder, " text-center border-b border-r  xmd:px-[0rem] px-[1.25rem] h-[3.1rem] min-h-[3.1rem] text-greyscaletext-50 text-[0.75rem] not-italic font-medium leading-[1.3125rem]")}>
 
-                {isMobile ? catChuoiNgayThang(data.time) : data.time}
+                {isMobile ? layNgayTuThoiGian(data?.date_time) : layNgayTuThoiGian(data?.date_time)}
 
                 {!isMobile && <div className='flex h-[1.25rem] justify-center items-center gap-[0.73206rem] shrink-0 px-[0.5rem] py-0 rounded-[1.1713rem]
                   text-[#262626] text-[0.75rem] font-medium leading-[1.3125rem] bg-[#F0FAFF]
                   '>
-                  {data.timeDetail}
+                  {layGioTuThoiGian(data?.date_time)}
                 </div>}
               </td>
               {isMobile && <td className={cn(className.td_boder, " text-center border-b border-r xmd:px-[0rem] not-italic font-semibold leading-[130%]")}>
-                {data.timeDetail}
+                {layGioTuThoiGian(data?.date_time)}
               </td>}
 
               <td className={cn(className.td_boder, "text-[0.875rem] font-medium leading-[150%] text-center border-b border-r  xmd:px-[0rem] px-[0.5rem] ")}>
                 <div className="  mx-auto md:px-[0.75rem] py-[0.25rem] rounded-[1.25rem] md:bg-[#EBF5FA] w-max
                   ">
-                  {data.place}
+                  {data?.location_primary_category?.name}
                 </div>
               </td>
-              <td className={cn(className.td_boder, " text-center border-b border-r  xmd:px-[0rem] px-[1rem]              text-[0.875rem] font-medium leading-[150%]")}>{data.country}</td>
-              <td className={cn(className.td_boder, " border-b border-r  xmd:px-[0.75rem] px-[1.5rem] text-primary-50 text-[0.875rem] font-semibold leading-[150%]")}>{data.event} </td>
+              <td className={cn(className.td_boder, " text-center border-b border-r  xmd:px-[0rem] px-[1rem]              text-[0.875rem] font-medium leading-[150%]")}>{data?.country_primary_category?.name}</td>
+              <td className={cn(className.td_boder, " border-b border-r  xmd:px-[0.75rem] px-[1.5rem] text-primary-50 text-[0.875rem] font-semibold leading-[150%]")}>{data?.title} </td>
               <td className={cn(className.td_boder, " border-b text-sm not-italic font-semibold leading-[130%] ")}>
                 <button className='mx-auto  flex h-[2rem] items-center text-primary-40 md:border md:border-primary-40 md:px-[1rem] md:py-[0.625rem] rounded-[0.5rem] border-solid'>
                   {!isMobile ? "chi tiết" :
