@@ -21,6 +21,7 @@ module.exports = {
       xxl: {max: '1366px'},
       xlg: {max: '1023px'},
       xmd: {max: '767px'},
+      tablet: {min: '768px', max: '1023px'},
     },
     container: {
       center: true,
@@ -64,6 +65,7 @@ module.exports = {
         'secondary-5': '#FFF2F3',
         'secondary-10': '#FFDDDE',
         'background-elevation-10': '#FAFAFA',
+        'background-elevation-tag-chip': '#EBF5FA',
         'elevation-tag-chip': '#EBF5FA',
         'elevation-blue': '#FBFBFF',
         'elevation-20': '#F8F8F8',

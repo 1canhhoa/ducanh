@@ -3,7 +3,7 @@ import { useRouter } from 'next/navigation';
 
 const TinTucNoiBat = ({ data }) => {
   const router = useRouter();
-  console.log('data', data);
+  // console.log('data', data);
   const handleClick = () => {
     // Thực hiện chuyển hướng đến trang chi tiết sản phẩm
     if (data.slug) {

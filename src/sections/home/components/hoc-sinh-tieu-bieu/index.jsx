@@ -168,7 +168,7 @@ const HocSinhTieuBieu = ({ isMobile }) => {
       <div ref={carouselRef} className=" slider-hocsinh" >
         {datHocsinh.map((d, i) => (
           <Image key={i} loading='lazy' width={392} height={730} alt={`ảnh học sinh ${i}`}
-            className="bd item xmd:!bottom-[-5.1rem] !bottom-[-3.1rem]" ref={el => itemsRef.current[i] = el} src={d.image} />
+            className="item xmd:!bottom-[-5.1rem] !bottom-[-3.1rem]" ref={el => itemsRef.current[i] = el} src={d.image} />
         ))}
       </div>
       <div className='  absolute h-full w-[6.7rem] xmd:top-[50%] top-[35%] -translate-y-1/2 xmd:right-[2rem] right-[5rem] z-[100] pointer-events-none'>

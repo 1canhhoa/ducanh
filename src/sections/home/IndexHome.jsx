@@ -6,7 +6,7 @@ import HocSinhTieuBieu from '@/sections/home/components/hoc-sinh-tieu-bieu'
 import TinTucDuHoc from '@/sections/home/components/tin-tuc-du-hoc'
 import TruongHocLienKet from '@/sections/home/components/truong-hoc-lien-ket'
 import './style.css'
-const IndexHome = ({ t, isMobile, dataTintucNoibat }) => {
+const IndexHome = ({ t, categories, isMobile, dataTintucs, dataNoibat }) => {
   return (
     <main className='relative w-full flex-col flex justify-center items-start xmd:bg-elevation-blue'>
       <section className='mx-auto w-full flex justify-center items-center md:mt-[10rem] mt-[3.65rem]'>
@@ -22,7 +22,11 @@ const IndexHome = ({ t, isMobile, dataTintucNoibat }) => {
         <DichVuDucAnh t={t.home_page} isMobile={isMobile} />
       </section>
       <section className='w-full'>
-        <TinTucDuHoc t={t.home_page} dataTintucNoibat={dataTintucNoibat} />
+        <TinTucDuHoc
+          t={t.home_page}
+          dataNoibat={dataNoibat}
+          categories={categories}
+          dataTintucs={dataTintucs} />
       </section>
       <section className='w-fit'>
         <HocSinhTieuBieu t={t.home_page} isMobile={isMobile} />

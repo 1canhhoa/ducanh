@@ -4,8 +4,16 @@ import getData from '@/lib/getData'
 export default async function HomePage({ searchParams, params }) {
   console.log('🚀 ~ HomePage ~ params:', params)
   const t = await getDictionary(params.lang)
-  const { categories, posts } = await getData(`/first-new-on-home`)
+  const { posts, categories } = await getData(`/first-new-on-home`)
+  const dataNoibat = await getData(`/posts-by-category/36`)// get hoặc nhiều bài viết nổi bật
+  const data = await getData(`/posts-by-category/36`)
   const { viewport } = searchParams
   const isMobile = viewport?.includes('mobile')
-  return <IndexHome dataTintucNoibat={posts} t={t} isMobile={isMobile} />
+  return <IndexHome
+    t={t}
+    categories={categories}
+    dataNoibat={dataNoibat}
+    dataTintucs={posts}
+    isMobile={isMobile}
+  />
 }

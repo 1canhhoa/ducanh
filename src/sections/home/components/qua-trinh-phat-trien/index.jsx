@@ -3,17 +3,20 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 const Section = ({ num, text, mobi }) => {
-  return <div className={`${mobi ? "!bg-transparent" : ""} bg-white flex xmd:items-center items-end pb-5 justify-center w-[16.375rem] h-[14.0625rem]  shrink-0 
+  return <div className={`${mobi ? "!bg-transparent" : ""} bd group relative bg-white flex xmd:items-center items-end pb-5 justify-center w-[16.375rem] h-[14.0625rem]  shrink-0 
   xmd:w-[8.75rem] xmd:h-[8.8125rem] xmd:rounded-3xl
   shadow-[0px_3px_24px_0px_rgba(0,132,255,0.04),0px_0px_32px_0px_rgba(0,119,229,0.04)] rounded-[1.08213rem]`}>
     <div className='inline-flex flex-col items-center'>
       <div className={` ${mobi ? '!text-white' : 'from-[#2E6BC6] from-[9.83%]  via-[#2E6BC6] via-[9.83%]  to-[#29A4EA] to-[86.69%] text-center text_gradient'}  
-       text-6xl not-italic font-extrabold leading-[130%] tracking-[-0.1875rem] bg-clip-text
-      xmd:text-[2.75rem]  xmd:tracking-[-0.1375rem]
-          bg-gradient-to-r md:from-[#2B46A8] md:from-[100%] md:to-[#082072] md:to-[0%]
+          text-6xl not-italic font-extrabold leading-[130%] tracking-[-0.1875rem] bg-clip-text
+          xmd:text-[2.75rem]  xmd:tracking-[-0.1375rem]
 
-         hover:bg-[url("/images/homepage/bg-text.svg")]
-         ease-linear duration-1000
+          bg-gradient-to-r 
+          md:from-[#2B46A8] md:from-[100%] 
+          md:to-[#082072] 
+          md:to-[0%]
+      
+          absolute bottom-[2.5rem] z-[50]
          `}>{num}</div>
       <div className={`${mobi ? '!text-white' : 'xmd:w-[5.1875rem] from-[#2E6BC6] from-[9.83%]  via-[#2E6BC6] via-[9.83%]  to-[#29A4EA] to-[86.69%] text-center text_gradient'} 
        text-base not-italic font-extrabold leading-[130%] tracking-[-0.02rem] bg-clip-text

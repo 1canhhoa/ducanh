@@ -531,11 +531,11 @@ export const data_table = [
 ]
 
 export const tintucduhoc = [
-  {id: 0, tittle: 'Tất cả bài viết'},
-  {id: 1, tittle: 'Cẩm nang'},
-  {id: 2, tittle: 'Học Sinh Đức Anh'},
-  {id: 3, tittle: 'Thông tin học bổng'},
-  {id: 4, tittle: 'Việc làm định cư'},
+  {id: 0, api: '/first-new-on-home', tittle: 'Tất cả bài viết'},
+  {id: 1, api: '/posts-by-category/4', tittle: 'Cẩm nang'},
+  {id: 2, api: '/posts-by-category/38', tittle: 'Học Sinh Đức Anh'},
+  {id: 3, api: '/posts-by-category/39', tittle: 'Thông tin học bổng'},
+  {id: 4, api: '/posts-by-category/40', tittle: 'Việc làm định cư'},
 ]
 export const buttonDuhoc = [
   {

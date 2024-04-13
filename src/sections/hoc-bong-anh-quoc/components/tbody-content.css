@@ -1,0 +1,25 @@
+.tbody-content>h2 {
+    color: var(--PRIMARY-50, #2B46A8);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* font-family: "Plus Jakarta Sans"; */
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tbody-content ul {
+    margin-top: 0.5rem;
+}
+
+.tbody-content ul>li {
+    color: var(--greyscaletext-40, #6A6A6A);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* font-family: "Plus Jakarta Sans"; */
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    list-style: disc;
+    margin-left: 1.2rem;
+}
