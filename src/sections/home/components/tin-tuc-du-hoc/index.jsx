@@ -26,7 +26,7 @@ const TinTicDuHoc = ({ categories, dataTintucs, dataNoibat }) => {
 
   const fetcher = url => fetch(url).then(r => r.json())
   const { data, error, isLoading } = useSWR(
-    apiUrl ? `${process.env.NEXT_PUBLIC_API}${apiUrl}` : null,
+    apiUrl ? `${process.env.NEXT_PUBLIC_API}/wp-json/okhub/v1/posts-by-category/${apiUrl}` : null,
     fetcher, {
     revalidateIfStale: false,
     revalidateOnFocus: false,    //Option này ngăn useSWR tự động gọi lại API khi cửa sổ hoặc tab của trình duyệt được focus lại
@@ -51,13 +51,13 @@ const TinTicDuHoc = ({ categories, dataTintucs, dataNoibat }) => {
         <Title className={'xmd:pl-[1rem] '} title={'Tin tức du học'} />
         <div className='w-full xmd:pl-[1rem] hidden-scrollbar xmd:overflow-x-auto relative flex items-end gap-[0.75rem] md:self-stretch'>
           <div className=" xmd:w-max flex items-start gap-[0.5rem] flex-[1_0_0]">
-            {tintucduhoc.map((t, i) => (
-              <button onClick={() => setApiUrl(t?.api)} key={i} className={`flex xmd:w-max justify-center items-center 
+            {categories?.map((t, i) => (
+              <button onClick={() => setApiUrl(t?.id)} key={i} className={`flex xmd:w-max justify-center items-center 
               py-[0.75rem] hover:bg-primary-5 duration-500 ease-in-out px-[1rem] 
               gap-[0.625rem] rounded-[0.5rem] border border-primary-20 `
-                + (apiUrl === t.api ? 'bg-primary-5 ' : '')}>
+                + (apiUrl === t.id ? 'bg-primary-5 ' : '')}>
                 <div className="text-greyscaletext-50 text-xs not-italic font-bold leading-[120%] uppercase">
-                  {t.tittle}
+                  {t?.name}
                 </div>
               </button>
             ))}

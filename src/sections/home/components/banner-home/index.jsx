@@ -16,8 +16,8 @@ const data_mini_menu = [
   { img: '/images/homepage/dinhcu.svg', title: 'Định cư' },
   { img: '/images/homepage/e-learning.svg', title: 'E-learning' },
 ]
-const BannerHome = () => {
-
+const BannerHome = ({ dataBanner }) => {
+  console.log({ dataBanner: dataBanner});
   const swiperRef = useRef(null)
   const [indexSlider, setIndexSlider] = useState(0)
 
@@ -48,7 +48,7 @@ const BannerHome = () => {
         </div>
 
         <ul className='xmd:grid-cols-2 xmd:grid gap-x-[0.5rem] gap-y-[0.38rem] '>
-          {country.map((d, i) => (
+          {dataBanner?.sidebar?.map((d, i) => (
             <>
               <li key={i} className=" 
               flex items-center gap-[1rem] overflow-hidden 
@@ -57,23 +57,23 @@ const BannerHome = () => {
               xmd:shadow-[0px_3px_24px_0px_rgba(0,132,255,0.04),0px_0px_32px_0px_rgba(0,119,229,0.04)]
               xmd:bg-white">
 
-                <Image priority className="xmd:hidden group-hover:opacity-0 duration-500 opacity-100 z-[1] size-[2rem]" alt={`ảnh lá cờ ${d.tittle} `} src={d.img} width={32} height={32} />
+                <Image priority className="xmd:hidden group-hover:opacity-0 duration-500 opacity-100 z-[1] size-[2rem]" alt={`ảnh lá cờ ${d?.title} `} src={d?.image} width={32} height={32} />
 
-                <div className='xmd:hidden group-hover:opacity-0 duration-700 opacity-100 flex-1 z-[1] button1 text-primary-60 uppercase'>{d.tittle}</div>
+                <div className='xmd:hidden group-hover:opacity-0 duration-700 opacity-100 flex-1 z-[1] button1 text-primary-60 uppercase'>{d?.title}</div>
 
                 <svg className='xmd:hidden z-[1] group-hover:opacity-0 duration-700 opacity-100 size-[1.25rem]' xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                   <path d="M7.5 4.78125L13.3333 10.6146L7.5 16.4479" stroke="#132B7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <Image priority alt={`ảnh background lá cờ ${d.tittle} `} src={d.bg} width={360} height={60}
+                <Image priority alt={`ảnh background lá cờ ${d?.title} `} src={d?.bg} width={360} height={60}
                   className="xmd:hidden absolute top-0 w-full h-full group-hover:opacity-100  custom-transition opacity-0 left-0 right-0 bottom-0" />
 
                 <div className='
                 button1 xmd:button2 xmd:text-primary-70
                 absolute  group-hover:opacity-100 duration-700 md:opacity-0 flex-1 z-[1]  text-white uppercase '>
-                  {d.tittle}</div>
+                  {d?.title}</div>
 
               </li>
-              {i !== country.length - 1 && <div className="xmd:hidden md:w-[18.125rem] my-[0.033rem] h-[0.03125rem] mx-auto shrink-0 bg-primary-60 opacity-10"></div >}
+              {i !== country?.length - 1 && <div className="xmd:hidden md:w-[18.125rem] my-[0.033rem] h-[0.03125rem] mx-auto shrink-0 bg-primary-60 opacity-10"></div >}
             </>
           ))}
         </ul>
@@ -108,26 +108,29 @@ const BannerHome = () => {
             swiperRef.current = swiper
           }}
         >
-          <SwiperSlide>
+          {dataBanner?.banner?.map((d, i) => (
+          <SwiperSlide key={i}>
             <div className='relative'>
-              <Image priority alt='ảnh banner web 2' src='/images/navPrimary/banner.png'
+                <Image priority alt='ảnh banner web 2'
+                  src={d?.url}
                 className='w-full xmd:hidden h-[38.4375rem] rounded-[0.78969rem] shrink-0' width={1100} height={615} />
-              <button className='absolute left-[6.44rem] top-[15.19rem] bg-linear-l1 inline-flex justify-center items-center h-[2.5rem] py-[0.625rem] px-[1.25rem] gap-[0.625rem] shrink-0 rounded-[0.625rem]'>
+              {i===0 && <button className='absolute left-[6.44rem] top-[15.19rem] bg-linear-l1 inline-flex justify-center items-center h-[2.5rem] py-[0.625rem] px-[1.25rem] gap-[0.625rem] shrink-0 rounded-[0.625rem]'>
                 <Align />
                 <div className='text-greyscaletext0 text-center text-[1rem] text-white not-italic font-bold leading-[150%]'>
                   Tìm hiểu thêm
                 </div>
                 <Align />
 
-              </button>
+              </button>}
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+              ))}
+          {/* <SwiperSlide>
             <div className='relative'>
               <Image loading='lazy' alt='ảnh banner web 2' src='/images/navPrimary/banner2.png'
                 className='w-full h-[38.4375rem] rounded-[0.78969rem] shrink-0' width={1100} height={615} />
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
         <div className='xmd:hidden absolute h-full w-[calc(96%)] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-50 pointer-events-none'>
           <NavigationCustom

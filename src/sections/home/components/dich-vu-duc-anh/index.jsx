@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Title from '@/components/Title'
-import { buttonDuhoc } from '@/lib/data'
 
 
 
@@ -25,21 +24,6 @@ const MouseButton = ({ check }) => {
 
   return <div className='absolute size-[3rem] xmd:bottom-[-0.54rem] bottom-0 right-0'>
     <div className='relative'>
-      {/* <Image
-      loading='lazy'
-  
-        alt="ảnh hiệu ứng Hover"
-        className={` xmd:hidden absolute ease-linear circle duration-100 bottom-[-2.5rem] right-[0.4rem] size-[1.9rem] ` +
-          (check ? ' opacity-0' : 'opacity-100 ')}
-        src={'/images/homepage/hover-title.svg'}
-        width={92} height={92} /> */}
-      {/* <Image
-      loading='lazy'
-  
-        alt="ảnh hiệu ứng Hover"
-        className={` absolute ease-linear duration-700  bottom-[-2.5rem] right-[0.4rem] size-[1.9rem] ` +
-          (check ? 'opacity-100 scale-75' : 'opacity-100 circle scale-[1.3]')}
-        src={'/images/homepage/hover-title.svg'} width={92} height={92} /> */}
       <Image
         loading='lazy'
 
@@ -67,27 +51,22 @@ const MouseButton = ({ check }) => {
 
 
 
-const DichVuDucAnh = ({ t, isMobile }) => {
+const DichVuDucAnh = ({ t, isMobile, dataDichVuTaiDucAnh }) => {
   const [hover, setHover] = useState(0)
-  const [currentItem, setCurrentItem] = useState(buttonDuhoc[0])
+  const [currentItem, setCurrentItem] = useState(dataDichVuTaiDucAnh)
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   const width = isMobile ? 2 : 1
-  const lenght = isMobile ? buttonDuhoc.length : 1
-  // function getGroupIndex(index, width) {
-  //   return Math.floor(index / width) + 1;
-  // }
-
-
+  const lenght = isMobile ? dataDichVuTaiDucAnh.length : 1
   useEffect(() => {
     setAccordionOpen(true)
     setHover(0)
-    setCurrentItem(buttonDuhoc[0])
+    setCurrentItem(dataDichVuTaiDucAnh[0])
   }, [])
   const renderItems = () => {
     const result = [];
     for (let a = 0; a < lenght; a += width) {
-      const group = isMobile ? buttonDuhoc.slice(a, a + width) : buttonDuhoc; // Lấy group phần tử theo width
+      const group = isMobile ? dataDichVuTaiDucAnh.slice(a, a + width) : dataDichVuTaiDucAnh; // Lấy group phần tử theo width
       const checkIsGroupOpen = group.find((f) => f.id === currentItem.id) 
       result.push(
         <div className='flex xmd:flex-col items-center'>
@@ -133,7 +112,7 @@ const DichVuDucAnh = ({ t, isMobile }) => {
                     <div className={(check ? '' : ' z-[-1] xmd:shadow-[0px_4px_8px_0px_rgba(0,0,0,0.08)] xmd:rounded-2xl bg-white') + " md:hidden  absolute top-2 left-2  w-[10.59375rem] h-[4.6875rem]"}></div>
                     <div className={' dichvuducanh4 absolute top-3 '}>
                       <div className={(check ? '' : 'xmd:!text-primary-40') + ' text-[1rem] font-bold leading-[1.2]  duration-300 ease-in-out text-center text-white'}>
-                        {b.tittle}
+                        {b?.title}
                       </div>
                     </div>
                   </div>

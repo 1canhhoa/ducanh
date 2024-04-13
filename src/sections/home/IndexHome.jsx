@@ -8,17 +8,22 @@ import TruongHocLienKet from '@/sections/home/components/truong-hoc-lien-ket'
 import './style.css'
 const IndexHome = ({
   t,
+  dataHocSinhTieuBieu,
+  dataDichVuTaiDucAnh,
+  dataQutrinhPhatTrienDucAnh,
   dataLichHoithaos,
   dataCountries,
   dataLocations,
   categories,
   isMobile,
   dataTintucs,
-  dataNoibat }) => {
+  dataNoibat,
+  dataBanner
+}) => {
   return (
     <main className='relative w-full flex-col flex justify-center items-start xmd:bg-elevation-blue'>
       <section className='mx-auto w-full flex justify-center items-center md:mt-[10rem] mt-[3.65rem]'>
-        <BannerHome isMobile={isMobile} />
+        <BannerHome dataBanner={dataBanner} isMobile={isMobile} />
       </section>
       <section className='mx-auto w-full flex justify-center items-center'>
         <LichHoiThao
@@ -30,10 +35,15 @@ const IndexHome = ({
           />
       </section>
       <section className='w-full'>
-        <QuaTrinhPhatTrien isMobile={isMobile} />
+        <QuaTrinhPhatTrien
+          dataQutrinhPhatTrienDucAnh={dataQutrinhPhatTrienDucAnh}
+          isMobile={isMobile} />
       </section>
       <section className='w-full'>
-        <DichVuDucAnh t={t.home_page} isMobile={isMobile} />
+        <DichVuDucAnh 
+          t={t.home_page} 
+          dataDichVuTaiDucAnh={dataDichVuTaiDucAnh} 
+          isMobile={isMobile} />
       </section>
       <section className='w-full'>
         <TinTucDuHoc
@@ -43,7 +53,10 @@ const IndexHome = ({
           dataTintucs={dataTintucs} />
       </section>
       <section className='w-fit'>
-        <HocSinhTieuBieu t={t.home_page} isMobile={isMobile} />
+        <HocSinhTieuBieu
+          dataHocSinhTieuBieu={dataHocSinhTieuBieu}
+          t={t.home_page}
+          isMobile={isMobile} />
       </section>
       <section className='w-full'>
         <TruongHocLienKet t={t.home_page} />

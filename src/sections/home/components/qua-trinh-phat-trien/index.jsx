@@ -2,8 +2,8 @@
 import { useState } from 'react'
 import Image from 'next/image'
 
-const Section = ({ num, text, mobi }) => {
-  return <div className={`${mobi ? "!bg-transparent" : ""} bd group relative bg-white flex xmd:items-center items-end pb-5 justify-center w-[16.375rem] h-[14.0625rem]  shrink-0 
+const Section = ({ num, text, mobi}) => {
+  return <div className={`${mobi ? "!bg-transparent" : ""} group relative bg-white flex xmd:items-center items-end pb-5 justify-center w-[16.375rem] h-[14.0625rem]  shrink-0 
   xmd:w-[8.75rem] xmd:h-[8.8125rem] xmd:rounded-3xl
   shadow-[0px_3px_24px_0px_rgba(0,132,255,0.04),0px_0px_32px_0px_rgba(0,119,229,0.04)] rounded-[1.08213rem]`}>
     <div className='inline-flex flex-col items-center'>
@@ -16,7 +16,7 @@ const Section = ({ num, text, mobi }) => {
           md:to-[#082072] 
           md:to-[0%]
       
-          absolute bottom-[2.5rem] z-[50]
+          md:absolute md:bottom-[2.5rem] md:z-[50]
          `}>{num}</div>
       <div className={`${mobi ? '!text-white' : 'xmd:w-[5.1875rem] from-[#2E6BC6] from-[9.83%]  via-[#2E6BC6] via-[9.83%]  to-[#29A4EA] to-[86.69%] text-center text_gradient'} 
        text-base not-italic font-extrabold leading-[130%] tracking-[-0.02rem] bg-clip-text
@@ -30,7 +30,8 @@ const Section = ({ num, text, mobi }) => {
   </div>
 }
 
-const QuaTrinhPhatTrien = ({ isMobile }) => {
+const QuaTrinhPhatTrien = ({ isMobile, dataQutrinhPhatTrienDucAnh }) => {
+  const { qua_trinh_phat_trien, ton_chi_lam_viec, thanh_tuu_dat_duoc }=dataQutrinhPhatTrienDucAnh
   const [hover, setHover] = useState(false)
   const [index, setIndex] = useState(-1)
   const data = ['Chuyên nghiệp', 'Minh bạch', 'Hiệu quả', 'Thân thiện', 'Đồng hành xuyên suốt']
@@ -43,7 +44,7 @@ const QuaTrinhPhatTrien = ({ isMobile }) => {
     setHover(() => setHover(false))
   }
   return (
-    <>
+    <div  className='quatrinhphattrienducanh'>
       <div className="relative w-full  xmd:flex xmd:flex-col justify-center items-center  xmd:pt-[4.3rem] pt-[6rem]">
         {/* title */}
         <div className="md:absolute xmd:w-fit top-[4rem] left-[5rem] inline-flex flex-col items-start xmd:space-y-[0.5rem] space-y-[1.5rem]">
@@ -53,19 +54,7 @@ const QuaTrinhPhatTrien = ({ isMobile }) => {
             Quá trình phát triển của Đức Anh
           </div>
           <div className="flex flex-col items-start xmd:space-y-[2.25rem] space-y-[1.8125rem]">
-            <div className="xmd:w-[21.4375rem] w-[46.625rem] @apply text-greyscaletext-50 text-[1.25rem] not-italic  font-bold leading-[150%] tracking-normal md:tracking-[-0.0625rem]
-             xmd:text-[1rem]
-            ">
-
-              <span className=' xmd:text-[1rem] text-primary-40 text-[1.25rem] font-bold leading-[150%] tracking-normal  md:tracking-[-0.0625rem]        
-              '>24 năm kinh nghiệm đồng hành&nbsp;
-              </span>
-              với các học sinh chinh phục ước mơ vươn tới những vùng đất mới,&nbsp;
-              <span className='xmd:text-[1rem] text-primary-40 text-xl not-italic font-bold leading-[150%]  tracking-normal md:tracking-[-0.0625rem]
-              '>
-                Đức Anh tự hào có những kết quả  mang lại sự thành công cho các học sinh và tạo dựng các cột mốc ấn tượng.
-              </span>
-            </div>
+            <div dangerouslySetInnerHTML={{ __html:qua_trinh_phat_trien?.title }} />
             <div className="flex z-[50] xmd:justify-between self-stretch items-center space-x-[0.9375rem]">
 
               <button className='w-max  flex h-12 justify-center items-center gap-2.5 xmd:flex-[1_0_0]  px-[1.875rem] py-[0.9375rem] rounded-lg
@@ -100,10 +89,10 @@ const QuaTrinhPhatTrien = ({ isMobile }) => {
           {/* WEB + MOBI ducanh connect */}
           <div className="absolute z-[2] xmd:top-[41.7rem] xmd:left-[-2.3rem] md:top-[13rem] md:left-[0.9rem] flex md:w-[17.8125rem] md:h-[11.4375rem] flex-col xmd:items-start items-end xmd:space-y-[0.5rem] space-y-[1rem] shrink-0">
             <div className=" text-white text-right xmd:text-[0.875rem] text-[1rem] not-italic font-bold leading-[normal] uppercase">
-              ĐỨc anh educonnect
+              {ton_chi_lam_viec?.title1}
             </div>
             <div className=" text-white text-right xmd:text-[1.75rem] text-[4.5rem] not-italic xmd:font-bold font-extrabold xmd:leading-[1.3] leading-[100%] xmd:tracking-normal tracking-[-0.045rem]">
-              Tôn chỉ làm việc
+              {ton_chi_lam_viec?.title2}
             </div>
           </div>
 
@@ -117,7 +106,7 @@ const QuaTrinhPhatTrien = ({ isMobile }) => {
 
           {/* WEB + MOBI  5 ĐIỀU ĐỨC ANH DẠY */}
           <div className="xmd:absolute xmd:top-[48.3rem] xmd:right-[0.5rem] z-[2] md:mb-20 flex md:w-[24.5625rem] md:h-[26.5625rem] flex-col items-start xmd:space-y-[0.67269rem] space-y-[1.875rem] shrink-0">
-            {data.map((d, i) => (
+            {ton_chi_lam_viec?.lists_ton_chi?.map((d, i) => (
               <div
                 key={i}
                 onMouseEnter={() => !isMobile ? handleHover(i) : () => { }}
@@ -128,7 +117,7 @@ const QuaTrinhPhatTrien = ({ isMobile }) => {
 
                 <div className={' xmd:size-[0.22425rem] size-[0.625rem] bg-secondary-40 absolute xmd:bottom-0 xmd:left-[0.5rem] bottom-0 left-0 duration-300 ease-linear  opacity-100 ' + (hover && index === i ? "translate-x-10 !opacity-0 " : "")}></div>
                 <div className=" text-white pl-4 !pointer-events-none xmd:text-[1.07631rem] text-[3rem] not-italic w-max font-bold leading-[normal] xmd:tracking-[-0.02244rem] tracking-[-0.0625rem]">
-                  {d}
+                  {d?.name}
                 </div>
               </div>
             ))}
@@ -146,15 +135,13 @@ const QuaTrinhPhatTrien = ({ isMobile }) => {
               className="md:hidden z-[10] w-full  " />
             <div className=" absolute  z-50 xmd:top-[7rem] xmd:left-1/2 xmd:-translate-x-1/2 top-[15rem] left-[5rem] inline-flex flex-col items-start xmd:space-y-[0.5] space-y-[1.5]">
               <div className="text-primary-5 xmd:text-[0.875rem] text-[0.98206rem] not-italic font-bold leading-[150%] xmd:tracking-normal tracking-[-0.00981rem] uppercase">
-                Quá trình phát triển của Đức Anh
+                {thanh_tuu_dat_duoc?.title1}
               </div>
               <div className="flex flex-col items-start xmd:space-y-[1.5rem] space-y-[1rem]">
                 <div className="xmd:w-[20.9375rem] w-[38.625rem] text-primary-5 xmd:text-[1.75rem] text-[2.25rem] 
                 not-italic font-bold xmd:leading-[1.3] leading-[1.5] xmd:tracking-normal tracking-[-0.03125rem]">
-                  <p>Thành tựu đạt được</p>
-                  {isMobile ? <p>sau 24 năm đồng hành </p> : <p>sau 24 năm đồng hành cùng</p>}
-                  {isMobile ? <p> cùng các học sinh chinh </p> : <p>các học sinh chinh phục ước mơ</p>}
-                  {isMobile ? <p>  phục ước mơ</p> : <></>}
+                  <div dangerouslySetInnerHTML={{ __html: thanh_tuu_dat_duoc?.title2 }} />
+
                 </div>
                 <button className="flex  justify-center items-center space-x-[0.75rem] border border-white px-[1.875rem] 
                 py-[0.9375rem] rounded-lg border-solid
@@ -176,21 +163,21 @@ const QuaTrinhPhatTrien = ({ isMobile }) => {
           className="z-[11] w-[20.95513rem] h-[31.39263rem] shrink-0 md:hidden absolute xmd:top-[11.3rem] xmd:left-1/2 xmd:-translate-x-1/2  -top-[14rem]" />
         <div className=' flex z-[12] space-x-[1.7rem] items-start absolute xmd:top-[12rem] xmd:left-1/2 xmd:-translate-x-1/2  -top-[14rem] md:right-[15rem]  '>
           <div className="flex flex-col xmd:space-y-[1.79rem] space-y-[2.19rem]">
-            <Section mobi={isMobile ? true : false} num={'2000+'} text={'TRƯỜNG HỌC LIÊN KẾT'} />
-            <Section mobi={false} num={'40+'} text={'TRƯỜNG HỌC LIÊN KẾT'} />
-            <Section mobi={isMobile ? true : false} num={'2000+'} text={'TRƯỜNG HỌC LIÊN KẾT'} />
+            {thanh_tuu_dat_duoc?.sau_o_thanh_tuu?.slice(0, 3).map((d,i) => (
+            <Section num={d?.num} text={d?.text} />
+            ))}
           </div>
           <div className=" flex flex-col xmd:space-y-[1.6rem] space-y-[2.19rem] xmd:mt-[0.35rem] md:mt-[5rem]">
-            <Section mobi={false} num={'40+'} text={'TRƯỜNG HỌC LIÊN KẾT'} />
-            <Section mobi={isMobile ? true : false} num={'2000+'} text={'TRƯỜNG HỌC LIÊN KẾT'} />
-            <Section mobi={false} num={'40+'} text={'TRƯỜNG HỌC LIÊN KẾT'} />
+            {thanh_tuu_dat_duoc?.sau_o_thanh_tuu?.slice(-3).map((d, i) => (
+              <Section num={d?.num} text={d?.text} />
+            ))}
           </div>
         </div>
 
 
 
       </div>
-    </ >
+    </div >
   )
 }
 

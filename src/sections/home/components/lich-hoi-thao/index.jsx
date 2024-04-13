@@ -43,7 +43,7 @@ const [currentPage,setCurrentPage] = useState(1)
 
   const fetcher = url => fetch(url).then(r => r.json())
   const { data, error, isLoading } = useSWR(
-    apiUrl?`${process.env.NEXT_PUBLIC_API}/events?page=${currentPage}&per_page=10`:null,
+    apiUrl ? `${process.env.NEXT_PUBLIC_API}/wp-json/okhub/v1/events?page=${currentPage}&per_page=10`:null,
     fetcher, {
     revalidateIfStale: false,
     revalidateOnFocus: false,//Option này ngăn useSWR tự động gọi lại API khi cửa sổ hoặc tab của trình duyệt được focus lại
@@ -85,7 +85,7 @@ const [currentPage,setCurrentPage] = useState(1)
           <div className="flex items-start space-x-[0.625rem] pl-[7.2rem]">
             <Button >Chọn quốc gia bạn quan tâm</Button>
             <Button >Địa điểm tổ chức</Button>
-          </div>
+          </div> 
         </div>
       </div>
       <div className=" flex xmd:flex-col w-screen md:w-fit xmd:items-center md:space-x-[1.375rem]">
