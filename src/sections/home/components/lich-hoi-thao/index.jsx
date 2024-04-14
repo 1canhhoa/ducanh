@@ -89,7 +89,7 @@ const [currentPage,setCurrentPage] = useState(1)
         </div>
       </div>
       <div className=" flex xmd:flex-col w-screen md:w-fit xmd:items-center md:space-x-[1.375rem]">
-        <div className='xmd:overflow-x-auto hidden-scrollbar xmd:w-full w-max'>
+        <div className='xmd:overflow-x-auto no-scrollbar xmd:w-full w-max'>
           <Swiper
             ref={swiperRef}
             spaceBetween={20}
