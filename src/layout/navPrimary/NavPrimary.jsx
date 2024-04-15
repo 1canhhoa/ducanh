@@ -23,7 +23,8 @@ export default function NavPrimary() {
           </div>
           <div className="flex lg:hidden bg-elevation-20 xmd:size-[2rem] xlg:size-[6.5rem] justify-center items-center gap-[0.2rem] p-[0.4rem] rounded-[5rem]">
             <Image
-              className="xmd:size-[1rem] xlg:size-[3rem] size-[1rem]" priority alt="icon menu header" src={'/images/navPrimary/menu.png'}
+              loading='lazy'
+              className="xmd:size-[1rem] xlg:size-[3rem] size-[1rem]" alt="icon menu header" src={'/images/navPrimary/menu.png'}
               width={handleViewPort(16, 48, 16)}
               height={handleViewPort(16, 48, 16)} />
           </div>

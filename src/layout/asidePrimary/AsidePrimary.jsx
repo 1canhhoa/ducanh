@@ -3,7 +3,6 @@ import Image from 'next/image'
 import {country} from '@/lib/data'
 
 export default function AsidePrimary({isMobile}) {
-  console.log('isMobile-aside', isMobile)
   return (
     <aside className='mt-[10rem] flex justify-start h-[38.5rem] items-center  flex-col border-[1px] rounded-[0.75rem] border-primary-10 overflow-hidden'>
       <div

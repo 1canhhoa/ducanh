@@ -10,34 +10,18 @@ module.exports = {
   prefix: '',
   theme: {
     screens: {
-<<<<<<< HEAD
-=======
-      // md: '768px',
-      // lg: '1024px',
-      // xl: '1367px',
-      // '2xl': '1600px',
-      // '3xl': '1800px',
-      // xmd: {max: '767px'},
-      // xlg: {max: '1023px'},
-      // xxl: {max: '1366px'},
-      // x2xl: {max: '1599px'},
-      // x3xl: {max: '1799px'},
-
->>>>>>> 47f1bc6b5542d2f3f2b5a7215bedbb01848aa407
       '3xl': '1800px',
       '2xl': '1600px',
       xl: '1367px',
       lg: '1024px',
       md: '768px',
+
       x3xl: {max: '1799px'},
       x2xl: {max: '1599px'},
       xxl: {max: '1366px'},
       xlg: {max: '1023px'},
       xmd: {max: '767px'},
-<<<<<<< HEAD
       tablet: {min: '768px', max: '1023px'},
-=======
->>>>>>> 47f1bc6b5542d2f3f2b5a7215bedbb01848aa407
     },
     container: {
       center: true,
@@ -47,6 +31,11 @@ module.exports = {
       },
     },
     extend: {
+      transitionDuration: {
+        1500: '1500ms',
+        2000: '2000ms',
+        1300: '1300ms',
+      },
       fontFamily: {
         plus: ['var(--font-plus-jakarta-sans)'],
       },

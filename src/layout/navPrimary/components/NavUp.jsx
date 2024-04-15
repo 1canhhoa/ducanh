@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 const NavUp = () => {
   const data = [
@@ -53,49 +52,15 @@ const NavUp = () => {
           </div>
         ))}
         <div className='inline-flex items-center space-x-[3.3125rem]'>
-          <div className='flex items-start space-x-[0.75rem]'>
-            <Image
-              priority
-              alt='ảnh ngôn ngữ tiếng việt'
-              src={'/images/navPrimary/vn.jpeg'}
-              width={5228}
-              height={5228}
-              className='w-[1.125rem] h-[1.125rem]'
-            />
-            <Image
-              priority
-              alt='ảnh ngôn ngữ tiếng anh'
-              src={'/images/navPrimary/en.jpeg'}
-              width={18}
-              height={18}
-              className='w-[1.125rem] h-[1.125rem]'
-            />
+          <div className="flex items-start space-x-[0.75rem]">
+            <Image loading='lazy' alt="ảnh ngôn ngữ tiếng việt" src={'/images/navPrimary/vn.jpeg'} width={5228} height={5228} className="w-[1.125rem] h-[1.125rem]" />
+            <Image loading='lazy' alt="ảnh ngôn ngữ tiếng anh" src={'/images/navPrimary/en.jpeg'} width={18} height={18} className="w-[1.125rem] h-[1.125rem]" />
           </div>
           <div className='flex items-start gap-[0.75rem]'>
-            <Image
-              priority
-              alt='ảnh social facebook'
-              src={'/images/navPrimary/fb.svg'}
-              width={24}
-              height={24}
-              className='w-[1.5rem] h-[1.5rem]'
-            />
-            <Image
-              priority
-              alt='ảnh social twitter'
-              src={'/images/navPrimary/tw.svg'}
-              width={24}
-              height={24}
-              className='w-[1.5rem] h-[1.5rem]'
-            />
-            <Image
-              priority
-              alt='ảnh social youtube'
-              src={'/images/navPrimary/yt.svg'}
-              width={24}
-              height={24}
-              className='w-[1.5rem] h-[1.5rem]'
-            />
+            <Image loading='lazy' alt="ảnh social facebook" src={'/images/navPrimary/fb.svg'} width={24} height={24} className="w-[1.5rem] h-[1.5rem]" />
+            <Image loading='lazy' alt="ảnh social twitter" src={'/images/navPrimary/tw.svg'} width={24} height={24} className="w-[1.5rem] h-[1.5rem]" />
+            <Image loading='lazy' alt="ảnh social youtube" src={'/images/navPrimary/yt.svg'} width={24} height={24} className="w-[1.5rem] h-[1.5rem]" />
+
           </div>
         </div>
       </div>
