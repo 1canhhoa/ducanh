@@ -7,6 +7,16 @@ import { data } from 'autoprefixer';
 
 const SLideBaiViet = ({ setSwiper, dataTintucs, swiperRef, loadingBaiviet }) => {
   const data = [1, 2, 3, 4, 5, 6, 7, 8]
+  function chunkArray(array, chunkSize) {
+    const chunks = [];
+    for (let i = 0; i < array.length; i += chunkSize) {
+      chunks.push(array.slice(i, i + chunkSize));
+    }
+    return chunks;
+  }
+
+  const data1 = [{ title: 1 }, { title: 1 }, { title: 1 }, { title: 1 }, { title: 1 }, { title: 1 }, { title: 1 }, { title: 1 }];
+  const chunkedData = chunkArray(data1, 3);
   return (
     <div className='md:w-[63rem] flex justify-center items-center'>
       <Swiper
