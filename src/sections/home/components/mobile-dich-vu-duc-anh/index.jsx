@@ -5,167 +5,64 @@ import Title from '@/components/Title'
 
 
 
-const Popup = ({ b, hover }) => {
-  return <div className="relative duration-500 ease-in-out px-[0.75rem] md:mt-10 xmd:mb-4  xmd:mt-4 ">
-    <div className={"flex relative duration-500 ease-in-out pt-[0.56rem] pb-[0.94rem] px-[0.75rem] z-[2] xmd:bg-linear-l5 justify-center items-center md:w-[30.75rem] rounded-xl md:absolute md:h-[13.49994rem] shrink-0 bg-white "
-    }>
-      <div className='md:w-[26.625rem] duration-500 ease-in-out xmd:text-white text-greyscaletext-80 xmd:text-[0.875rem] text-base not-italic font-medium leading-[150%]'>
-        {b?.content}
-      </div>
-    </div>
-    <div className={(hover ? "xmd:bg-[#2c98e3] xmd:left-[17rem]" : "xmd:left-10 xmd:bg-linear-l5") + '  xmd:w-12 xmd:h-10 w-12 h-16 duration-500  z-[1] ease-in-out rounded-md rotate-45  absolute xmd:top-[-0.2rem]  -top-4 md:left-20  md:bg-white '}></div>
-  </div>
-}
-
-
-const MouseButton = ({ check }) => {
-
-
-
-  return <div className='absolute size-[3rem] xmd:bottom-[-0.54rem] bottom-0 right-0'>
-    <div className='relative'>
-      <Image
-        loading='lazy'
-
-        alt="ảnh hiệu ứng Hover"
-        className={` absolute ease-linear duration-700  bottom-[-2.5rem] right-[0.4rem] size-[1.9rem] ` +
-          (check ? 'opacity-100 scale-75' : 'opacity-100 scale-[1.3]')}
-        src={'/images/homepage/hover-title.svg'} width={92} height={92} />
-      <Image
-        loading='lazy'
-
-        alt="ảnh hiệu ứng Hover"
-        className={` absolute  bottom-[-2.5rem] right-[0.3rem] size-[1.2rem] ease-linear duration-700 ` +
-          (check ? ' xmd:opacity-100 ' : 'xmd:opacity-0')}
-        src={'/images/homepage/mouse-cursor1.svg'} width={92} height={92} />
-      <Image
-        loading='lazy'
-
-        alt="ảnh hiệu ứng Hover"
-        className={` absolute  bottom-[-2.5rem] right-[0.41rem] size-[2rem] duration-700 ease-linear ` +
-          (check ? 'opacity-100 scale-90' : 'scale-105 opacity-0')}
-        src={'/images/homepage/ellipse.png'} width={92} height={92} />
-    </div>
-  </div>
-}
-
-
 
 const DichVuDucAnh = ({ t, isMobile, dataDichVuTaiDucAnh }) => {
-  const [hover, setHover] = useState(0)
+  const [active, setActive] = useState(-1)
   const [currentItem, setCurrentItem] = useState(dataDichVuTaiDucAnh)
   const [accordionOpen, setAccordionOpen] = useState(false);
-
-  const width = isMobile ? 2 : 1
-  const lenght = isMobile ? dataDichVuTaiDucAnh.length : 1
   useEffect(() => {
-    setAccordionOpen(true)
-    setHover(0)
     setCurrentItem(dataDichVuTaiDucAnh[0])
   }, [])
-  const renderItems = () => {
-    const result = [];
-    for (let a = 0; a < lenght; a += width) {
-      const group = isMobile ? dataDichVuTaiDucAnh.slice(a, a + width) : dataDichVuTaiDucAnh; // Lấy group phần tử theo width
-      const checkIsGroupOpen = group.find((f) => f.id === currentItem.id) 
-      result.push(
-        <div className='flex xmd:flex-col items-center'>
-          <div className='flex'>
-            {group.map((b, i) => {
-              const translateYValue = `-${i * 2.8}rem`;
-              const check = hover != -1 && i === hover && checkIsGroupOpen
-
-              return (
-                <a
-                  className={' dichvuducanh2 z-10'}
-                  key={i}
-                  style={{ transform: isMobile ? `` : `translateY(${translateYValue})` }}
-                >
-                  <div
-                    onClick={isMobile ? () => {
-                      setAccordionOpen(true)
-                      setHover(i)
-                      setCurrentItem(b)
-                    } : () => { }}
-                    onMouseEnter={isMobile ? () => { } : () => { setHover(i) }}
-                    onMouseLeave={() => { setHover(0) }}
-                    className={(check ? '' : ' ') + ' cursor-pointer duration-300 ease-in-out  dichvuducanh3 relative  w-[11.5rem] h-[5.4375rem] '}>
-
-                    <Image
-                      loading='lazy'
-
-                      alt='ảnh nền xanh button khi chưa hover'
-                      src='/images/homepage/union1.svg'
-                      className={'z-0 xmd:hidden shrink-0  absolute w-[11.5rem] h-[5.4375rem] duration-700 ease-in-out ' +
-                        (check ? ' opacity-0 ' : 'opacity-100')}
-                      width={185}
-                      height={90} />
-                    <Image
-                      loading='lazy'
-                      alt='ảnh nền xanh button khi đã hover'
-                      src='/images/homepage/union.svg'
-                      className={'z-0 shrink-0  absolute xmd:top-2 duration-700 w-[11.5rem] h-[5.4375rem] ease-in-out ' +
-                        (check ? 'opacity-100 ' : 'opacity-0')}
-                      width={185} height={90} />
-                    <MouseButton index={i} check={check} />
-
-                    <div className={(check ? '' : ' z-[-1] xmd:shadow-[0px_4px_8px_0px_rgba(0,0,0,0.08)] xmd:rounded-2xl bg-white') + " md:hidden  absolute top-2 left-2  w-[10.59375rem] h-[4.6875rem]"}></div>
-                    <div className={' dichvuducanh4 absolute top-3 '}>
-                      <div className={(check ? '' : 'xmd:!text-primary-40') + ' text-[1rem] font-bold leading-[1.2]  duration-300 ease-in-out text-center text-white'}>
-                        {b?.title}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* <UnionDef /> */}
-                  <div
-                    className={`grid overflow-hidden absolute md:w-[35rem] md:h-[30rem]  text-slate-600 text-sm 
-                      ${hover === i && !isMobile
-                        ? "dichvu-popup dichvu-popup-active"
-                        : "dichvu-popup "
-                      }`}
-                  >
-                    <div className="overflow-hidden">
-                      <Popup b={currentItem} />
-                    </div>
-                  </div>
-                </a>
-              )
-            })}
-          </div>
-          <div
-            className={`grid overflow-hidden  transition-all duration-700 ease-out text-slate-600 text-sm 
-          ${accordionOpen && checkIsGroupOpen && isMobile
-                ? "grid-rows-[1fr]"
-                : "grid-rows-[0fr]"
-              }`}
-          >
-            <div className="overflow-hidden">
-              <Popup hover={hover === 1} b={currentItem} />
-            </div>
-          </div>
-
-        </div>
-      );
+  const handleClick = (i) => {
+    if (active === i) {
+      setAccordionOpen(false);
+      setActive(-1);
+    } else {
+      setAccordionOpen(true);
+      setActive(i);
     }
-    return result;
   };
 
-
   return (
-    <div className='xmd:mt-[3rem] xmd:h-[40rem] z-[10]  w-full relative'>
-      <div className="flex z-[1] flex-col xmd:px-[0.75rem] md:absolute top-20 left-20 items-start space-y-[0.5rem]">
-        <div className="text-greyscaletext-40 xmd:text-primary-40 text-center xmd:text-[0.875rem] text-[1rem] not-italic font-bold leading-[normal] uppercase">
+    <div className='mt-[3rem] z-[10] h-[46em] space-y-[1.25rem]  w-full relative'>
+      <div className="px-[0.75rem] flex z-[1] flex-col  md:absolute top-20 left-20 items-start space-y-[0.5rem]">
+        <div className="text-greyscaletext-40 xmd:text-primary-40 text-center text-[0.875rem] not-italic font-bold leading-[normal] uppercase">
           Đồng hành với học sinh
         </div>
         <Title title={t.dich_vu_duc_anh} className={'xmd:text-[1.75rem] xmd:font-bold xmd:leading-[1.3]'} />
       </div>
-      <div className='  dichvuducanh md:absolute xmd:pt-[1.25rem]  xmd:flex-col xmd:left-0  top-[23rem] flex md:left-[3rem] md:gap-3'>
-        {renderItems()}
+      <div className='px-[0.75rem] w-full relative space-y-[0.75rem]'>
+        {dataDichVuTaiDucAnh?.map((d, i) => (
+          <div key={i} className='flex bg-white flex-col items-start  self-stretch border shadow-[0px_3px_24px_0px_rgba(0,132,255,0.04),0px_0px_32px_0px_rgba(0,119,229,0.04)] pl-6 pr-4 py-4 rounded-2xl border-solid border-[rgba(52,104,205,0.40)]'>
+            <div onClick={() => handleClick(i)} className={' flex items-center gap-4 self-stretch '}>
+              <div className='flex-[1_0_0] text-[color:var(--PRIMARY-50,var(--Xanh,#2B46A8))] text-lg not-italic font-bold leading-[160%]'>{d?.title}</div>
+              <div className='flex group-hover:scale-110 ease-linear duration-100 justify-center items-center px-3'>
+                <svg className={`duration-200 ease-linear ${accordionOpen && active===i ? 'rotate-180' : ''}`} xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6" fill="none">
+                  <path d="M7 4.68677L4 1.68677L1 4.68677" stroke="#132B7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+          </div>
+          <div
+              className={`grid overflow-hidden  transition-all duration-[4000ms] ease-in-out text-slate-600 text-sm 
+          ${accordionOpen && active === i
+                  ? "mt-[1rem] grid-rows-[1fr] opacity-100"
+                  : "grid-rows-[0fr] opacity-0"
+              }`}
+          >
+            <div className="overflow-hidden">
+                Chúng tôi sẽ tư vấn chọn nước, trường, ngành học dựa trên nguyện vọng của DHS, đào tạo tiếng Anh, SAT, GMAT, GRE, tổ chức thi PTE A và đăng ký thi IELTS cho DHS nếu cần; đồng thời, hướng dẫn DHS chuẩn bị hồ sơ du học: học lực, ngoại khóa, luận, PS, video, tài chính…& trực tiếp hỗ trợ DHS hoàn thiện hồ sơ du học.
+            </div>
+            </div>
+        </div>
+        ))}
+
       </div>
-      <Image loading='lazy' alt="ảnh nền phần dịch vụ cho web" src={'/images/homepage/bg_dichvu.jpg'} width={1600} height={900} className="xmd:hidden w-full h-[54.375rem]" />
-      <Image loading='lazy' alt="ảnh nền phần dịch vụ 2 cho web" src={'/images/homepage/bg-dichvu2.png'} width={1600} height={30} className="xmd:hidden w-full" />
-      <Image loading='lazy' alt="ảnh nền phần dịch vụ cho mobile" src={'/images/homepage/bg-dichvu-mobi.png'} width={380} height={620} className="md:hidden absolute w-full z-[-1] left-0 h-[40.5rem] bottom-[0rem] " />
+      <div className=" h-[19rem] absolute bottom-[0rem] w-full z-[-1]">
+        <div className='absolute bottom-[3.4rem] right-[0.3rem] text-white z-10 w-[13.75rem] text-center text-base not-italic font-extrabold leading-[120%]'>
+          Các dịch vụ đảm bảo chuyên nghiệp, minh bạch, hiệu quả và thân thiện
+        </div>
+        <Image className="absolute bottom-[0rem] left-0" riority alt="ảnh" src={'/images/homepage/bg-dichvu-mobi.png'} width={500} height={500} />
+      </div>
 
     </div >
   )

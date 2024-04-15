@@ -2,7 +2,6 @@ import {getDictionary} from '../dictionaries'
 import IndexHome from '@/sections/home/IndexHome'
 import getData from '@/lib/getData'
 export default async function HomePage({ searchParams, params }) {
-  console.log('🚀 ~ HomePage ~ params:', params)
   const t = await getDictionary(params.lang)
   const { posts, categories } = await getData(`/wp-json/okhub/v1/first-new-on-home`)
   const dataNoibat = await getData(`/wp-json/okhub/v1/posts-by-category/36`)
@@ -17,6 +16,7 @@ export default async function HomePage({ searchParams, params }) {
   return <IndexHome
     t={t}
     dataBanner={dataBanner?.acf?.sidebar_banner}
+    // dataBanner={dataBanner?.acf?.sidebar_banner}
     dataQutrinhPhatTrienDucAnh={dataBanner?.acf?.qua_trinh_phat_trien_duc_anh}
     dataDichVuTaiDucAnh={dataBanner?.acf?.dich_vu_tai_duc_anh}
     dataHocSinhTieuBieu={dataBanner?.acf?.hoc_sinh_tieu_bieu}

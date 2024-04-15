@@ -5,7 +5,6 @@ import { Autoplay } from "swiper/modules";
 import { Skeleton } from '@/components/ui/skeleton';
 
 const SlideTinTucNoiBat = ({ dataNoibat, loadingBaiviet }) => {
-  console.log({ dataNoibat });
   return (
     <Swiper
       speed={1500}

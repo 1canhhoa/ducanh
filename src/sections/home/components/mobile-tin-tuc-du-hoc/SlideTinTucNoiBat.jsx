@@ -5,7 +5,6 @@ import { Autoplay } from "swiper/modules";
 import { Skeleton } from '@/components/ui/skeleton';
 
 const SlideTinTucNoiBat = ({ dataNoibat, loadingBaiviet }) => {
-  console.log({ dataNoibat });
   return (
     <Swiper
       speed={1500}
@@ -14,7 +13,7 @@ const SlideTinTucNoiBat = ({ dataNoibat, loadingBaiviet }) => {
       modules={[Autoplay]}
       spaceBetween={50}
       slidesPerView={'auto'}
-      className='xmd:w-full  w-[37rem] xmd:!py-[0.75rem] xmd:!pl-[1rem] !pl-[3.75rem] '
+      className='w-full !py-[0.75rem] !pl-[1rem] '
     >
       {!loadingBaiviet && dataNoibat?.map((data, i) => (
         <SwiperSlide key={i}>

@@ -20,7 +20,6 @@ const StudenSlide = ({items = [], slideChange}) => {
           setActiveIndex(swiper.realIndex)
           slideChange(swiper.realIndex)
         }}
-        // onSwiper={(swiper) => console.log(swiper)}
         pagination={{clickable: true}}
         className='w-screen tablet:w-[50rem] md:w-[36rem] md:!ml-0'
         autoplay={{delay: 3000}}

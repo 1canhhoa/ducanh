@@ -1,21 +1,11 @@
 import Image from 'next/image'
-import { useRouter } from 'next/navigation';
 
 const TinTucNoiBat = ({ data }) => {
-  const router = useRouter();
-  // console.log('data', data);
-  const handleClick = () => {
-    // Thực hiện chuyển hướng đến trang chi tiết sản phẩm
-    if (data.slug) {
-      router.push(`/tin-tuc-du-hoc/${data?.post_slug}`);
-    }
-  };
   return (
     <div
-      onClick={handleClick}
-      className=" inline-flex flex-col  items-center xmd:p-[0.75rem] md:px-[1.5rem] md:pt-[1.5rem] md:pb-[1.75rem]
-         rounded-[1rem] md:border md:border-primary-50 bg-white
-         xmd:shadow-[0px_-8px_24px_0px_rgba(0,0,0,0.08),74px_151px_67px_0px_rgba(158,158,158,0.01),42px_85px_57px_0px_rgba(158,158,158,0.05)] xmd:backdrop-blur-[10px]
+      className=" inline-flex flex-col items-center p-[0.75rem]
+         rounded-[1rem] bg-white
+         shadow-[0px_-8px_24px_0px_rgba(0,0,0,0.08),74px_151px_67px_0px_rgba(158,158,158,0.01),42px_85px_57px_0px_rgba(158,158,158,0.05)] backdrop-blur-[10px]
          "
 
     >
@@ -37,17 +27,16 @@ const TinTucNoiBat = ({ data }) => {
               </div>
             </div>
           </div>
-          <div className="xmd:w-[19.9375rem] line-clamp-3 w-[27.3125rem] text-greyscaletext-80 xmd:text-[1.25rem] text-2xl not-italic xmd:font-semibold font-bold leading-[150%] xmd:tracking-[-0.0125rem] tracking-[-0.015rem]">
+          <div className="w-[19.9375rem] line-clamp-3 text-greyscaletext-80 text-[1.25rem] not-italic font-semibold leading-[150%] tracking-[-0.0125rem]">
             {data?.title}
           </div>
-          <div className="xmd:w-[19.9375rem] w-[27.3125rem] text-greyscaletext-50 text-base not-italic font-normal leading-[150%]">
+          <div className="w-[19.9375rem] text-greyscaletext-50 text-base not-italic font-normal leading-[150%]">
             {data?.description}
           </div>
         </div>
         <Image loading='lazy' alt='ảnh minh họa thẻ tin tức '
-          // src={'/images/homepage/card.png'}
           src={data.thumbnail}
-          className='xmd:w-[20.0625rem] xmd:h-[12.6875rem] w-[27.375rem] h-[17.375rem] rounded-[0.5rem] shrink-0' width={440} height={280} />
+          className='w-[20.0625rem] h-[12.6875rem] rounded-[0.5rem] shrink-0' width={440} height={280} />
       </div>
     </div>
   )

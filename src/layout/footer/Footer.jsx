@@ -1,4 +1,5 @@
 
+import getData from '@/lib/getData'
 import Image from 'next/image'
 import Link from 'next/link'
 const data_section = [
@@ -17,35 +18,37 @@ const data_section1 = [
 ]
 const Section = ({ data }) => {
   return <div className="flex flex-col items-start space-y-8">
-    {data.map((d, i) => (
+    {data?.map((d, i) => (
       <div key={i} className="w-max text-white button1  uppercase">
-        {d}
+        {d?.title}
       </div>
     ))}
 
   </div>
 }
-export default function Footer() {
+export default async function Footer() {
+  const datasFooter = await getData('/wp-json/acf/v3/pages/476')
+  const footer = datasFooter?.acf?.footer
   return (
     <footer className='w-full relative  xmd:px-[1.5rem] shrink-0 bg-primary-40 mt-[6rem]'>
       {/* logo,name */}
       <div className='md:absolute md:top-[2.5rem] md:left-1/2 md:-translate-x-1/2 flex flex-col xmd:flex-col-reverse xmd:gap-[1.5rem] space-y-[2.81rem] items-center'>
         <div className='xmd:w-[19rem] xmd:text-white text-primary-10 text-center xmd:text-[1.125rem] text-xl not-italic font-bold xmd:leading-[160%] leading-[120%] xmd:tracking-normal tracking-[-0.00313rem]'>
-          CÔNG TY TƯ VẤN DU HỌC & DỊCH THUẬT ĐỨC ANH
+          {footer?.name_company}
         </div>
         <Link
           id='logo_nav'
           href='/'
         >
-          <Image loading='lazy' alt="ảnh logo du học đức anh" src={'/images/footer/logo.png'} width={235} height={69}
+          <Image loading='lazy' alt="ảnh logo du học đức anh" src={footer?.logo?.url} width={235} height={69}
             className="md:mr-12  xmd:w-[14.5625rem] xmd:h-[4.271rem]  xlg:w-[19rem] xlg:h-[6.9375rem]   w-[14.5625rem] h-[4.271rem]" />
         </Link>
       </div>
       {/* thong tin va chi nhanh */}
       <div className='flex  xmd:flex-col justify-between items-start md:px-[3.75rem] xmd:space-y-[2.63rem] xmd:pt-[3.42rem] pt-[6.75rem]'>
         <div className='inline-flex xmd:flex-col items-start xmd:space-y-[2rem] md:space-x-[3.4375rem]'>
-          <Section data={data_section} />
-          <Section data={data1_section} />
+          <Section data={footer?.main_footer} />
+          <Section data={footer?.main2_footer} />
         </div>
         <div className=' flex md:w-[26.125rem] flex-col items-start space-y-[0.4375rem]'>
           <div className='h5 font-semibold text-white flex items-center xmd:space-x-[0.56rem]'>
@@ -91,16 +94,16 @@ export default function Footer() {
           </div>
           <div className='  w-[20.4375rem] md:w-[26.125rem] h-[0.0625rem] bg-[#4E91F6]'></div>
           <div className='md:flex md:flex-col xmd:grid xmd:grid-cols-2  xmd:gap-x-[1.38rem] w-max items-start xmd:gap-y-[1.3rem] md:space-y-[1rem] pt-[0.6rem]'>
-            {data_section1.map((d, i) => (
-              <div className='sub1 xmd:flex-col text-white flex xmd:justify-start xmd:items-start items-center justify-center xmd:space-y-[0.75rem] md:space-x-[1.56rem]'>
+            {footer?.chi_nhanh_van_phong?.map((d, i) => (
+              <div key={i} className='sub1 xmd:flex-col text-white flex xmd:justify-start xmd:items-start items-center justify-center xmd:space-y-[0.75rem] md:space-x-[1.56rem]'>
                 <div className='min-w-[6.2rem] xmd:font-bold xmd:leading-normal'>
-                  {d.place}
+                  {d?.city}
                 </div>
                 <div className='min-w-[9.75rem] xmd:body12 xmd:font-semibold xmd:text-primary-10'>
-                  {d.place_detail}
+                  {d?.place}
                 </div>
                 <div className=' xmd:body12 xmd:font-semibold xmd:text-primary-10'>
-                  {d.number}
+                  {d?.phone}
                 </div>
               </div>
             ))}
@@ -181,10 +184,10 @@ export default function Footer() {
             <div className="mt-[0.45rem] md:hidden w-[20.4375rem] md:w-[26.125rem] h-[0.0625rem] bg-[#4E91F6]"></div>
             <div className="mt-[1em] flex flex-col items-start space-y-[0.25rem]">
               <div className="text-[1rem] xmd:leading-[1.875rem] text-white">
-                Hotline chung: 098 870 9698
+                {footer?.lien_he?.dien_thoai}
               </div>
               <div className="text-[1rem] xmd:leading-[1.875rem] text-white">
-                Email: duhoc@ducanh.edu.vn
+                {footer?.lien_he?.email}
               </div>
             </div>
           </div>
@@ -199,10 +202,10 @@ export default function Footer() {
             <div className="mt-[0.45rem] md:hidden w-[20.4375rem] md:w-[26.125rem] h-[0.0625rem] bg-[#4E91F6]"></div>
             <div className="mt-[1em] flex flex-col items-start space-y-[0.25rem]">
               <div className="text-[1rem] xmd:leading-[1.875rem] text-white">
-                Tel: 024 3971 6229
+                {footer?.host_line?.host_line1}
               </div>
               <div className="text-[1rem] xmd:leading-[1.875rem] text-white">
-                Tel: 028 3929 3995
+                {footer?.host_line?.host_line2}
               </div>
             </div>
           </div>

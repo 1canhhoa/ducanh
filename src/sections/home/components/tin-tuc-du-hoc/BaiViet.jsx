@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import { Skeleton } from '@/components/ui/skeleton'
 const BaiViet = ({ data, loadingBaiviet }) => {
-  // console.log('data', data);
-
   return (
     <>
       {loadingBaiviet ?

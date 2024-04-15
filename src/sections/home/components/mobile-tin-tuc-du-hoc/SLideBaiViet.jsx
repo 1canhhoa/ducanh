@@ -6,7 +6,6 @@ import { data } from 'autoprefixer';
 
 
 const SLideBaiViet = ({ setSwiper, dataTintucs, swiperRef, loadingBaiviet }) => {
-  console.log({ dataTintucs });
   const data = [1, 2, 3, 4, 5, 6, 7, 8]
   return (
     <div className='md:w-[63rem] flex justify-center items-center'>

@@ -17,7 +17,6 @@ const data_mini_menu = [
   { img: '/images/homepage/e-learning.svg', title: 'E-learning' },
 ]
 const BannerHome = ({ dataBanner }) => {
-  console.log({ dataBanner: dataBanner});
   const swiperRef = useRef(null)
   const [indexSlider, setIndexSlider] = useState(0)
 

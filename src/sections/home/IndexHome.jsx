@@ -30,6 +30,58 @@ const IndexHome = ({
 }) => {
   return (
     <main className='relative w-full flex-col flex justify-center items-start xmd:bg-elevation-blue'>
+
+
+
+      {isMobile && <section className='mx-auto w-full flex justify-center items-center md:mt-[10rem] mt-[3.65rem]'>
+        <MobileBannerHome dataBanner={dataBanner} isMobile={isMobile} />
+      </section>}
+      {isMobile && <section className='mx-auto w-full flex justify-center items-center'>
+        <MobileLichHoiThao
+          t={t.home_page}
+          isMobile={isMobile}
+          dataLocations={dataLocations}
+          dataCountries={dataCountries}
+          dataLichHoithaos={dataLichHoithaos}
+        />
+      </section>}
+
+      {isMobile && <section className='w-full'>
+        <MobileQuaTrinhPhatTrien
+          dataQutrinhPhatTrienDucAnh={dataQutrinhPhatTrienDucAnh}
+          isMobile={isMobile} />
+      </section>}
+      {isMobile && <section className='w-full'>
+        <MobileDichVuDucAnh
+          t={t.home_page}
+          dataDichVuTaiDucAnh={dataDichVuTaiDucAnh}
+          isMobile={isMobile} />
+      </section>}
+      {isMobile && <section className='w-full'>
+        <MobileTinTucDuHoc
+          t={t.home_page}
+          dataNoibat={dataNoibat}
+          categories={categories}
+          dataTintucs={dataTintucs} />
+      </section>}
+      {isMobile && <section className='w-fit'>
+        <MobileHocSinhTieuBieu
+          dataHocSinhTieuBieu={dataHocSinhTieuBieu}
+          t={t.home_page}
+          isMobile={isMobile} />
+      </section>}
+      {isMobile &&<section className='w-full'>
+        <MobileTruongHocLienKet t={t.home_page} />
+      </section>}
+
+
+
+
+
+
+
+
+
       {!isMobile && <section className='mx-auto w-full flex justify-center items-center md:mt-[10rem] mt-[3.65rem]'>
         <BannerHome dataBanner={dataBanner} isMobile={isMobile} />
       </section>}
@@ -71,51 +123,6 @@ const IndexHome = ({
       </section>}
 
 
-
-
-      {isMobile && <section className='mx-auto w-full flex justify-center items-center md:mt-[10rem] mt-[3.65rem]'>
-        <MobileBannerHome dataBanner={dataBanner} isMobile={isMobile} />
-      </section>}
-      {isMobile && <section className='mx-auto w-full flex justify-center items-center'>
-        <MobileLichHoiThao
-          t={t.home_page}
-          isMobile={isMobile}
-          dataLocations={dataLocations}
-          dataCountries={dataCountries}
-          dataLichHoithaos={dataLichHoithaos}
-        />
-      </section>}
-
-
-
-      {/* Huy làm từ đây nha */}
-      {isMobile && <section className='w-full'>
-        <MobileQuaTrinhPhatTrien
-          dataQutrinhPhatTrienDucAnh={dataQutrinhPhatTrienDucAnh}
-          isMobile={isMobile} />
-      </section>}
-      {isMobile && <section className='w-full'>
-        <MobileDichVuDucAnh
-          t={t.home_page}
-          dataDichVuTaiDucAnh={dataDichVuTaiDucAnh}
-          isMobile={isMobile} />
-      </section>}
-      {isMobile && <section className='w-full'>
-        <MobileTinTucDuHoc
-          t={t.home_page}
-          dataNoibat={dataNoibat}
-          categories={categories}
-          dataTintucs={dataTintucs} />
-      </section>}
-      {isMobile && <section className='w-fit'>
-        <MobileHocSinhTieuBieu
-          dataHocSinhTieuBieu={dataHocSinhTieuBieu}
-          t={t.home_page}
-          isMobile={isMobile} />
-      </section>}
-      {<section className='w-full'>
-        <MobileTruongHocLienKet t={t.home_page} />
-      </section>}
 
     </main>
   )
