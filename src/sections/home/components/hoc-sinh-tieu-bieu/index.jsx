@@ -136,7 +136,7 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
           </div>
         </button>
       </div>
-      <div ref={carouselRef} className=" slider-hocsinh" >
+      <div  className=" slider-hocsinh" >
         {dataHocSinhTieuBieu?.map((d, i) => (
           <Image key={i} loading='lazy' width={392} height={730} alt={`ảnh học sinh ${i}`}
             className="item xmd:!bottom-[-5.1rem] !bottom-[-3.1rem]" ref={el => itemsRef.current[i] = el} src={d?.image?.url} />

@@ -43,7 +43,7 @@ const DichVuDucAnh = ({ t, isMobile, dataDichVuTaiDucAnh }) => {
               </div>
           </div>
           <div
-              className={`grid overflow-hidden  transition-all duration-[4000ms] ease-in-out text-slate-600 text-sm 
+              className={`grid overflow-hidden  transition-all duration-500 ease-in-out text-slate-600 text-sm 
           ${accordionOpen && active === i
                   ? "mt-[1rem] grid-rows-[1fr] opacity-100"
                   : "grid-rows-[0fr] opacity-0"
@@ -61,7 +61,7 @@ const DichVuDucAnh = ({ t, isMobile, dataDichVuTaiDucAnh }) => {
         <div className='absolute bottom-[3.4rem] right-[0.3rem] text-white z-10 w-[13.75rem] text-center text-base not-italic font-extrabold leading-[120%]'>
           Các dịch vụ đảm bảo chuyên nghiệp, minh bạch, hiệu quả và thân thiện
         </div>
-        <Image className="absolute bottom-[0rem] left-0" riority alt="ảnh" src={'/images/homepage/bg-dichvu-mobi.png'} width={500} height={500} />
+        <Image className="absolute bottom-[0rem] w-full left-0" riority alt="ảnh" src={'/images/homepage/bg-dichvu-mobi.png'} width={500} height={500} />
       </div>
 
     </div >
