@@ -51,7 +51,7 @@ const TinTicDuHoc = ({ categories, dataTintucs, dataNoibat }) => {
         <Title className={'xmd:pl-[1rem] '} title={'Tin tức du học'} />
         <div className='w-full xmd:pl-[1rem] no-scrollbar xmd:overflow-x-auto relative flex items-end gap-[0.75rem] md:self-stretch'>
           <div className=" xmd:w-max flex items-start gap-[0.5rem] flex-[1_0_0]">
-            {categories?.map((t, i) => (
+            {categories?.filter((f) => f?.slug !== 'uncategorized' && f?.slug !== 'bai-viet-noi-bat' && f?.slug !== 'all-bai-viet' )?.map((t, i) => (
               <button onClick={() => setApiUrl(t?.id)} key={i} className={`flex xmd:w-max justify-center items-center 
               py-[0.75rem] hover:bg-primary-5 duration-500 ease-in-out px-[1rem] 
               gap-[0.625rem] rounded-[0.5rem] border border-primary-20 `
@@ -62,7 +62,7 @@ const TinTicDuHoc = ({ categories, dataTintucs, dataNoibat }) => {
               </button>
             ))}
           </div>
-          <div className=' xmd:hidden absolute h-full w-[6.7rem] top-1/2 -translate-y-1/2 right-0 z-1 pointer-events-none'>
+          <div className=' xmd:hidden absolute right-[10.3rem] h-full w-[6.7rem] top-1/2 -translate-y-1/2 z-1 pointer-events-none'>
             <NavigationCustom
               indexSlider={3}
               length={5}
@@ -71,6 +71,11 @@ const TinTicDuHoc = ({ categories, dataTintucs, dataNoibat }) => {
               outline={true}
             />
           </div>
+          <div onClick={() => setApiUrl(categories?.find((f) => f?.slug === 'all-bai-viet')?.id)} className="flex h-[2.625rem] justify-center items-center gap-2.5 px-[1.875rem] py-[0.9375rem] rounded-lg
+          bg-gradient-to-b from-[#2E6BC6] from-[9.83%] via-[#2E6BC6] via-[35.38%] to-[#29A4EA] to-[86.69%] 
+          text-white text-center text-sm not-italic font-bold leading-[120%] w-max
+
+          ">{categories?.find((f) => f?.slug === 'all-bai-viet')?.name}</div>
         </div>
       </div>
       <div className=" flex xmd:flex-col justify-start items-start w-full">

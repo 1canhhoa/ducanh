@@ -16,7 +16,6 @@ export default async function HomePage({ searchParams, params }) {
   return <IndexHome
     t={t}
     dataBanner={dataBanner?.acf?.sidebar_banner}
-    // dataBanner={dataBanner?.acf?.sidebar_banner}
     dataQutrinhPhatTrienDucAnh={dataBanner?.acf?.qua_trinh_phat_trien_duc_anh}
     dataDichVuTaiDucAnh={dataBanner?.acf?.dich_vu_tai_duc_anh}
     dataHocSinhTieuBieu={dataBanner?.acf?.hoc_sinh_tieu_bieu}
