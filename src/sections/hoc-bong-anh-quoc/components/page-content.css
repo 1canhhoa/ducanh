@@ -1,0 +1,57 @@
+.page-content-renderer>h2 {
+    margin-top: 1.5rem;
+    color: var(--PRIMARY-50, var(--Xanh, #2B46A8));
+
+    /* DRAFT/sub/24 bold */
+    /* font-family: "Plus Jakarta Sans"; */
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    /* 1.95rem */
+    margin-bottom: 0.5rem;
+}
+
+.page-content-renderer>p:not(ul+p) {
+    margin-bottom: 0.5rem;
+}
+
+.page-content-renderer>ol>li {
+    list-style: decimal;
+    margin-left: 1.5rem;
+}
+
+.page-content-renderer>ul>li {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+.page-content-renderer strong {
+    margin-top: 0.5rem;
+}
+
+.page-content-renderer a {
+    text-decoration: underline;
+}
+
+.page-content-renderer img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.page-content-renderer p>img {
+    margin-top: 2rem;
+}
+
+.page-content-renderer ul+p {
+    margin-top: 1rem;
+}
+
+.page-content-renderer ul+p:last-child {
+    margin-top: 1rem;
+}
+
+.page-content-renderer p>span {
+    overflow: hidden;
+    display: block;
+}

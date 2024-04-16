@@ -1,5 +1,5 @@
 import {getDictionary} from '@/app/[lang]/dictionaries'
-import getData from '@/libs/getData'
+import getData from '@/libs/getDataDefaultWPEndpointWithPagination'
 import RecruitmentDetailsIndex from '@/sections/recruitmentDetails/RecruitmentDetailsIndex'
 
 const RecruitmentDetailsPage = async ({params}) => {

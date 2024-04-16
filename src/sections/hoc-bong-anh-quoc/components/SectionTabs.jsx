@@ -3,10 +3,11 @@ import clsx from 'clsx'
 import {useState} from 'react'
 
 const SectionTabs = ({items = [], className = '', selectChange}) => {
+  // console.log({items})
   const [activeIndex, setActiveIndex] = useState(0)
   const handleActiveIndexChange = (tabItem, index) => {
     setActiveIndex(index)
-    selectChange(tabItem)
+    selectChange(tabItem, index)
   }
   return (
     <section className={className}>
@@ -29,7 +30,7 @@ const SectionTabs = ({items = [], className = '', selectChange}) => {
                   'bg-white xmd:bg-primary-5 text-greyscaletext-30 xmd:text-primary-50',
               )}
             >
-              {tabItem.title}
+              {tabItem.name}
             </div>
           )
         })}

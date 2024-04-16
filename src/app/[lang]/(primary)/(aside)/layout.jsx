@@ -8,7 +8,7 @@ export default function AsideLayout({children}) {
       userAgent,
     )
   return (
-    <main className='flex w-full justify-center items-start pt-[9.69rem] md:px-[1.5rem]'>
+    <main className='flex w-full justify-center items-start pt-[9.69rem] xmd:pt-[3.69rem] md:px-[1.5rem]'>
       <AsidePrimary isMobile={isMobile} />
       {children}
     </main>

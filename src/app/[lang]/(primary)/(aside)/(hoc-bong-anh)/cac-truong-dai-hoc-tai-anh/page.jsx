@@ -1,9 +1,12 @@
+import dynamic from 'next/dynamic'
 import {getDictionary} from '@/app/[lang]/dictionaries'
 import getDataCustomEndpoint from '@/libs/getDataCustomEndpoint'
 import getDataDefaultWPEndpoint from '@/libs/getDataDefaultWPEndpoint'
 import PostPrimary from '@/sections/hoc-bong-anh-quoc/components/PostPrimary'
 
-const ReasonPage = async ({params}) => {
+const Map = dynamic(() => import('@/components/Map/Map'), {ssr: false})
+
+const Page = async ({params}) => {
   const t = await getDictionary(params.lang)
   const resTags = await getDataDefaultWPEndpoint('/tags')
   const resSuggestLinks = await getDataCustomEndpoint('/suggested-links')
@@ -15,18 +18,21 @@ const ReasonPage = async ({params}) => {
       page: 1,
     },
   )
-  const res = await getDataDefaultWPEndpoint('/posts/389')
+  const res = await getDataDefaultWPEndpoint('/posts/655')
   return (
-    <PostPrimary
-      lang={t.scholarship}
-      res={res}
-      tags={resTags}
-      suggestLinks={resSuggestLinks}
-      dataRelativePosts={resRelativePosts}
-      id={'reason-to-select-duc-anh'}
-      title={t.scholarship.h2_reason}
-    />
+    <>
+      <Map lang={t} />
+      <PostPrimary
+        lang={t.scholarship}
+        tags={resTags}
+        suggestLinks={resSuggestLinks}
+        dataRelativePosts={resRelativePosts}
+        res={res}
+        id='university-schools'
+        title={t.scholarship.h2_university_schools}
+      />
+    </>
   )
 }
 
-export default ReasonPage
+export default Page

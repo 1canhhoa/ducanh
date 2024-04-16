@@ -3,7 +3,7 @@ import getDataCustomEndpoint from '@/libs/getDataCustomEndpoint'
 import getDataDefaultWPEndpoint from '@/libs/getDataDefaultWPEndpoint'
 import PostPrimary from '@/sections/hoc-bong-anh-quoc/components/PostPrimary'
 
-const ReasonPage = async ({params}) => {
+const Page = async ({params}) => {
   const t = await getDictionary(params.lang)
   const resTags = await getDataDefaultWPEndpoint('/tags')
   const resSuggestLinks = await getDataCustomEndpoint('/suggested-links')
@@ -15,18 +15,18 @@ const ReasonPage = async ({params}) => {
       page: 1,
     },
   )
-  const res = await getDataDefaultWPEndpoint('/posts/389')
+  const res = await getDataDefaultWPEndpoint('/posts/663')
   return (
     <PostPrimary
       lang={t.scholarship}
-      res={res}
       tags={resTags}
       suggestLinks={resSuggestLinks}
       dataRelativePosts={resRelativePosts}
-      id={'reason-to-select-duc-anh'}
-      title={t.scholarship.h2_reason}
+      res={res}
+      id={'register-to-study'}
+      title={t.scholarship.h2_register_to_study}
     />
   )
 }
 
-export default ReasonPage
+export default Page

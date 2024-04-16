@@ -1,6 +1,6 @@
 import AboutUnitedKingom from '@/sections/hoc-bong-anh-quoc/components/AboutUnitedKingom'
 import Reason from '@/sections/hoc-bong-anh-quoc/components/Reason'
-import EducationSystem from '@/sections/hoc-bong-anh-quoc/components/EducationSystem'
+import EducationSystem from '@/sections/hoc-bong-anh-quoc/components/PostPrimary'
 import SecondarySchools from '@/sections/hoc-bong-anh-quoc/components/SecondarySchools'
 import TrainingInstitutes from '@/sections/hoc-bong-anh-quoc/components/TrainingInstitutes'
 import UniversitySchools from '@/sections/hoc-bong-anh-quoc/components/UniversitySchools'

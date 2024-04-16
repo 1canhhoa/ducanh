@@ -1,14 +1,27 @@
+'use client'
+
 import Image from 'next/image'
-const Pagination = ({page = 1, perpage = 4, total}) => {
-  const lastPage = Math.ceil(total / perpage)
+const Pagination = ({pageChangeCallback, page = 1, pageCount = 1}) => {
   const pages = []
-  for (let i = 1; i <= lastPage; i++) {
+  for (let i = 1; i <= Number(pageCount); i++) {
     pages.push(i)
   }
+  // console.log({page, pageCount: Number(pageCount), pages})
+
+  const handlePageButtonClick = (pageNum = 1, action = 'page') => {
+    if (action === 'prev') {
+    }
+  }
+
   return (
     <section className='p-[1.3125rem_2rem_0rem_2rem] bg-white mt-[2.4rem] w-full'>
       <nav className='pagination-wrapper flex items-center justify-center'>
-        <button className='p-[0.69269rem] grid place-items-center mr-[0.5rem]'>
+        <button
+          className='p-[0.69269rem] grid place-items-center mr-[0.5rem]'
+          onClick={() =>
+            handlePageButtonClick(Number(page) > 1 ? Number(page) - 1 : 1)
+          }
+        >
           <Image
             src={'/images/primary/Chevron_Left.svg'}
             width={100}
