@@ -2,6 +2,10 @@
 import Image from 'next/image'
 import { country_truonglk } from '@/lib/data'
 import { useState } from 'react';
+import { Swiper, SwiperSlide, } from "swiper/react";
+import { Autoplay, FreeMode, Grid, Navigation } from 'swiper/modules'
+import "swiper/css";
+import 'swiper/css/grid';
 const TruongLienKet = () => {
   const [displayData, setDisplayData] = useState(country_truonglk);
 
@@ -24,16 +28,38 @@ const TruongLienKet = () => {
       </div>
       <div
         className='xmd:mt-[2rem] overflow-x-hidden no-scrollbar absolute xmd:top-[8rem] md:bottom-0 w-full'>
-        <div className=" contentlk marquee md:flex md:items-center w-max xmd:grid xmd:grid-rows-2 xmd:grid-flow-col xmd:grid-cols-3 xmd:gap-x-[2.7rem] xmd:pl-[1.4rem] ">
+        <Swiper
+          slidesPerView='auto'
+          freeMode={true}
+          loop
+          modules={[Navigation, Autoplay, FreeMode, Grid]}
+          className='w-[23.4375rem] h-[18rem] !pointer-events-none
+            '
+          grid={{
+            rows: 2,
+          }}
+
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: false,
+          }}
+          speed={3000}
+          id="swiper_social"
+        >
           {displayData.map((d, i) => (
-            <div key={i} className="flex  flex-col space-y-[0.75rem] md:w-40 md:h-[9.1875rem] justify-center items-center  py-[1.4375rem] md:px-[2.65625rem]">
-              <Image loading='lazy' alt={`ảnh quốc gia ${d}`} src={d?.img} width={60} height={60} className="size-[3.625rem]" />
-              <div className="text-primary-60 text-center xmd:text-[1rem] text-xl not-italic xmd:font-medium font-semibold leading-[150%] xmd:tracking-normal tracking-[-0.0125rem]">
-                {d?.tittle}
+            <SwiperSlide className='!w-[6rem] !pointer-events-none'>
+
+              <div key={i} className="flex flex-col space-y-[0.75rem] justify-center items-center  py-[1.4375rem]">
+                <Image loading='lazy' alt={`ảnh quốc gia ${d}`} src={d?.img} width={60} height={60} className="size-[3.625rem]" />
+                <div className="text-primary-60 text-center xmd:text-[1rem] text-xl not-italic xmd:font-medium font-semibold leading-[150%] xmd:tracking-normal tracking-[-0.0125rem]">
+                  {d?.tittle}
+                </div>
               </div>
-            </div>
+            </SwiperSlide>
+
           ))}
-        </div>
+        </Swiper>
 
       </div>
 

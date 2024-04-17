@@ -169,18 +169,11 @@ export const country_truonglk = [
     tittle: 'Mỹ',
   },
   {
-    id: 5,
-    img: '/images/homepage/singapo.svg',
-    bg: '/images/homepage/bg-singapo.png',
+    id: 3,
+    img: '/images/homepage/canada.svg',
+    bg: '/images/homepage/bg-canada.png',
 
-    tittle: 'Singapore',
-  },
-  {
-    id: 6,
-    img: '/images/homepage/switzerland.svg',
-    bg: '/images/homepage/bg-switzerland.png',
-
-    tittle: 'Thuỵ Sỹ',
+    tittle: 'Canada',
   },
   {
     id: 3,
@@ -204,25 +197,11 @@ export const country_truonglk = [
     tittle: 'Canada',
   },
   {
-    id: 4,
-    img: '/images/homepage/usa.svg',
-    bg: '/images/homepage/bg-usa.png',
+    id: 3,
+    img: '/images/homepage/canada.svg',
+    bg: '/images/homepage/bg-canada.png',
 
-    tittle: 'Mỹ',
-  },
-  {
-    id: 5,
-    img: '/images/homepage/singapo.svg',
-    bg: '/images/homepage/bg-singapo.png',
-
-    tittle: 'Singapore',
-  },
-  {
-    id: 6,
-    img: '/images/homepage/switzerland.svg',
-    bg: '/images/homepage/bg-switzerland.png',
-
-    tittle: 'Thuỵ Sỹ',
+    tittle: 'Canada',
   },
   {
     id: 3,
@@ -246,25 +225,11 @@ export const country_truonglk = [
     tittle: 'Canada',
   },
   {
-    id: 4,
-    img: '/images/homepage/usa.svg',
-    bg: '/images/homepage/bg-usa.png',
+    id: 3,
+    img: '/images/homepage/canada.svg',
+    bg: '/images/homepage/bg-canada.png',
 
-    tittle: 'Mỹ',
-  },
-  {
-    id: 5,
-    img: '/images/homepage/singapo.svg',
-    bg: '/images/homepage/bg-singapo.png',
-
-    tittle: 'Singapore',
-  },
-  {
-    id: 6,
-    img: '/images/homepage/switzerland.svg',
-    bg: '/images/homepage/bg-switzerland.png',
-
-    tittle: 'Thuỵ Sỹ',
+    tittle: 'Canada',
   },
   {
     id: 3,
@@ -286,125 +251,6 @@ export const country_truonglk = [
     bg: '/images/homepage/bg-canada.png',
 
     tittle: 'Canada',
-  },
-  {
-    id: 4,
-    img: '/images/homepage/usa.svg',
-    bg: '/images/homepage/bg-usa.png',
-
-    tittle: 'Mỹ',
-  },
-  {
-    id: 5,
-    img: '/images/homepage/singapo.svg',
-    bg: '/images/homepage/bg-singapo.png',
-
-    tittle: 'Singapore',
-  },
-  {
-    id: 6,
-    img: '/images/homepage/switzerland.svg',
-    bg: '/images/homepage/bg-switzerland.png',
-
-    tittle: 'Thuỵ Sỹ',
-  },
-  {
-    id: 3,
-    img: '/images/homepage/canada.svg',
-    bg: '/images/homepage/bg-canada.png',
-
-    tittle: 'Canada',
-  },
-  {
-    id: 4,
-    img: '/images/homepage/usa.svg',
-    bg: '/images/homepage/bg-usa.png',
-
-    tittle: 'Mỹ',
-  },
-  {
-    id: 3,
-    img: '/images/homepage/canada.svg',
-    bg: '/images/homepage/bg-canada.png',
-
-    tittle: 'Canada',
-  },
-  {
-    id: 4,
-    img: '/images/homepage/usa.svg',
-    bg: '/images/homepage/bg-usa.png',
-
-    tittle: 'Mỹ',
-  },
-  {
-    id: 5,
-    img: '/images/homepage/singapo.svg',
-    bg: '/images/homepage/bg-singapo.png',
-
-    tittle: 'Singapore',
-  },
-  {
-    id: 6,
-    img: '/images/homepage/switzerland.svg',
-    bg: '/images/homepage/bg-switzerland.png',
-
-    tittle: 'Thuỵ Sỹ',
-  },
-  {
-    id: 3,
-    img: '/images/homepage/canada.svg',
-    bg: '/images/homepage/bg-canada.png',
-
-    tittle: 'Canada',
-  },
-  {
-    id: 4,
-    img: '/images/homepage/usa.svg',
-    bg: '/images/homepage/bg-usa.png',
-
-    tittle: 'Mỹ',
-  },
-  {
-    id: 3,
-    img: '/images/homepage/canada.svg',
-    bg: '/images/homepage/bg-canada.png',
-
-    tittle: 'Canada',
-  },
-  {
-    id: 4,
-    img: '/images/homepage/usa.svg',
-    bg: '/images/homepage/bg-usa.png',
-
-    tittle: 'Mỹ',
-  },
-  {
-    id: 5,
-    img: '/images/homepage/singapo.svg',
-    bg: '/images/homepage/bg-singapo.png',
-
-    tittle: 'Singapore',
-  },
-  {
-    id: 6,
-    img: '/images/homepage/switzerland.svg',
-    bg: '/images/homepage/bg-switzerland.png',
-
-    tittle: 'Thuỵ Sỹ',
-  },
-  {
-    id: 3,
-    img: '/images/homepage/canada.svg',
-    bg: '/images/homepage/bg-canada.png',
-
-    tittle: 'Canada',
-  },
-  {
-    id: 4,
-    img: '/images/homepage/usa.svg',
-    bg: '/images/homepage/bg-usa.png',
-
-    tittle: 'Mỹ',
   },
 ]
 export const data_table = [

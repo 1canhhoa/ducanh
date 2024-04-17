@@ -3,27 +3,20 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 const Section = ({ num, text, mobi}) => {
-  return <div className={`${mobi ? "!bg-transparent" : ""} group relative bg-white flex xmd:items-center items-end pb-5 justify-center w-[16.375rem] h-[14.0625rem]  shrink-0 
-  xmd:w-[8.75rem] xmd:h-[8.8125rem] xmd:rounded-3xl
+  return <div className={`group relative bg-white flex xmd:items-center items-end pb-5 justify-center w-[16.375rem] h-[14.0625rem]  shrink-0 
   shadow-[0px_3px_24px_0px_rgba(0,132,255,0.04),0px_0px_32px_0px_rgba(0,119,229,0.04)] rounded-[1.08213rem]`}>
     <div className='inline-flex flex-col items-center'>
-      <div className={` ${mobi ? '!text-white' : 'from-[#2E6BC6] from-[9.83%]  via-[#2E6BC6] via-[9.83%]  to-[#29A4EA] to-[86.69%] text-center text_gradient'}  
-          text-6xl not-italic font-extrabold leading-[130%] tracking-[-0.1875rem] bg-clip-text
-          xmd:text-[2.75rem]  xmd:tracking-[-0.1375rem]
+      <div className={`   
+          text-6xl not-italic font-extrabold leading-[130%] tracking-[-0.1875rem]
+          absolute bottom-[2.5rem] z-[50] 
+          text-[#2B46A8] group-hover:text-indigo-500
+          duration-500 ease-linear
+          `}>{num}</div>
 
-          bg-gradient-to-r 
-          md:from-[#2B46A8] md:from-[100%] 
-          md:to-[#082072] 
-          md:to-[0%]
-      
-          md:absolute md:bottom-[2.5rem] md:z-[50]
-         `}>{num}</div>
-      <div className={`${mobi ? '!text-white' : 'xmd:w-[5.1875rem] from-[#2E6BC6] from-[9.83%]  via-[#2E6BC6] via-[9.83%]  to-[#29A4EA] to-[86.69%] text-center text_gradient'} 
-       text-base not-italic font-extrabold leading-[130%] tracking-[-0.02rem] bg-clip-text
+      <div className={`
+       text-base not-italic font-extrabold leading-[130%] tracking-[-0.02rem] 
       xmd:text-xs xmd:tracking-[-0.015rem]
-         bg-gradient-to-r md:from-[#2B46A8] md:from-[100%] md:to-[#082072] md:to-[0%]
-
-         hover:bg-[url("/images/homepage/bg-text.svg")]
+text-[#2B46A8] group-hover:text-[#29A4EA]
          ease-linear duration-1000
          `}>{text}</div>
     </div>
@@ -116,7 +109,7 @@ const QuaTrinhPhatTrien = ({ isMobile, dataQutrinhPhatTrienDucAnh }) => {
                 <div className={' w-[0.5rem] h-[0.5rem] bg-secondary-40 rounded-full duration-300 ease-linear absolute xmd:bottom-[0.06rem] xmd:left-[0.04rem] bottom-[0.06rem] left-[0.04rem] xmd:scale-0 scale-50' + (hover && index === i ? 'scale-100 circle1' : '')}></div>
 
                 <div className={' xmd:size-[0.22425rem] size-[0.625rem] bg-secondary-40 absolute xmd:bottom-0 xmd:left-[0.5rem] bottom-0 left-0 duration-300 ease-linear  opacity-100 ' + (hover && index === i ? "translate-x-10 !opacity-0 " : "")}></div>
-                <div className=" text-white pl-4 !pointer-events-none xmd:text-[1.07631rem] text-[3rem] not-italic w-max font-bold leading-[normal] xmd:tracking-[-0.02244rem] tracking-[-0.0625rem]">
+                <div className={`${hover && index === i ? 'translate-x-[1.5rem]' : ''} duration-300 ease-linear  text-white pl-4 !pointer-events-none xmd:text-[1.07631rem] text-[3rem] not-italic w-max font-bold leading-[normal] xmd:tracking-[-0.02244rem] tracking-[-0.0625rem]`}>
                   {d?.name}
                 </div>
               </div>
