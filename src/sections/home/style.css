@@ -21,9 +21,12 @@ line-height: 150%;
 letter-spacing: -0.0625rem;
 /* width: 46.625rem; */
 }
+@media (max-width: 767px) {
 .quatrinhphattrienducanh .text1{
   width: 21.4375rem;
 }
+}
+
 .quatrinhphattrienducanh .text1_1{
 color: var(--PRIMARY-40, #3468CD);
 font-feature-settings: 'clig' off, 'liga' off;
@@ -170,29 +173,22 @@ ve-cong-ty */
 
 /* DỊCH VỤ ĐỨC ANH */
 
-
 .dichvuducanh2:nth-child(1){
-  color: blue;
   transform: translateY(0rem) !important;
 }
 .dichvuducanh2:nth-child(2){
-  color: blue;
   transform: translateY(-5rem) translateX(14rem) !important;
 }
 .dichvuducanh2:nth-child(3){
-  color: blue;
   transform: translateY(-9rem) translateX(28rem) !important;
 }
 .dichvuducanh2:nth-child(4){
-  color: blue;
   transform: translateY(-14.5rem) translateX(40rem) !important;
 }
 .dichvuducanh2:nth-child(5){
-  color: blue;
   transform: translateY(-20rem)  translateX(48rem) !important;
 }
 .dichvuducanh2:nth-child(6){
-  color: blue;
   transform: translateY(-25rem) translateX(58rem)  !important;
 }
 
