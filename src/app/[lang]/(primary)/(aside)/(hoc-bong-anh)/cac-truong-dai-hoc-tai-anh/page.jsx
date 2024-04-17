@@ -4,10 +4,15 @@ import getDataCustomEndpoint from '@/libs/getDataCustomEndpoint'
 import getDataDefaultWPEndpoint from '@/libs/getDataDefaultWPEndpoint'
 import PostPrimary from '@/sections/hoc-bong-anh-quoc/components/PostPrimary'
 
-const Map = dynamic(() => import('@/components/Map/Map'), {ssr: false})
+const FindByMapPopup = dynamic(
+  () => import('@/components/FindByMapPopup/FindByMapPopup'),
+  {ssr: false},
+)
 
-const Page = async ({params}) => {
+const Page = async ({params, searchParams}) => {
   const t = await getDictionary(params.lang)
+  const {viewport} = searchParams
+  const isMobile = viewport?.includes('mobile')
   const resTags = await getDataDefaultWPEndpoint('/tags')
   const resSuggestLinks = await getDataCustomEndpoint('/suggested-links')
   const resRelativePosts = await getDataDefaultWPEndpoint(
@@ -21,7 +26,10 @@ const Page = async ({params}) => {
   const res = await getDataDefaultWPEndpoint('/posts/655')
   return (
     <>
-      <Map lang={t} />
+      <FindByMapPopup
+        isMobile={isMobile}
+        lang={t}
+      />
       <PostPrimary
         lang={t.scholarship}
         tags={resTags}

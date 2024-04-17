@@ -243,6 +243,11 @@
     "h2_related_posts": "Bài viết liên quan"
   },
   "map": {
-    "find_school": "Tìm trường cùng<br>Đức Anh Educonnect"
+    "find_school": "Tìm trường cùng<br>Đức Anh Educonnect",
+    "select_country": "Chọn quốc gia",
+    "select_state_province": "Chọn bang/tỉnh",
+    "level_select_title": "Lựa chọn bậc học",
+    "search": "Tìm kiếm",
+    "find_school_text": "Tìm tên trường"
   }
 }
