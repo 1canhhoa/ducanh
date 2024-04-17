@@ -21,9 +21,12 @@ line-height: 150%;
 letter-spacing: -0.0625rem;
 /* width: 46.625rem; */
 }
+@media (max-width: 767px) {
 .quatrinhphattrienducanh .text1{
   width: 21.4375rem;
 }
+}
+
 .quatrinhphattrienducanh .text1_1{
 color: var(--PRIMARY-40, #3468CD);
 font-feature-settings: 'clig' off, 'liga' off;
