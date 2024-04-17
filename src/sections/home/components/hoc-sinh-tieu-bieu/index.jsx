@@ -6,32 +6,18 @@ import NavigationCustom from '@/components/navigationcustom'
 const HocSinhTieuBieu = ({isMobile, dataHocSinhTieuBieu}) => {
   const [moveClass, setMoveClass] = useState('')
 
-<<<<<<< HEAD
   const itemsRef = useRef([])
-  const [datHocsinh, setDatHocsinh] = useState(hocsinhnoibat)
+  const [datHocsinh, setDatHocsinh] = useState(dataHocSinhTieuBieu)
   const [active, setActive] = useState(3)
   const [divHeight, setDivHeight] = useState(null)
   const divRef = useRef(null)
-=======
-  const itemsRef = useRef([]);
-  const [datHocsinh, setDatHocsinh] = useState(dataHocSinhTieuBieu);
-  const [active, setActive] = useState(3);
-  const [divHeight, setDivHeight] = useState(null);
-  const divRef = useRef(null);
->>>>>>> 2c8c7479d0ca429108291e5a34b2be20af2f6b4f
   useEffect(() => {
     setDivHeight(document.querySelector('.text-item-' + active)?.clientHeight)
   }, [active])
 
   useEffect(() => {
-<<<<<<< HEAD
     loadShow()
   }, [active])
-
-=======
-    loadShow();
-  }, [active]);
->>>>>>> 2c8c7479d0ca429108291e5a34b2be20af2f6b4f
   // next prev active
   function loadShow() {
     let items = document.querySelectorAll('.slider-hocsinh .item')
@@ -58,7 +44,6 @@ const HocSinhTieuBieu = ({isMobile, dataHocSinhTieuBieu}) => {
     }
   }
 
-
   // function cutFirstToLast(arr) {
   //   let firstElement = arr.shift();
   //   arr.push(firstElement);
@@ -78,7 +63,6 @@ const HocSinhTieuBieu = ({isMobile, dataHocSinhTieuBieu}) => {
     )
     loadShow()
   }
-
 
   const handlePrev = () => {
     // setDatHocsinh(cutLastToFirst([...datHocsinh]))
@@ -107,7 +91,7 @@ const HocSinhTieuBieu = ({isMobile, dataHocSinhTieuBieu}) => {
         width={380}
         height={700}
       />
-      <div className='absolute  xmd:hidden top-16 left-16'>
+      <div className='absolute xmd:hidden top-16 left-16'>
         <div className='flex flex-col items-start space-y-[0.5rem]'>
           <div
             className={
@@ -138,10 +122,9 @@ const HocSinhTieuBieu = ({isMobile, dataHocSinhTieuBieu}) => {
         style={{
           top: `calc(3.8rem + 1.8125rem + 1rem + ${divHeight}px)`,
         }}
-<<<<<<< HEAD
         className=' flex md:hidden absolute top-[10.5rem]  left-1/2 -translate-x-1/2 z-[1000] items-center space-x-[0.4rem]'
       >
-        {dataHocSinhTieuBieu?.map((_, i) => (
+        {datHocsinh?.map((_, i) => (
           <div
             key={i}
             className={
@@ -151,7 +134,7 @@ const HocSinhTieuBieu = ({isMobile, dataHocSinhTieuBieu}) => {
           ></div>
         ))}
       </div>
-      {dataHocSinhTieuBieu?.map((c, index) => (
+      {datHocsinh?.map((c, index) => (
         <div
           key={index}
           className={
@@ -174,22 +157,6 @@ const HocSinhTieuBieu = ({isMobile, dataHocSinhTieuBieu}) => {
               className={`text-item-${index} flex flex-col items-start gap-[1.25rem] md:w-[30.375rem]`}
             >
               <div className=' self-stretch xmd:w-[20.4375rem] xmd:text-[1.5rem]  text-white text-[2rem] not-italic xmd:font-bold font-extrabold leading-[130%] xmd:tracking-[-0.03rem] tracking-[-0.02rem]'>
-=======
-        className=" flex md:hidden absolute top-[10.5rem]  left-1/2 -translate-x-1/2 z-[1000] items-center space-x-[0.4rem]">
-        {datHocsinh?.map((_, i) => (
-          <div key={i} className={(active === i ? " bg-[#FFF] " : " opacity-40 bg-[#FFF]") + " w-1.5 h-1.5 rounded-full"}></div>
-        ))}
-      </div>
-      {datHocsinh?.map((c, index) => (
-        <div key={index} className={"inline-flex absolute xmd:flex-col xmd:space-y-[1rem] xmd:top-[2.81rem] top-[22%] xmd:left-[1.25rem] md:left-[48%] md:-translate-x-1/2  items-start  md:p-[1.8125rem] duration-300 ease-linear " + (index !== active ? "opacity-0" : " opacity-100")}>
-          <Image loading='lazy' alt='dấu quotes trích dẫn' src='/images/homepage/quotes.png'
-            className='w-[2.5rem] h-[1.75rem] shrink-0' width={40} height={28} />
-          <div className='xmd:hidden w-5 z-50 h-[16rem]'>
-          </div>
-          <div className="flex flex-col items-start xmd:space-y-[2.8125rem] space-y-[1.8125rem]">
-            <div ref={divRef} className={`text-item-${index} flex flex-col items-start gap-[1.25rem] md:w-[30.375rem]`}>
-              <div className=" self-stretch xmd:w-[20.4375rem] xmd:text-[1.5rem]  text-white text-[2rem] not-italic xmd:font-bold font-extrabold leading-[130%] xmd:tracking-[-0.03rem] tracking-[-0.02rem]">
->>>>>>> 2c8c7479d0ca429108291e5a34b2be20af2f6b4f
                 {c?.about_student?.comment}
               </div>
               <div className='flex flex-col items-start xmd:space-y-[0.25rem] space-y-[0.375rem]'>
@@ -239,9 +206,8 @@ const HocSinhTieuBieu = ({isMobile, dataHocSinhTieuBieu}) => {
           </div>
         </button>
       </div>
-<<<<<<< HEAD
       <div className=' slider-hocsinh'>
-        {dataHocSinhTieuBieu?.map((d, i) => (
+        {datHocsinh?.map((d, i) => (
           <Image
             key={i}
             loading='lazy'
@@ -252,13 +218,6 @@ const HocSinhTieuBieu = ({isMobile, dataHocSinhTieuBieu}) => {
             ref={(el) => (itemsRef.current[i] = el)}
             src={d?.image?.url}
           />
-=======
-      <div  className=" slider-hocsinh" >
-        {datHocsinh?.map((d, i) => (
-          <Image
-            key={i} loading='lazy' width={392} height={730} alt={`ảnh học sinh ${i}`}
-            className="item xmd:!bottom-[-5.1rem] !bottom-[-3.1rem]" ref={el => itemsRef.current[i] = el} src={d?.image?.url} />
->>>>>>> 2c8c7479d0ca429108291e5a34b2be20af2f6b4f
         ))}
       </div>
       <div className='  absolute h-full w-[6.7rem] xmd:top-[50%] top-[35%] -translate-y-1/2 xmd:right-[2rem] right-[5rem] z-[100] pointer-events-none'>
