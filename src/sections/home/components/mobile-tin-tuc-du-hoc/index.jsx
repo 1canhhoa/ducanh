@@ -44,7 +44,7 @@ const TinTicDuHoc = ({ categories, dataTintucs, dataNoibat }) => {
       console.error('Error fetching data:', error);
     }
   }, [data, error, isLoading]);
-
+console.log({dataTintucs});
   return (
     <div className='relative pt-[2.5rem] flex-col space-y-[0em] z-10 w-full flex justify-center items-center bg-elevation-blue '>
       <div className='w-full flex flex-col items-start space-y-[1.375rem]'>
@@ -52,14 +52,16 @@ const TinTicDuHoc = ({ categories, dataTintucs, dataNoibat }) => {
         <div className='w-full pl-[1rem] no-scrollbar overflow-x-auto relative flex items-end gap-[0.75rem]'>
           <div className=" w-max flex items-start space-x-[0.5rem] flex-[1_0_0]">
             {categories?.map((t, i) => (
-              <button onClick={() => setApiUrl(t?.id)} key={i} className={`flex xmd:w-max justify-center items-center 
-              py-[0.75rem] hover:bg-primary-5 duration-500 ease-in-out px-[1rem] 
-              gap-[0.625rem] rounded-[0.5rem] border border-primary-20 `
-                + (apiUrl === t.id ? 'bg-primary-5 ' : '')}>
-                <div className="text-greyscaletext-50 text-xs not-italic font-bold leading-[120%] uppercase">
-                  {t?.name}
-                </div>
-              </button>
+              <>
+                {t?.slug !== 'uncategorized' && <button onClick={() => setApiUrl(t?.id)} key={i} className={`flex xmd:w-max justify-center items-center 
+                py-[0.75rem] hover:bg-primary-5 duration-500 ease-in-out px-[1rem] 
+                gap-[0.625rem] rounded-[0.5rem] border border-primary-20 `
+                  + (apiUrl === t.id ? 'bg-primary-5 ' : '')}>
+                  <div className="text-greyscaletext-50 text-xs not-italic font-bold leading-[120%] uppercase">
+                    {t?.name}
+                  </div>
+                </button>}
+              </>
             ))}
           </div>
         </div>
@@ -67,7 +69,7 @@ const TinTicDuHoc = ({ categories, dataTintucs, dataNoibat }) => {
       <div className=" flex flex-col justify-start items-start w-full">
         <SlideTinTucNoiBat
           loadingBaiviet={loadingBaiviet}
-          dataNoibat={dataNoibat} />
+          dataTintucs={dataTintucsClient.length > 0 ? dataTintucsClient : dataTintucs} />
         <SLideBaiViet
           loadingBaiviet={loadingBaiviet}
           swiperRef={swiperRef}

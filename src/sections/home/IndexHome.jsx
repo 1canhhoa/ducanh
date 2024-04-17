@@ -25,7 +25,6 @@ const IndexHome = ({
   categories,
   isMobile,
   dataTintucs,
-  dataNoibat,
   dataBanner
 }) => {
   return (
@@ -60,7 +59,7 @@ const IndexHome = ({
       {isMobile && <section className='w-full'>
         <MobileTinTucDuHoc
           t={t.home_page}
-          dataNoibat={dataNoibat}
+          // dataNoibat={dataNoibat}
           categories={categories}
           dataTintucs={dataTintucs} />
       </section>}
@@ -108,7 +107,6 @@ const IndexHome = ({
       {!isMobile && <section className='w-full'>
         <TinTucDuHoc
           t={t.home_page}
-          dataNoibat={dataNoibat}
           categories={categories}
           dataTintucs={dataTintucs} />
       </section>}

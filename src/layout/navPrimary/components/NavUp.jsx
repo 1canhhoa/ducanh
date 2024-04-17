@@ -1,5 +1,6 @@
 import Image from 'next/image'
-const NavUp = () => {
+import Link from 'next/link'
+const NavUp = ({ data_header }) => {
   const data = [
     {id: 0, title: 'Nghề HOT'},
     {id: 1, title: 'Hợp Tác'},
@@ -43,13 +44,15 @@ const NavUp = () => {
       </div>
       {/* NAV,LANG AND SOCIAL */}
       <div className='flex items-center xlg:items-start xlg:flex-col lg:space-x-[1rem]'>
-        {data.map((d, i) => (
-          <div
-            key={i}
-            className='button2 text-primary-60 font-bold flex h-[2.25rem] justify-center items-center px-[0.5rem] py-[0.625rem]'
-          >
-            {d.title}
-          </div>
+        {data_header?.nav_up?.map((d, i) => (
+          <Link href={d?.url}>
+            <div
+              key={i}
+              className='button2 text-primary-60 font-bold flex h-[2.25rem] justify-center items-center px-[0.5rem] py-[0.625rem]'
+            >
+              {d.title}
+            </div>
+          </Link>
         ))}
         <div className='inline-flex items-center space-x-[3.3125rem]'>
           <div className="flex items-start space-x-[0.75rem]">

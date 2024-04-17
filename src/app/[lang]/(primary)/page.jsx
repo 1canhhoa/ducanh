@@ -3,8 +3,9 @@ import IndexHome from '@/sections/home/IndexHome'
 import getData from '@/lib/getData'
 export default async function HomePage({ searchParams, params }) {
   const t = await getDictionary(params.lang)
-  const { posts, categories } = await getData(`/wp-json/okhub/v1/first-new-on-home`)
-  const dataNoibat = await getData(`/wp-json/okhub/v1/posts-by-category/36`)
+  const { categories } = await getData(`/wp-json/okhub/v1/first-new-on-home`)
+  const posts = await getData(`/wp-json/okhub/v1/posts-by-category/54`)
+  // const dataNoibat = await getData(`/wp-json/okhub/v1/posts-by-category/54`)
   const dataLocations = await getData(`/wp-json/okhub/v1/locations`)
   const dataCountries = await getData(`/wp-json/okhub/v1/countries`)
   const { events } = await getData(`/wp-json/okhub/v1/events?page=1&per_page=10`)
@@ -16,14 +17,13 @@ export default async function HomePage({ searchParams, params }) {
   return <IndexHome
     t={t}
     dataBanner={dataBanner?.acf?.sidebar_banner}
-    // dataBanner={dataBanner?.acf?.sidebar_banner}
     dataQutrinhPhatTrienDucAnh={dataBanner?.acf?.qua_trinh_phat_trien_duc_anh}
     dataDichVuTaiDucAnh={dataBanner?.acf?.dich_vu_tai_duc_anh}
     dataHocSinhTieuBieu={dataBanner?.acf?.hoc_sinh_tieu_bieu}
 
     categories={categories}
     dataTintucs={posts}
-    dataNoibat={dataNoibat}
+    // dataNoibat={dataNoibat}
     dataLichHoithaos={events}
 
     dataLocations={dataLocations}

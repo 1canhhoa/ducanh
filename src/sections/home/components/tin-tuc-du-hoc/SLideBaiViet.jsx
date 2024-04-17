@@ -5,10 +5,51 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { data } from 'autoprefixer';
 
 
-const SLideBaiViet = ({ setSwiper, dataTintucs, swiperRef, loadingBaiviet }) => {
-  const data = [1, 2, 3, 4, 5, 6, 7, 8]
+const data_bandau = [
+  {
+    data: [{ slug: 'bai-viet-noi-bat' }, { slug: 'bai-viet' }]
+  },
+    {
+    data: [{ slug: 'bai-viet1' }, { slug: 'bai-viet' }]
+  },
+    {
+    data: [{ slug: 'bai-viet1' }, { slug: 'bai-viet' }]
+  },
+    {
+    data: [{ slug: 'bai-viet1' }, { slug: 'bai-viet' }]
+  },
+]
+const ketqua = [
+  {
+    data: [{ slug: 'bai-viet1' }, { slug: 'bai-viet' }]
+  },
+  {
+    data: [{ slug: 'bai-viet1' }, { slug: 'bai-viet' }]
+  },
+  {
+    data: [{ slug: 'bai-viet1' }, { slug: 'bai-viet' }]
+  },
+]
+
+
+
+const SLideBaiViet = ({dataTintucs, swiperRef, loadingBaiviet }) => {
+
+
+  const loaiBoBaivietnoibat = dataTintucs?.filter(item => {
+    return !item?.categories?.some(obj => obj.slug === 'bai-viet-noi-bat');
+  });
+  function chunkArray(array, chunkSize) {
+    const chunks = [];
+    for (let i = 0; i < array.length; i += chunkSize) {
+      chunks.push(array.slice(i, i + chunkSize));
+    }
+    return chunks;
+  }
+  const chunkedData = chunkArray(dataTintucs, 8);
+  console.log({ dataTintucs, loaiBoBaivietnoibat });
   return (
-    <div className='md:w-[63rem] flex justify-center items-center'>
+    <div className='md:w-[59rem] flex justify-center items-center'>
       <Swiper
         ref={swiperRef}
         onBeforeInit={(swiper) => {
@@ -18,18 +59,20 @@ const SLideBaiViet = ({ setSwiper, dataTintucs, swiperRef, loadingBaiviet }) => 
         loop={false}
         spaceBetween={20}
         slidesPerView={1}
-        className='md:!pl-2 h-full xmd:py-[1rem] w-screen'
+        className='md:!pl-2 h-full xmd:py-[1rem]'
       >
-        <SwiperSlide>
+        {chunkedData?.map((d, i) => (
+        <SwiperSlide key={i}>
           <div className=' h-full  xmd:mx-auto xmd:w-fit grid grid-cols-2 xmd:grid-cols-1 gap-x-[1.56rem] xmd:gap-y-[0.75rem] gap-y-[2.1rem]'>
-            {!loadingBaiviet && dataTintucs?.map((data, i) => (
+            {!loadingBaiviet && d?.map((data, i) => (
               <BaiViet data={data} loadingBaiviet={loadingBaiviet} />
             ))}
-            {loadingBaiviet && data.map((_, index) => (
+              {loadingBaiviet && Array(8).fill(0)?.map((_, index) => (
               <Skeleton className={'bg-greyscaletext-10 xmd:hidden w-[28.6875rem] h-[7.875rem]'} />
             ))}
           </div>
         </SwiperSlide>
+            ))}
       </Swiper>
 
     </div>
