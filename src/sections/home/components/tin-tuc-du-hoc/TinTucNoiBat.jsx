@@ -12,14 +12,14 @@ const TinTucNoiBat = ({ data }) => {
   return (
     <div
       onClick={handleClick}
-      className=" inline-flex flex-col  items-center xmd:p-[0.75rem] md:px-[1.5rem] md:pt-[1.5rem] md:pb-[1.75rem]
+      className="inline-flex flex-col  items-center xmd:p-[0.75rem] md:px-[1.5rem] md:pt-[1.5rem] md:pb-[1.75rem]
          rounded-[1rem] md:border md:border-primary-50 bg-white
          xmd:shadow-[0px_-8px_24px_0px_rgba(0,0,0,0.08),74px_151px_67px_0px_rgba(158,158,158,0.01),42px_85px_57px_0px_rgba(158,158,158,0.05)] xmd:backdrop-blur-[10px]
          "
 
     >
-      <div className=" flex flex-col items-start gap-[1.5rem]">
-        <div className=" flex flex-col items-start gap-[1rem]">
+      <div className="flex flex-col items-start gap-[1.5rem]">
+        <div className="min-h-[15.5rem] flex flex-col items-start gap-[1rem]">
           <div className="flex justify-between items-center self-stretch">
             <div className="flex items-center gap-[0.75rem]">
               <div className="text-[0.875rem] not-italic font-normal leading-[170%] font-feature-settings  text-greyscaletext-30">
@@ -44,8 +44,7 @@ const TinTucNoiBat = ({ data }) => {
           </div>
         </div>
         <Image loading='lazy' alt='ảnh minh họa thẻ tin tức '
-          // src={'/images/homepage/card.png'}
-          src={data.thumbnail}
+          src={data?.thumbnail}
           className='xmd:w-[20.0625rem] xmd:h-[12.6875rem] w-[27.375rem] h-[17.375rem] rounded-[0.5rem] shrink-0' width={440} height={280} />
       </div>
     </div>

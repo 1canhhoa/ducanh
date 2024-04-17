@@ -7,7 +7,7 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
   const [moveClass, setMoveClass] = useState('');
 
   const itemsRef = useRef([]);
-  const [datHocsinh, setDatHocsinh] = useState(hocsinhnoibat);
+  const [datHocsinh, setDatHocsinh] = useState(dataHocSinhTieuBieu);
   const [active, setActive] = useState(3);
   const [divHeight, setDivHeight] = useState(null);
   const divRef = useRef(null);
@@ -18,7 +18,6 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
   useEffect(() => {
     loadShow();
   }, [active]);
-
   // next prev active
   function loadShow() {
     let items = document.querySelectorAll('.slider-hocsinh .item');
@@ -44,13 +43,29 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
       items[i].style.transform = `translateX(${-6.225 * stt}rem)`;
     }
   }
+
+
+  // function cutFirstToLast(arr) {
+  //   let firstElement = arr.shift();
+  //   arr.push(firstElement);
+  //   return arr;
+  // }
+
+  // function cutLastToFirst(arr) {
+  //   let lastElement = arr.pop();
+  //   arr.unshift(lastElement);
+  //   return arr;
+  // }
   const handleNext = () => {
+    // setDatHocsinh(cutFirstToLast([...datHocsinh]))
     setMoveClass('next')
     setActive(prevActive => (prevActive + 1 < itemsRef.current.length ? prevActive + 1 : prevActive));
     loadShow();
   }
 
+
   const handlePrev = () => {
+    // setDatHocsinh(cutLastToFirst([...datHocsinh]))
     setMoveClass('prev')
     setActive(prevActive => (prevActive - 1 >= 0 ? prevActive - 1 : prevActive));
     loadShow();
@@ -82,11 +97,11 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
           top: `calc(3.8rem + 1.8125rem + 1rem + ${divHeight}px)`
         }}
         className=" flex md:hidden absolute top-[10.5rem]  left-1/2 -translate-x-1/2 z-[1000] items-center space-x-[0.4rem]">
-        {dataHocSinhTieuBieu?.map((_, i) => (
+        {datHocsinh?.map((_, i) => (
           <div key={i} className={(active === i ? " bg-[#FFF] " : " opacity-40 bg-[#FFF]") + " w-1.5 h-1.5 rounded-full"}></div>
         ))}
       </div>
-      {dataHocSinhTieuBieu?.map((c, index) => (
+      {datHocsinh?.map((c, index) => (
         <div key={index} className={"inline-flex absolute xmd:flex-col xmd:space-y-[1rem] xmd:top-[2.81rem] top-[22%] xmd:left-[1.25rem] md:left-[48%] md:-translate-x-1/2  items-start  md:p-[1.8125rem] duration-300 ease-linear " + (index !== active ? "opacity-0" : " opacity-100")}>
           <Image loading='lazy' alt='dấu quotes trích dẫn' src='/images/homepage/quotes.png'
             className='w-[2.5rem] h-[1.75rem] shrink-0' width={40} height={28} />
@@ -137,8 +152,9 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
         </button>
       </div>
       <div  className=" slider-hocsinh" >
-        {dataHocSinhTieuBieu?.map((d, i) => (
-          <Image key={i} loading='lazy' width={392} height={730} alt={`ảnh học sinh ${i}`}
+        {datHocsinh?.map((d, i) => (
+          <Image
+            key={i} loading='lazy' width={392} height={730} alt={`ảnh học sinh ${i}`}
             className="item xmd:!bottom-[-5.1rem] !bottom-[-3.1rem]" ref={el => itemsRef.current[i] = el} src={d?.image?.url} />
         ))}
       </div>

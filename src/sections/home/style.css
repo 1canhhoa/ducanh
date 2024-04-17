@@ -2,7 +2,16 @@
 
 
 
+
+
+
+
+
+
+
+
 .quatrinhphattrienducanh .text1{
+  width: 46.625rem;
 color: var(--greyscaletext-50, #454545);
 font-feature-settings: 'clig' off, 'liga' off;
 font-size: 1.25rem;
@@ -11,6 +20,9 @@ font-weight: 600;
 line-height: 150%;
 letter-spacing: -0.0625rem;
 /* width: 46.625rem; */
+}
+.quatrinhphattrienducanh .text1{
+  width: 21.4375rem;
 }
 .quatrinhphattrienducanh .text1_1{
 color: var(--PRIMARY-40, #3468CD);
@@ -157,81 +169,37 @@ ve-cong-ty */
 
 
 /* DỊCH VỤ ĐỨC ANH */
-.dichvuducanh2:nth-child(1) .dichvuducanh3 > .dichvuducanh4{
-  width: 7rem;
-  left: 1.56rem;
-  top: 0.7rem;
-  @media (max-width: 767px) {
-  left: 1.56rem;
-  top: 1rem;
-  }
-}
 
-@media (max-width: 767px) {
-  .dichvuducanh2:nth-child(1) .dichvuducanh3 > .dichvuducanh4{
-    left: 1.86rem;
-    top: 1.5rem;
-  }
-}
 
-.dichvuducanh2:nth-child(2) .dichvuducanh3 > .dichvuducanh4{
-  left: 1.56rem;
-  top: 1.5rem;
+.dichvuducanh2:nth-child(1){
+  color: blue;
+  transform: translateY(0rem) !important;
 }
-@media (max-width: 767px) {
-  .dichvuducanh2:nth-child(2) .dichvuducanh3 > .dichvuducanh4{
-    width: 5rem;
-    left: 3.4rem;
-    top: 1.5rem;
-  }
+.dichvuducanh2:nth-child(2){
+  color: blue;
+  transform: translateY(-5rem) translateX(14rem) !important;
 }
-/* --- trên web, dưới là mobi */
-.dichvuducanh2:nth-child(3) .dichvuducanh3 > .dichvuducanh4{
-  left: 1.8rem;
-  top: 1.5rem;
+.dichvuducanh2:nth-child(3){
+  color: blue;
+  transform: translateY(-9rem) translateX(28rem) !important;
 }
-.dichvuducanh div:nth-child(2) .dichvuducanh2:nth-child(1) .dichvuducanh4{
-  left: 2.2rem;
-  top: 2.2rem;
+.dichvuducanh2:nth-child(4){
+  color: blue;
+  transform: translateY(-14.5rem) translateX(40rem) !important;
 }
-/* --- trên web, dưới là mobi */
-.dichvuducanh2:nth-child(4) .dichvuducanh3 > .dichvuducanh4{
-  left: 2.9rem;
-  top: 1.5rem;
+.dichvuducanh2:nth-child(5){
+  color: blue;
+  transform: translateY(-20rem)  translateX(48rem) !important;
 }
-.dichvuducanh div:nth-child(2) .dichvuducanh2:nth-child(2) .dichvuducanh4{
-  left: 3.2rem;
-  top: 2.3rem;
-}
-/* --- */
-
-.dichvuducanh2:nth-child(5) .dichvuducanh3 > .dichvuducanh4{
-  width: 9rem;
-  left: 0.6rem;
-  top: 0.7rem;
-}
-.dichvuducanh div:nth-child(3) .dichvuducanh2:nth-child(1) .dichvuducanh4{
-  width: 8.5rem;
-  left: 1.6rem;
-  top: 1.5rem;
-}
-/* --- */
-
- .dichvuducanh2:nth-child(6) .dichvuducanh3 > .dichvuducanh4{
-  width: 9rem;
-  left: 0.6rem;
-  top: 0.7rem;
-}
-.dichvuducanh div:nth-child(3) .dichvuducanh2:nth-child(2) .dichvuducanh4{
-  width: 8.5rem;
-  left: 1.6rem;
-  top: 1.5rem;
+.dichvuducanh2:nth-child(6){
+  color: blue;
+  transform: translateY(-25rem) translateX(58rem)  !important;
 }
 
 
 @keyframes marquee {
   0% {
-    transform: translateX(0%);
+    transform: translateX(50%);
   }
   100% {
     transform: translateX(-100%);
@@ -240,7 +208,9 @@ ve-cong-ty */
 .marquee {
   white-space: nowrap;
   overflow: hidden;
-  animation: marquee 55s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 
-
+#swiper_social .swiper-wrapper {
+  transition-timing-function: linear !important;
+}

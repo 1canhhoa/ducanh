@@ -9,7 +9,7 @@ import SLideBaiViet from './SLideBaiViet'
 
 
 
-const TinTicDuHoc = ({ categories, dataTintucs, dataNoibat }) => {  
+const TinTicDuHoc = ({ categories, dataTintucs }) => {  
 
   
   const swiperRef = useRef(null)
@@ -71,17 +71,17 @@ const TinTicDuHoc = ({ categories, dataTintucs, dataNoibat }) => {
               outline={true}
             />
           </div>
-          <div onClick={() => setApiUrl(categories?.find((f) => f?.slug === 'all-bai-viet')?.id)} className="flex h-[2.625rem] justify-center items-center gap-2.5 px-[1.875rem] py-[0.9375rem] rounded-lg
+          <button onClick={() => setApiUrl(categories?.find((f) => f?.slug === 'all-bai-viet')?.id)} className="flex h-[2.625rem] justify-center items-center gap-2.5 px-[1.875rem] py-[0.9375rem] rounded-lg
           bg-gradient-to-b from-[#2E6BC6] from-[9.83%] via-[#2E6BC6] via-[35.38%] to-[#29A4EA] to-[86.69%] 
           text-white text-center text-sm not-italic font-bold leading-[120%] w-max
 
-          ">{categories?.find((f) => f?.slug === 'all-bai-viet')?.name}</div>
+          ">{categories?.find((f) => f?.slug === 'all-bai-viet')?.name}</button>
         </div>
       </div>
-      <div className=" flex xmd:flex-col justify-start items-start w-full">
+      <div className="flex xmd:flex-col space-x-[2.375rem] justify-center items-start w-full">
         <SlideTinTucNoiBat
           loadingBaiviet={loadingBaiviet}
-          dataNoibat={dataNoibat} />
+          dataTintucs={dataTintucsClient.length > 0 ? dataTintucsClient : dataTintucs} />
         <SLideBaiViet
           loadingBaiviet={loadingBaiviet}
           swiperRef={swiperRef}

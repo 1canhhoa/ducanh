@@ -44,7 +44,7 @@ const TinTicDuHoc = ({ categories, dataTintucs, dataNoibat }) => {
       console.error('Error fetching data:', error);
     }
   }, [data, error, isLoading]);
-
+console.log({dataTintucs});
   return (
     <div className='relative pt-[2.5rem] flex-col space-y-[0em] z-10 w-full flex justify-center items-center bg-elevation-blue '>
       <div className='w-full flex flex-col items-start space-y-[1.375rem]'>
@@ -69,7 +69,7 @@ const TinTicDuHoc = ({ categories, dataTintucs, dataNoibat }) => {
       <div className=" flex flex-col justify-start items-start w-full">
         <SlideTinTucNoiBat
           loadingBaiviet={loadingBaiviet}
-          dataNoibat={dataNoibat} />
+          dataTintucs={dataTintucsClient.length > 0 ? dataTintucsClient : dataTintucs} />
         <SLideBaiViet
           loadingBaiviet={loadingBaiviet}
           swiperRef={swiperRef}
