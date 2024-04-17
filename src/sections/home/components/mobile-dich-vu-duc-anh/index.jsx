@@ -85,12 +85,28 @@ const DichVuDucAnh = ({t, isMobile, dataDichVuTaiDucAnh}) => {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
+=======
+          <div
+              className={`grid overflow-hidden  transition-all duration-500 ease-in-out text-slate-600 text-sm 
+          ${accordionOpen && active === i
+                  ? "mt-[1rem] grid-rows-[1fr] opacity-100"
+                  : "grid-rows-[0fr] opacity-0"
+              }`}
+          >
+            <div className="overflow-hidden">
+                Chúng tôi sẽ tư vấn chọn nước, trường, ngành học dựa trên nguyện vọng của DHS, đào tạo tiếng Anh, SAT, GMAT, GRE, tổ chức thi PTE A và đăng ký thi IELTS cho DHS nếu cần; đồng thời, hướng dẫn DHS chuẩn bị hồ sơ du học: học lực, ngoại khóa, luận, PS, video, tài chính…& trực tiếp hỗ trợ DHS hoàn thiện hồ sơ du học.
+            </div>
+            </div>
+        </div>
+>>>>>>> 2c8c7479d0ca429108291e5a34b2be20af2f6b4f
         ))}
       </div>
       <div className=' h-[19rem] absolute bottom-[0rem] w-full z-[-1]'>
         <div className='absolute bottom-[3.4rem] right-[0.3rem] text-white z-10 w-[13.75rem] text-center text-base not-italic font-extrabold leading-[120%]'>
           Các dịch vụ đảm bảo chuyên nghiệp, minh bạch, hiệu quả và thân thiện
         </div>
+<<<<<<< HEAD
         <Image
           className='absolute bottom-[0rem] left-0'
           riority
@@ -99,6 +115,9 @@ const DichVuDucAnh = ({t, isMobile, dataDichVuTaiDucAnh}) => {
           width={500}
           height={500}
         />
+=======
+        <Image className="absolute bottom-[0rem] w-full left-0" riority alt="ảnh" src={'/images/homepage/bg-dichvu-mobi.png'} width={500} height={500} />
+>>>>>>> 2c8c7479d0ca429108291e5a34b2be20af2f6b4f
       </div>
     </div>
   )
