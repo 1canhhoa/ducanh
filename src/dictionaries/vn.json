@@ -1,6 +1,7 @@
 {
   "hello": "xin chao okhub",
   "related_posts": "Bài viết liên quan",
+  "position": "Vị trí",
   "contact": {
     "title": "Kết nối với chúng tôi",
     "firstAndLastName": "Họ và tên*",
@@ -249,5 +250,45 @@
     "level_select_title": "Lựa chọn bậc học",
     "search": "Tìm kiếm",
     "find_school_text": "Tìm tên trường"
+  },
+  "form": {
+    "fullname": {
+      "label": "Họ và Tên",
+      "placeholder": "Họ và tên của bạn",
+      "message": "Họ và tên bao gồm tối thiểu 4 ký tự"
+    },
+    "gender": {
+      "label": "Giới tính",
+      "placeholder": "Giới tính của bạn",
+      "message": "Giới tính không được để trống",
+      "male": "Nam",
+      "female": "Nữ"
+    },
+    "yearOfBirth": {
+      "label": "Năm sinh",
+      "placeholder": "Năm sinh của bạn",
+      "message": "Năm sinh phải bao gồm 4 chữ số"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Email của bạn",
+      "message": "Email không được để trống",
+      "message2": "Email không hợp lệ"
+    },
+    "address": {
+      "label": "Nơi ở hiện tại",
+      "placeholder": "Nơi ở hiện tại của bạn",
+      "message": "Nơi ở hiện tại không được để trống"
+    },
+    "workplace_address": {
+      "label": "Nơi làm việc hiện tại",
+      "placeholder": "Nơi làm việc hiện tại của bạn",
+      "message": "Nơi làm việc hiện tại không được để trống"
+    },
+    "recruitment_position": {
+      "label": "Vị trí ứng tuyển",
+      "placeholder": "Vị trí ứng tuyển của bạn",
+      "message": "Vị trí ứng tuyển không được để trống"
+    }
   }
 }
