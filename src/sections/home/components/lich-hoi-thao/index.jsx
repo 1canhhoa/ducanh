@@ -44,7 +44,7 @@ const [currentPage,setCurrentPage] = useState(1)
 
   const fetcher = url => fetch(url).then(r => r.json())
   const { data, error, isLoading } = useSWR(
-    apiUrl ? `${process.env.NEXT_PUBLIC_API}/wp-json/okhub/v1/events?page=${currentPage}&per_page=10`:null,
+    apiUrl ? `${process.env.NEXT_PUBLIC_API_DOMAIN}/wp-json/okhub/v1/events?page=${currentPage}&per_page=10` : null,
     fetcher, {
     revalidateIfStale: false,
     revalidateOnFocus: false,//Option này ngăn useSWR tự động gọi lại API khi cửa sổ hoặc tab của trình duyệt được focus lại

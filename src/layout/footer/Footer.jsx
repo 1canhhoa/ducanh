@@ -1,5 +1,5 @@
 
-import getData from '@/lib/getData'
+import getData1 from '@/lib/getData1'
 import Image from 'next/image'
 import Link from 'next/link'
 const data_section = [
@@ -27,7 +27,7 @@ const Section = ({ data }) => {
   </div>
 }
 export default async function Footer() {
-  const datasFooter = await getData('/wp-json/acf/v3/pages/476')
+  const datasFooter = await getData1('/wp-json/acf/v3/pages/476')
   const footer = datasFooter?.acf?.footer
   return (
     <footer className='w-full relative  xmd:px-[1.5rem] shrink-0 bg-primary-40 mt-[6rem]'>

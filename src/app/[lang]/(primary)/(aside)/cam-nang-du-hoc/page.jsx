@@ -1,5 +1,5 @@
 import {getDictionary} from '@/app/[lang]/dictionaries'
-import getData from '@/libs/getData'
+import getData from '@/lib/getData'
 import AbroadGuideIndex from '@/sections/cam-nang-du-hoc/AbroadGuideIndex'
 
 const CamNangDuHocPage = async ({params}) => {

@@ -1,8 +1,6 @@
 "use client"
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import { hocsinhnoibat } from '@/lib/data';
-import NavigationCustom from '@/components/navigationcustom';
 import { Swiper, SwiperSlide, } from "swiper/react";
 import { Navigation } from 'swiper/modules'
 import "swiper/css";

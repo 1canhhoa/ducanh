@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import {country} from '@/lib/data'
+import { country } from '@/lib/data'
 
 export default function AsidePrimary({isMobile}) {
   return (

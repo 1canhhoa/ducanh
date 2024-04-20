@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import CradDrop from './CardDrop'
 
-import getDatawp from '@/libs/getDatawp'
+import getDatawp from '@/lib/getDatawp'
 import Huongdan from './Huongdan'
 import clsx from 'clsx'
 
