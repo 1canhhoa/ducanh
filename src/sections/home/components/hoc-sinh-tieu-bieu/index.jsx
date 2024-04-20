@@ -44,10 +44,19 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
             Đức Anh song hành cùng
           </div>
           <div className='flex items-end gap-[0.5rem]'>
-            <div className={"w-[25.53631rem] text-white text-[4rem] not-italic font-extrabold leading-[120%] tracking-[-0.08rem] "}>
+            <div
+              className={
+                'w-[25.53631rem] text-white text-[4rem] not-italic font-extrabold leading-[120%] tracking-[-0.08rem] '
+              }
+            >
               Các học sinh
               <br />
-              tiêu biểu<span className={' absolute bottom-[0.9rem] right-[8rem]  w-[0.625rem] h-[0.625rem] bg-primary-10 '} ></span>
+              tiêu biểu
+              <span
+                className={
+                  ' absolute bottom-[0.9rem] right-[8rem]  w-[0.625rem] h-[0.625rem] bg-primary-10 '
+                }
+              ></span>
             </div>
           </div>
         </div>
@@ -73,10 +82,11 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       ))}
+
+
       <div
         style={{
           top: `calc(11.8rem + 1.125rem + 1rem + ${divHeight}px)`
@@ -88,21 +98,20 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
           <div className=" relative text-center
                   text-primary-40 text-sm not-italic w-max font-bold leading-[100%] tracking-[0.01313rem] uppercase
                   bg-clip-text text_gradient bg-gradient-to-b from-[#2E6BC6] from-[10.78%]
-                  to-[#29A4EA] to-[81.3%]
-                    ">
+                  to-[#29A4EA] to-[81.3%]">
             Xem chi tiết
           </div>
         </button>
-        <button className="flex justify-center items-center h-[3rem] py-[0.75rem] px-[1.875rem]
-                rounded-[0.625rem] border-[2px]">
-          <div className="text-white w-max text-center uppercase
-                     text-sm not-italic font-bold leading-[100%] tracking-[0.01313rem]
-                    ">
+
+        <button className="flex justify-center items-center h-[3rem] py-[0.75rem] px-[1.875rem] rounded-[0.625rem] border-[2px]">
+          <div className="text-white w-max text-center uppercase text-sm not-italic font-bold leading-[100%] tracking-[0.01313rem]" >
             Tất cả học sinh
           </div>
         </button>
       </div>
-      <div className="absolute bottom-0 left-0" >
+
+
+      <div className="absolute bottom-0 left-0 ">
         <Swiper
           speed={500}
           ref={swiperRef}
@@ -127,6 +136,9 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
           ))}
         </Swiper>
       </div>
+
+
+
       <div className='  absolute h-full w-[6.7rem] top-[35%] -translate-y-1/2 right-[5rem] z-[100] pointer-events-none'>
         <NavigationCustom
           indexSlider={3}
@@ -137,7 +149,7 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default HocSinhTieuBieu;
+export default HocSinhTieuBieu
