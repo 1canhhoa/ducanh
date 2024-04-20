@@ -4,6 +4,7 @@ import {z} from 'zod'
 import {zodResolver} from '@hookform/resolvers/zod'
 import {useForm} from 'react-hook-form'
 import {Button} from '@/components/ui/button'
+import Image from 'next/image'
 import {
   Form,
   FormControl,
@@ -19,8 +20,10 @@ import CustomSelect from './CustomSelect'
 import PostionPopup from './PostionPopup'
 import {useState} from 'react'
 import {generateFormFields} from '../fakeData'
+import postContactForm7 from '@/libs/postContactForm7'
+import {toast} from 'react-toastify'
 
-const RecruitmentForm = ({lang}) => {
+const RecruitmentForm = ({lang, onClose}) => {
   const FORM_FIELDS = generateFormFields(lang)
   const [popup, setPopup] = useState({
     enabled: false,
@@ -44,15 +47,6 @@ const RecruitmentForm = ({lang}) => {
     yearOfBirth: z.string().refine((value) => /^\d{4}$/.test(value), {
       message: lang.form.yearOfBirth.message,
     }),
-    // .number({
-    //   required_error: 'Age is required',
-    //   invalid_type_error: 'Age must be a number',
-    // })
-    // .min(4, {
-    //   message: lang.form.yearOfBirth.message,
-    // })
-    // .max(4, {message: lang.form.yearOfBirth.message}),
-
     recruitment_position: z.string().min(5, {
       message: lang.form.recruitment_position.message,
     }),
@@ -61,20 +55,42 @@ const RecruitmentForm = ({lang}) => {
     resolver: zodResolver(formSchema),
     defaultValues: {
       fullname: '',
+      gender: '',
+      yearOfBirth: '',
       email: '',
       address: '',
       workplace_address: '',
-      yearOfBirth: '',
-      gender: '',
       recruitment_position: '',
     },
   })
 
   // 2. Define a submit handler.
-  function onSubmit(values) {
+  async function onSubmit(values) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-    console.log(values)
+    try {
+      // console.log(values)
+      const formData = new FormData()
+      formData.append('fullname', values.fullname)
+      formData.append('gender', values.gender)
+      formData.append('yearOfBirth', values.yearOfBirth)
+      formData.append('email', values.email)
+      formData.append('address', values.address)
+      formData.append('workplace_address', values.workplace_address)
+      formData.append('recruitment_position', values.recruitment_position)
+      formData.append('_wpcf7_unit_tag', '860')
+
+      const res = await postContactForm7(860, formData)
+      // console.log(res)
+      if (res.status === 'mail_sent') {
+        toast.success(lang.recruitment.rq_apply_success)
+      } else {
+        toast.error(lang.recruitment.rq_apply_failure)
+      }
+    } catch (error) {
+      toast.error(lang.recruitment.rq_apply_failure)
+      console.log(error)
+    }
   }
 
   return (
@@ -84,9 +100,25 @@ const RecruitmentForm = ({lang}) => {
           onSubmit={form.handleSubmit(onSubmit)}
           className='space-y-8 h-max'
         >
-          <h2 className='text-secondary-50 text-[1rem] font-bold leading-[130%] uppercase'>
-            ứng tuyển ngay
-          </h2>
+          <header className='flex justify-between items-center'>
+            <h2 className='text-secondary-50 text-[1rem] font-bold leading-[130%] uppercase'>
+              ứng tuyển ngay
+            </h2>
+            {/* close btn */}
+            <button
+              className='px-[0.5rem]'
+              onClick={onClose}
+            >
+              <Image
+                src={'/images/recruitment/Close_MD.svg'}
+                alt={'close-img'}
+                width={100}
+                height={100}
+                className={'size-[1.5rem]'}
+                priority
+              />
+            </button>
+          </header>
           {FORM_FIELDS?.map((formField, index) => {
             if (!formField?.doubleCol) {
               return (
@@ -207,7 +239,7 @@ const RecruitmentForm = ({lang}) => {
           })}
           <Button
             type='submit'
-            className='uppercase bg-primary-50 text-[0.875rem] leading-[120%] font-bold rounded-lg h-[3rem] p-[0.9375rem_1.875rem] text-white w-full'
+            className='uppercase bg-primary-50 md:w-[10rem] text-[0.875rem] leading-[120%] font-bold rounded-lg h-[3rem] p-[0.9375rem_1.875rem] text-white w-full'
           >
             Ứng tuyển
           </Button>

@@ -37,7 +37,7 @@ const PostionPopup = ({lang, closeCallback, onSelect, currentOption = ''}) => {
       </header>
       {POSITIONS.map((position) => (
         <div
-          className='flex items-center justify-between mx-[1rem] h-[3rem] border-b border-b-[rgba(19, 43, 125, 0.20)]'
+          className='flex items-center justify-between mx-[1rem] h-[3rem] border-b border-b-[rgba(19, 43, 125, 0.20)] cursor-pointer'
           key={position}
           onClick={() => handleOptionSelect(position)}
         >

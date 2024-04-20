@@ -17,7 +17,7 @@
   },
   "student": {
     "student": "Học viên",
-    "goAlong": "Đức Anh song hành cùng",
+    "goAlong": " song hành cùng",
     "outstandingStudents": "Các học sinh tiêu biểu",
     "viewDetail": "Xem chi tiết",
     "allStudent": "Tất cả học sinh",
@@ -36,7 +36,9 @@
     "time": "Thời gian",
     "applyNow": "Ứng tuyển ngay",
     "applyNowMobile": "Ứng tuyển",
-    "apply": "Ứng tuyển"
+    "apply": "Ứng tuyển",
+    "rq_apply_success": "Đã gửi yêu cầu ứng tuyển",
+    "rq_apply_failure": "Gửi yêu cầu ứng tuyển không thành công"
   },
   "about_us": {
     "legal": "Pháp nhân",

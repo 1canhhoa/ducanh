@@ -7,8 +7,9 @@ import {useState} from 'react'
 import clsx from 'clsx'
 import {Button} from '@/components/ui/button'
 import {Autoplay} from 'swiper/modules'
-const StudenSlide = ({items = [], slideChange}) => {
+const StudenSlide = ({items = [], slideChange, lang}) => {
   const [activeIndex, setActiveIndex] = useState(0)
+  // console.log(lang)
   return (
     <div className='ml-[-0.75rem] md:ml-0'>
       <Swiper
@@ -79,10 +80,10 @@ const StudenSlide = ({items = [], slideChange}) => {
       </div>
       <div className='flex items-center mt-[1rem] md:mt-[1.81rem] xmd:justify-between md:ml-[5rem]'>
         <Button className='text-[0.875rem] md:mr-[0.81rem] font-bold leading-[120%] w-[10.5625rem] md:h-[3rem] md:w-[9.4rem] p-[0.9375rem_1.875rem] h-[2.5rem] bg-primary-50 text-white ml-[0.75rem] capitalize'>
-          Xem chi tiết
+          {lang?.viewDetail}
         </Button>
-        <Button className='text-[0.875rem] font-bold leading-[120%] md:w-[9.4rem] w-[10.5625rem] p-[0.9375rem_1.875rem] h-[2.5rem] md:h-[3rem] border-[#ECECEC] capitalize'>
-          Tất cả học sinh
+        <Button className='text-[0.875rem] font-bold leading-[120%] md:w-[9.4rem] w-[10.5625rem] p-[0.9375rem_1.875rem] h-[2.5rem] md:h-[3rem] border border-[#ECECEC] capitalize'>
+          {lang?.allStudent}
         </Button>
       </div>
     </div>
