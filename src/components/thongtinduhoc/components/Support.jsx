@@ -22,10 +22,10 @@ export default async function Support({
       )}
     >
       <div className='w-full py-[4rem] flex flex-col items-start'>
-        <h1 className='title xmd:mb32 relative w-fit'>{text.hotro.title}</h1>
+        <h1 className='title xmd:mb32 relative w-fit'>{text?.hotro?.title}</h1>
         <div className='flex flex-col items-start mt-[2.5rem] xmd:mt-[1rem]'>
           <span className='text-[1rem] font-semibold leading-[1.7] text-primary-50'>
-            {text.hotro.description}
+            {text?.hotro?.description}
           </span>
           {text?.hotro?.question?.map((e, index) => (
             <div
@@ -54,7 +54,7 @@ export default async function Support({
               width={422}
             />
             <span className='relative z-10 xmd:mb18 text-[1.25rem] mt-[1.7rem] xmd:mt-[1.75rem] xmd:mx-[1.19rem] font-bold leading-[1.5] w-[23.375rem] xmd:w-[19.5625rem] xmd:text-center text-white'>
-              {text.hotro.title_banner}
+              {text?.hotro?.title_banner}
             </span>
           </div>
           <div className='flex flex-col items-start space-y-[1rem] xmd:space-y-[0.62rem] mt-[2.5rem] xmd:mt-[1.5rem] xmd:w-full flex-1'>
