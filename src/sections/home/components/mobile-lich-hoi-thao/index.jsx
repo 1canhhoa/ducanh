@@ -101,8 +101,8 @@ const LichHoiThao = ({ t, isMobile, dataCountries, dataLocations, dataLichHoitha
 
           <Image loading='lazy' alt="ảnh map tìm đường mobi" src={'/images/homepage/map-timduong-mobi.png'} width={375} height={370} className="w-[23.4375rem] h-[23.14813rem]" />
           <Image loading='lazy' className=" absolute bottom-[1.1rem] right-[1rem] w-[17.5rem] h-[4.5rem]" alt="ảnh button tìm đường mobile" src={'/images/homepage/button-timduong-mobi.png'} width={350} height={105} />
-          <Image loading='lazy' className="absolute bottom-[1.94rem] right-[2.94rem] w-[2.46225rem] h-[2.61319rem]" alt="ảnh kính loop" src={'/images/homepage/search-timduong.png'} width={40} height={44} />
-          <div className='absolute z-50 bottom-[2.1rem] right-[2.8rem] text-white text-center text-[0.75rem] not-italic font-semibold leading-[150%] tracking-[-0.0075rem] uppercase'>
+          <Image loading='lazy' className="kinh-loop2 absolute bottom-[0.94rem] right-[-2.94rem] w-[2.46225rem] h-[2.61319rem]" alt="ảnh kính loop" src={'/images/homepage/search-timduong.png'} width={40} height={44} />
+          <div className='absolute z-50 bottom-[2.1rem] right-[6.8rem] text-white text-center text-[0.75rem] not-italic font-semibold leading-[150%] tracking-[-0.0075rem] uppercase'>
             Tìm trường cùng Đức Anh
           </div>
         </div>

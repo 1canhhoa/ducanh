@@ -1,11 +1,10 @@
 
-import NavPrimary from "@/layout/navPrimary/NavPrimary"
-
+import WrapperNavPrimary from "@/layout/navPrimary/WrapperNavPrimary"
 export default function PrimaryLayout({ children }) {
 
   return (
     <>
-      <NavPrimary />
+      <WrapperNavPrimary />
       {children}
     </>
   )

@@ -49,7 +49,7 @@ const SLideBaiViet = ({dataTintucs, swiperRef, loadingBaiviet }) => {
   const chunkedData = chunkArray(dataTintucs, 8);
   console.log({ dataTintucs, loaiBoBaivietnoibat });
   return (
-    <div className='md:w-[59rem] flex justify-center items-center'>
+    <div className='w-[59rem] flex justify-center items-center'>
       <Swiper
         ref={swiperRef}
         onBeforeInit={(swiper) => {
@@ -59,16 +59,16 @@ const SLideBaiViet = ({dataTintucs, swiperRef, loadingBaiviet }) => {
         loop={false}
         spaceBetween={20}
         slidesPerView={1}
-        className='md:!pl-2 h-full xmd:py-[1rem]'
+        className='!pl-2 h-full'
       >
         {chunkedData?.map((d, i) => (
         <SwiperSlide key={i}>
-          <div className=' h-full  xmd:mx-auto xmd:w-fit grid grid-cols-2 xmd:grid-cols-1 gap-x-[1.56rem] xmd:gap-y-[0.75rem] gap-y-[2.1rem]'>
+            <div className=' h-full grid grid-cols-2 gap-x-[1.56rem] gap-y-[2.1rem]'>
             {!loadingBaiviet && d?.map((data, i) => (
               <BaiViet data={data} loadingBaiviet={loadingBaiviet} />
             ))}
               {loadingBaiviet && Array(8).fill(0)?.map((_, index) => (
-              <Skeleton className={'bg-greyscaletext-10 xmd:hidden w-[28.6875rem] h-[7.875rem]'} />
+                <Skeleton className={'bg-greyscaletext-10 w-[28.6875rem] h-[7.875rem]'} />
             ))}
           </div>
         </SwiperSlide>
