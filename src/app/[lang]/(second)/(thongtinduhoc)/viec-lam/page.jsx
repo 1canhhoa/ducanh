@@ -1,6 +1,6 @@
 import {getDictionary} from '@/app/[lang]/dictionaries'
 import ViecLam from '@/components/thongtinduhoc/vieclam'
-import getDatawp from '@/libs/getDatawp'
+import getDatawp from '@/lib/getDatawp'
 
 export default async function page({params}) {
   const res = await getDatawp('/pages?slug=viec-lam-dinh-cu')

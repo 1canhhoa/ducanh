@@ -1,63 +1,54 @@
 "use client"
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import { hocsinhnoibat } from '@/lib/data';
-import NavigationCustom from '@/components/navigationcustom';
-const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
-  const [moveClass, setMoveClass] = useState('');
-
-  const itemsRef = useRef([]);
+import { Swiper, SwiperSlide, } from "swiper/react";
+import { Navigation } from 'swiper/modules'
+import "swiper/css";
+const HocSinhTieuBieu = ({ isMobile, dataHocSinhTieuBieu }) => {
   const [active, setActive] = useState(3);
   const [divHeight, setDivHeight] = useState(null);
   const divRef = useRef(null);
+  const swiperRef = useRef(null)
+
+  const [datHocsinh, setDatHocsinh] = useState(dataHocSinhTieuBieu);
+
+  const handleSlideChange = (swiper) => {
+    setActive(swiper.realIndex)
+
+  }
   useEffect(() => {
     setDivHeight(document.querySelector(".text-item-" + active)?.clientHeight)
   }, [active]);
 
-  useEffect(() => {
-    loadShow();
-  }, [active]);
-
-  // next prev active
-  function loadShow() {
-    let items = document.querySelectorAll('.slider-hocsinh .item');
-    let stt = 0;  
-    items[active].style.transform = `none`;
-    items[active].style.width = isMobile ? '21rem' : '33rem';
-    items[active].style.height = isMobile ? '35.8125rem' : '45.8125rem';
-    isMobile ? null : items[active].style.left = '32rem'
-    for (var i = active + 1; i < items.length; i++) {
-      stt += 3;
-      items[i].style.width = '17rem';
-      items[i].style.height = '25.5rem';
-      isMobile ? null : items[i].style.left = '40rem'
-      items[i].style.transform = `translateX(${6.875 * stt}rem)`;
-    }
-
-    stt = 0;
-    for (var i = active - 1; i >= 0; i--) {
-      stt += 3;
-      items[i].style.width = '17rem';
-      items[i].style.height = '25.5rem';
-      isMobile ? null : items[i].style.left = '15rem';
-      items[i].style.transform = `translateX(${-6.225 * stt}rem)`;
-    }
-  }
-  const handleNext = () => {
-    setMoveClass('next')
-    setActive(prevActive => (prevActive + 1 < itemsRef.current.length ? prevActive + 1 : prevActive));
-    loadShow();
-  }
-
-  const handlePrev = () => {
-    setMoveClass('prev')
-    setActive(prevActive => (prevActive - 1 >= 0 ? prevActive - 1 : prevActive));
-    loadShow();
-  }
   return (
     <div className='w-full mt-[3rem] relative'>
+      <div className="absolute bottom-0 left-0 " >
+        <Swiper
+          speed={500}
+          ref={swiperRef}
+          onSlideChange={handleSlideChange}
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper
+          }}
+          centeredSlides
+          slidesPerView={2}
+          loop={'true'}
+          modules={[Navigation]}
+          className='w-[23.4375rem] mySwiper h-full'
+        >
+          {datHocsinh?.map((d, i) => (
+            <SwiperSlide>
+              <div onClick={() => setActive(i)} className='box_item_slide'>
+                <Image
+                  key={i} loading='lazy' width={392} height={730} alt={`ảnh học sinh ${i}`}
+                  className="item_slide" src={d?.image?.url} />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
       <Image loading='lazy' alt='background học sinh tieu biểu mobi' src='/images/homepage/bg-hocsinh-mobi.png'
-        className='w-full h-[50.65886rem] z-[9] shrink-0' width={380} height={700} />
+        className='w-full h-[46.65886rem] z-[9] shrink-0' width={380} height={700} />
       <div
         style={{
           top: `calc(3.8rem + 1.8125rem + 1rem + ${divHeight}px)`
@@ -73,14 +64,14 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
             className='w-[2.5rem] h-[1.75rem] shrink-0' width={40} height={28} />
           <div className="flex flex-col items-start space-y-[2.8125rem]">
             <div ref={divRef} className={`text-item-${index} flex flex-col items-start gap-[1.25rem] md:w-[30.375rem]`}>
-              <div className=" self-stretch w-[20.4375rem] text-[1.5rem]  text-white not-italic font-bold leading-[130%] tracking-[-0.03rem]">
+              <div className=" line-clamp-3 self-stretch w-[20.4375rem] text-[1.5rem]  text-white not-italic font-bold leading-[130%] tracking-[-0.03rem]">
                 {c?.about_student?.comment}
               </div>
               <div className="flex flex-col items-start space-y-[0.25rem]">
                 <div className="w-max text-[1rem] font-bold leading-[1.5] text-white">
                   - {c?.about_student?.name}
                 </div>
-                <div className="text-white text-[0.875rem] not-italic font-normal leading-[1.4]">
+                <div className="line-clamp-3 text-white text-[0.875rem] not-italic font-normal leading-[1.4]">
                   {c?.about_student?.ex_student}<br />
                   {c?.about_student?.award}
                 </div>
@@ -92,7 +83,7 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
       ))}
       <div
         style={{
-          top: !isMobile ? `calc(11.8rem + 1.8125rem + 1rem + ${divHeight}px)` : `calc(5.8rem + 1.8125rem + 1rem + ${divHeight}px)`
+          top: `calc(5.8rem + 1.8125rem + 1rem + ${divHeight}px)`
         }}
         className=" duration-300 ease-linear absolute top-[10.5rem] left-1/2 -translate-x-1/2 flex items-start self-stretch space-x-[0.8125rem]">
         <button className=' relative flex justify-center items-center h-[2.6rem] py-[0.9375rem] px-[2.5rem] rounded-[0.625rem]  bg-linear-l5  '>
@@ -114,21 +105,6 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
             Tất cả học sinh
           </div>
         </button>
-      </div>
-      <div className=" slider-hocsinh" >
-        {dataHocSinhTieuBieu?.map((d, i) => (
-          <Image key={i} loading='lazy' width={392} height={730} alt={`ảnh học sinh ${i}`}
-            className="item !bottom-[-5.1rem]" ref={el => itemsRef.current[i] = el} src={d?.image?.url} />
-        ))}
-      </div>
-      <div className='  absolute h-full w-[6.7rem] top-[50%] -translate-y-1/2 right-[2rem] z-[100] pointer-events-none'>
-        <NavigationCustom
-          indexSlider={3}
-          length={5}
-          handlePrevSlide={handlePrev}
-          handleNextSlide={handleNext}
-          outline={false}
-        />
       </div>
     </div>
   );

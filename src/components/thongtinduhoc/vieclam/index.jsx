@@ -6,7 +6,7 @@ export default function Vieclam({text, dataAcf}) {
     >
       <div className='flex flex-col lg:w-[76.6875rem] w-full items-start'>
         <h1 className='title xmd:mb32 relative w-fit mb-[2.8rem] xmd:mb-[1.5rem]'>
-          {text?.job.title}
+          {text?.job?.title}
         </h1>
         <span className='lg:w-[76.6875rem] xlg:w-full xmd:w-[21.9375rem] mb-[1.88rem] lg:mt-[2.5rem] body16 xmd:body14 font-medium text-greyscaletext-60 xmd:text-[#2B46A8]'>
           {text?.job?.description}

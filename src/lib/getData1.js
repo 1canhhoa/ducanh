@@ -1,5 +1,5 @@
-export default async function getData(api, revalidate = 60) {
-  const res = await fetch(`${process.env.API}${api}`, {
+export default async function getData1(api, revalidate = 60) {
+  const res = await fetch(`${process.env.DOMAIN}${api}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

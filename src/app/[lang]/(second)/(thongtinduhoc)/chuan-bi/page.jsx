@@ -1,6 +1,6 @@
 import {getDictionary} from '@/app/[lang]/dictionaries'
 import ChuanBi from '@/components/thongtinduhoc/chuanbi'
-import getDatawp from '@/libs/getDatawp'
+import getDatawp from '@/lib/getDatawp'
 
 export default async function page({params, searchParams}) {
   const res = await getDatawp('/pages?slug=chuan-bi')

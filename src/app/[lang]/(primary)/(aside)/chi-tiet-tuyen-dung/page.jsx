@@ -1,5 +1,5 @@
 import {getDictionary} from '@/app/[lang]/dictionaries'
-import getData from '@/libs/getData'
+import getData from '@/lib/getData'
 import RecruitmentDetailsIndex from '@/sections/recruitmentDetails/RecruitmentDetailsIndex'
 
 const RecruitmentDetailsPage = async ({params}) => {

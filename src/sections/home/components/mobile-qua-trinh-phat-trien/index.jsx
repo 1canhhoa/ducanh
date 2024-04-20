@@ -67,14 +67,13 @@ const QuaTrinhPhatTrien = ({ isMobile, dataQutrinhPhatTrienDucAnh }) => {
         </div>
         {/* MOBI ảnh trường học và ảnh nền xanh + CÔ ÁO ĐỎ */}
         <div className="md:hidden h-[50.25rem] w-full relative">
-          <Image className="z-[2] absolute top-[-2.4rem] w-full " loading='lazy' alt="ngôi trường và học sinh" src={'/images/homepage/quatrinh-mobi.png'} width={330} height={330} />
-          <Image className="z-[1] absolute top-[12.25rem] w-full" loading='lazy' alt="ảnh nên xanh mobi" src={'/images/homepage/quatrinh2-mobi.png'} width={330} height={330} />
+          <Image className="z-[2] absolute top-[0rem] w-full " loading='lazy' alt="ngôi trường và học sinh" src={'/images/homepage/quatrinh-mobi.png'} width={330} height={330} />
+          <Image className="z-[1] absolute top-[14.25rem] w-full" loading='lazy' alt="ảnh nên xanh mobi" src={'/images/homepage/quatrinh2-mobi.png'} width={330} height={330} />
         </div>
 
 
         <div className='flex items-center space-x-[3.2rem] shrink-0'>
 
-          {/* WEB + MOBI ducanh connect */}
           <div className="absolute z-[2] top-[43.5rem] left-[1rem] flex flex-col items-start space-y-[0.5rem] shrink-0">
             <div className=" text-white text-right text-[0.875rem] not-italic font-bold leading-[normal] uppercase">
               {ton_chi_lam_viec?.title1}
@@ -84,34 +83,28 @@ const QuaTrinhPhatTrien = ({ isMobile, dataQutrinhPhatTrienDucAnh }) => {
             </div>
           </div>
 
-          {/* WEB + MOBI  5 ĐIỀU ĐỨC ANH DẠY */}
-          <div className="absolute top-[52.5rem] right-[0.5rem] z-[2] flex flex-col items-start space-y-[0.67269rem] shrink-0">
+          {/*MOBI  5 ĐIeu*/}
+          <div className="absolute top-[51rem] right-[0.7rem] z-[2] flex flex-col items-start space-y-[0.9rem] shrink-0">
             {ton_chi_lam_viec?.lists_ton_chi?.map((d, i) => (
               <div
                 key={i}
-                onMouseEnter={() => !isMobile ? handleHover(i) : () => { }}
-                onMouseLeave={() => !isMobile ? handleLeave(i) : () => { }}
-                className="relative group cursor-pointer flex items-end gap-[0.4375rem]">
-                <Image className={` ${hover && index === i ? 'circle !opacity-100' : ''} opacity-0 size-[3.8rem] absolute -left-[1.53rem] top-[1.75rem] `} loading='lazy' alt={d} src={'/images/homepage/hover-title.svg'} width={92} height={92} />
-                <div className={' w-[0.5rem] h-[0.5rem] bg-secondary-40 rounded-full duration-300 ease-linear absolute bottom-[0.06rem] left-[0.04rem] scale-0 ' + (hover && index === i ? 'scale-100 circle1' : '')}></div>
-
-                <div className={'size-[0.22425rem] bg-secondary-40 absolute left-[0.5rem] bottom-0 duration-300 ease-linear  opacity-100 ' + (hover && index === i ? "translate-x-10 !opacity-0 " : "")}></div>
-                <div className=" text-white pl-4 !pointer-events-none text-[1.07631rem] not-italic w-max font-bold leading-[normal] tracking-[-0.02244rem]">
-                  {d?.name}
+                className="relative group cursor-pointer flex items-end">
+                <div className=" flex items-center space-x-[1.25rem] text-white pl-4 !pointer-events-none text-[1rem] not-italic w-max font-semibold leading-[normal] tracking-[-0.02438em]">
+                  <div className='size-[0.4rem] bg-white rounded-full mr-[0.6rem] mt-[0.2rem]'></div> {d?.name}
                 </div>
               </div>
             ))}
           </div>
         </div>
       </div>
-      {/* bg - sticky  ,   2000 truong dai hoc    ,text-on-bg-sticky*/}
-      <div className="relative w-full h-[42.6rem]">
+      {/* 2000 truong dai hoc,text-on-bg-sticky*/}
+      <div className="relative w-full h-[42rem]">
 
         <div className=" absolute w-full z-[2] -top-[12.3rem]">
           <div className=' z-[10] w-full top-[3rem]'>
             <Image loading='lazy' alt="ảnh nền xanh nước biển mobi, phần sticky" src={'/images/homepage/quatrinh3-mobi.png'} width={1050} height={1000}
-              className=" z-[10] w-full  mt-[1.2rem]" />
-            <div className=" absolute  z-50 top-[8rem] left-1/2 -translate-x-1/2 inline-flex flex-col items-start space-y-[0.5]">
+              className=" z-[10] w-full  mt-[3rem]" />
+            <div className=" absolute  z-50 top-[10rem] left-1/2 -translate-x-1/2 inline-flex flex-col items-start space-y-[0.6rem]">
               <div className="text-primary-5 text-[0.875rem] not-italic font-bold leading-[150%] tracking-normal uppercase">
                 {thanh_tuu_dat_duoc?.title1}
               </div>
@@ -135,9 +128,9 @@ const QuaTrinhPhatTrien = ({ isMobile, dataQutrinhPhatTrienDucAnh }) => {
           </div>
 
         </div>
-        <Image loading='lazy' alt="ảnh nền xanh mờ web" src={'/images/homepage/union-blue.png'} width={1600} height={920}
-          className="z-[11] w-[20.95513rem] h-[31.39263rem] shrink-0 md:hidden absolute top-[6.6rem] left-1/2 -translate-x-1/2" />
-        <div className='flex z-[12] space-x-[1.7rem] items-start absolute top-[7.5rem] left-1/2 -translate-x-1/2'>
+        <Image loading='lazy' alt="ảnh nền xanh thành tựu" src={'/images/homepage/union-blue.png'} width={1600} height={920}
+          className="z-[11] w-[20.95513rem] h-[31.39263rem] shrink-0 md:hidden absolute top-[8.5rem] left-1/2 -translate-x-1/2" />
+        <div className='flex z-[12] space-x-[1.7rem] items-start absolute top-[9.4rem] left-1/2 -translate-x-1/2'>
           <div className="flex flex-col space-y-[1.59rem]">
             {thanh_tuu_dat_duoc?.sau_o_thanh_tuu?.slice(0, 3).map((d, i) => (
               <Section num={d?.num} mobi={i === 0 || i === 2 ? true : false} text={d?.text} />

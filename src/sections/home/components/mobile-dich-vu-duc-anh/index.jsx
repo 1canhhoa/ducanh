@@ -21,9 +21,9 @@ const DichVuDucAnh = ({t, isMobile, dataDichVuTaiDucAnh}) => {
   }
 
   return (
-    <div className='mt-[3rem] z-[10] h-[46em] space-y-[1.25rem]  w-full relative'>
-      <div className='px-[0.75rem] flex z-[1] flex-col  md:absolute top-20 left-20 items-start space-y-[0.5rem]'>
-        <div className='text-greyscaletext-40 xmd:text-primary-40 text-center text-[0.875rem] not-italic font-bold leading-[normal] uppercase'>
+    <div className='mt-[2rem] z-[10] h-[46em] space-y-[1.25rem]  w-full relative'>
+      <div className="px-[0.75rem] flex z-[1] flex-col  md:absolute top-20 left-20 items-start space-y-[0.5rem]">
+        <div className="text-greyscaletext-40 xmd:text-primary-40 text-center text-[0.875rem] not-italic font-bold leading-[normal] uppercase">
           Đồng hành với học sinh
         </div>
         <Title
@@ -66,11 +66,7 @@ const DichVuDucAnh = ({t, isMobile, dataDichVuTaiDucAnh}) => {
                   </svg>
                 </div>
               </div>
-              <div
-                style={{
-                  transitionDuration: '4s',
-                }}
-                className={`grid overflow-hidden  transition-all ease-in-out text-slate-600 text-sm 
+              <div className={`grid duration-500 overflow-hidden  transition-all ease-in-out text-slate-600 text-sm 
           ${
             accordionOpen && active === i
               ? 'mt-[1rem] grid-rows-[1fr] opacity-100'
@@ -85,22 +81,6 @@ const DichVuDucAnh = ({t, isMobile, dataDichVuTaiDucAnh}) => {
                   khóa, luận, PS, video, tài chính…& trực tiếp hỗ trợ DHS hoàn
                   thiện hồ sơ du học.
                 </div>
-              </div>
-            </div>
-            <div
-              className={`grid overflow-hidden  transition-all duration-500 ease-in-out text-slate-600 text-sm 
-          ${
-            accordionOpen && active === i
-              ? 'mt-[1rem] grid-rows-[1fr] opacity-100'
-              : 'grid-rows-[0fr] opacity-0'
-          }`}
-            >
-              <div className='overflow-hidden'>
-                Chúng tôi sẽ tư vấn chọn nước, trường, ngành học dựa trên nguyện
-                vọng của DHS, đào tạo tiếng Anh, SAT, GMAT, GRE, tổ chức thi PTE
-                A và đăng ký thi IELTS cho DHS nếu cần; đồng thời, hướng dẫn DHS
-                chuẩn bị hồ sơ du học: học lực, ngoại khóa, luận, PS, video, tài
-                chính…& trực tiếp hỗ trợ DHS hoàn thiện hồ sơ du học.
               </div>
             </div>
           </div>
