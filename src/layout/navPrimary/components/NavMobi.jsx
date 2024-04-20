@@ -1,5 +1,3 @@
-
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Search from './Search'
@@ -44,9 +42,9 @@ const NavMobi = ({ openNavMobile, data_header, setOpenNavMobile }) => {
       <div className='flex  items-start gap-2.5 self-stretch pt-10 pb-5 px-5'>
         <ul className="flex h-full flex-col space-y-[1.5rem] items-start">
           {data_header?.nav_down?.map((d, i) => (
-            <>
+            <div key={i}>
 
-              <div className="w-full">
+              <div className="w-full mb-[1.5rem]">
                 <div onClick={() => handleClick(i)} className={'flex group rounded-full justify-between items-center '}>
                   <li key={i} className='flex h-5 space-x-[0.75rem] items-start self-stretch'>
                     <div className="text-[color:var(--PRIMARY-60,#132B7D)] text-sm not-italic font-bold leading-[120%] uppercase">
@@ -83,7 +81,7 @@ const NavMobi = ({ openNavMobile, data_header, setOpenNavMobile }) => {
 
 
               {i !== data_header?.nav_down?.length - 1 && <div div className="w-[20.9375rem] h-[0.0625rem] bg-[#ECECEC]" ></div >}
-            </>
+            </div>
           ))}
 
           <button className='flex bg-primary-60 justify-center items-center px-4 py-2.5 rounded-[2.5rem]'>

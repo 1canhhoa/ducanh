@@ -11,7 +11,7 @@ const SLideBaiViet = ({ setSwiper, dataTintucs, swiperRef, loadingBaiviet }) => 
     <div className='md:w-[63rem] flex justify-center items-center'>
           <div className=' h-full  xmd:mx-auto xmd:w-fit grid grid-cols-2 xmd:grid-cols-1 gap-x-[1.56rem] xmd:gap-y-[0.75rem] gap-y-[2.1rem]'>
             {!loadingBaiviet && dataTintucs?.map((data, i) => (
-              <BaiViet data={data} loadingBaiviet={loadingBaiviet} />
+              <BaiViet key={i} data={data} loadingBaiviet={loadingBaiviet} />
             ))}
             {loadingBaiviet && data.map((_, index) => (
               <Skeleton className={'bg-greyscaletext-10 xmd:hidden w-[28.6875rem] h-[7.875rem]'} />

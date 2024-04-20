@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Search = () => {
   return (
     <div className=' xlg:p-[0.75rem]'>

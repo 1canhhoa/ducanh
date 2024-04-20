@@ -6,21 +6,17 @@ import NavigationCustom from '@/components/navigationcustom';
 import { Swiper, SwiperSlide, } from "swiper/react";
 import { Navigation } from 'swiper/modules'
 import "swiper/css";
-const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
-  const [moveClass, setMoveClass] = useState('');
-
-  const itemsRef = useRef([]);
+const HocSinhTieuBieu = ({ isMobile, dataHocSinhTieuBieu }) => {
   const [active, setActive] = useState(3);
   const [divHeight, setDivHeight] = useState(null);
   const divRef = useRef(null);
   const swiperRef = useRef(null)
-  const [indexSlider, setIndexSlider] = useState(0)
+
   const [datHocsinh, setDatHocsinh] = useState(dataHocSinhTieuBieu);
 
   const handleSlideChange = (swiper) => {
-    console.log({ swiper });
     setActive(swiper.realIndex)
-    setIndexSlider(swiper.realIndex)
+
   }
   useEffect(() => {
     setDivHeight(document.querySelector(".text-item-" + active)?.clientHeight)
@@ -54,7 +50,7 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
         </Swiper>
       </div>
       <Image loading='lazy' alt='background học sinh tieu biểu mobi' src='/images/homepage/bg-hocsinh-mobi.png'
-        className='w-full h-[50.65886rem] z-[9] shrink-0' width={380} height={700} />
+        className='w-full h-[46.65886rem] z-[9] shrink-0' width={380} height={700} />
       <div
         style={{
           top: `calc(3.8rem + 1.8125rem + 1rem + ${divHeight}px)`
@@ -89,7 +85,7 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
       ))}
       <div
         style={{
-          top: !isMobile ? `calc(11.8rem + 1.8125rem + 1rem + ${divHeight}px)` : `calc(5.8rem + 1.8125rem + 1rem + ${divHeight}px)`
+          top: `calc(5.8rem + 1.8125rem + 1rem + ${divHeight}px)`
         }}
         className=" duration-300 ease-linear absolute top-[10.5rem] left-1/2 -translate-x-1/2 flex items-start self-stretch space-x-[0.8125rem]">
         <button className=' relative flex justify-center items-center h-[2.6rem] py-[0.9375rem] px-[2.5rem] rounded-[0.625rem]  bg-linear-l5  '>
@@ -112,16 +108,6 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
           </div>
         </button>
       </div>
-      {/*
-      <div className='  absolute h-full w-[6.7rem] top-[50%] -translate-y-1/2 right-[2rem] z-[100] pointer-events-none'>
-        <NavigationCustom
-          indexSlider={3}
-          length={5}
-          handlePrevSlide={handlePrev}
-          handleNextSlide={handleNext}
-          outline={false}
-        />
-      </div> */}
     </div>
   );
 };

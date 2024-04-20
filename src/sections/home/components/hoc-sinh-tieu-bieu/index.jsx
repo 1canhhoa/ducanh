@@ -96,7 +96,7 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
           <div className='flex justify-center items-center absolute top-1/2  -translate-y-1/2 left-1/2 -translate-x-1/2 h-[2.7rem] w-[97%] rounded-[0.525rem] bg-white   '>
           </div>
           <div className=" relative text-center
-                  text-primary-40 text-sm not-italic w-max font-bold leading-[100%] tracking-[0.01313rem] uppercase
+                  text-primary-40 text-sm not-italic w-max font-bold leading-[1.5] tracking-[0.01313rem] uppercase
                   bg-clip-text text_gradient bg-gradient-to-b from-[#2E6BC6] from-[10.78%]
                   to-[#29A4EA] to-[81.3%]">
             Xem chi tiết

@@ -129,7 +129,7 @@ const [currentPage,setCurrentPage] = useState(1)
           <Image loading='lazy' alt="ảnh map tìm đường" src={'/images/homepage/map-timduong.png'} width={480} height={560} className="w-[29.8125rem] h-[35rem]" />
 
           <Image loading='lazy' className="absolute bottom-[1.94rem] right-[2.94rem] w-[23.0625rem] h-[4.5rem]" alt="ảnh button tìm đường" src={'/images/homepage/button-timduong.png'} width={370} height={75} />
-          <Image loading='lazy' className="kinh-loop absolute bottom-[1rem] right-[-0.5rem] w-[2.46225rem] h-[2.61319rem]" alt="ảnh kính loop" src={'/images/homepage/search-timduong.png'} width={40} height={44} />
+          <Image loading='lazy' className="kinh-loop absolute bottom-[1.5rem] right-[-1.5rem] w-[2.46225rem] h-[2.61319rem]" alt="ảnh kính loop" src={'/images/homepage/search-timduong.png'} width={40} height={44} />
           <div className='absolute z-50 bottom-[2.8rem] left-[4.94rem] text-white text-center text-[0.75rem] not-italic font-semibold leading-[150%] tracking-[-0.0075rem] uppercase'>
             Tìm trường cùng Đức Anh
           </div>

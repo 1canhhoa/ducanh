@@ -51,7 +51,7 @@ const TinTicDuHoc = ({ categories, dataTintucs }) => {
         <div className='w-full pl-[1rem] no-scrollbar overflow-x-auto relative flex items-end gap-[0.75rem]'>
           <div className=" w-max flex items-start space-x-[0.5rem] pr-[1rem] flex-[1_0_0]">
             {categories?.filter((f) => f?.slug !== 'uncategorized' && f?.slug !== 'bai-viet-noi-bat')?.map((t, i) => (
-              <>
+              <div key={i}>
                 {t?.slug !== 'uncategorized' && <button onClick={() => setApiUrl(t?.id)} key={i} className={`flex xmd:w-max justify-center items-center 
                 py-[0.75rem] hover:bg-primary-5 duration-500 ease-in-out px-[1rem] 
                 gap-[0.625rem] rounded-[0.5rem] border border-primary-20 `
@@ -60,7 +60,7 @@ const TinTicDuHoc = ({ categories, dataTintucs }) => {
                     {t?.name}
                   </div>
                 </button>}
-              </>
+              </div>
             ))}
           </div>
         </div>

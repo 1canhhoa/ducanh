@@ -54,15 +54,20 @@
 @media (max-width: 767px) {
 .swiper-slide.swiper-slide-next .item_slide {
   bottom: 0rem;
-  height: 22rem;
+  height: 16rem;
   transform: translateX(-70%);
+}}
+@media (max-width: 767px) {
+.swiper-slide.swiper-slide-prev .item_slide {
+  bottom: 0rem;
+  height: 16rem;
 }}
 
 
 @media (max-width: 767px) {
 .swiper-slide.swiper-slide-active .item_slide {
   bottom: 6rem;
-  transform: translateX(-90%) translateY(10%) rotate(0) scaleX(1.6648355) scaleY(1.58437542662116);
+  transform: translateX(-85%) translateY(20%) scaleX(1.7648355) scaleY(1.22);
 }}
 
 
@@ -70,36 +75,36 @@
 
 @keyframes moveTriangle {
   0% {
-    transform: translateX(-100px) translateY(0); /* Vị trí ban đầu */
+    transform: translateX(-6.26rem) translateY(0); /* Vị trí ban đầu */
   }
   33.33% {
-    transform: translateX(calc(50% - 100px)) translateY(calc(50% - 86.5px)); /* Điểm B */
+    transform: translateX(calc(50% - 6.26rem)) translateY(calc(50% - 4rem)); /* Điểm B */
   }
   66.66% {
-    transform: translateX(calc(100% - 100px)) translateY(0); /* Điểm C */
+    transform: translateX(calc(100% - 6.26rem)) translateY(0); /* Điểm C */
   }
   100% {
-    transform: translateX(-100px) translateY(0); /* Quay lại vị trí ban đầu */
+    transform: translateX(-6.26rem) translateY(0); /* Quay lại vị trí ban đầu */
   }
 }
 
 @keyframes moveTriangleMobi {
   0% {
-    transform: translateX(-100px) translateY(0); /* Vị trí ban đầu */
+    transform: translateX(-6.26rem) translateY(0); /* Vị trí ban đầu */
   }
   33.33% {
-    transform: translateX(calc(50% - 100px)) translateY(calc(50% - 56.5px)); /* Điểm B */
+    transform: translateX(calc(50% - 6.26rem)) translateY(calc(50% - 56.5px)); /* Điểm B */
   }
   66.66% {
-    transform: translateX(calc(100% - 100px)) translateY(0); /* Điểm C */
+    transform: translateX(calc(100% - 6.26rem)) translateY(0); /* Điểm C */
   }
   100% {
-    transform: translateX(-100px) translateY(0); /* Quay lại vị trí ban đầu */
+    transform: translateX(-6.26rem) translateY(0); /* Quay lại vị trí ban đầu */
   }
 }
 
 .kinh-loop{
-   animation: moveTriangle 5s infinites
+   animation: moveTriangle 5s infinite
   }
 .kinh-loop2{
  animation: moveTriangleMobi 5s infinite
