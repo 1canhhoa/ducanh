@@ -15,6 +15,7 @@ module.exports = {
       xl: '1367px',
       lg: '1024px',
       md: '768px',
+
       x3xl: {max: '1799px'},
       x2xl: {max: '1599px'},
       xxl: {max: '1366px'},
@@ -30,6 +31,11 @@ module.exports = {
       },
     },
     extend: {
+      transitionDuration: {
+        1500: '1500ms',
+        2000: '2000ms',
+        1300: '1300ms',
+      },
       fontFamily: {
         plus: ['var(--font-plus-jakarta-sans)'],
       },

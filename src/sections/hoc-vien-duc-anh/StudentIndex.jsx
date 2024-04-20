@@ -20,18 +20,15 @@ export default function StudentIndex({lang, isMobile}) {
     'https://this-person-does-not-exist.com/img/avatar-gen1174912f2832183bdeed43eb1500e7f5.jpg',
     'https://this-person-does-not-exist.com/img/avatar-gen1182d18720932245dc8de8765578d802.jpg',
   ])
-  // console.log(activeIndex)
   const handleActiveIndexChange = (index) => {
     setActiveIndex(index)
   }
   useEffect(() => {
     const subPictures = pictures.slice(1)
     const firstPic = pictures.shift()
-    // console.log({length: subPictures.length})
     setPictures((prevPictures) => {
       return [...subPictures, firstPic]
     })
-    // console.log(pictures)
   }, [activeIndex])
   return (
     <div className='px-[0.75rem] tablet:px-[4rem] md:px-[11rem] xmd:pt-[5rem] pt-[12rem]'>

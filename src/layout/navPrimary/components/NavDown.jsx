@@ -1,4 +1,6 @@
-const NavDown = () => {
+import Link from "next/link"
+
+const NavDown = ({ data_header }) => {
   const data2 = [
     { id: 0, title: 'về chúng tôi' },
     { id: 1, title: 'thông tin du học' },
@@ -10,10 +12,12 @@ const NavDown = () => {
   ]
   return (
     <ul className='inline-flex xlg:items-start xlg:flex-col items-center lg:space-x-[1.5rem]'>
-      {data2.map((d, i) => (
-        <li key={i} className="button1 text-primary-60 uppercase">
-          {d.title}
-        </li>
+      {data_header?.nav_down?.map((d, i) => (
+        <Link href={d?.url}>
+          <li key={i} className="button1 text-primary-60 uppercase">
+            {d?.title}
+          </li>
+        </Link>
       ))}
 
       <button className='flex justify-center items-center py-[0.625rem] px-[1.25rem] 

@@ -1,6 +1,5 @@
-"use client"
 
-import NavPrimary from '@/layout/navPrimary/NavPrimary'
+import NavPrimary from "@/layout/navPrimary/NavPrimary"
 
 export default function PrimaryLayout({ children }) {
 
