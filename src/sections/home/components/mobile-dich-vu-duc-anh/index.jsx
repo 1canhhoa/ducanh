@@ -24,7 +24,7 @@ const DichVuDucAnh = ({ t, isMobile, dataDichVuTaiDucAnh }) => {
   };
 
   return (
-    <div className='mt-[3rem] z-[10] h-[46em] space-y-[1.25rem]  w-full relative'>
+    <div className='mt-[2rem] z-[10] h-[46em] space-y-[1.25rem]  w-full relative'>
       <div className="px-[0.75rem] flex z-[1] flex-col  md:absolute top-20 left-20 items-start space-y-[0.5rem]">
         <div className="text-greyscaletext-40 xmd:text-primary-40 text-center text-[0.875rem] not-italic font-bold leading-[normal] uppercase">
           Đồng hành với học sinh

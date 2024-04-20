@@ -9,7 +9,7 @@ import SLideBaiViet from './SLideBaiViet'
 
 
 
-const TinTicDuHoc = ({ categories, dataTintucs, dataNoibat }) => {  
+const TinTicDuHoc = ({ categories, dataTintucs }) => {  
 
   
   const swiperRef = useRef(null)
@@ -44,14 +44,13 @@ const TinTicDuHoc = ({ categories, dataTintucs, dataNoibat }) => {
       console.error('Error fetching data:', error);
     }
   }, [data, error, isLoading]);
-console.log({dataTintucs});
   return (
     <div className='relative pt-[2.5rem] flex-col space-y-[0em] z-10 w-full flex justify-center items-center bg-elevation-blue '>
       <div className='w-full flex flex-col items-start space-y-[1.375rem]'>
         <Title className={'pl-[1rem] '} title={'Tin tức du học'} />
         <div className='w-full pl-[1rem] no-scrollbar overflow-x-auto relative flex items-end gap-[0.75rem]'>
-          <div className=" w-max flex items-start space-x-[0.5rem] flex-[1_0_0]">
-            {categories?.map((t, i) => (
+          <div className=" w-max flex items-start space-x-[0.5rem] pr-[1rem] flex-[1_0_0]">
+            {categories?.filter((f) => f?.slug !== 'uncategorized' && f?.slug !== 'bai-viet-noi-bat')?.map((t, i) => (
               <>
                 {t?.slug !== 'uncategorized' && <button onClick={() => setApiUrl(t?.id)} key={i} className={`flex xmd:w-max justify-center items-center 
                 py-[0.75rem] hover:bg-primary-5 duration-500 ease-in-out px-[1rem] 
@@ -66,7 +65,7 @@ console.log({dataTintucs});
           </div>
         </div>
       </div>
-      <div className=" flex flex-col justify-start items-start w-full">
+      <div className=" flex flex-col justify-start items-center w-full space-y-[0.75rem] pt-[0.75rem]">
         <SlideTinTucNoiBat
           loadingBaiviet={loadingBaiviet}
           dataTintucs={dataTintucsClient.length > 0 ? dataTintucsClient : dataTintucs} />

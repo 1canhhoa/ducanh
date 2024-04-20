@@ -81,7 +81,7 @@ const IndexHome = ({
 
 
 
-      {!isMobile && <section className='mx-auto w-full flex justify-center items-center md:mt-[10rem] mt-[3.65rem]'>
+      {!isMobile && <section className='mx-auto w-full flex justify-center items-center mt-[9rem]'>
         <BannerHome dataBanner={dataBanner} isMobile={isMobile} />
       </section>}
       {!isMobile && <section className='mx-auto w-full flex justify-center items-center'>
