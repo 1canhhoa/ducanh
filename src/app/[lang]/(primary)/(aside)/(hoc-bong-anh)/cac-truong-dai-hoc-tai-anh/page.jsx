@@ -4,10 +4,10 @@ import getDataCustomEndpoint from '@/libs/getDataCustomEndpoint'
 import getDataDefaultWPEndpoint from '@/libs/getDataDefaultWPEndpoint'
 import PostPrimary from '@/sections/hoc-bong-anh-quoc/components/PostPrimary'
 
-const FindByMapPopup = dynamic(
-  () => import('@/components/FindByMapPopup/FindByMapPopup'),
-  {ssr: false},
-)
+// const FindByMapPopup = dynamic(
+//   () => import('@/components/FindByMapPopup/FindByMapPopup'),
+//   {ssr: false},
+// )
 
 const Page = async ({params, searchParams}) => {
   const t = await getDictionary(params.lang)
@@ -25,21 +25,21 @@ const Page = async ({params, searchParams}) => {
   )
   const res = await getDataDefaultWPEndpoint('/posts/655')
   return (
-    <>
-      <FindByMapPopup
-        isMobile={isMobile}
-        lang={t}
-      />
-      <PostPrimary
-        lang={t.scholarship}
-        tags={resTags}
-        suggestLinks={resSuggestLinks}
-        dataRelativePosts={resRelativePosts}
-        res={res}
-        id='university-schools'
-        title={t.scholarship.h2_university_schools}
-      />
-    </>
+    // <>
+    //   <FindByMapPopup
+    //     isMobile={isMobile}
+    //     lang={t}
+    //   />
+    <PostPrimary
+      lang={t.scholarship}
+      tags={resTags}
+      suggestLinks={resSuggestLinks}
+      dataRelativePosts={resRelativePosts}
+      res={res}
+      id='university-schools'
+      title={t.scholarship.h2_university_schools}
+    />
+    // </>
   )
 }
 

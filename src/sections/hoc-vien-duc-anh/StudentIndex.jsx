@@ -56,7 +56,6 @@ export default function StudentIndex({lang, isMobile, res}) {
           lang={lang}
         />
       )}
-
       {/* slide + images */}
       <section className='flex flex-col md:flex-row mb-[1.5rem] md:mb-[4.5rem]'>
         <div className='xmd:w-full mr-auto'>
