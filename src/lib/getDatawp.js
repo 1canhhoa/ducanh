@@ -1,5 +1,5 @@
 export default async function getDatawp(api, revalidate = 60) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_H}${api}`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API}${api}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

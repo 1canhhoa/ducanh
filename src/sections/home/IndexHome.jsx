@@ -14,6 +14,7 @@ import MobileHocSinhTieuBieu from '@/sections/home/components/mobile-hoc-sinh-ti
 import MobileTinTucDuHoc from '@/sections/home/components/mobile-tin-tuc-du-hoc'
 import MobileTruongHocLienKet from '@/sections/home/components/mobile-truong-hoc-lien-ket'
 import './style.css'
+
 const IndexHome = ({
   t,
   dataHocSinhTieuBieu,
@@ -79,9 +80,7 @@ const IndexHome = ({
 
 
 
-
-
-      {!isMobile && <section className='mx-auto w-full flex justify-center items-center mt-[9rem]'>
+      {!isMobile && <section className='mx-auto w-full flex justify-center items-center mt-[7.8rem]'>
         <BannerHome dataBanner={dataBanner} isMobile={isMobile} />
       </section>}
       {!isMobile && <section className='mx-auto w-full flex justify-center items-center'>
