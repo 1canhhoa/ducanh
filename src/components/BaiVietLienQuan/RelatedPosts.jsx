@@ -8,14 +8,14 @@ import {useEffect, useState} from 'react'
 const RelatedPosts = ({
   lang,
   borderTop = true,
-  data = {}, // {pagination:{perPage,total,pageCount},data}
+  listItems = [],
   excludePostID = '',
 }) => {
-  // console.log(data)
+  // console.log(listItems)
   const perPageToShow = 6
-  const perPageFromResult = data?.pagination?.perPage || perPageToShow
+  const perPageFromResult = perPageToShow
   const [page, setPage] = useState(1)
-  const [items, setItems] = useState(data?.data || [])
+  const [items, setItems] = useState(listItems || [])
   let filteredItems = items?.filter((item) => item.id != excludePostID)
   if (perPageFromResult > perPageToShow) {
     filteredItems = filteredItems.slice(0, perPageToShow)
@@ -68,22 +68,26 @@ const RelatedPosts = ({
                 <a href='#'>{item.title.rendered}</a>
               </h2>
               <div
-                className='hidden md:block line-clamp-4 overflow-hidden mt-[1rem] mb-auto !text-greyscaletext-80'
+                className='hidden md:block line-clamp-4 text-ellipsis overflow-hidden my-[1rem] !text-greyscaletext-80'
+                title={item?.excerpt?.rendered.slice(
+                  3,
+                  item?.excerpt?.rendered.length - 5,
+                )}
                 dangerouslySetInnerHTML={{
-                  __html: item?.acf?.description || item?.content?.rendered,
+                  __html: item?.excerpt?.rendered,
                 }}
               ></div>
-              <Button className='hidden md:block h-[2.5rem] px-[1.5rem] w-max group-hover:bg-white'>
+              <Button className='hidden md:block h-[2.5rem] mt-auto px-[1.5rem] border border-primary-50 w-max group-hover:bg-white'>
                 Xem thêm
               </Button>
             </div>
           </article>
         ))}
       </div>
-      {filteredItems?.length > 0 && data?.pagination.total > perPageToShow && (
+      {filteredItems?.length > 0 && (
         <Pagination
           page={page}
-          pageCount={data?.pagination?.pageCount || 1}
+          pageCount={1}
         />
       )}
     </section>

@@ -1,5 +1,5 @@
 import {getDictionary} from '@/app/[lang]/dictionaries'
-import getDataDefaultWPEndpoint from '@/libs/getDataDefaultWPEndpoint'
+import getData from '@/lib/getData'
 import StudentIndex from '@/sections/hoc-vien-duc-anh/StudentIndex'
 
 export default async function HocVienDucAnhPage({searchParams, params}) {
@@ -8,7 +8,7 @@ export default async function HocVienDucAnhPage({searchParams, params}) {
   const myPageLang = t.student
   const {viewport} = searchParams
   const isMobile = viewport?.includes('mobile')
-  const res = await getDataDefaultWPEndpoint('/pages/866')
+  const res = await getData('/wp-json/wp/v2/pages/866')
   // console.log(res)
   return (
     <StudentIndex

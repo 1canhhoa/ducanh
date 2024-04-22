@@ -103,7 +103,7 @@ const PostPrimary = ({
       />
       <RelatedPosts
         lang={lang}
-        data={dataRelativePosts || {}}
+        listItems={dataRelativePosts || []}
         excludePostID={res?.id}
       />
     </SectionWrapper>

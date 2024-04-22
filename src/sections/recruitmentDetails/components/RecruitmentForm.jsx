@@ -20,7 +20,7 @@ import CustomSelect from './CustomSelect'
 import PostionPopup from './PostionPopup'
 import {useState} from 'react'
 import {generateFormFields} from '../fakeData'
-import postContactForm7 from '@/libs/postContactForm7'
+import postContactForm7 from '@/lib/postContactForm7'
 import {toast} from 'react-toastify'
 
 const RecruitmentForm = ({lang, onClose}) => {

@@ -9,7 +9,7 @@ import ContactBar from '@/components/contactBar'
 import Pagination from '@/components/pagination/Pagination'
 
 export default function StudentIndex({lang, isMobile, res}) {
-  // console.log({res})
+  // console.log({isMobile})
   const [activeIndex, setActiveIndex] = useState(0)
   const [pictures, setPictures] = useState([
     'https://this-person-does-not-exist.com/img/avatar-gena0f2bc9209c7c43f14ab4e8bd8981c98.jpg',
@@ -35,7 +35,7 @@ export default function StudentIndex({lang, isMobile, res}) {
     // console.log(pictures)
   }, [activeIndex])
   return (
-    <div className='px-[0.75rem] tablet:px-[4rem] md:px-[11rem] xmd:pt-[5rem] pt-[12rem]'>
+    <div className='px-[0.75rem] tablet:px-[4rem] md:px-[11rem] xmd:pt-[5rem] pt-[12rem] overflow-x-hidden'>
       <h1 className='hidden md:flex w-full items-baseline title pb-[3rem] text-primary-50 text-[3rem] font-bold leading-[120%] tracking-[-0.03rem]'>
         {lang.student}&nbsp;{res?.acf?.main_title_unit}
       </h1>

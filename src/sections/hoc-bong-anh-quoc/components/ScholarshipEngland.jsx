@@ -8,8 +8,7 @@ import SectionWrapper from './SectionWrapper'
 import Structure1 from './CheckListBox'
 import SuggestedSection from './SuggestedSection'
 import RelatedPosts from '@/components/BaiVietLienQuan/RelatedPosts'
-import getDataCustomEndpoint from '@/libs/getDataCustomEndpoint'
-import getData from '@/libs/getDataDefaultWPEndpoint'
+import getData from '@/lib/getData'
 import './page-content.css'
 
 const ScholarshipEngland = ({
@@ -54,14 +53,14 @@ const ScholarshipEngland = ({
       resArray?.length <= 0
     ) {
       ;(async function () {
-        const res = await getDataCustomEndpoint(tabInfor?.api_slug)
+        const res = await getData('/wp-json/wp/v2' + tabInfor?.api_slug)
         // console.log(res)
         setResArray(res)
       })()
     }
     if (tabInfor.currentIndex > 1 && !postContent) {
       ;(async function () {
-        const res = await getData(tabInfor?.api_slug)
+        const res = await getData('/wp-json/wp/v2' + tabInfor?.api_slug)
 
         // console.log(res)
         if (res?.acf?.check_list_block?.length > 0) {

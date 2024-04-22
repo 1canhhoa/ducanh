@@ -15,7 +15,7 @@ const SectionTabs = ({items = [], className = '', selectChange}) => {
         className='flex items-center w-full no-scrollbar xmd:pl-[0.75rem] xmd:overflow-x-auto xmd:p-[0.5rem] p-[0.25rem] 
       xmd:border-none border border-primary-20 bg-white rounded-xl'
       >
-        {items.map((tabItem, index) => {
+        {items?.map((tabItem, index) => {
           return (
             <div
               key={tabItem.id}
