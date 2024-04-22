@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react'
 import Image from 'next/image'
+import Count from '@/components/count/Count'
 
 const Section = ({ num, text, active }) => {
   const [hover, setHover] = useState()
@@ -14,7 +15,7 @@ const Section = ({ num, text, active }) => {
           bg-gradient-to-br  from-[#608AE5] from-[27.2%] to-[#BC678D] to-[86.72%]
           duration-500 ease-linear
           `}>
-        {num}
+        {<Count num={num} />}+
       </div>
       <div className={` 
       ${hover === active ? 'opacity-0' : 'opacity-100'}
@@ -24,8 +25,8 @@ const Section = ({ num, text, active }) => {
           bg-gradient-to-br  from-[#082072] from-[0%] to-[#2B46A8] to-[100%]
           duration-500 ease-linear
           `}>
+        <Count num={num} />+
 
-        {num}
       </div>
 
       <div className={`

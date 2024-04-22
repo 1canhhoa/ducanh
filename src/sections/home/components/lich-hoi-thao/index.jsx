@@ -10,7 +10,7 @@ import "swiper/css";
 import Image from 'next/image'
 import Table from './Table'
 import Align from '@/components/icon/Align';
-
+import Count from '@/components/count/Count'
 
 const Pagination = ({ className, content }) => {
   return <div className={'border border-[rgba(19,43,125,0.20)] text-primary-50 p-2.5 rounded-lg ' + (className ? className : '')}>
@@ -44,7 +44,7 @@ const [currentPage,setCurrentPage] = useState(1)
 
   const fetcher = url => fetch(url).then(r => r.json())
   const { data, error, isLoading } = useSWR(
-    apiUrl ? `${process.env.NEXT_PUBLIC_API_DOMAIN}/wp-json/okhub/v1/events?page=${currentPage}&per_page=10` : null,
+    apiUrl ? `${process.env.NEXT_PUBLIC_API}/wp-json/okhub/v1/events?page=${currentPage}&per_page=10` : null,
     fetcher, {
     revalidateIfStale: false,
     revalidateOnFocus: false,//Option này ngăn useSWR tự động gọi lại API khi cửa sổ hoặc tab của trình duyệt được focus lại
@@ -113,7 +113,8 @@ const [currentPage,setCurrentPage] = useState(1)
             <div className="  text-[5.54163rem] not-italic font-extrabold leading-[100%] tracking-[-0.27706rem]
           bg-gradient-to-r text_gradient bg-clip-text  from-[#2E6BC6] from-[9.83%]  via-[#2E6BC6] via-[9.83%]  to-[#29A4EA] to-[86.69%] 
           ">
-              2000
+              <Count num={2000} />
+              {/* <Count num={20} /> */}
             </div>
             <div className="text-[1.29044rem] not-italic font-extrabold leading-[130%] tracking-[-0.02581rem]
                       bg-gradient-to-r text_gradient bg-clip-text  from-[#2E6BC6] from-[9.83%]  via-[#2E6BC6] via-[9.83%]  to-[#29A4EA] to-[86.69%] 

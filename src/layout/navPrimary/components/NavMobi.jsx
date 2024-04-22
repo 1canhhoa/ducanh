@@ -66,7 +66,7 @@ const NavMobi = ({ openNavMobile, data_header, setOpenNavMobile }) => {
                 >
                   <div className="overflow-hidden">
                     <div className='flex-col pt-[0.7rem] flex items-start space-y-[1rem]'>
-                      {d?.children?.map((c, i) => (
+                      {d?.children && d?.children?.map((c, i) => (
                         <Link href={'/tuyen-dung'}>
                           <div onClick={handleClickItem}
                             key={i} className='text-sm font-light text-greyscaletext-50'>
