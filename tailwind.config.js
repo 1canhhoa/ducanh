@@ -73,6 +73,7 @@ module.exports = {
         'background-elevation-tag-chip': '#EBF5FA',
         'elevation-tag-chip': '#EBF5FA',
         'elevation-blue': '#FBFBFF',
+        'elevation-10': '#FAFAFA',
         'elevation-20': '#F8F8F8',
         'linear-l9': '#6196F6',
         'linear-l6': 'linear-gradient(170deg, #2E6BC6 10.78%, #29A4EA 81.3%)',
