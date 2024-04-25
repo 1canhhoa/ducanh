@@ -11,7 +11,10 @@ import clsx from 'clsx'
 export default function CradDrop({index, only = false, width, column, data}) {
   return (
     <Accordion
-      className={clsx('accor', width ? `w-[${width}rem]` : 'w-full')}
+      className={clsx(
+        'accor hover:bg-primary-5 rounded-[0.75rem]',
+        width ? `w-[${width}rem]` : 'w-full',
+      )}
       type='single'
       collapsible
     >

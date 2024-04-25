@@ -60,7 +60,7 @@ export default function NavDirectional() {
                 key={index}
                 href={e.href}
                 className={clsx(
-                  `transition-all text-primary-50 duration-300 xmd:w-[12.40849rem] lg:flex-1 py-[0.75rem] rounded-[0.5rem] flex justify-center items-center body14 font-medium`,
+                  `transition-all text-primary-50 duration-300 xmd:w-[12.40849rem] lg:flex-1 py-[0.75rem] rounded-[0.5rem] flex justify-center items-center body14 font-medium xmd:text-[0.625rem] xmd:font-bold leading-[1.5]`,
                   pathname == e.href ? 'bg-primary-10' : 'xmd:bg-primary-10',
                 )}
               >

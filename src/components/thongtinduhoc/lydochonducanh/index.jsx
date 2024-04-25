@@ -7,7 +7,7 @@ export default function LyDoChonDucAnh({text, dataAcf}) {
     <>
       <section
         id='ly_do'
-        className='flex pt-[8rem] xmd:pt-[6rem] flex-col mb-[9rem] xmd:mb-[1.5rem] w-full xmd:px-0 px-[11.75rem] relative'
+        className='flex pt-[8rem] xmd:pt-[5rem] flex-col mb-[9rem] xmd:mb-[1.5rem] w-full xmd:px-0 px-[11.75rem] relative'
       >
         <h1 className='title relative w-fit xmd:mb32 mb-[2.75rem] xmd:px-[0.75rem]'>
           {text?.lydochonducanh?.title}
