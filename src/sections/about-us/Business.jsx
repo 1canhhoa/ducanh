@@ -2,33 +2,7 @@ import Title from '@/components/Title'
 import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-const data = [
-  {
-    img: '/images/about_us/business1.jpg',
-    mainTitle: '01. Tư vấn du học',
-    desc: 'Phấn đấu 98- 100% du học sinh được nhận vào học trường yêu thích, được cấp visa du học, du học thành công, tìm được việc làm và có nhiều cơ hội định cư theo mong muốn,đồng thời có được trải nghiệm tốt khi sử dụng dịch vụ của công ty Đức Anh.',
-    content: 'Công ty ký kết hợp đồng làm đại diện tuyển sinh với hơn 2.000 trường phổ thông, cao đẳng, đại học nghiêm túc, thứ hạng cao trên toàn cầu, để học sinh- sinh viên Việt Nam có thể đến du học. Công ty tư vấn chọn nước- trường- ngành du học và trực tiếp làm hồ sơ du học cho các học sinh, sinh viên có nhu cầu du học các bậc học phổ thông, cao đẳng, dư bị đại học, cử nhân, thạc sỹ, tiến sỹ, giao lưu văn hóa, du học hè đến 14 nước: Anh, Úc, Mỹ, New Zealand, Canada, Hà Lan, Thụy Sỹ, Pháp, Ý, Ba Lan, Nhật Bản, Hàn Quốc, Singapore, Malaysia. '
-  },
-  {
-    img: '/images/about_us/business2.jpg',
-    mainTitle: '02. Đào tạo tiếng Anh và các kỹ năng m02.',
-    desc: 'Học viên học được kiến thức và chuẩn bị tốt nhất cho việc làm bài kiểm tra - thi các bài thi chuẩn hóa cho du học, làm việc, định cư.',
-    content: 'Đào tạo: Công ty đào tạo các chương trình tiếng Anh học thuật, tiếng Anh chuyên ngành, luyện thi IELTS, PTE đồng thời, đào tạo kỹ năng học tập để thành công ở nước ngoài. '
-  },
-  {
-    img: '/images/about_us/business3.jpg',
-    mainTitle: '03. Khảo thí tiếng Anh PTE A, PTE UKVI, PTE Home',
-    desc: 'Đảm bảo các kỳ thi tuân thủ đúng - đủ các qui đinh về tổ chức thi, coi thi & hỗ trợ tốt nhất cho thí sinh dự thi.',
-    content: 'Tổ chức các kỳ thi khảo thí tiếng Anh quốc tế PTE A, PTE UKVI & PTE Home cho các mục đích du học- làm việc- định cư & các mục đích khác, theo ủy quyền của Pearson Education, Mỹ. '
-  },
-  {
-    img: '/images/about_us/business4.jpg',
-    mainTitle: '04. Tư vấn việc làm và định cư',
-    desc: 'Đảm bảo các kỳ thi tuân thủ đúng - đủ các qui đinh về tổ chức thi, coi thi & hỗ trợ tốt nhất cho thí sinh dự thi.',
-    content: 'Tổ chức các kỳ thi khảo thí tiếng Anh quốc tế PTE A, PTE UKVI & PTE Home cho các mục đích du học- làm việc- định cư & các mục đích khác, theo ủy quyền của Pearson Education, Mỹ.'
-  },
-]
-
+import Timestamp from './Timestamp'
 const CardBuisiness = ({ d }) => {
   return <div className='flex justify-between items-start xmd:flex-col xmd:space-y-[1.125rem] md:w-[76.875rem]'>
     <Image priority alt="ảnh" src={d?.img?.url} width={380} height={370} className=" shrink-0" />
@@ -51,18 +25,19 @@ const CardBuisiness = ({ d }) => {
 const Business = ({ t, dataLinhvuc }) => {
   return (
     <section className='flex flex-col w-full items-center'>
-      <div className=' xmd:px-[0.75rem] xmd:space-y-[0.75rem] space-y-[2.5rem]'>
+      <div className=' md:mb-[3rem] xmd:px-[0.75rem] xmd:space-y-[0.75rem] space-y-[2.5rem]'>
         <Title title={t.business} />
         <div className="flex  flex-col items-start space-y-[5.25rem] xmd:space-y-[2rem]">
           {dataLinhvuc && dataLinhvuc?.map((d, i) => (
           <>
             <CardBuisiness d={d} key={i} />
-            {i != data.length - 1 && <div className="md:hidden mx-auto w-[21.9375rem] h-[0.0625rem] bg-[rgba(97,150,246,0.20)]">
+              {i != dataLinhvuc?.length - 1 && <div className="md:hidden mx-auto w-[21.9375rem] h-[0.0625rem] bg-[rgba(97,150,246,0.20)]">
             </div >}
           </>
         ))}
         </div>
       </div>
+      <Timestamp t={t} />
     </section>
   )
 }

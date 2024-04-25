@@ -21,7 +21,7 @@ const Table = ({ isMobile,dataLichHoithaos }) => {
     <div className={cn("ml-[0.625rem] w-min overflow-hidden", className.wrap)}>
       <table className=' min-w-full' >
         <thead>
-          <tr className="bg-linear-l5">
+          <tr className="bg-primary-40">
             <th className={cn(className.td_boder, " w-[3.875rem]  border-b border-r  px-[0rem]  h-[3.175rem]")}>
               <div className={cn("", className.th_text)}>
                 Ngày

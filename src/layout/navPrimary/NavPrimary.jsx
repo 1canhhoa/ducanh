@@ -40,7 +40,7 @@ export default function NavPrimary({ data_header }) {
   }, [openNavMobile]);
   return (
     <header className={`${isHidden ? '-translate-y-full' : 'translate-y-0'}  transition-transform duration-700 fixed w-full z-[1000] top-0 flex bg-white justify-center items-center`}>
-      <div className=" md:w-[100rem] xlg:w-full  xlg:relative flex items-center justify-center shrink-0">
+      <div className=" md:w-[100rem] xlg:w-full xlg:relative flex items-center justify-center shrink-0">
 
         <div className='flex items-center xmd:!px-[0.75rem] xlg:px-[4.75rem]  xmd:py-[0.75rem] xlg:w-full xlg:justify-between md:space-x-[11.12rem]'>
           <Link

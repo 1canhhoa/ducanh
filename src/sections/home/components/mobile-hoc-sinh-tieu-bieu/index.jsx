@@ -48,7 +48,7 @@ const HocSinhTieuBieu = ({ isMobile, dataHocSinhTieuBieu }) => {
         </Swiper>
       </div>
       <Image loading='lazy' alt='background học sinh tieu biểu mobi' src='/images/homepage/bg-hocsinh-mobi.png'
-        className='w-full h-[46.65886rem] z-[9] shrink-0' width={380} height={700} />
+        className='w-screen h-[46.65886rem] z-[9] shrink-0' width={380} height={700} />
       <div
         style={{
           top: `calc(3.8rem + 1.8125rem + 1rem + ${divHeight}px)`

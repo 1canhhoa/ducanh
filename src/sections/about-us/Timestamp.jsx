@@ -2,8 +2,7 @@ import Title from "@/components/Title"
 import Image from 'next/image'
 const Timestamp = ({ t }) => {
   return (
-    <section className="flex flex-col items-start xmd:w-full px-[0.5rem] xmd:space-y-[0.75rem] space-y-[2.5rem]">
-      <Title title={t.timestamp} />
+    <section className="xmd:mt-[2rem] mt-[3rem] flex flex-col items-start xmd:w-full px-[0.5rem] xmd:space-y-[0.75rem] space-y-[2.5rem]">
       <div className="relative md:w-[77rem] w-full ">
         <Image priority alt="ảnh nền liên hệ " src={'/images/about_us/contact.jpg'} width={1240} height={400} className=" xmd:hidden w-full" />
         <Image priority alt="ảnh nền liên hệ mobile " src={'/images/about_us/contact_mobile.jpeg'} width={355} height={540} className=" md:hidden w-full" />

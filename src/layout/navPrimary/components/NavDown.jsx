@@ -6,39 +6,24 @@ import {
 } from "@/components/ui/hover-card"
 import Link from "next/link"
 const NavDown = ({ data_header }) => {
-  const data2 = [
-    { id: 0, title: 'về chúng tôi' },
-    { id: 1, title: 'thông tin du học' },
-    { id: 2, title: 'học bổng' },
-    { id: 3, title: 'thi pte academic' },
-    { id: 4, title: 'học tiếng anh' },
-    { id: 5, title: 'việc làm - định cư' },
-    { id: 6, title: 'cộng đồng' },
-  ]
-  const data = [
-    { id: 0, title: 'Lý do chọn Đức Anh' },
-    { id: 1, title: 'Dịch vụ du học tại Đức Anh' },
-    { id: 2, title: 'Chuẩn bị du học' },
-    { id: 3, title: 'Cách quy đổi điểm GPA' },
-    { id: 4, title: 'Học bổng hay tự túc' },
-    { id: 5, title: 'Chọn ngành và chương trình học' },
-    { id: 6, title: 'Việc làm và định cư nước ngoài' },
-    { id: 7, title: 'Hỗ trợ du học sinh' },
-    { id: 8, title: 'Hướng dẫn trước khi lên đường' },
-  ]
-  console.log({ abc: data_header?.nav_down });
   return (
     <ul className='flex items-center w-full justify-between'>
       {data_header?.nav_down?.map((d, i) => (
         <HoverCard openDelay={0} closeDelay={0} key={i}>
-          <HoverCardTrigger>
-            {/* <Link href={d?.url}> */}
-            <li key={i} className="button1 text-primary-60 uppercase cursor-pointer">
-              {d?.title}
-            </li>
-            {/* </Link> */}
+          <HoverCardTrigger asChild>
+            {d?.children?.length > 0 ? (
+              <li key={i} className="button1 hover:text-[#BE3136] duration-200 ease-linear text-primary-60 uppercase cursor-pointer">
+                {d?.title}
+              </li>
+            ) : (
+              <Link href={d?.url}>
+                <li key={i} className="button1 hover:text-[#BE3136] duration-200 ease-linear text-primary-60 uppercase cursor-pointer">
+                  {d?.title}
+                </li>
+              </Link>
+            )}
           </HoverCardTrigger>
-          <HoverCardContent className='pt-6'>
+          {d?.children?.length > 0 && <HoverCardContent className='pt-6'>
 
             <ul className="flex bg-[#3468CD] w-[20.4246rem] flex-col items-start space-y-[0.14641rem] shadow-[0px_4px_12px_0px_rgba(78,145,246,0.15)] p-[0.58565rem] rounded-[1.1713rem]">
               {d?.children && d?.children?.map((a, i) => (
@@ -49,7 +34,7 @@ const NavDown = ({ data_header }) => {
                 </Link>
               ))}
             </ul>
-          </HoverCardContent>
+          </HoverCardContent>}
         </HoverCard>
 
       ))}

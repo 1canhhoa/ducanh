@@ -270,3 +270,17 @@ body {
     transform: translateX(1rem);
   }
 }
+
+/* SIDEBAR BANNER HOMAPAGE */
+.custom-transition {
+  color: white;
+  font-weight: bold;
+  transition: opacity 0.5s cubic-bezier(0.01, 0.01, 0.01, 0.01);
+  opacity: 0;
+}
+
+.custom-transition:hover {
+  opacity: 1;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(1, 20.01, 1, 20.01);
+}
