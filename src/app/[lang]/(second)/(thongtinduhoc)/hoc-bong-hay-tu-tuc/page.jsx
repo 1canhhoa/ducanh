@@ -1,9 +1,9 @@
 import {getDictionary} from '@/app/[lang]/dictionaries'
 import HocbongHayTutuc from '@/components/thongtinduhoc/hocbonghaytutuc'
-import getDatawp from '@/lib/getDatawp'
+import getData from '@/lib/getData'
 
 export default async function page({params}) {
-  const res = await getDatawp('/pages?slug=hoc-bong-hay-tu-tuc')
+  const res = await getData('/wp-json/wp/v2/pages/754')
   console.log('🚀 ~ HomePage ~ params:', params)
   const t = await getDictionary(params?.lang)
   //   const {viewport} = searchParams
@@ -11,7 +11,7 @@ export default async function page({params}) {
   return (
     <HocbongHayTutuc
       text={t}
-      dataAcf={res?.[0]?.acf}
+      dataAcf={res?.acf}
     />
   )
 }

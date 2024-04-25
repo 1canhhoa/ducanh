@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 import CradDrop from './CardDrop'
 
-import getDatawp from '@/lib/getDatawp'
 import Huongdan from './Huongdan'
 import clsx from 'clsx'
+import getData from '@/lib/getData'
 
 export default async function Support({
   text,
@@ -12,7 +12,8 @@ export default async function Support({
   className,
   guide = false,
 }) {
-  const res = await getDatawp('/pages?slug=ho-tro')
+  const res = await getData('/wp-json/wp/v2/pages/421')
+  const huongdan = await getData('/wp-json/wp/v2/pages/406')
   return (
     <section
       id='ho_tro'
@@ -45,7 +46,7 @@ export default async function Support({
           ))}
         </div>
         <div className='w-full flex xmd:flex-col items-start xmd:space-x-0 space-x-[5rem]'>
-          <div className='flex justify-center mt-[2.5rem] relative w-[26.375rem] h-[27.125rem] xmd:w-[21.9375rem] xmd:h-[25.375rem] xmd:rounded-[0.375rem] rounded-[0.49825rem]'>
+          <div className='lg:sticky lg:top-[16rem] flex justify-center mt-[2.5rem] relative w-[26.375rem] h-[27.125rem] xmd:w-[21.9375rem] xmd:h-[25.375rem] xmd:rounded-[0.375rem] rounded-[0.49825rem]'>
             <Image
               className='absolute size-full top-0 left-0 rounded-[0.49825rem]'
               alt='banner hỗ trợ du học sinh'
@@ -58,7 +59,7 @@ export default async function Support({
             </span>
           </div>
           <div className='flex flex-col items-start space-y-[1rem] xmd:space-y-[0.62rem] mt-[2.5rem] xmd:mt-[1.5rem] xmd:w-full flex-1'>
-            {res?.[0]?.acf?.support?.map((e, index) => (
+            {res?.acf?.support?.map((e, index) => (
               <CradDrop
                 key={index}
                 index={index}
@@ -68,7 +69,12 @@ export default async function Support({
           </div>
         </div>
       </div>
-      {isMobile && !guide && <Huongdan text={text} />}
+      {isMobile && !guide && (
+        <Huongdan
+          data={huongdan?.acf?.huong_dan}
+          text={text}
+        />
+      )}
     </section>
   )
 }
