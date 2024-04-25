@@ -5,7 +5,7 @@ export default async function RecruitmentPage({ params, searchParams }) {
   const { viewport } = searchParams
   const isMobile = viewport?.includes('mobile')
   const { recruitment } = await getDictionary(params.lang)
-  return <div className='px-[0.69rem]'>
+  return <div className='px-[0.69rem] md:pr-[2.4rem]'>
     <TitleAndBanner t={recruitment} />
     <FilterAndListCardRecuiment t={recruitment} isMobile={isMobile} />
   </div>

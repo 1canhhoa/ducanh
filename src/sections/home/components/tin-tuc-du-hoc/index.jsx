@@ -25,7 +25,7 @@ const TinTicDuHoc = ({ categories, dataTintucs }) => {
 
   const fetcher = url => fetch(url).then(r => r.json())
   const { data, error, isLoading } = useSWR(
-    apiUrl ? `${process.env._DOMAIN}/wp-json/okhub/v1/posts-by-category/${apiUrl}` : null,
+    apiUrl ? `${process.env.NEXT_PUBLIC_API}/wp-json/okhub/v1/posts-by-category/${apiUrl}` : null,
     fetcher, {
     revalidateIfStale: false,
     revalidateOnFocus: false,    //Option này ngăn useSWR tự động gọi lại API khi cửa sổ hoặc tab của trình duyệt được focus lại

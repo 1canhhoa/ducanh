@@ -79,7 +79,7 @@ const WorkTime = ({ t, dataGioLamViec }) => {
       <Image priority alt="ảnh thời gian làm việc du học đức anh" src={'/images/about_us/worktime.jpg'} width={1840} height={680}
         className="w-[114.97544rem] mx-auto xmd:hidden z-[-1] h-[42.48706rem] absolute left-0 right-0 bottom-0" />
       <Image priority alt="ảnh thời gian làm việc du học đức anh" src={'/images/about_us/worktime_mobi.jpg'} width={380} height={520}
-        className="z-[-1] absolute md:hidden left-0 right-0 bottom-[0rem]" />
+        className="z-[-1] absolute md:hidden w-full left-0 right-0 bottom-[0rem]" />
     </section>
   )
 }

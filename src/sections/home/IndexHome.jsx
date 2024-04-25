@@ -26,7 +26,8 @@ const IndexHome = ({
   categories,
   isMobile,
   dataTintucs,
-  dataBanner
+  dataBanner,
+  dataTruongLk
 }) => {
   return (
     <main className='relative w-full flex-col flex justify-center items-start xmd:bg-elevation-blue'>
@@ -71,7 +72,7 @@ const IndexHome = ({
           isMobile={isMobile} />
       </section>}
       {isMobile &&<section className='w-full'>
-        <MobileTruongHocLienKet t={t.home_page} />
+        <MobileTruongHocLienKet dataTruongLk={dataTruongLk} t={t.home_page} />
       </section>}
 
 
@@ -116,7 +117,7 @@ const IndexHome = ({
           isMobile={isMobile} />
       </section>}
       {!isMobile && <section className='w-full'>
-        <TruongHocLienKet t={t.home_page} />
+        <TruongHocLienKet dataTruongLk={dataTruongLk} t={t.home_page} />
       </section>}
 
 

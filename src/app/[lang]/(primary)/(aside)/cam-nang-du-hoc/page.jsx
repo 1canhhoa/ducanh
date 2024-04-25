@@ -5,7 +5,7 @@ import AbroadGuideIndex from '@/sections/cam-nang-du-hoc/AbroadGuideIndex'
 const CamNangDuHocPage = async ({params}) => {
   const t = await getDictionary(params.lang)
   const res = await getData(
-    'https://duc-anh.okhub-tech.com/wp-json/acf/v3/pages/204',
+    '/wp-json/acf/v3/pages/204',
   )
   return (
     <AbroadGuideIndex
