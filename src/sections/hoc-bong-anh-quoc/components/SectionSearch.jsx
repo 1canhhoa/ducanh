@@ -4,7 +4,11 @@ const SectionSearch = ({className = '', placeholder = 'Tìm học bổng'}) => {
   return (
     <div
       className={clsx(
+<<<<<<< HEAD
+        'flex items-center pl-[1rem] rounded-lg border border-primary-10 overflow-hidden md:w-[22rem] xmd:mb-[1.25rem] mb-[1.5rem]',
+=======
         'flex items-center pl-[1rem] rounded-lg border border-primary-10 overflow-hidden md:w-[22rem]',
+>>>>>>> master
         className,
       )}
     >

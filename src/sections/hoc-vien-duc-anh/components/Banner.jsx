@@ -1,10 +1,20 @@
 import Image from 'next/image'
+<<<<<<< HEAD
+const Banner = ({lang, res}) => {
+  // console.log({res})
+  return (
+    <section className='overflow-hidden w-full h-[11rem] md:h-[38.4375rem] mb-[1.5rem] md:mb-[4.5rem] relative rounded-xl bg-[linear-gradient(176deg,rgba(25,87,180,0.75)_-0.03%,#29A4EA_87.83%)]'>
+      {/* overlay students */}
+      <Image
+        src={res?.acf?.overlay || '/images/hoc-vien-duc-anh/banner.png'}
+=======
 const Banner = ({lang, data}) => {
   return (
     <section className='overflow-hidden w-full h-[11rem] md:h-[38.4375rem] mb-[1.5rem] md:mb-[4.5rem] relative rounded-xl'>
       {/* overlay students */}
       <Image
         src='/images/hoc-vien-duc-anh/banner.png'
+>>>>>>> master
         width={620}
         height={413}
         priority
@@ -13,7 +23,11 @@ const Banner = ({lang, data}) => {
       />
       {/* student */}
       <Image
+<<<<<<< HEAD
+        src={res?.acf?.person || '/images/hoc-vien-duc-anh/student img.png'}
+=======
         src='/images/hoc-vien-duc-anh/student img.png'
+>>>>>>> master
         width={416}
         height={531}
         priority
@@ -66,7 +80,11 @@ const Banner = ({lang, data}) => {
             className='z-20 w-ful text-greyscaletext-80 text-justify xmd:text-[0.1875rem] text-[0.44rem] font-normal 
             xmd:leading-[150%] leading-[160%] tracking-[-0.03125rem]'
           >
+<<<<<<< HEAD
+            {res?.acf?.message_1}
+=======
             {data.text1}
+>>>>>>> master
           </p>
         </div>
       </div>
@@ -112,7 +130,11 @@ const Banner = ({lang, data}) => {
             className='z-20 w-full h-[6rem] text-greyscaletext-80 text-justify xmd:text-[0.1875rem] text-[0.75rem] font-normal 
             xmd:leading-[150%] leading-[160%] tracking-[-0.03125rem]'
           >
+<<<<<<< HEAD
+            {res?.acf?.message_2}
+=======
             {data.text2}
+>>>>>>> master
           </p>
         </div>
       </div>
@@ -164,14 +186,22 @@ const Banner = ({lang, data}) => {
             className='z-20 w-full text-greyscaletext-80 text-justify xmd:text-[0.1875rem] text-[0.75rem] font-normal 
             xmd:leading-[150%] leading-[160%] tracking-[-0.03125rem]'
           >
+<<<<<<< HEAD
+            {res?.acf?.message_3}
+=======
             {data.text3}
+>>>>>>> master
           </p>
         </div>
       </div>
       <h2 className='text-white xmd:text-[0.875rem] text-[3rem] font-medium uppercase flex flex-col absolute xmd:left-[1.4rem] left-[5rem] xmd:top-[3rem] top-[10rem]'>
         <span className='leading-[120%]'>{lang.textBanner1}</span>{' '}
         <span className='xmd:text-[1.175rem] text-[4rem] font-bold xmd:w-[10rem] w-[28.4375rem] leading-[120%]'>
+<<<<<<< HEAD
+          {res?.acf?.banner_main_title}
+=======
           {lang.textBannerName}
+>>>>>>> master
         </span>{' '}
         <span>{lang.textBanner2}</span>
       </h2>

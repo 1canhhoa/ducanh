@@ -54,10 +54,13 @@ export function middleware(request) {
       new URL(`/${defaultLocale}${pathname}`, request.url),
     )
   }
+<<<<<<< HEAD
+=======
 const newUrl = new URL(`${pathname}`, request.url)
 newUrl.search = nextUrl.searchParams.toString()
 return NextResponse.rewrite(newUrl)
   
+>>>>>>> master
 }
 
 export const config = {

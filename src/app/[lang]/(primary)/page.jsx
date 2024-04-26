@@ -1,5 +1,13 @@
 import {getDictionary} from '../dictionaries'
 import IndexHome from '@/sections/home/IndexHome'
+<<<<<<< HEAD
+export default async function HomePage({ searchParams, params }) {
+  console.log('🚀 ~ HomePage ~ params:', params)
+  const t = await getDictionary(params.lang)
+  const { viewport } = searchParams
+  const isMobile = viewport?.includes('mobile')
+  return <IndexHome t={t} isMobile={isMobile} />
+=======
 import getData from '@/lib/getData'
 export default async function HomePage({ searchParams, params }) {
   console.log({ searchParams });
@@ -32,4 +40,5 @@ export default async function HomePage({ searchParams, params }) {
 
     isMobile={isMobile}
   />
+>>>>>>> master
 }

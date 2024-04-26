@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+  "hello":"hello okhub"
+}
+=======
   "hello": "xin chao okhub",
   "related_posts": "Bài viết liên quan",
   "contact": {
@@ -248,3 +252,4 @@
     "h2_related_posts": "Bài viết liên quan"
   }
 }
+>>>>>>> master

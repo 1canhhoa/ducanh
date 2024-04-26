@@ -1,15 +1,79 @@
+<<<<<<< HEAD
+import Structure1 from './CheckListBox'
+import SectionWrapper from './SectionWrapper'
+import RelatedPosts from '@/components/BaiVietLienQuan/RelatedPosts'
+import SuggestedSection from './SuggestedSection'
+import './page-content.css'
+const SecondarySchools = ({
+  lang,
+  id = 'secondary-schools',
+  res,
+  tags = [],
+  dataRelativePosts = {},
+  suggestLinks = [],
+}) => {
+  const topChecklistBlocks = []
+  const bottomChecklistBlocks = []
+  if (res?.acf?.check_list_block) {
+    res?.acf?.check_list_block?.forEach((clb) => {
+      if (clb?.position === 'top') {
+        topChecklistBlocks.push(clb)
+      } else {
+        bottomChecklistBlocks.push(clb)
+      }
+    })
+  }
+=======
 import Image from 'next/image'
 import SectionWrapper from './SectionWrapper'
 import Structure1 from './Structure1'
 import Structure2 from './Structure2'
 import Paragraph from './Paragraph'
 const SecondarySchools = ({lang, id = 'secondary-schools'}) => {
+>>>>>>> master
   return (
     <SectionWrapper
       id={id}
       title={lang.h2_secondary_schools}
       className='!mt-0'
     >
+<<<<<<< HEAD
+      {' '}
+      {topChecklistBlocks.length > 0 &&
+        topChecklistBlocks.map((topChecklistBlock, index) => (
+          <Structure1
+            key={index}
+            h3Text={topChecklistBlock.heading_text}
+            listText={topChecklistBlock?.items}
+            className='mb-[1.5rem]'
+          />
+        ))}
+      <div
+        className='page-content-renderer text-greyscaletext-60 text-[1rem] font-medium leading-[1.5]'
+        dangerouslySetInnerHTML={{
+          __html: res?.content?.rendered || '',
+        }}
+      ></div>
+      {bottomChecklistBlocks.length > 0 &&
+        bottomChecklistBlocks.map((bottomChecklistBlock, index) => (
+          <Structure1
+            key={index}
+            h3Text={bottomChecklistBlock.heading_text}
+            listText={bottomChecklistBlock?.items}
+            className='mb-[1.5rem]'
+          />
+        ))}
+      <SuggestedSection
+        className='mt-[5.27rem]'
+        tags={tags || []}
+        suggests={suggestLinks || []}
+      />
+      <RelatedPosts
+        lang={lang}
+        data={dataRelativePosts || {}}
+        excludePostID={res?.id}
+      />
+=======
       <p className='text-[1rem] font-semibold leading-[170%] text-primary-50 my-[1.25rem]'>
         Như đã đề cập, chương trình phổ thông tại Anh có thể 13 năm (A-level)
         hoặc 12 năm (IB). Kết thúc 2 chương trình này, học sinh sẽ học lên năm
@@ -39,6 +103,7 @@ Bằng tổng hợp/ kết hợp (Combining qualifications). Sinh viên có th�
 Bằng tổng hợp/ kết hợp (Combining qualifications). Sinh viên có thể học kết hợp bằng nghề và chứng chỉ AS hoặc A level, hoặc kết hợp với các chương trình đào tạo khác.'
         />
       </Structure2>
+>>>>>>> master
     </SectionWrapper>
   )
 }

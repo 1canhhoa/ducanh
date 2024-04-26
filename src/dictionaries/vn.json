@@ -1,6 +1,14 @@
 {
   "hello": "xin chao okhub",
+<<<<<<< HEAD
+  "view_more": "Xem thêm",
   "related_posts": "Bài viết liên quan",
+  "find_school_placeholder": "Tìm tên trường...",
+  "find_school_placeholder_bonus": "VD: Harvard, Cambridge,...",
+  "position": "Vị trí",
+=======
+  "related_posts": "Bài viết liên quan",
+>>>>>>> master
   "contact": {
     "title": "Kết nối với chúng tôi",
     "firstAndLastName": "Họ và tên*",
@@ -16,7 +24,11 @@
   },
   "student": {
     "student": "Học viên",
+<<<<<<< HEAD
+    "goAlong": " song hành cùng",
+=======
     "goAlong": "Đức Anh song hành cùng",
+>>>>>>> master
     "outstandingStudents": "Các học sinh tiêu biểu",
     "viewDetail": "Xem chi tiết",
     "allStudent": "Tất cả học sinh",
@@ -35,19 +47,33 @@
     "time": "Thời gian",
     "applyNow": "Ứng tuyển ngay",
     "applyNowMobile": "Ứng tuyển",
+<<<<<<< HEAD
+    "apply": "Ứng tuyển",
+    "rq_apply_success": "Đã gửi yêu cầu ứng tuyển",
+    "rq_apply_failure": "Gửi yêu cầu ứng tuyển không thành công"
+=======
     "apply": "Ứng tuyển"
+>>>>>>> master
   },
   "about_us": {
     "legal": "Pháp nhân",
     "ceo": "Ban giám đốc",
+<<<<<<< HEAD
+    "business": "3 lĩnh vực kinh doanh chính",
+=======
     "business": "4 lĩnh vực kinh doanh chính",
+>>>>>>> master
     "credo": "Tôn chỉ",
     "achievement": "Thành tựu công ty",
     "office": "Văn phòng",
     "centersLanguage": "Trung tâm ngoại ngữ",
+<<<<<<< HEAD
+    "staff": "Nhân Viên"
+=======
     "staff": "Nhân Viên",
     "worktime": "Giờ làm Việc",
     "ducanhCtg": "Đức Anh cùng thời gian"
+>>>>>>> master
   },
   "scholarship": {
     "nationInfor": "Nước Anh nằm ở phía Tây Bắc của châu Âu, được hợp thành bởi 4 phần: North Ireland, Wales, England và Scotland.",
@@ -60,6 +86,154 @@
     "h2_reason_mb": "Vì sao du học tại Anh Quốc",
     "h2_education_system": "Hệ thống giáo dục đất nước",
     "h2_secondary_schools": "Các trường phổ thông tại Anh",
+<<<<<<< HEAD
+    "h2_training_institutes": "Các viện đào tạo nghề tại Anh",
+    "h2_related_posts": "Bài viết liên quan",
+    "h2_scholarship_en": "Học bổng du học tại Anh",
+    "h2_job_settled": "Việc làm-Định cư tại Anh",
+    "h2_university_schools": "Các trường Đại học tại Anh",
+    "h2_register_to_study": "Đăng ký xin học tại Anh",
+    "h2_visa_abroad_study": "Visa du học"
+  },
+  "information": {
+    "title_1": "Lý do chọn Đức Anh",
+    "text_title_1": {
+      "text_banner": "Có nên tự làm hồ sơ du học",
+      "text1": "Có thể bạn từng có ý định tự làm hồ sơ du học, và chúng tôi hoàn toàn đồng ý rằng, việc tự làm hồ sơ khi bạn có đủ kiến thức, kinh nghiệm, hiểu biết cần… là một trải nghiệm thú vị.",
+      "text2": "Tuy nhiên, nếu bạn chọn tự làm hồ sơ khi có một trong các suy nghĩ dưới đây thì chúng tôi đề nghị các bạn xem xét lại:"
+    },
+    "title_1_h2": "LÝ DO CHỌN CÔNG TY ĐỨC ANH ĐỂ LÀM HỒ SƠ DU HỌC",
+    "text_tl1_h2": {
+      "text1": "Hơn 23 năm qua, công ty Đức Anh đã giúp hàng chục ngàn học sinh, sinh viên xin học, xin học bổng và du học thành công ở 16 nước chúng tôi hợp tác cùng.",
+      "text2": "Khảo sát khách hàng của chúng tôi từ năm 2000 đến nay đã chỉ ra các lý do cơ bản mà du học sinh chọn công ty Đức Anh, thay vì công ty tư vấn du học khác, là:"
+    },
+    "maxim": "Bằng kiến thức chuyên môn và kinh nghiệm của mình, Đức Anh hoàn toàn có thể giúp các bạn tránh được các rủi ro và toại nguyện ước mơ du học. Các bạn có thể tin tưởng ở chúng tôi!",
+    "title_2": "Chuẩn bị cho du học",
+    "banner_prepare": "Phụ huynh và học sinh quan tâm đến du học cần chuẩn bị tốt ít nhất 5 yếu tố sau:",
+    "text_banner_prepare": {
+      "banner_finance": "Tài chính",
+      "banner_tknowledge": "Kiến thức",
+      "banner_thought": "Tư tưởng",
+      "banner_language": "Ngoại ngữ",
+      "banner_soft_skills": "Các kỹ năng mềm"
+    },
+    "title_3": "Quy đổi điểm GPA",
+    "title_4": "Du học học bổng",
+    "text_title_4": "Du học học bổng là khi du học sinh được cá nhân hay tổ chức nào đó hỗ trợ một phần hay toàn phần tài chính cho du học. Những bạn quan tâm đến học bổng có thể tham khảo một số chương trình học bổng điển hình.",
+    "types_scholarships": "Học sinh cần phân biệt rõ các dạng học bổng. Công ty Đức Anh hỗ trợ các bạn để xin cả 3 loại: Scholarship, Grant, Busary/ Financial aid.",
+    "h2_criteria_scholarship": {
+      "title": "Tiêu chí & cách xét học bổng:",
+      "text_1": "Với hầu hết các nước bạn chỉ có thể chính thức được xét học bổng sau khi có thư mời học chính thức & không có điều kiện; vì vậy tất cả các học sinh được khuyên là cần nộp hồ sơ sớm, ngay trước khi bạn có đủ hồ sơ để “xếp hàng” xin học bổng; như vậy khi bạn có đủ hồ sơ- bạn sẽ được xét nhanh hơn và cũng ưu tiên hơn.",
+      "text_2": "Tuy nhiên, Mỹ và một số ít nước khác có thể tạm đồng ý cấp học bổng cho bạn khi bạn gửi hồ sơ chưa hoàn thiện, tuy nhiên cuối cùng thì đều phải dựa trên kết quả thực tế cuối cùng để chốt là bạn có được học bổng hay không."
+    },
+    "h2_reference": "Tham khảo năng lực học sinh >< mức học bổng có thể đăng ký để cạnh tranh:",
+    "h2_file": {
+      "title": "Hồ sơ xin học bổng:",
+      "text1": "Học bạ/ bảng điểm của khóa học gần nhất",
+      "text2": "HBằng tốt nghiệp bậc học cao nhất",
+      "text3": "Hộ chiếu trang có ảnh và chữ ký",
+      "text4": "Tiếng Anh (PTE A/ IELTS/ TOEFL/ SAT/ GMAT/ GRE…)",
+      "text5": "Thành tích khoa học, hoạt động ngoại khóa, các bài viết nghiên cứu- nếu có",
+      "title_sub": "Với học bổng bậc thạc sỹ, tiến sỹ, bạn cần thêm:",
+      "text_sub1": "Work CV",
+      "text_sub2": "1 personal statement",
+      "text_sub3": "2 thư giới thiệu"
+    },
+    "h2_note": {
+      "title": "Lưu ý khác:",
+      "text1": "Với các học sinh đạt học bổng bán phần (chỉ có học phí hoặc 1 phần học phí, hoặc 1 phần tiền ăn ở…), học sinh cần đủ tiền để trang trải các phí còn lại (học phí, sinh hoạt phí…) Một số nước khi xin học bổng thì cần đầy đủ & nhiều loại giấy tờ, một số nước khác chỉ xét GPA & tiếng Anh."
+    },
+    "h2_reference_countries": "Các bạn có thể tham khảo chương trình học bổng 10-100% học phí của các trường tại các nước:",
+    "title_5": {
+      "title": "Du học tự túc",
+      "text1": "Hiện nay, du học sinh có thể lựa chọn du học toàn phần (học toàn bộ thời gian ở nước ngoài), du học bán phần (học một phần ở Việt Nam và một phần ở nước khác), học tại một nước trong suốt quá trình du học hoặc học chuyển tiếp giữa các nước…",
+      "text2": "Với loại hình du học này, học sinh có quyền quyết định tương lai của mình: học tại nước nào, trường nào và chương trình nào, chi bao nhiêu tiền cho khóa học, học xong làm gì, ở đâu… So với du học học bổng, số lượng du học sinh tự túc lớn hơn rất nhiều lần."
+    },
+    "title_6": {
+      "title": "Chọn ngành và chương trình học",
+      "text1": "Bạn đã học xong chương trình X nào đó tại Việt Nam, và không biết nên chọn chương trình học nào tại nước ngoài cho phù hợp?",
+      "text2": "Bạn và gia đình bàn bạc mãi mà chưa quyết định được học ngành gì?",
+      "reference": "HÃY THAM KHẢO:",
+      "reference_text1": "1. Hướng dẫn của một trong số các trường đại học nổi tiếng ở nước ngoài về các ngành nghề- học gì để có thể làm được ở lĩnh vực ngành nghề đó: ",
+      "reference_text2": "2. Đối chiếu với hoàn cảnh cá nhân bạn, hãy liên hệ với chúng tôi để được tư vấn về một giải pháp- lộ trình học đảm bảo: học tốt- chi phí phải chăng- ra trường dễ kiếm việc làm."
+    },
+    "h2_choose": {
+      "title": "Chọn ngành học",
+      "text1": "Việc chọn ngành học của bạn phụ thuộc nhiều vào các yếu tố:",
+      "text2_check": "Bạn thích trở thành ai?",
+      "text3_check": "Bạn mạnh về lĩnh vực học tập nào?",
+      "text4_check": "Cơ hội việc làm sau khi tốt nghiệp?",
+      "text5_check": "Làm việc tại nước ngoài hay tại Việt Nam sau khi tốt nghiệp?",
+      "popular_industry": "Ngành học phổ biến các bạn có thể tham khảo"
+    },
+    "h2_program": "Chọn chương trình học",
+    "title_7": {
+      "title": "Chi phí du học",
+      "text_banner": "Khi du học hầu như không có gì là miễn phí và gần 100% các trường hợp là bạn phải trả trước khi được phục vụ. Cuộc sống ở nước ngoài khá là đắt đỏ so với Việt Nam, vì vậy, bạn cần tìm hiểu kỹ để lên kế hoạch tài chính cho du học một cách phù hợp nhất. Dưới đây là danh sách các loại chi phí chính mà bạn cần biết."
+    },
+    "h2_related_costs": {
+      "title": "Các loại chi phí liên quan đến du học",
+      "title1_table": "Phí",
+      "title2_table": "Nộp tại",
+      "title3_table": "Miêu tả"
+    },
+    "h2_predicted_costs": {
+      "title": "Dự toán chi phí du học ở một số nước:",
+      "title1_table": "Phí",
+      "title2_table": "Nộp tại",
+      "title3_table": "Miêu tả",
+      "note1": "* Đơn vị tiền tệ: theo tiền tệ của nước đó, riêng Malaysia và Nhật theo USD.",
+      "note2": "* Đối với các phí cần nộp sang trường và đến các cơ quan hữu quan, học sinh sẽ nộp trực tiếp qua ngân hàng dưới sự hướng dẫn của Công ty Đức Anh."
+    },
+    "spending": {
+      "title": "Cách chi tiêu",
+      "text1": "Quản lý quỹ tiền phụ huynh chu cấp sao cho đến ngày cuối của tháng bạn vẫn đủ tiền, thậm chí dư ra một chút…là cả một nghệ thuật tính toán… Chắc chắn là bạn cần lên kế hoạch để khỏi “phá sản”, ảnh hưởng đến học tập và dạ dày của bạn. Các bạn nên chia nhỏ tiền thành các khoản được phép chi tiêu và tuân thủ nguyên tắc: Tiêu đúng tiền vào đúng việc. ",
+      "note": "Sinh viên cũng nên để ý tìm kiếm các giải pháp mua rẻ những đồ chất lượng tốt (sale/ mua qua các trang web giá rẻ…), sử dụng đồ tiết kiệm và có phương pháp, sử dụng các chính sách discount áp dụng cho sinh viên quốc tế…",
+      "maxim": "TIÊU ĐÚNG TIỀN VÀO ĐÚNG VIỆC"
+    },
+    "contact": {
+      "title": "Bạn muốn tư vấn?",
+      "text1": "Kết nối với Đức Anh để được tư vấn giải đáp. Chúng tôi sẽ đồng hành cùng bạn từ khi có mong muốn du học đến khi sau tốt nghiệp, tìm việc và định cư tại nước sở tại.",
+      "text_btn": "Liên hệ tư vấn"
+    },
+    "job": {
+      "title": "Việc làm- Định cư tại Anh",
+      "text1": "Với đa số các nước, sinh viên được phép ở lại làm việc nếu bạn xin được việc làm tại nước họ, hoặc định cư nếu bạn đủ tiêu chuẩn. Dưới đây là một số thông tin liên quan đến việc làm- định cư ở một số nước.",
+      "text2": "Trong trường hợp bạn có nguyện vọng, và bạn là sinh viên nghiêm túc, công ty Đức Anh có thể tư vấn cho bạn về vấn đề việc làm hoặc định cư tại nước ngoài. Các sinh viên được khuyến khích ở lại nước ngoài làm việc một vài năm sau khi tốt nghiệp để có thêm kinh nghiệm thực tế và khi trở về Việt Nam phục vụ đất nước, kiến thức các bạn có được sẽ toàn diện và thực tế hơn, sự nghiệp của các bạn cũng sẽ thuận lợi hơn."
+    },
+    "support": {
+      "title1": "Hỗ trợ du học sinh",
+      "question": "Câu hỏi chúng tôi thường xuyên gặp là:",
+      "question1": "Sau khi con tôi nhập học rồi thì thế nào?",
+      "question2": " Ai giúp đỡ khi cần?",
+      "question3": "Gia đình  muốn sang thăm con thì công ty có hỗ trợ không?",
+      "text_banner": "Khi chọn công ty Đức Anh là đại diện, chúng tôi sẽ ở bên các bạn, chỉ cần các bạn hợp tác làm theo các chỉ dẫn của chúng tôi, không cần phải lo lắng.",
+      "title2": "Hướng dẫn trước khi lên đường",
+      "before": {
+        "title": "Trước khi bay",
+        "text": "Giấy tờ mang theo, các loại thẻ, tiền, đồ dùng học tập, tư trang, đồ giải trí- lưu niệm."
+      },
+      "flying": {
+        "title": "Khi bay",
+        "text": "Lên sân bay, check in máy bay, lên máy bay, bay, ra khỏi máy bay, check in hải quan, đón xe về nơi ở."
+      },
+      "after": {
+        "title": "Đến Nơi",
+        "text": "Sống và học tập: nhà ở, nhập học, làm quen xung quanh, học, các vấn đề liên quan đến học và cuộc sống ở nước ngoài, an toàn, làm thêm, ở lại làm khi tốt nghiệp, định cư…"
+      }
+    },
+    "contact_footer": {
+      "maxim": "Nếu bạn đã thực hiện đúng tất cả những chỉ dẫn trên mà vẫn còn vướng mắc, khó khăn hay vô tình phạm lỗi…",
+      "contact_title1": "ĐỪNG NGẠI:",
+      "contact_title2": "CHÚNG TÔI SẼ GIÚP BẠN!",
+      "contact_text1": "Báo cho người có thẩm quyền hay thầy cô, người thân biết.",
+      "contact_text2": {
+        "t1": "Liên hệ gấp với HOTLINE của công ty Đức Anh:",
+        "t2": " 09887 09698- 09743 80915"
+      }
+    }
+  },
+=======
     "h2_secondary_schools_mb": "Các trường phổ thông tại Anh Quốc",
     "h2_training_institutes": "Các viện đào tạo nghề tại Anh",
 
@@ -196,6 +370,7 @@
     "description": "Với đa số các nước, sinh viên được phép ở lại làm việc nếu bạn xin được việc làm tại nước họ, hoặc định cư nếu bạn đủ tiêu chuẩn. Dưới đây là một số thông tin liên quan đến việc làm- định cư ở một số nước.",
     "label": "Trong trường hợp bạn có nguyện vọng, và bạn là sinh viên nghiêm túc, công ty Đức Anh có thể tư vấn cho bạn về vấn đề việc làm hoặc định cư tại nước ngoài. Các sinh viên được khuyến khích ở lại nước ngoài làm việc một vài năm sau khi tốt nghiệp để có thêm kinh nghiệm thực tế và khi trở về Việt Nam phục vụ đất nước, kiến thức các bạn có được sẽ toàn diện và thực tế hơn, sự nghiệp của các bạn cũng sẽ thuận lợi hơn."
   },
+>>>>>>> master
   "nghe_hot": {
     "title": "Nghề HOT",
     "banner": {
@@ -220,10 +395,13 @@
     "banner": "Công ty du học Đức Anh hoan nghênh các ý định hợp tác trong các lĩnh vực chúng tôi hiện có, với tinh thần hợp tác chuyên nghiệp, đảm bảo đạo đức nghề nghiệp, tuân thủ pháp luật và các bên cùng có lợi.",
     "tu_van": "Tư vấn du học"
   },
+<<<<<<< HEAD
+=======
   "scholarship_or_selfsufficiency": {
     "title": "HỌC BỔNG HAY TỰ TÚC?",
     "consult": "Các bạn có thể tham khảo chương trình học bổng 10-100% học phí của các trường tại các nước:"
   },
+>>>>>>> master
   "hoc_bong": {
     "title": "Học Bổng",
     "description": "Đức Anh EduConnect trân trọng thông báo chương trình học bổng du học 10-100% học phí tại các nước:",
@@ -231,15 +409,70 @@
       "text1": "Các thí sinh cần ",
       "text2": "liên hệ",
       "text3": "với chúng tôi sớm nhất để kịp làm hồ sơ và xin học bổng du học cho các kỳ nhập học 2023-2024."
+<<<<<<< HEAD
+=======
     },
     "search": "Tìm học bổng",
     "xemthem": {
       "title": "Xem chi tiết:",
       "label": "Tại Đây"
+>>>>>>> master
     }
   },
   "study_abroad_guide": {
     "main_content": "Nội dung chính",
     "h2_related_posts": "Bài viết liên quan"
+<<<<<<< HEAD
+  },
+  "map": {
+    "find_school": "Tìm trường cùng<br>Đức Anh Educonnect",
+    "find_school_mobile": "Tìm trường cùng Đức Anh Educonnect",
+    "select_country": "Chọn quốc gia",
+    "select_state_province": "Chọn bang/tỉnh",
+    "level_select_title": "Lựa chọn bậc học",
+    "search": "Tìm kiếm",
+    "find_school_text": "Tìm tên trường"
+  },
+  "form": {
+    "fullname": {
+      "label": "Họ và Tên",
+      "placeholder": "Họ và tên của bạn",
+      "message": "Họ và tên bao gồm tối thiểu 4 ký tự"
+    },
+    "gender": {
+      "label": "Giới tính",
+      "placeholder": "Giới tính của bạn",
+      "message": "Giới tính không được để trống",
+      "male": "Nam",
+      "female": "Nữ"
+    },
+    "yearOfBirth": {
+      "label": "Năm sinh",
+      "placeholder": "Năm sinh của bạn",
+      "message": "Năm sinh phải bao gồm 4 chữ số"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Email của bạn",
+      "message": "Email không được để trống",
+      "message2": "Email không hợp lệ"
+    },
+    "address": {
+      "label": "Nơi ở hiện tại",
+      "placeholder": "Nơi ở hiện tại của bạn",
+      "message": "Nơi ở hiện tại không được để trống"
+    },
+    "workplace_address": {
+      "label": "Nơi làm việc hiện tại",
+      "placeholder": "Nơi làm việc hiện tại của bạn",
+      "message": "Nơi làm việc hiện tại không được để trống"
+    },
+    "recruitment_position": {
+      "label": "Vị trí ứng tuyển",
+      "placeholder": "Vị trí ứng tuyển của bạn",
+      "message": "Vị trí ứng tuyển không được để trống"
+    }
+=======
+>>>>>>> master
   }
 }

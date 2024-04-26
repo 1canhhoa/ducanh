@@ -1,3 +1,63 @@
+<<<<<<< HEAD
+import {data} from 'autoprefixer'
+import Image from 'next/image'
+import Link from 'next/link'
+const data_section = ['Thông tin du học', 'HỌC BỔNG', 'VỀ CÔNG TY']
+const data1_section = ['THI PTE ACADEMY', 'HỌC TIẾNG ANH', 'VIỆC LÀM - ĐỊNH CƯ']
+const Section = ({data}) => {
+  return (
+    <div className='flex flex-col items-start space-y-8'>
+      {data.map((d, i) => (
+        <div
+          key={i}
+          className='w-max text-white button1  uppercase'
+        >
+          {d}
+        </div>
+      ))}
+    </div>
+  )
+}
+
+const data_section1 = [
+  {
+    place: 'Hà Nội',
+    place_detail: '54 - 56 Tuệ Tĩnh',
+    number: '+94 906 225 454',
+  },
+  {
+    place: 'TP. Hồ Chí Minh',
+    place_detail: '172 Bùi Thị Xuân, Q.1',
+    number: '+94 963 049 860',
+  },
+  {
+    place: 'Vinh',
+    place_detail: '172 Bùi Thị Xuân, Q.1',
+    number: '+ 94 906 225 454',
+  },
+  {
+    place: 'Quảng ngãi',
+    place_detail: '01 Trần Thị Hiệp',
+    number: '+94 906 225 454',
+  },
+  {
+    place: 'Viêng chăn',
+    place_detail: 'Tòa nhà Iconic, Phonxay',
+    number: '+94 906 225 454',
+  },
+  {
+    place: 'melbourne',
+    place_detail: '276 Flinders Street',
+    number: '+94 906 225 454',
+  },
+]
+export default function Footer() {
+  return (
+    <footer className='w-full xmd:px-[1.5rem] relative md:h-[28.875rem] shrink-0 bg-primary-40 mt-[6rem]'>
+      <div className='md:absolute md:top-[2.5rem] md:left-1/2 md:-translate-x-1/2 flex flex-col xmd:flex-col-reverse xmd:gap-[1.5rem] space-y-[2.81rem] items-center'>
+        <div className='xmd:w-[19rem] xmd:text-white text-primary-10 text-center xmd:text-[1.125rem] text-xl not-italic font-bold xmd:leading-[160%] leading-[120%] xmd:tracking-normal tracking-[-0.00313rem]'>
+          CÔNG TY TƯ VẤN DU HỌC & DỊCH THUẬT ĐỨC ANH
+=======
 
 import getData from '@/lib/getData'
 import Image from 'next/image'
@@ -35,11 +95,28 @@ export default async function Footer() {
       <div className='md:absolute md:top-[2.5rem] md:left-1/2 md:-translate-x-1/2 flex flex-col xmd:flex-col-reverse xmd:gap-[1.5rem] space-y-[2.81rem] items-center'>
         <div className='xmd:w-[19rem] xmd:text-white text-primary-10 text-center xmd:text-[1.125rem] text-xl not-italic font-bold xmd:leading-[160%] leading-[120%] xmd:tracking-normal tracking-[-0.00313rem]'>
           {footer?.name_company}
+>>>>>>> master
         </div>
         <Link
           id='logo_nav'
           href='/'
         >
+<<<<<<< HEAD
+          <Image
+            priority
+            alt='ảnh logo du học đức anh'
+            src={'/images/footer/logo.png'}
+            width={235}
+            height={69}
+            className='md:mr-12  xmd:w-[14.5625rem] xmd:h-[4.271rem]  xlg:w-[19rem] xlg:h-[6.9375rem]   w-[14.5625rem] h-[4.271rem]'
+          />
+        </Link>
+      </div>
+      <div className='flex  xmd:flex-col justify-between items-start md:px-[3.75rem] xmd:space-y-[2.63rem] xmd:pt-[3.42rem] pt-[6.75rem]'>
+        <div className='inline-flex xmd:flex-col items-start xmd:space-y-[2rem] md:space-x-[3.4375rem]'>
+          <Section data={data_section} />
+          <Section data={data1_section} />
+=======
           <Image loading='lazy' alt="ảnh logo du học đức anh" src={footer?.logo?.url} width={235} height={69}
             className="md:mr-12  xmd:w-[14.5625rem] xmd:h-[4.271rem]  xlg:w-[19rem] xlg:h-[6.9375rem]   w-[14.5625rem] h-[4.271rem]" />
         </Link>
@@ -49,6 +126,7 @@ export default async function Footer() {
         <div className='inline-flex xmd:flex-col items-start xmd:space-y-[2rem] md:space-x-[3.4375rem]'>
           <Section data={footer?.main_footer} />
           <Section data={footer?.main2_footer} />
+>>>>>>> master
         </div>
         <div className=' flex md:w-[26.125rem] flex-col items-start space-y-[0.4375rem]'>
           <div className='h5 font-semibold text-white flex items-center xmd:space-x-[0.56rem]'>
@@ -94,6 +172,18 @@ export default async function Footer() {
           </div>
           <div className='  w-[20.4375rem] md:w-[26.125rem] h-[0.0625rem] bg-[#4E91F6]'></div>
           <div className='md:flex md:flex-col xmd:grid xmd:grid-cols-2  xmd:gap-x-[1.38rem] w-max items-start xmd:gap-y-[1.3rem] md:space-y-[1rem] pt-[0.6rem]'>
+<<<<<<< HEAD
+            {data_section1.map((d, i) => (
+              <div className='sub1 xmd:flex-col text-white flex xmd:justify-start xmd:items-start items-center justify-center xmd:space-y-[0.75rem] md:space-x-[1.56rem]'>
+                <div className='min-w-[6.2rem] xmd:font-bold xmd:leading-normal'>
+                  {d.place}
+                </div>
+                <div className='min-w-[9.75rem] xmd:body12 xmd:font-semibold xmd:text-primary-10'>
+                  {d.place_detail}
+                </div>
+                <div className=' xmd:body12 xmd:font-semibold xmd:text-primary-10'>
+                  {d.number}
+=======
             {footer?.chi_nhanh_van_phong?.map((d, i) => (
               <div key={i} className='sub1 xmd:flex-col text-white flex xmd:justify-start xmd:items-start items-center justify-center xmd:space-y-[0.75rem] md:space-x-[1.56rem]'>
                 <div className='min-w-[6.2rem] xmd:font-bold xmd:leading-normal'>
@@ -104,12 +194,48 @@ export default async function Footer() {
                 </div>
                 <div className=' xmd:body12 xmd:font-semibold xmd:text-primary-10'>
                   {d?.phone}
+>>>>>>> master
                 </div>
               </div>
             ))}
           </div>
         </div>
       </div>
+<<<<<<< HEAD
+
+      <div className='flex xmd:flex-col-reverse justify-start xmd:items-start items-end md:space-x-[12.3rem] md:ml-[3.75rem]'>
+        <div className='inline-flex items-start space-x-[0.75rem]'>
+          <svg
+            className='size-[1.5rem]'
+            xmlns='http://www.w3.org/2000/svg'
+            width={24}
+            height={24}
+            viewBox='0 0 24 24'
+            fill='none'
+          >
+            <g clipPath='url(#clip0_401_23428)'>
+              <path
+                d='M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z'
+                stroke='#F0FAFF'
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+              />
+              <path
+                d='M15.75 8.25H14.25C13.6533 8.25 13.081 8.48705 12.659 8.90901C12.2371 9.33097 12 9.90326 12 10.5V21'
+                stroke='#F0FAFF'
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+              />
+              <path
+                d='M9 13.5H15'
+                stroke='#F0FAFF'
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+              />
+=======
       {/* social and  hotline contact */}
       <div className='flex xmd:flex-col-reverse xmd:space-y-[2.25rem] justify-start xmd:items-start items-end md:space-x-[12.3rem] md:ml-[3.75rem]'>
         <div className="inline-flex items-start xmd:mt-[2.25rem] space-x-[0.75rem]">
@@ -118,6 +244,7 @@ export default async function Footer() {
               <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#F0FAFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               <path d="M15.75 8.25H14.25C13.6533 8.25 13.081 8.48705 12.659 8.90901C12.2371 9.33097 12 9.90326 12 10.5V21" stroke="#F0FAFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               <path d="M9 13.5H15" stroke="#F0FAFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+>>>>>>> master
             </g>
             <defs>
               <clipPath id='clip0_401_23428'>
@@ -173,6 +300,19 @@ export default async function Footer() {
             />
           </svg>
         </div>
+<<<<<<< HEAD
+        <div className='inline-flex xmd:flex-col-reverse items-start md:space-x-[12rem]'>
+          <div className='flex flex-col items-start space-y-[0.25rem]'>
+            <div className='text-[1rem] text-white'>Tel: 024 3971 6229</div>
+            <div className='text-[1rem] text-white'>Tel: 028 3929 3995</div>
+          </div>
+          <div className='flex flex-col items-start space-y-[0.25rem]'>
+            <div className='text-[1rem] text-white'>
+              Hotline chung: 098 870 9698
+            </div>
+            <div className='text-[1rem] text-white'>
+              Email: duhoc@ducanh.edu.vn
+=======
         <div className="inline-flex xmd:space-y-[2.25rem] xmd:flex-col items-start md:space-x-[12rem]">
           <div className=''>
             <div className=" md:hidden flex items-center gap-[0.5625rem]">
@@ -207,18 +347,39 @@ export default async function Footer() {
               <div className="text-[1rem] xmd:leading-[1.875rem] text-white">
                 {footer?.host_line?.host_line2}
               </div>
+>>>>>>> master
             </div>
           </div>
         </div>
       </div>
+<<<<<<< HEAD
+      {/* <div className="mt-[2.25rem] w-[92.5rem] h-[0.03125rem] shrink-0 bg-primary-10"></div>
+      <div className='flex pt-[1.03rem] px-[3.75rem] justify-between items-center'>
+=======
       <div className="xmd:mt-[1rem] mt-[2.25rem] xmd:w-full md:mx-auto w-[92.5rem] h-[0.03125rem] shrink-0 bg-primary-10"></div>
       {/* madeIn and policy */}
       <div className='flex relative pb-[0.73rem] pt-[1.03rem] md:px-[3.75rem] justify-between items-center'>
+>>>>>>> master
         <div className="inline-flex items-start space-x-[1.5rem]">
           <div className="sub2 text-white">
             @2023 DucAnh Educonnect
           </div>
           <div className="sub2 text-white">
+<<<<<<< HEAD
+            @2023 DucAnh Educonnect
+          </div>
+        </div>
+        <div className=" inline-flex items-center space-x-[2rem]">
+          <div className="button2 text-white">Policy</div>
+          <div className="flex h-[1.5rem] justify-center items-center space-x-[0.625rem] rounded-[0.625rem]">
+            <div className="button2 text-white">Policy</div>
+            <svg className='size-[1.5rem]' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5 16L12 9L19 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div> */}
+=======
             Made by OKHUB Agency
           </div>
         </div>
@@ -235,6 +396,7 @@ export default async function Footer() {
           </div>
         </div>
       </div>
+>>>>>>> master
     </footer>
   )
 }

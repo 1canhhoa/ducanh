@@ -1,7 +1,14 @@
+<<<<<<< HEAD
+<svg width="72" height="91" viewBox="0 0 72 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.2" cx="26.5" cy="45.5" r="45" stroke="url(#paint0_linear_4983_52154)"/>
+<circle opacity="0.5" cx="26.4991" cy="45.5011" r="30.2432" stroke="url(#paint1_linear_4983_52154)"/>
+<circle opacity="0.7" cx="26.4997" cy="45.4997" r="13.027" stroke="url(#paint2_linear_4983_52154)"/>
+=======
 <svg width="72" height="91" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle opacity="1" cx="47.5"    cy="45.5" r="45" stroke="url(#paint0_linear_4983_52154)"/>
 <circle opacity="1" cx="47.4991" cy="45.5011" r="30.2432" stroke="url(#paint1_linear_4983_52154)"/>
 <circle opacity="1" cx="47.4997" cy="45.4997" r="13.027" stroke="url(#paint2_linear_4983_52154)"/>
+>>>>>>> master
 <defs>
 <linearGradient id="paint0_linear_4983_52154" x1="26.5" y1="0" x2="26.5" y2="91" gradientUnits="userSpaceOnUse">
 <stop stop-color="white"/>

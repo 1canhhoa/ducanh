@@ -8,13 +8,34 @@
     line-height: 130%;
 }
 
+<<<<<<< HEAD
+.content-wrapper img {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+=======
 .content-wrapper>img {
     width: 100%;
     margin-top: 2rem;
+>>>>>>> master
 }
 
 .content-wrapper>ul {
     margin-top: 1rem;
+<<<<<<< HEAD
+    margin-bottom: 1rem;
+}
+
+.content-wrapper p {
+    margin-bottom: 1rem;
+}
+
+/* .content-wrapper>br {
+    display: block;
+    content: "";
+    margin-top: 1rem;
+} */
+=======
 }
 
 .content-wrapper>br {
@@ -22,10 +43,13 @@
     content: "";
     margin-top: 1rem;
 }
+>>>>>>> master
 
 .content-wrapper>ul>li {
     list-style-type: disc;
     margin-left: 1.5rem;
+<<<<<<< HEAD
+=======
 }
 
 .content-wrapper>ul>li>em {
@@ -88,4 +112,5 @@
     .content-wrapper>a {
         margin-bottom: 0;
     }
+>>>>>>> master
 }

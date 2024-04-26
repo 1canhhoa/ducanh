@@ -1,8 +1,13 @@
 import Image from 'next/image'
 import ItemCard from './components/ItemCard'
+<<<<<<< HEAD
+
+export default function HopTac({t}) {
+=======
 import Link from 'next/link'
 
 export default function HopTac({t, dataAcf}) {
+>>>>>>> master
   return (
     <section className='w-full text-center mb-[4.56rem] xmd:p-0 xlg:px-[1rem]'>
       <div className='flex flex-col items-start justify-start xmd:space-y-[1.5rem] space-y-[3rem] lg:w-[76.875rem] xmd:pl-[0.75rem] mx-auto'>
@@ -30,6 +35,13 @@ export default function HopTac({t, dataAcf}) {
           </p>
         </div>
         <div className='flex flex-col xlg:px-[11.675rem] xmd:p-0 w-full space-y-[3rem] xmd:space-y-[1.5rem]'>
+<<<<<<< HEAD
+          {new Array(3).fill(0).map((e, index) => (
+            <ItemCard key={index} />
+          ))}
+        </div>
+        <div className='w-full xmd:w-[21.9375rem] h-[19.4375rem] relative flex justify-start xlg:items-center lg:px-[4.75rem] lg:pt-[4.53rem] xlg:pl-[11.675rem] xmd:pl-[1.63rem] xmd:pt-[2.03rem] rounded-[0.75rem] border-[1px] border-solid border-[rgba(52,104,205,0.40)] bg-white'>
+=======
           {dataAcf?.content?.map((e, index) => (
             <ItemCard
               key={index}
@@ -38,6 +50,7 @@ export default function HopTac({t, dataAcf}) {
           ))}
         </div>
         <div className='w-full xmd:w-[21.9375rem] h-[19.4375rem] relative flex justify-start xlg:items-center lg:px-[4.75rem] lg:pt-[2.53rem] xlg:pl-[11.675rem] xmd:pl-[1.63rem] xmd:pt-[2.03rem] rounded-[0.75rem] border-[1px] border-solid border-[rgba(52,104,205,0.40)] bg-white'>
+>>>>>>> master
           <Image
             alt='tu van'
             src={'/images/hoptac/bg-tuvan.png'}
@@ -53,9 +66,12 @@ export default function HopTac({t, dataAcf}) {
             className='absolute top-0 left-0 object-cover size-full xlg:hidden xmd:block lg:hidden'
           />
           <div className='z-10 flex flex-col space-y-[1.5rem] '>
+<<<<<<< HEAD
+=======
             <span className='text-[#E01717] body16 font-semibold text-start'>
               {dataAcf?.lien_he?.name}
             </span>
+>>>>>>> master
             <div className='flex flex-col items-start space-y-[0.75rem]'>
               <div className='flex justify-start w-full space-x-[1rem]'>
                 <div className='flex body16 xmd:body16 xlg:text-[1.5rem] xmd:text-[0.875rem] text-greyscaletext-80 xmd:text-linear-l9 font-bold space-x-[1rem]'>
@@ -68,6 +84,11 @@ export default function HopTac({t, dataAcf}) {
                   />
                   Phone:
                 </div>
+<<<<<<< HEAD
+                <span className='body16 xmd:body16 xlg:text-[1.5rem] xmd:text-[0.875rem] xmd:text-greyscaletext-80 text-linear-l9 font-semibold'>
+                  +84 9887 09698
+                </span>
+=======
                 <Link
                   href={`tel:${dataAcf?.lien_he?.phone}`}
                   className='body16 xmd:body16 xlg:text-[1.5rem]
@@ -76,6 +97,7 @@ export default function HopTac({t, dataAcf}) {
                 >
                   {dataAcf?.lien_he?.phone}
                 </Link>
+>>>>>>> master
               </div>
               <div className='flex justify-start w-full space-x-[1rem]'>
                 <div className='flex body16 xmd:body16 xlg:text-[1.5rem] xmd:text-[0.875rem] text-greyscaletext-80 xmd:text-linear-l9 font-semibold space-x-[1rem]'>
@@ -88,12 +110,18 @@ export default function HopTac({t, dataAcf}) {
                   />
                   Skype:
                 </div>
+<<<<<<< HEAD
+                <span className='body16 xmd:body16 xlg:text-[1.5rem] xmd:text-[0.875rem] xmd:text-greyscaletext-80 text-linear-l9 font-semibold'>
+                  lucyhn8899
+                </span>
+=======
                 <Link
                   href={`skype:${dataAcf?.lien_he?.skype}?chat`}
                   className='body16 xmd:body16 xlg:text-[1.5rem] xmd:text-[0.875rem] xmd:text-greyscaletext-80 text-linear-l9 font-semibold'
                 >
                   {dataAcf?.lien_he?.skype}
                 </Link>
+>>>>>>> master
               </div>
               <div className='flex justify-start w-full space-x-[1rem]'>
                 <div className='flex body16 xmd:body16 xlg:text-[1.5rem] xmd:text-[0.875rem] text-greyscaletext-80 xmd:text-linear-l9 font-bold space-x-[1rem]'>
@@ -106,12 +134,18 @@ export default function HopTac({t, dataAcf}) {
                   />
                   Email:
                 </div>
+<<<<<<< HEAD
+                <span className='body16 xmd:body16 xlg:text-[1.5rem] xmd:text-[0.875rem] xmd:text-greyscaletext-80 text-linear-l9 font-semibold'>
+                  lycy@ducanh.edu.vn
+                </span>
+=======
                 <Link
                   href={`mailto:${dataAcf?.lien_he?.email}`}
                   className='body16 xmd:body16 xlg:text-[1.5rem] xmd:text-[0.875rem] xmd:text-greyscaletext-80 text-linear-l9 font-semibold'
                 >
                   {dataAcf?.lien_he?.email}
                 </Link>
+>>>>>>> master
               </div>
             </div>
             <button className='px-[1.875rem] py-[0.9375rem]  h-fit flex justify-center items-center rounded-[0.5rem] body14 text-center bg-primary-50 text-white'>

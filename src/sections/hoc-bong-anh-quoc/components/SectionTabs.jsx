@@ -2,11 +2,20 @@
 import clsx from 'clsx'
 import {useState} from 'react'
 
+<<<<<<< HEAD
+const SectionTabs = ({tabLabels = [], className = '', selectChange}) => {
+  // console.log({tabLabels})
+  const [activeIndex, setActiveIndex] = useState(0)
+  const handleActiveIndexChange = (index) => {
+    setActiveIndex(index)
+    selectChange(index)
+=======
 const SectionTabs = ({items = [], className = '', selectChange}) => {
   const [activeIndex, setActiveIndex] = useState(0)
   const handleActiveIndexChange = (tabItem, index) => {
     setActiveIndex(index)
     selectChange(tabItem)
+>>>>>>> master
   }
   return (
     <section className={className}>
@@ -14,11 +23,19 @@ const SectionTabs = ({items = [], className = '', selectChange}) => {
         className='flex items-center w-full no-scrollbar xmd:pl-[0.75rem] xmd:overflow-x-auto xmd:p-[0.5rem] p-[0.25rem] 
       xmd:border-none border border-primary-20 bg-white rounded-xl'
       >
+<<<<<<< HEAD
+        {tabLabels?.map((tabLabel, index) => {
+          return (
+            <div
+              key={index}
+              onClick={() => handleActiveIndexChange(index)}
+=======
         {items.map((tabItem, index) => {
           return (
             <div
               key={tabItem.id}
               onClick={() => handleActiveIndexChange(tabItem, index)}
+>>>>>>> master
               className={clsx(
                 `ml-[0.5rem] first:ml-0 rounded-lg xmd:p-[0.75rem] p-[0.625rem_1.25rem] h-[2.625rem] xmd:whitespace-nowrap 
              xmd:text-[0.75rem] text-[0.875rem] md:flex-1 text-center xmd:font-semibold font-bold xmd:leading-[100%] leading-[120%] 
@@ -29,7 +46,11 @@ const SectionTabs = ({items = [], className = '', selectChange}) => {
                   'bg-white xmd:bg-primary-5 text-greyscaletext-30 xmd:text-primary-50',
               )}
             >
+<<<<<<< HEAD
+              {tabLabel}
+=======
               {tabItem.title}
+>>>>>>> master
             </div>
           )
         })}

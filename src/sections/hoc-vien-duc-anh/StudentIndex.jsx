@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+import Image from 'next/image'
+import StudentItem from '@/sections/hoc-vien-duc-anh/components/StudentItem'
+import Banner from '@/sections/hoc-vien-duc-anh/components/Banner'
+import ContactBar from '@/components/contactBar'
+import Pagination from '@/components/pagination/Pagination'
+import StudentSlideWrapper from './components/StudentSlideWrapper'
+
+export default function StudentIndex({lang, isMobile, res, students}) {
+  // console.log({students})
+  return (
+    <div className='px-[0.75rem] tablet:px-[4rem] md:px-[11rem] xmd:pt-[5rem] pt-[12rem] overflow-x-hidden'>
+      <h1 className='hidden md:flex w-full items-baseline title pb-[3rem] text-primary-50 text-[3rem] font-bold leading-[120%] tracking-[-0.03rem]'>
+        {lang.student}&nbsp;{res?.acf?.main_title_unit}
+      </h1>
+      <ContactBar />
+      {/* banner */}
+=======
 'use client'
 import Image from 'next/image'
 import StudentItem from '@/sections/hoc-vien-duc-anh/components/StudentItem'
@@ -37,6 +55,7 @@ export default function StudentIndex({lang, isMobile}) {
         <span className='bg-secondary-40 w-[0.625rem] ml-[0.5rem] h-[0.625rem] block'></span>
       </h1>
       <ContactBar />
+>>>>>>> master
       {isMobile ? (
         <Image
           src={'/images/hoc-vien-duc-anh/mobile_banner.png'}
@@ -48,6 +67,19 @@ export default function StudentIndex({lang, isMobile}) {
         />
       ) : (
         <Banner
+<<<<<<< HEAD
+          res={res}
+          lang={lang}
+        />
+      )}
+
+      <StudentSlideWrapper
+        lang={lang}
+        students={students}
+        res={res}
+      />
+      {/* hoc sinh tieu bieu - excellent students */}
+=======
           lang={lang}
           data={{
             text1: `“Điều làm em ấn tượng nhất chính là công ty Đức Anh là một đối tác
@@ -93,6 +125,7 @@ export default function StudentIndex({lang, isMobile}) {
           ))}
         </div>
       </section>
+>>>>>>> master
       <section>
         <h2
           className='pb-[1.5rem] md:pb-[2rem] mb-[2rem] md:mb-[3rem] border-b border-[#C5C5C%]
@@ -104,6 +137,12 @@ export default function StudentIndex({lang, isMobile}) {
           className='grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-y-[2rem] md:gap-y-[3.5rem]
         gap-x-[0.34rem] md:gap-x-[6.5rem]'
         >
+<<<<<<< HEAD
+          {students.map((student) => (
+            <StudentItem
+              key={student.id}
+              data={student}
+=======
           {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
             <StudentItem
               key={item}
@@ -116,6 +155,7 @@ export default function StudentIndex({lang, isMobile}) {
                 img: '/images/hoc-vien-duc-anh/person.png',
                 p: 'Học bổng 100% University of Melbourne',
               }}
+>>>>>>> master
             />
           ))}
         </div>
