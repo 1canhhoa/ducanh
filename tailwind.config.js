@@ -93,10 +93,54 @@ module.exports = {
           from: {height: 'var(--radix-accordion-content-height)'},
           to: {height: '0'},
         },
+        moveTriangle: {
+          '0%': {
+            right: '0.5rem',
+            bottom: '-1.1rem',
+            transform: 'rotate(-30deg)',
+          },
+          '33%': {
+            right: '-2.5rem',
+            bottom: '-0.1rem',
+          },
+          '50%': {
+            right: '2.5rem',
+            bottom: '3rem',
+            transform: 'rotate(-10deg)',
+          },
+          '100%': {
+            right: '0.5rem',
+            bottom: '-1.1rem',
+            transform: 'rotate(-30deg)',
+          },
+        },
+        moveTriangleMobile: {
+          '0%': {
+            right: '0.5rem',
+            bottom: '-1rem',
+            transform: 'rotate(-30deg)',
+          },
+          '33%': {
+            right: '-1.4rem',
+            bottom: '-0.5rem',
+          },
+          '50%': {
+            right: '1.6rem',
+            bottom: '3rem',
+            transform: 'rotate(-10deg)',
+          },
+          '100%': {
+            right: '0.5rem',
+            bottom: '-1rem',
+            transform: 'rotate(-30deg)',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'kinh-loop': 'moveTriangle 2.5s infinite',
+        'kinh-loop-mobile': 'moveTriangleMobile 2.5s infinite',
       },
     },
   },

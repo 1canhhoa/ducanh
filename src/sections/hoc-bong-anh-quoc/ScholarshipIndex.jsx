@@ -58,7 +58,7 @@ const ScholarshipIndex = ({lang, isMobile}) => {
 
   return (
     <div className='w-full md:flex-1'>
-      {isMobile && <MobileTableOfContents list={IDs} />}
+      {/* {isMobile && <MobileTableOfContents list={IDs} />} */}
       <AboutUnitedKingom
         lang={scholarshipLang}
         id={IDs.about_united_kingdom.id}

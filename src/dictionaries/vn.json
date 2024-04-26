@@ -2,6 +2,8 @@
   "hello": "xin chao okhub",
   "view_more": "Xem thêm",
   "related_posts": "Bài viết liên quan",
+  "find_school_placeholder": "Tìm tên trường...",
+  "find_school_placeholder_bonus": "VD: Harvard, Cambridge,...",
   "position": "Vị trí",
   "contact": {
     "title": "Kết nối với chúng tôi",
@@ -62,7 +64,6 @@
     "h2_reason_mb": "Vì sao du học tại Anh Quốc",
     "h2_education_system": "Hệ thống giáo dục đất nước",
     "h2_secondary_schools": "Các trường phổ thông tại Anh",
-    "h2_secondary_schools_mb": "Các trường phổ thông tại Anh Quốc",
     "h2_training_institutes": "Các viện đào tạo nghề tại Anh",
     "h2_related_posts": "Bài viết liên quan",
     "h2_scholarship_en": "Học bổng du học tại Anh",
@@ -248,6 +249,7 @@
   },
   "map": {
     "find_school": "Tìm trường cùng<br>Đức Anh Educonnect",
+    "find_school_mobile": "Tìm trường cùng Đức Anh Educonnect",
     "select_country": "Chọn quốc gia",
     "select_state_province": "Chọn bang/tỉnh",
     "level_select_title": "Lựa chọn bậc học",

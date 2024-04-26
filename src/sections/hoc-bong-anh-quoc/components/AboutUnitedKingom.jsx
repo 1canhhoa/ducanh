@@ -34,7 +34,7 @@ const AboutUnitedKingom = ({
     <section id={id}>
       <div className='w-full xmd:h-[calc(100vh-3.625rem)] h-[44.5rem] md:h-max rounded-xl bg-primary-10 flex flex-col md:flex-row'>
         <div className='flex-1'>
-          <div className='relative w-full h-full'>
+          <div className='relative w-full h-full xmd:overflow-hidden'>
             {!formShow && (
               <h1
                 className='absolute top-[0.94rem] left-[0.75rem] md:top-[1.5rem] md:left-[2rem] uppercase text-white text-[1.5rem] md:text-[2.1rem]
@@ -53,44 +53,51 @@ const AboutUnitedKingom = ({
                 width={160}
                 height={320}
                 alt='hoc-bong-anh-quoc'
-                className='absolute bottom-[0] md:top-[-1rem] left-[6.88rem] md:left-[13.25rem] w-[9.61063rem] h-[18.81263rem] md:w-[16.68731rem] 
+                className='absolute bottom-[0] xmd:top-[4rem] md:top-[-1rem] left-[6.88rem] md:left-[13.25rem] xmd:w-[9rem] w-[9.61063rem] h-[18.8rem] md:w-[16.68731rem] 
               md:h-[32.6rem] object-contain'
               ></Image>
             </picture>
-            <Image
-              loading='lazy'
-              className='absolute bottom-[1.94rem] right-[2.94rem] w-[23.0625rem] h-[4.5rem]'
-              alt='ảnh button tìm đường'
-              src={'/images/homepage/button-timduong.png'}
-              width={370}
-              height={75}
-            />
-            <Image
-              loading='lazy'
-              className='kinh-loop absolute bottom-[1.5rem] right-[-1.5rem] w-[2.46225rem] h-[2.61319rem]'
-              alt='ảnh kính loop'
-              src={'/images/homepage/search-timduong.png'}
-              width={40}
-              height={44}
-            />
-            <div className='absolute z-50 bottom-[2.8rem] left-[4.94rem] text-white text-center text-[0.75rem] not-italic font-semibold leading-[150%] tracking-[-0.0075rem] uppercase'>
-              Tìm trường cùng Đức Anh
-            </div>
-            {/* <button
-              className='bg-white p-[2rem] text-black absolute bottom-[1rem] right-[1.5rem]'
+            {/* button show form */}
+            <div
+              className='absolute bottom-[1.25rem] xmd:bottom-[0.75rem] xmd:right-[0.75rem] xmd:w-[17.1rem] xmd:h-max w-[23rem] h-[4.5rem] right-[1.86rem] cursor-pointer'
               onClick={() => {
                 setFormShow((prev) => !prev)
               }}
             >
-              Expand - Show Form
-            </button> */}
+              <picture>
+                <source
+                  media='(max-width:767px)'
+                  srcSet='/images/homepage/button-search-map-mobile.png'
+                />
+                <Image
+                  loading='lazy'
+                  className='size-full object-cover'
+                  alt='ảnh button tìm đường'
+                  src={'/images/homepage/button-timduong.png'}
+                  width={370}
+                  height={75}
+                />
+              </picture>
+              <Image
+                loading='lazy'
+                className='absolute xmd:bottom-[-1rem] bottom-[-1.1rem] right-[0.5rem] w-[2.46225rem] h-[2.61319rem] rotate-[-30deg] animate-kinh-loop xmd:animate-kinh-loop-mobile'
+                alt='ảnh kính loop'
+                src={'/images/homepage/search-timduong.png'}
+                width={40}
+                height={44}
+              />
+              <div className='absolute z-50 bottom-[0.9rem] xmd:bottom-[1rem] left-[1.2rem] text-white text-center text-[0.75rem] not-italic font-semibold xmd:font-extrabold leading-[150%] tracking-[-0.0075rem] uppercase'>
+                Tìm trường cùng Đức Anh
+              </div>
+            </div>
           </div>
         </div>
 
         {formShow ? (
           <FindModal
             lang={lang}
-            className='!ml-0 mr-[1.64rem] my-[1.5rem]'
+            isMobile={isMobile}
+            className='!ml-0 mr-[1.64rem] my-[1.5rem] xmd:mt-0 xmd:mb-[1.15rem]'
           />
         ) : (
           <div className='flex-1 my-[0.8rem] mx-[0.75rem] md:ml-0 mr-[0.8rem] p-[1.5rem] xmd:p-[1rem] rounded-lg bg-white'>
