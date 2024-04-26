@@ -9,21 +9,6 @@ import {Button} from '../ui/button'
 import Link from 'next/link'
 import {FAKE_COUNTRIES, headquarter} from './fakeData'
 
-const CHECK_BOXS = [
-  {
-    label: 'Du học cấp 3',
-    value: 'cap_3',
-  },
-  {
-    label: 'Du học đại học',
-    value: 'dh',
-  },
-  {
-    label: 'Du học sau đại học',
-    value: 'sdh',
-  },
-]
-
 const FindByMapPopup = ({lang, closeCallback, isMobile = false}) => {
   const [country, setCountry] = useState({
     country: '',

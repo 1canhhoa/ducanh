@@ -1,9 +1,68 @@
-const FindModal = () => {
+'use client'
+import Image from 'next/image'
+import {useState, useEffect} from 'react'
+import {Button} from '../ui/button'
+import {FAKE_COUNTRIES} from '../FindByMapPopup/fakeData'
+import clsx from 'clsx'
+import useClickOutSide from '@/hooks/useClickOutSide'
+const CHECK_BOXS = [
+  {
+    label: 'Du học cấp 3',
+    value: 'high_school',
+  },
+  {
+    label: 'Du học đại học',
+    value: 'university',
+  },
+  {
+    label: 'Du học sau đại học',
+    value: 'postgraduate',
+  },
+]
+
+const FindModal = ({lang, countries = [], className = ''}) => {
+  const [country, setCountry] = useState({})
+  const [state, setState] = useState({})
+  const [activeSelect, setActiveSelect] = useState({
+    id: '',
+    enabled: false,
+  })
+
+  const [countryDropdownRef, iscountryDropdownOutside] = useClickOutSide()
+  const [stateDropdownRef, isStateDropdownOutside] = useClickOutSide()
+
+  useEffect(() => {
+    if (iscountryDropdownOutside || isStateDropdownOutside) {
+      setActiveSelect((prev) => {
+        return {
+          ...prev,
+          enabled: false,
+        }
+      })
+    }
+  }, [iscountryDropdownOutside, isStateDropdownOutside])
+
+  const handleToggleSelect = (id) => {
+    setActiveSelect((prevState) => {
+      return {
+        id,
+        enabled: id !== prevState.id ? true : !prevState.enabled,
+      }
+    })
+  }
+  const handleCountrySelect = (countryObj) => {
+    setCountry(countryObj)
+    setActiveSelect('')
+  }
+
   return (
     <section>
       <form
         action=''
-        className='bg-white w-[calc(100%-0.75rem*2)] xmd:mb-[0.75rem] md:w-[24rem] md:ml-[2.87rem] rounded-[1rem] p-[1.5rem] xmd:h-[13rem]'
+        className={clsx(
+          'bg-white min-w-[calc(100%-0.75rem*2)] xmd:mb-[0.75rem] md:min-w-[24.3125rem] md:ml-[2.87rem] rounded-[1rem] p-[1.5rem] xmd:h-[13rem]',
+          className && className,
+        )}
       >
         {/* title */}
         <h2 className='text-primary-60 font-bold text-[1.5rem] leading-[120%]'>
@@ -13,7 +72,7 @@ const FindModal = () => {
           ></div>
         </h2>
         {/* input tìm trường */}
-        <div className='mt-[2rem] mb-[0.7rem] rounded-lg border border-primary-40 flex h-[3rem] p-[0.625rem_1rem] items-center'>
+        <div className='mt-[1rem] mb-[0.7rem] rounded-lg border border-primary-40 flex h-[2.5rem] p-[0.625rem_1rem] items-center'>
           <Image
             src={'/images/primary/AlignBottom_color.svg'}
             alt={'duc-anh'}
@@ -35,7 +94,10 @@ const FindModal = () => {
           Harvard, Cambridge, Stanford,...
         </span>
         {/* custom select quốc gia*/}
-        <div className='mt-[2rem] select-none cursor-pointer mb-[0.7rem] relative rounded-lg border border-primary-40 flex h-[3rem] p-[0.625rem_1rem] items-center'>
+        <div
+          ref={countryDropdownRef}
+          className='mt-[1.25rem] select-none cursor-pointer mb-[0.7rem] relative rounded-lg border border-primary-40 flex h-[2.5rem] p-[0.625rem_1rem] items-center'
+        >
           <Image
             src={'/images/primary/AlignBottom_color.svg'}
             alt={'duc-anh'}
@@ -79,7 +141,10 @@ const FindModal = () => {
         </div>
 
         {/* custom select chọn bang/tỉnh */}
-        <div className='mt-[1.5rem] select-none cursor-pointer mb-[0.7rem] relative rounded-lg border border-primary-40 flex h-[3rem] p-[0.625rem_1rem] items-center'>
+        <div
+          ref={stateDropdownRef}
+          className='mt-[1.5rem] select-none cursor-pointer mb-[0.7rem] relative rounded-lg border border-primary-40 flex h-[2.5rem] p-[0.625rem_1rem] items-center'
+        >
           <Image
             src={'/images/primary/AlignBottom_color.svg'}
             alt={'duc-anh'}
@@ -104,7 +169,7 @@ const FindModal = () => {
             >
               {FAKE_COUNTRIES?.find(
                 (c) => country.country === c.country,
-              ).states?.map((state) => (
+              )?.states?.map((state) => (
                 <div
                   key={state.name}
                   className='p-[0.5rem_1rem] hover:bg-greyscaletext-10 duration-150 text-[0.875rem] cursor-pointer leading-[100%] tracking-[0.013rem] uppercase'
@@ -118,12 +183,14 @@ const FindModal = () => {
         </div>
 
         {/* checkbox */}
-        <h3 className='mt-[2.25rem] text-primary-50 text-[0.875rem] font-bold leading-[120%] mb-[1rem]'>
-          {lang.map.select_title}
+        <h3 className='mt-[1.25rem] text-primary-50 text-[1rem] font-bold leading-[120%] mb-[0.75rem]'>
+          {lang.map.level_select_title}
         </h3>
-        {CHECK_BOXS.map((checkbox) => (
+        {CHECK_BOXS.map((checkbox, index) => (
           <div
-            className='flex items-center mb-[0.6rem] last:mb-0'
+            className={clsx('flex items-center mb-[0.6rem]', {
+              '!mb-0': index === CHECK_BOXS.length - 1,
+            })}
             key={checkbox.value}
           >
             <input
@@ -148,7 +215,7 @@ const FindModal = () => {
           onClick={(e) => {
             e.preventDefault()
           }}
-          className='uppercase w-full bg-primary-50 text-white mt-[2rem]'
+          className='uppercase w-full bg-primary-50 text-white mt-[1rem]'
         >
           {' '}
           <Image
