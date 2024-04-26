@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import Image from 'next/image'
 
@@ -11,6 +12,29 @@ const TinTucNoiBat = () => {
     >
       <div className=" flex flex-col items-start gap-[1.5rem]">
         <div className=" flex flex-col items-start gap-[1rem]">
+=======
+import Image from 'next/image'
+import { useRouter } from 'next/navigation';
+
+const TinTucNoiBat = ({ data }) => {
+  const router = useRouter();
+  const handleClick = () => {
+    // Thực hiện chuyển hướng đến trang chi tiết sản phẩm
+    if (data.slug) {
+      router.push(`/tin-tuc-du-hoc/${data?.post_slug}`);
+    }
+  };
+  return (
+    <div
+      onClick={handleClick}
+      className="inline-flex flex-col  items-center px-[1.5rem] pt-[1.5rem] pb-[1.75rem]
+         rounded-[1rem] border border-primary-50 bg-white
+         "
+
+    >
+      <div className="flex flex-col items-start gap-[1.5rem]">
+        <div className="min-h-[15.5rem] flex flex-col items-start gap-[1rem]">
+>>>>>>> master
           <div className="flex justify-between items-center self-stretch">
             <div className="flex items-center gap-[0.75rem]">
               <div className="text-[0.875rem] not-italic font-normal leading-[170%] font-feature-settings  text-greyscaletext-30">
@@ -27,6 +51,7 @@ const TinTucNoiBat = () => {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
           <div className="xmd:w-[19.9375rem] w-[27.3125rem] text-greyscaletext-80 xmd:text-[1.25rem] text-2xl not-italic xmd:font-semibold font-bold leading-[150%] xmd:tracking-[-0.0125rem] tracking-[-0.015rem]">
             Chiến lược du học nhanh - rẻ - hiệu quả tại Anh, Úc, Mỹ, NZ, Canada, Thuỵ Sỹ, Singapore
           </div>
@@ -36,6 +61,18 @@ const TinTucNoiBat = () => {
         </div>
         <Image priority alt='ss' src='/images/homepage/card.png'
           className='xmd:w-[20.0625rem] xmd:h-[12.6875rem] w-[27.375rem] h-[17.375rem] rounded-[0.5rem] shrink-0' width={440} height={280} />
+=======
+          <div className=" line-clamp-3 w-[27.3125rem] text-greyscaletext-80 xmd:text-[1.25rem] text-2xl not-italic font-bold leading-[150%] tracking-[-0.015rem]">
+            {data?.title}
+          </div>
+          <div className="w-[27.3125rem] text-greyscaletext-50 text-base not-italic font-normal leading-[150%]">
+            {data?.description}
+          </div>
+        </div>
+        <Image loading='lazy' alt='ảnh minh họa thẻ tin tức '
+          src={data?.thumbnail}
+          className='w-[27.375rem] h-[17.375rem] rounded-[0.5rem] shrink-0' width={440} height={280} />
+>>>>>>> master
       </div>
     </div>
   )

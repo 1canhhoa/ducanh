@@ -1,6 +1,7 @@
 'use client'
 
 import clsx from 'clsx'
+<<<<<<< HEAD
 import {useState} from 'react'
 
 const section = [
@@ -27,10 +28,56 @@ const section = [
   {
     title: 'Chi phí cách chi tiêu',
     href: 'chi_phi',
+=======
+import Link from 'next/link'
+import {usePathname} from 'next/navigation'
+
+const ttdh = [
+  {
+    title: 'Lý do chọn Đức Anh',
+    href: '/ly-do-chon-duc-anh',
+  },
+  {
+    title: 'Dịch vụ du hoc',
+    href: '/dich-vu-da',
+  },
+  {
+    title: 'Chuẩn bị du học',
+    href: '/chuan-bi',
+  },
+  {
+    title: 'Cách quy đổi điểm GPA',
+    href: '/quy-doi',
+  },
+  {
+    title: 'Học bổng hay tự túc',
+    href: '/hoc-bong-hay-tu-tuc',
+  },
+  {
+    title: 'Chọn ngành và chương trình học',
+    href: '/chon-nganh-va-chuong-trinh',
+  },
+  {
+    title: 'Chi phí và cách tiêu',
+    href: '/chi-phi',
+  },
+  {
+    title: 'Việc làm và định cư nước ngoài',
+    href: '/viec-lam',
+  },
+  {
+    title: 'Hỗ trợ du học sinh',
+    href: '/ho-tro',
+  },
+  {
+    title: 'Hướng dẫn trước khi lên đường',
+    href: '/huong-dan',
+>>>>>>> master
   },
 ]
 
 export default function NavDirectional() {
+<<<<<<< HEAD
   const [indexActiveNav1, setIndexActiveNav1] = useState(0)
   const [indexActiveNav2, setIndexActiveNav2] = useState(0)
   const [indexActiveNavSmall, setIndexActiveNavSmall] = useState(0)
@@ -97,6 +144,30 @@ export default function NavDirectional() {
           ))}
         </div>
       </nav>
+=======
+  const pathname = usePathname()
+
+  return (
+    <div className='fixed top-[8.88rem] z-[999] bg-white w-full'>
+      <div className='xmd:relative xmd:overflow-hidden xmd:w-[27.45242rem] xmd:h-[5.1rem]'>
+        <div className='xmd:absolute xmd:overflow-x-auto w-full'>
+          <nav className='p-[0.625rem] rounded-[0.625rem] xmd:w-fit xmd:flex xmd:space-x-[0.73rem] lg:grid lg:grid-cols-5 bg-white shadow-[0px_0px_24px_0px_rgba(78,145,246,0.15)]'>
+            {ttdh.map((e, index) => (
+              <Link
+                key={index}
+                href={e.href}
+                className={clsx(
+                  `transition-all text-primary-50 duration-300 xmd:w-[12.40849rem] lg:flex-1 py-[0.75rem] rounded-[0.5rem] flex justify-center items-center body14 font-medium xmd:text-[0.625rem] xmd:font-bold leading-[1.5]`,
+                  pathname == e.href ? 'bg-primary-10' : 'xmd:bg-primary-10',
+                )}
+              >
+                {e.title}
+              </Link>
+            ))}
+          </nav>
+        </div>
+      </div>
+>>>>>>> master
     </div>
   )
 }

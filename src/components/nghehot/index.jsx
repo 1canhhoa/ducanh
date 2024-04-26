@@ -2,6 +2,7 @@ import Image from 'next/image'
 import ListNghe from './components/ListNghe'
 import RelatedPosts from '@/components/BaiVietLienQuan/RelatedPosts'
 
+<<<<<<< HEAD
 const data = [
   {
     title: 'Nghề hot tại Canada',
@@ -49,6 +50,11 @@ const data = [
 export default function NgheHot({t}) {
   return (
     <section className='w-full'>
+=======
+export default function NgheHot({t, dataAcf}) {
+  return (
+    <section className='flex-1 lg:ml-[1.5rem]'>
+>>>>>>> master
       <div className='flex flex-col items-start mb-[2rem] xmd:px-[0.75rem]'>
         <h1 className='text-[3rem] xmd:text-[2rem] xmd:font-extrabold xmd:leading-[1.3] text-primary-50 font-extrabold relative leading-[1.2]'>
           {t.nghe_hot.title}
@@ -80,10 +86,17 @@ export default function NgheHot({t}) {
         </div>
         <div className='flex flex-col xlg:w-full items-start space-y-[1.5rem] xmd:space-y-[0.75rem] lg:py-[1.5rem] lg:w-[71.0625rem] lg:border-y-[1px] border-solid border-greyscaletext-5'>
           <span className='text-[1.25rem] xmd:text-[1.25rem] xlg:text-[1.5rem] xmd:w-[21.9375rem] font-bold text-primary-50 leading-[1.6] xmd:body16 xmd:font-semibold xmd:leading-[1.5]'>
+<<<<<<< HEAD
             {t.nghe_hot.support_title}
           </span>
           <div className='flex flex-col items-start justify-center space-y-[0.75rem]'>
             {t.nghe_hot.support_text.map((e, index) => (
+=======
+            {dataAcf?.ho_tro_ban_xac_dinh?.title}
+          </span>
+          <div className='flex flex-col items-start justify-center space-y-[0.75rem]'>
+            {dataAcf?.ho_tro_ban_xac_dinh?.content?.map((e, index) => (
+>>>>>>> master
               <div
                 key={index}
                 className='flex justify-start space-x-[0.625rem]'
@@ -96,7 +109,11 @@ export default function NgheHot({t}) {
                   height={20}
                 />
                 <span className='body16 flex-1 xlg:text-[1.5rem] xmd:text-[0.875rem] xmd:leading-[1.7] font-medium text-greyscaletext-50 xmd:text-greyscaletext-60'>
+<<<<<<< HEAD
                   {e}
+=======
+                  {e?.label}
+>>>>>>> master
                 </span>
               </div>
             ))}
@@ -104,9 +121,15 @@ export default function NgheHot({t}) {
         </div>
         <div className='mt-[1.5rem] w-full flex flex-col items-start space-y-[1.7rem] py-[1.5rem] xmd:border-b-[1px] border-solid border-greyscaletext-5'>
           <span className='text-[1.25rem] xlg:text-[1.5rem] xmd:w-[22.125rem] font-bold leading-[1.6] text-primary-50 xmd:body16'>
+<<<<<<< HEAD
             {t.nghe_hot.list_hot}
           </span>
           {data.map((e, index) => (
+=======
+            {dataAcf?.nghe_hot_cac_nuoc?.title}
+          </span>
+          {dataAcf?.nghe_hot_cac_nuoc?.danh_sach?.map((e, index) => (
+>>>>>>> master
             <div
               key={index}
               className='flex flex-col w-full items-start xmd:rounded-[0.375rem] xmd:pb-[1.5rem] xmd:border-[1px] xmd:border-solid xmd:border-[rgba(19,43,125,0.20)]'

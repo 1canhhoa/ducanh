@@ -10,6 +10,7 @@ module.exports = {
   prefix: '',
   theme: {
     screens: {
+<<<<<<< HEAD
       // md: '768px',
       // lg: '1024px',
       // xl: '1367px',
@@ -21,11 +22,17 @@ module.exports = {
       // x2xl: {max: '1599px'},
       // x3xl: {max: '1799px'},
 
+=======
+>>>>>>> master
       '3xl': '1800px',
       '2xl': '1600px',
       xl: '1367px',
       lg: '1024px',
       md: '768px',
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
       x3xl: {max: '1799px'},
       x2xl: {max: '1599px'},
       xxl: {max: '1366px'},
@@ -41,6 +48,14 @@ module.exports = {
       },
     },
     extend: {
+<<<<<<< HEAD
+=======
+      transitionDuration: {
+        1500: '1500ms',
+        2000: '2000ms',
+        1300: '1300ms',
+      },
+>>>>>>> master
       fontFamily: {
         plus: ['var(--font-plus-jakarta-sans)'],
       },
@@ -73,12 +88,20 @@ module.exports = {
         'background-elevation-tag-chip': '#EBF5FA',
         'elevation-tag-chip': '#EBF5FA',
         'elevation-blue': '#FBFBFF',
+<<<<<<< HEAD
         'elevation-10': '#FAFAFA',
+=======
+>>>>>>> master
         'elevation-20': '#F8F8F8',
         'linear-l9': '#6196F6',
         'linear-l6': 'linear-gradient(170deg, #2E6BC6 10.78%, #29A4EA 81.3%)',
       },
       backgroundImage: {
+<<<<<<< HEAD
+=======
+        'linear-tc':
+          'linear-gradient(89deg, rgba(80, 150, 255, 0.12) 0.43%,rgba(41, 164, 234, 0.06) 99.57%)',
+>>>>>>> master
         'linear-l5':
           'linear-gradient(95deg, #2E6BC6 9.83%, #2E6BC6 35.38%, #29A4EA 86.69%)',
         'linear-l1':
@@ -93,6 +116,7 @@ module.exports = {
           from: {height: 'var(--radix-accordion-content-height)'},
           to: {height: '0'},
         },
+<<<<<<< HEAD
         moveTriangle: {
           '0%': {
             right: '0.5rem',
@@ -135,12 +159,17 @@ module.exports = {
             transform: 'rotate(-30deg)',
           },
         },
+=======
+>>>>>>> master
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+<<<<<<< HEAD
         'kinh-loop': 'moveTriangle 2.5s infinite',
         'kinh-loop-mobile': 'moveTriangleMobile 2.5s infinite',
+=======
+>>>>>>> master
       },
     },
   },

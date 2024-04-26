@@ -1,6 +1,7 @@
 "use client"
 import Image from 'next/image'
 import NavigationCustom from '@/components/navigationcustom'
+<<<<<<< HEAD
 import { country } from '@/lib/data'
 import { Swiper, SwiperSlide, } from "swiper/react";
 import { Navigation, EffectFade } from 'swiper/modules'
@@ -18,6 +19,17 @@ const data_mini_menu = [
 ]
 const BannerHome = ({ isMobile }) => {
 
+=======
+
+import { Swiper, SwiperSlide, } from "swiper/react";
+import { Navigation, EffectFade } from 'swiper/modules'
+import { useState, useRef } from 'react'
+import "swiper/css";
+import 'swiper/css/effect-fade';
+import Align from '@/components/icon/Align';
+import AsidePrimary from '@/layout/asidePrimary/AsidePrimary';
+const BannerHome = ({ dataBanner }) => {
+>>>>>>> master
   const swiperRef = useRef(null)
   const [indexSlider, setIndexSlider] = useState(0)
 
@@ -32,6 +44,7 @@ const BannerHome = ({ isMobile }) => {
     swiperRef.current?.slidePrev()
   }
   return (
+<<<<<<< HEAD
     <div className='flex xmd:flex-col-reverse items-start justify-start md:space-x-[1.5rem] md:pb-[7.75rem] pb-[2.23rem]'>
       {/* SIDE_BAR BANNER HOME */}
       <div className="flex xmd:mt-[2.5rem] justify-start items-start mx-auto  flex-col md:border-[1px] md:rounded-[0.75rem] md:border-primary-10 ">
@@ -95,6 +108,11 @@ const BannerHome = ({ isMobile }) => {
           ))}
         </div>
       </div>
+=======
+    <div className='flex items-start justify-start space-x-[1.5rem] pb-[4rem]'>
+      {/* SIDE_BAR BANNER HOME */}
+      <AsidePrimary />
+>>>>>>> master
 
       {/* SWIPER BANNER WEB */}
       <div className='xmd:hidden relative z-[1]'>
@@ -109,17 +127,28 @@ const BannerHome = ({ isMobile }) => {
             swiperRef.current = swiper
           }}
         >
+<<<<<<< HEAD
           <SwiperSlide>
             <div className='relative'>
               <Image priority alt='ss' src='/images/navPrimary/banner.png'
                 className='w-full xmd:hidden h-[38.4375rem] rounded-[0.78969rem] shrink-0' width={9999} height={9999} />
               <button className='absolute left-[6.44rem] top-[15.19rem] bg-linear-l1 inline-flex justify-center items-center h-[2.5rem] py-[0.625rem] px-[1.25rem] gap-[0.625rem] shrink-0 rounded-[0.625rem]'>
+=======
+          {dataBanner?.images?.map((d, i) => (
+          <SwiperSlide key={i}>
+            <div className='relative'>
+                <Image priority alt='ảnh banner web 2'
+                  src={d?.img}
+                  className='w-full h-[38.4375rem] rounded-[0.78969rem] shrink-0' width={1100} height={615} />
+              {i===0 && <button className='absolute left-[6.44rem] top-[15.19rem] bg-linear-l1 inline-flex justify-center items-center h-[2.5rem] py-[0.625rem] px-[1.25rem] gap-[0.625rem] shrink-0 rounded-[0.625rem]'>
+>>>>>>> master
                 <Align />
                 <div className='text-greyscaletext0 text-center text-[1rem] text-white not-italic font-bold leading-[150%]'>
                   Tìm hiểu thêm
                 </div>
                 <Align />
 
+<<<<<<< HEAD
               </button>
             </div>
           </SwiperSlide>
@@ -131,6 +160,14 @@ const BannerHome = ({ isMobile }) => {
           </SwiperSlide>
         </Swiper>
         <div className='xmd:hidden absolute h-full w-[calc(96%)] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-50 pointer-events-none'>
+=======
+              </button>}
+            </div>
+          </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className='absolute h-full w-[calc(96%)] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-50 pointer-events-none'>
+>>>>>>> master
           <NavigationCustom
             indexSlider={1000}
             length={5}

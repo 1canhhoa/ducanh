@@ -1,4 +1,5 @@
 import {getDictionary} from '@/app/[lang]/dictionaries'
+<<<<<<< HEAD
 import getData from '@/lib/getData'
 import PostPrimary from '@/sections/hoc-bong-anh-quoc/components/PostPrimary'
 
@@ -19,6 +20,13 @@ const ReasonPage = async ({params}) => {
       title={t.scholarship.h2_reason}
     />
   )
+=======
+import Reason from '@/sections/hoc-bong-anh-quoc/components/Reason'
+
+const ReasonPage = async ({params}) => {
+  const t = await getDictionary(params.lang)
+  return <Reason lang={t.scholarship} />
+>>>>>>> master
 }
 
 export default ReasonPage

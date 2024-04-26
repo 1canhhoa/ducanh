@@ -40,12 +40,18 @@ const GridImageItem = ({src, index}) => {
   if (index === 4) {
     return (
       <div className={clsx('col-span-2 flex items-end', [heightClass])}>
+<<<<<<< HEAD
         {/* <div className='bg-[#BE212F] w-[1.25rem] h-[1.25rem] md:w-[2rem] md:h-[2rem] rounded-sm mr-[1.07rem] md:mr-[1.69rem] ml-auto'></div> */}
         <div
           className={clsx(
             widthClass,
             'relative overflow-hidden rounded-lg ml-auto',
           )}
+=======
+        <div className='bg-[#BE212F] w-[1.25rem] h-[1.25rem] md:w-[2rem] md:h-[2rem] rounded-sm mr-[1.07rem] md:mr-[1.69rem] ml-auto'></div>
+        <div
+          className={clsx(widthClass, 'relative overflow-hidden rounded-lg')}
+>>>>>>> master
         >
           <div className='bg-[rgba(6,41,167,0.6)] absolute top-0 left-0 h-full w-full'></div>
           <Image

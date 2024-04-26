@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client'
 
 import clsx from 'clsx'
@@ -33,6 +34,19 @@ const Pagination = ({
             handlePageButtonClick(Number(page) > 1 ? Number(page) - 1 : 1)
           }
         >
+=======
+import Image from 'next/image'
+const Pagination = ({page = 1, perpage = 4, total}) => {
+  const lastPage = Math.ceil(total / perpage)
+  const pages = []
+  for (let i = 1; i <= lastPage; i++) {
+    pages.push(i)
+  }
+  return (
+    <section className='p-[1.3125rem_2rem_0rem_2rem] bg-white mt-[2.4rem] w-full'>
+      <nav className='pagination-wrapper flex items-center justify-center'>
+        <button className='p-[0.69269rem] grid place-items-center mr-[0.5rem]'>
+>>>>>>> master
           <Image
             src={'/images/primary/Chevron_Left.svg'}
             width={100}
@@ -42,12 +56,21 @@ const Pagination = ({
             alt='prev-btn'
           />
         </button>
+<<<<<<< HEAD
         <button className='rounded-lg xmd:bg-primary-60 bg-primary-5 border xmd:border-[rgba(19, 43, 125, 0.20)] md:border-primary-10 mr-[0.5rem] p-[0.625rem] flex items-center'>
           <div className='w-[1.125rem] h-[1.125rem] xmd:text-white text-primary-50 text-[0.875rem] font-bold uppercase leading-[1.125rem]'>
             1
           </div>
         </button>
         <button className='rounded-lg bg-white border xmd:border-[rgba(19, 43, 125, 0.20)] md:border-primary-10 mr-[0.5rem] p-[0.625rem] flex items-center'>
+=======
+        <button className='rounded-lg bg-primary-5 border border-primary-10 mr-[0.5rem] p-[0.625rem] flex items-center'>
+          <div className='w-[1.125rem] h-[1.125rem] text-primary-50 text-[0.875rem] font-bold uppercase leading-[1.125rem]'>
+            1
+          </div>
+        </button>
+        <button className='rounded-lg bg-white border border-primary-10 mr-[0.5rem] p-[0.625rem] flex items-center'>
+>>>>>>> master
           <div className='w-[1.125rem] h-[1.125rem] text-primary-50 text-[0.875rem] font-bold uppercase leading-[1.125rem]'>
             2
           </div>
@@ -55,7 +78,11 @@ const Pagination = ({
         <span className='inline-block mr-[0.5rem] p-[0.625rem] text-primary-50 text-[0.875rem] font-bold uppercase leading-[1.125rem]'>
           ...
         </span>
+<<<<<<< HEAD
         <button className='rounded-lg bg-white border xmd:border-[rgba(19, 43, 125, 0.20)] md:border-primary-10 mr-[0.5rem] p-[0.625rem] flex items-center'>
+=======
+        <button className='rounded-lg bg-white border border-primary-10 mr-[0.5rem] p-[0.625rem] flex items-center'>
+>>>>>>> master
           <div className='w-[1.125rem] h-[1.125rem] text-primary-50 text-[0.875rem] font-bold uppercase leading-[1.125rem]'>
             3
           </div>
