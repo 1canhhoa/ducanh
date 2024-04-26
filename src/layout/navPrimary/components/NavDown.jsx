@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import {
   HoverCard,
   HoverCardContent,
@@ -36,11 +36,12 @@ const NavDown = ({ data_header }) => {
             </ul>
           </HoverCardContent>}
         </HoverCard>
-
       ))}
 
-      <button className='flex justify-center items-center py-[0.625rem] px-[1.25rem] 
-        rounded-[2.5rem] bg-primary-60 button1 uppercase text-white'>
+      <button
+        className='flex justify-center items-center py-[0.625rem] px-[1.25rem] 
+        rounded-[2.5rem] bg-primary-60 button1 uppercase text-white'
+      >
         Nộp hồ sơ online
       </button>
     </ul>

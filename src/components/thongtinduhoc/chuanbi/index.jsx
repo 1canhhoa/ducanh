@@ -4,7 +4,7 @@ import Support from '../components/Support'
 export default function ChuanBi({text, dataAcf, isMobile}) {
   return (
     <main className='w-full'>
-      <section className='w-full px-[11.56rem] xmd:px-[0.75rem] pt-[8rem]'>
+      <section className='w-full px-[11.56rem] xmd:px-[0.75rem] pt-[8rem] xmd:pt-[5rem]'>
         <h1 className='title xmd:mb32 relative w-fit xmd:mb-[1.75rem] mb-[2.05rem] xlg:pl-[5.3rem] xmd:pl-0'>
           {text.chuabiduhoc.title}
           <div className='size-[0.625rem] bg-secondary-40 absolute bottom-[0.625rem] right-[-1.125rem]'></div>
