@@ -14,6 +14,7 @@ import MobileHocSinhTieuBieu from '@/sections/home/components/mobile-hoc-sinh-ti
 import MobileTinTucDuHoc from '@/sections/home/components/mobile-tin-tuc-du-hoc'
 import MobileTruongHocLienKet from '@/sections/home/components/mobile-truong-hoc-lien-ket'
 import './style.css'
+
 const IndexHome = ({
   t,
   dataHocSinhTieuBieu,
@@ -25,7 +26,8 @@ const IndexHome = ({
   categories,
   isMobile,
   dataTintucs,
-  dataBanner
+  dataBanner,
+  dataTruongLk
 }) => {
   return (
     <main className='relative w-full flex-col flex justify-center items-start xmd:bg-elevation-blue'>
@@ -70,7 +72,7 @@ const IndexHome = ({
           isMobile={isMobile} />
       </section>}
       {isMobile &&<section className='w-full'>
-        <MobileTruongHocLienKet t={t.home_page} />
+        <MobileTruongHocLienKet dataTruongLk={dataTruongLk} t={t.home_page} />
       </section>}
 
 
@@ -79,9 +81,7 @@ const IndexHome = ({
 
 
 
-
-
-      {!isMobile && <section className='mx-auto w-full flex justify-center items-center mt-[9rem]'>
+      {!isMobile && <section className='mx-auto w-full flex justify-center items-center mt-[7.8rem]'>
         <BannerHome dataBanner={dataBanner} isMobile={isMobile} />
       </section>}
       {!isMobile && <section className='mx-auto w-full flex justify-center items-center'>
@@ -117,7 +117,7 @@ const IndexHome = ({
           isMobile={isMobile} />
       </section>}
       {!isMobile && <section className='w-full'>
-        <TruongHocLienKet t={t.home_page} />
+        <TruongHocLienKet dataTruongLk={dataTruongLk} t={t.home_page} />
       </section>}
 
 

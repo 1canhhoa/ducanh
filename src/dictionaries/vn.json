@@ -40,12 +40,14 @@
   "about_us": {
     "legal": "Pháp nhân",
     "ceo": "Ban giám đốc",
-    "business": "3 lĩnh vực kinh doanh chính",
+    "business": "4 lĩnh vực kinh doanh chính",
     "credo": "Tôn chỉ",
     "achievement": "Thành tựu công ty",
     "office": "Văn phòng",
     "centersLanguage": "Trung tâm ngoại ngữ",
-    "staff": "Nhân Viên"
+    "staff": "Nhân Viên",
+    "worktime": "Giờ làm Việc",
+    "ducanhCtg": "Đức Anh cùng thời gian"
   },
   "scholarship": {
     "nationInfor": "Nước Anh nằm ở phía Tây Bắc của châu Âu, được hợp thành bởi 4 phần: North Ireland, Wales, England và Scotland.",

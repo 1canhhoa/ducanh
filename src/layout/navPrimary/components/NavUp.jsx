@@ -2,12 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Search from './Search'
 const NavUp = ({ data_header }) => {
-  const data = [
-    {id: 0, title: 'Nghề HOT'},
-    {id: 1, title: 'Hợp Tác'},
-    {id: 2, title: 'Trắc Nghiệm Nghề Nghiệp'},
-    {id: 3, title: 'Tuyển Dụng'},
-  ]
   return (
     <div className='flex items-center xlg:items-start xlg:flex-col lg:space-x-[4rem]'>
       <Search />
@@ -17,9 +11,9 @@ const NavUp = ({ data_header }) => {
           <Link href={d?.url}>
             <div
               key={i}
-              className='button2 text-primary-60 font-bold flex h-[2.25rem] justify-center items-center px-[0.5rem] py-[0.625rem]'
+              className='button2 hover:text-[#BE3136]  duration-200 ease-linear  uppercase text-primary-60 font-bold flex h-[2.25rem] justify-center items-center px-[0.5rem] py-[0.625rem]'
             >
-              {d.title}
+              {d?.title}
             </div>
           </Link>
         ))}

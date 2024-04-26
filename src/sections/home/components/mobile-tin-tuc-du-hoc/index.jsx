@@ -25,7 +25,7 @@ const TinTicDuHoc = ({ categories, dataTintucs }) => {
 
   const fetcher = url => fetch(url).then(r => r.json())
   const { data, error, isLoading } = useSWR(
-    apiUrl ? `${process.env.NEXT_PUBLIC_API_DOMAIN}/wp-json/okhub/v1/posts-by-category/${apiUrl}` : null,
+    apiUrl ? `${process.env.NEXT_PUBLIC_API}/wp-json/okhub/v1/posts-by-category/${apiUrl}` : null,
     fetcher, {
     revalidateIfStale: false,
     revalidateOnFocus: false,    //Option này ngăn useSWR tự động gọi lại API khi cửa sổ hoặc tab của trình duyệt được focus lại
@@ -48,7 +48,7 @@ const TinTicDuHoc = ({ categories, dataTintucs }) => {
       <div className='w-full flex flex-col items-start space-y-[1.375rem]'>
         <Title className={'pl-[1rem] '} title={'Tin tức du học'} />
         <div className='w-full pl-[1rem] no-scrollbar overflow-x-auto relative flex items-end gap-[0.75rem]'>
-          <div className=" w-max flex items-start space-x-[0.5rem] pr-[1rem] flex-[1_0_0]">
+          <div className="z-50 w-max flex items-start space-x-[0.5rem] pr-[1rem] flex-[1_0_0]">
             {categories?.filter((f) => f?.slug !== 'uncategorized' && f?.slug !== 'bai-viet-noi-bat')?.map((t, i) => (
               <div key={i}>
                 {t?.slug !== 'uncategorized' && <button onClick={() => setApiUrl(t?.id)} key={i} className={`flex xmd:w-max justify-center items-center 

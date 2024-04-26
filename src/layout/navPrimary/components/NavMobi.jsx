@@ -67,18 +67,10 @@ const NavMobi = ({openNavMobile, data_header, setOpenNavMobile}) => {
         <ul className='flex h-full flex-col space-y-[1.5rem] items-start'>
           {data_header?.nav_down?.map((d, i) => (
             <div key={i}>
-              <div className='w-full mb-[1.5rem]'>
-                <div
-                  onClick={() => handleClick(i)}
-                  className={
-                    'flex group rounded-full justify-between items-center '
-                  }
-                >
-                  <li
-                    key={i}
-                    className='flex h-5 space-x-[0.75rem] items-start self-stretch'
-                  >
-                    <div className='text-[color:var(--PRIMARY-60,#132B7D)] text-sm not-italic font-bold leading-[120%] uppercase'>
+              <div className="w-full mb-[1.5rem]">
+                <div onClick={() => handleClick(i)} className={'flex group rounded-full justify-between items-center '}>
+                  <li key={i} className='flex h-5 space-x-[0.75rem] items-start self-stretch'>
+                    <div className="text-[color:var(--PRIMARY-60,#132B7D)] text-sm not-italic font-bold leading-[120%] uppercase">
                       {d?.title}
                     </div>
                     <div className='flex w-5 h-5 justify-center items-center'>
@@ -115,18 +107,14 @@ const NavMobi = ({openNavMobile, data_header, setOpenNavMobile}) => {
                 >
                   <div className='overflow-hidden'>
                     <div className='flex-col pt-[0.7rem] flex items-start space-y-[1rem]'>
-                      {d?.children &&
-                        d?.children?.map((c, i) => (
-                          <Link href={'/tuyen-dung'}>
-                            <div
-                              onClick={handleClickItem}
-                              key={i}
-                              className='text-sm font-light text-greyscaletext-50'
-                            >
-                              {c?.title}
-                            </div>
-                          </Link>
-                        ))}
+                      {d?.children && d?.children?.map((c, i) => (
+                        <Link href={c?.url}>
+                          <div onClick={handleClickItem}
+                            key={i} className='text-sm font-light text-greyscaletext-50'>
+                            {c?.title}
+                          </div>
+                        </Link>
+                      ))}
                     </div>
                   </div>
                 </div>

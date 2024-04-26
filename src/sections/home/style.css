@@ -66,11 +66,9 @@
 
 @media (max-width: 767px) {
 .swiper-slide.swiper-slide-active .item_slide {
-  bottom: 6rem;
-  transform: translateX(-85%) translateY(20%) scaleX(1.7648355) scaleY(1.22);
+  bottom: 2rem;
+  transform: translateX(-85%) translateY(0%) scaleX(1.7648355) scaleY(1.22);
 }}
-
-
 
 
 @keyframes moveTriangle {
@@ -213,19 +211,6 @@ ve-cong-ty */
 
 
 
-/* SIDEBAR BANNER HOMAPAGE */
-.custom-transition {
-  color: white;
-  font-weight: bold;
-  transition: opacity 0.5s cubic-bezier(0.01, 0.01, 0.01, 0.01);
-  opacity: 0;
-}
-
-.custom-transition:hover {
-  opacity: 1;
-  transition-duration: 1s;
-  transition-timing-function: cubic-bezier(1, 20.01, 1, 20.01);
-}
 
 
 @keyframes scaleInOut {

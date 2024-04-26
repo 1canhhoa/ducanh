@@ -119,6 +119,7 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
           onBeforeInit={(swiper) => {
             swiperRef.current = swiper
           }}
+          allowTouchMove={false}
           centeredSlides
           slidesPerView={4}
           loop={'true'}

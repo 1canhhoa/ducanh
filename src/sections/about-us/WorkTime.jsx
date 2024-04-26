@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Title from '@/components/Title'
 import { Button } from '@/components/ui/button'
 
-const WorkTime = ({ t }) => {
+const WorkTime = ({ t, dataGioLamViec }) => {
   return (
     <section className='relative flex justify-center items-center w-full h-[44.375rem] md:h-[48.375rem]'>
       <div className='xmd:w-full xmd:px-[0.5rem] w-[77rem] relative h-full flex justify-start items-start'>
@@ -18,7 +18,7 @@ const WorkTime = ({ t }) => {
                   Buổi Sáng
                 </div>
                 <div className="text-primary-50 xmd:body14 xmd:leading-[1.2] text-center text-[1rem] font-extrabold leading-[1.3rem]">
-                  08:30 - 12:30
+                  {dataGioLamViec?.gio_sang}
                 </div>
               </div>
               <div className="flex items-start space-x-[1.25rem] ">
@@ -26,22 +26,21 @@ const WorkTime = ({ t }) => {
                   Buổi Chiều
                 </div>
                 <div className="text-primary-50 xmd:body14 xmd:leading-[1.2] text-center text-[1rem] font-extrabold leading-[1.3rem]">
-                  13:30 - 17:30
+                  {dataGioLamViec?.gio_chieu}
                 </div>
               </div>
             </div>
           </div>
           <div className="mt-[3.06rem] xmd:mt-[1rem] inline-flex flex-col items-start xmd:space-y-[0.75rem] space-y-[1rem] ">
             <div className="md:w-[25.6875rem] text-greyscaletext-60 xmd:text-greyscaletext-70 body14 font-medium">
-              Trong trường hợp khẩn cấp, quý vị có thể liên hệ với
-              nhân viên phụ trách qua các số máy sau để được phục vụ:
+              {dataGioLamViec?.desc_hotline}
             </div>
-            <div className="flex items-start md:space-x-[2.5rem]
-             xmd:w-[21.9375rem] xmd:justify-between  xmd:content-start xmd:gap-y-5 xmd:flex-wrap
+            <div className="flex items-start xmd:space-x-[3.38rem] space-x-[2.5rem]
+             xmd:w-[21.9375rem] xmd:justify-start  xmd:content-start xmd:gap-y-5 xmd:flex-wrap
             ">
               <div className="flex flex-col justify-center items-start space-y-[0.25rem]">
                 <div className="text-primary-30 xmd:body12 font-feature-settings  text-[0.875rem] font-extrabold leading-[1.25rem] uppercase tracking-[0.00875rem] ">
-                  Hà Nội
+                  HOTLINE 1
                 </div>
                 <div className="text-primary-50 xmd:body12 xmd:leading-[1.6] text-center text-[1rem] font-extrabold leading-[1.3rem]">
                   098 87 09 698
@@ -49,18 +48,10 @@ const WorkTime = ({ t }) => {
               </div>
               <div className="flex flex-col justify-center items-start space-y-[0.25rem]">
                 <div className="text-primary-30 xmd:body12 font-feature-settings  text-[0.875rem] font-extrabold leading-[1.25rem] uppercase tracking-[0.00875rem] ">
-                  Hồ Chí Minh
+                  HOTLINE 2
                 </div>
                 <div className="text-primary-50 xmd:body12 xmd:leading-[1.6] text-center text-[1rem] font-extrabold leading-[1.3rem]">
                   096 30 49 860
-                </div>
-              </div>
-              <div className="flex flex-col justify-center items-start space-y-[0.25rem]">
-                <div className="text-primary-30 xmd:body12 font-feature-settings  text-[0.875rem] font-extrabold leading-[1.25rem] uppercase tracking-[0.00875rem] ">
-                  Vinh & Quảng Ngãi
-                </div>
-                <div className="text-primary-50 xmd:body12 xmd:leading-[1.6] text-center text-[1rem] font-extrabold leading-[1.3rem]">
-                  098 68 88 440
                 </div>
               </div>
             </div>
@@ -88,7 +79,7 @@ const WorkTime = ({ t }) => {
       <Image priority alt="ảnh thời gian làm việc du học đức anh" src={'/images/about_us/worktime.jpg'} width={1840} height={680}
         className="w-[114.97544rem] mx-auto xmd:hidden z-[-1] h-[42.48706rem] absolute left-0 right-0 bottom-0" />
       <Image priority alt="ảnh thời gian làm việc du học đức anh" src={'/images/about_us/worktime_mobi.jpg'} width={380} height={520}
-        className="z-[-1] absolute md:hidden left-0 right-0 bottom-[0rem]" />
+        className="z-[-1] absolute md:hidden w-full left-0 right-0 bottom-[0rem]" />
     </section>
   )
 }

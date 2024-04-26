@@ -73,6 +73,8 @@ module.exports = {
         'linear-l6': 'linear-gradient(170deg, #2E6BC6 10.78%, #29A4EA 81.3%)',
       },
       backgroundImage: {
+        'linear-tc':
+          'linear-gradient(89deg, rgba(80, 150, 255, 0.12) 0.43%,rgba(41, 164, 234, 0.06) 99.57%)',
         'linear-l5':
           'linear-gradient(95deg, #2E6BC6 9.83%, #2E6BC6 35.38%, #29A4EA 86.69%)',
         'linear-l1':
