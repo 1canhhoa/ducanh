@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-  "hello":"hello okhub"
-}
-=======
   "hello": "xin chao okhub",
   "related_posts": "Bài viết liên quan",
   "contact": {
@@ -69,13 +65,13 @@
     "h2_scholarship_en": "Học bổng du học tại Anh",
     "h2_job_settled": "Việc làm-Định cư tại Anh"
   },
-    "home_page": {
-      "lich_hoi_thao": "Lịch hội thảo - Triển lãm du học",
-      "qua_trinh_phat_trien": "Quá trình phát triển của Đức Anh",
-      "dich_vu_duc_anh": "Dịch vụ tại Đức Anh",
-      "tin_tuc_du_hoc": "Tin tức du học",
-      "hoc_sinh_tieu_bieu": "Các học sinh tiêu biểu"
-    },
+  "home_page": {
+    "lich_hoi_thao": "Lịch hội thảo - Triển lãm du học",
+    "qua_trinh_phat_trien": "Quá trình phát triển của Đức Anh",
+    "dich_vu_duc_anh": "Dịch vụ tại Đức Anh",
+    "tin_tuc_du_hoc": "Tin tức du học",
+    "hoc_sinh_tieu_bieu": "Các học sinh tiêu biểu"
+  },
   "information": {
     "title_1": "Lý do chọn Đức Anh",
     "text_title_1": {
@@ -252,4 +248,3 @@
     "h2_related_posts": "Bài viết liên quan"
   }
 }
->>>>>>> master

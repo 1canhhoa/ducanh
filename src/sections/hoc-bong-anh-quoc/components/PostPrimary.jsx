@@ -101,11 +101,11 @@ const PostPrimary = ({
         tags={tags || []}
         suggests={suggestLinks || []}
       />
-      <RelatedPosts
+      {/* <RelatedPosts
         lang={lang}
         listItems={dataRelativePosts || []}
         excludePostID={res?.id}
-      />
+      /> */}
     </SectionWrapper>
   )
 }

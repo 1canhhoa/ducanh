@@ -3,18 +3,11 @@
 @tailwind utilities;
 
 .bd {
-<<<<<<< HEAD
-  @apply border border-black
-}
-
-@layer utilities {
-
-=======
   @apply border border-black;
 }
 
 @layer utilities {
->>>>>>> master
+
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
@@ -51,11 +44,7 @@
   }
 
   .body14 {
-<<<<<<< HEAD
-    @apply text-[0.875rem] leading-[1.7];
-=======
     @apply text-[0.875rem] leading-[1.2];
->>>>>>> master
   }
 
   .sub10 {
@@ -96,24 +85,12 @@
 
   .caption2 {
     @apply text-[0.625rem] leading-[1];
-<<<<<<< HEAD
-
   }
 
-
-=======
-  }
-
->>>>>>> master
   .label1 {
     @apply text-[0.875rem] leading-[1] tracking-[0.00875rem];
   }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> master
   .title {
     @apply text-[3rem] font-extrabold leading-[1.2] -tracking-[0.03rem] text-primary-50;
   }
@@ -193,18 +170,9 @@ textarea {
 button {
   cursor: pointer;
   outline: none;
-<<<<<<< HEAD
-  /* background-color: transparent;
-  border: 0; */
 }
 
 html {
-  /* overflow-x: hidden; */
-=======
-}
-
-html {
->>>>>>> master
   font-size: 1vw;
 }
 
@@ -214,15 +182,6 @@ html {
   }
 }
 
-<<<<<<< HEAD
-/* @media (min-width: 1900px) {
-  html{
-    font-size: 16px;
-  };
-} */
-
-=======
->>>>>>> master
 body {
   background: white;
   color: black;
@@ -254,15 +213,8 @@ body {
   line-height: 120%;
   letter-spacing: -0.0375rem;
   text-transform: uppercase;
-<<<<<<< HEAD
   background: var(--LINEAR-L6,
       linear-gradient(170deg, #2e6bc6 10.78%, #29a4ea 81.3%));
-=======
-  background: var(
-    --LINEAR-L6,
-    linear-gradient(170deg, #2e6bc6 10.78%, #29a4ea 81.3%)
-  );
->>>>>>> master
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -278,35 +230,13 @@ body {
   /* 4.5rem */
   letter-spacing: -0.0375rem;
   text-transform: uppercase;
-<<<<<<< HEAD
   background: var(--LINEAR-L2,
       linear-gradient(94deg, #cb2128 -1.03%, #cb2128 36.82%, #fc4d54 88.7%));
-=======
-  background: var(
-    --LINEAR-L2,
-    linear-gradient(94deg, #cb2128 -1.03%, #cb2128 36.82%, #fc4d54 88.7%)
-  );
->>>>>>> master
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-<<<<<<< HEAD
-.xem_them {
-  animation: up_down 1s linear 1s infinite alternate;
-}
-
-@keyframes up_down {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(0.5rem);
-  }
-}
-=======
 .tulamhoso p,
 .tulamhoso ul,
 .tulamhoso li {
@@ -316,12 +246,14 @@ body {
   font-weight: 500;
   line-height: 170%;
 }
+
 .tulamhoso ul {
   list-style: initial;
   transform: translateX(1rem);
 }
 
 @media (max-width: 767px) {
+
   .tulamhoso p,
   .tulamhoso ul,
   .tulamhoso li {
@@ -331,6 +263,7 @@ body {
     font-weight: 500;
     line-height: 170%;
   }
+
   .tulamhoso ul {
     width: 95%;
     list-style: initial;
@@ -351,4 +284,3 @@ body {
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(1, 20.01, 1, 20.01);
 }
->>>>>>> master
