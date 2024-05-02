@@ -7,14 +7,9 @@ import {useState} from 'react'
 import clsx from 'clsx'
 import {Button} from '@/components/ui/button'
 import {Autoplay} from 'swiper/modules'
-<<<<<<< HEAD
 const StudenSlide = ({items = [], slideChange, lang}) => {
   const [activeIndex, setActiveIndex] = useState(0)
   // console.log({items})
-=======
-const StudenSlide = ({items = [], slideChange}) => {
-  const [activeIndex, setActiveIndex] = useState(0)
->>>>>>> master
   return (
     <div className='ml-[-0.75rem] md:ml-0'>
       <Swiper
@@ -26,16 +21,10 @@ const StudenSlide = ({items = [], slideChange}) => {
           setActiveIndex(swiper.realIndex)
           slideChange(swiper.realIndex)
         }}
-<<<<<<< HEAD
         // onSwiper={(swiper) => console.log(swiper)}
         pagination={{clickable: true}}
         className='w-screen tablet:w-[50rem] md:w-[36rem] md:!ml-0'
         // autoplay={{delay: 3000}}
-=======
-        pagination={{clickable: true}}
-        className='w-screen tablet:w-[50rem] md:w-[36rem] md:!ml-0'
-        autoplay={{delay: 3000}}
->>>>>>> master
       >
         {items.map((item, index) => {
           return (
@@ -57,7 +46,6 @@ const StudenSlide = ({items = [], slideChange}) => {
                     className='text-primary-60 md:text-greyscaletext-80 tracking-[-0.03rem] tablet:text-[2.5rem] text-[1.5rem] md:text-[2rem] font-bold md:font-bold 
                   leading-[130%] md:leading-[140%] self-stretch w-[20.4rem] tablet:w-full md:w-[30.375rem]'
                   >
-<<<<<<< HEAD
                     <div
                       title={item?.content?.rendered}
                       className='line-clamp-6'
@@ -74,18 +62,6 @@ const StudenSlide = ({items = [], slideChange}) => {
                   </p>
                   <p className='text-greyscaletext-80 .font-feature-settings text-[0.875rem] tablet:text-[1.25rem] font-normal leading-[140%]'>
                     {item?.acf?.scholarship_infor}
-=======
-                    Em tin rằng tất cả mọi người có thể làm được giống em
-                  </h3>
-                  <h4 className='text-greyscaletext-80 mt-[0.5rem] md:mt-[1.19rem] mb-[0.25rem] text-[1rem] tablet:text-[2rem] md:text-[1.25rem] font-bold leading-[150%] tracking-[-0.0125rem]'>
-                    - Lê Minh
-                  </h4>
-                  <p className='text-greyscaletext-80 .font-feature-settings text-[0.875rem] tablet:text-[1.25rem] font-normal leading-[140%]'>
-                    Cựu học sinh Amsterdam
-                  </p>
-                  <p className='text-greyscaletext-80 .font-feature-settings text-[0.875rem] tablet:text-[1.25rem] font-normal leading-[140%]'>
-                    Học bổng toàn phần trường Deakin University
->>>>>>> master
                   </p>
                 </div>
               </div>
@@ -110,17 +86,10 @@ const StudenSlide = ({items = [], slideChange}) => {
       </div>
       <div className='flex items-center mt-[1rem] md:mt-[1.81rem] xmd:justify-between md:ml-[5rem]'>
         <Button className='text-[0.875rem] md:mr-[0.81rem] font-bold leading-[120%] w-[10.5625rem] md:h-[3rem] md:w-[9.4rem] p-[0.9375rem_1.875rem] h-[2.5rem] bg-primary-50 text-white ml-[0.75rem] capitalize'>
-<<<<<<< HEAD
           {lang?.viewDetail}
         </Button>
         <Button className='text-[0.875rem] text-primary-60 font-bold leading-[120%] md:w-[9.4rem] w-[10.5625rem] p-[0.9375rem_1.875rem] h-[2.5rem] md:h-[3rem] border border-[#ECECEC] capitalize'>
           {lang?.allStudent}
-=======
-          Xem chi tiết
-        </Button>
-        <Button className='text-[0.875rem] font-bold leading-[120%] md:w-[9.4rem] w-[10.5625rem] p-[0.9375rem_1.875rem] h-[2.5rem] md:h-[3rem] border-[#ECECEC] capitalize'>
-          Tất cả học sinh
->>>>>>> master
         </Button>
       </div>
     </div>

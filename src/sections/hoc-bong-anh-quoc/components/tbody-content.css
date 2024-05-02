@@ -22,7 +22,6 @@
     line-height: normal;
     list-style: disc;
     margin-left: 1.2rem;
-<<<<<<< HEAD
 }
 
 @media (max-width:767px) {
@@ -30,6 +29,4 @@
         font-size: 0.625rem;
         margin-left: 1rem;
     }
-=======
->>>>>>> master
 }

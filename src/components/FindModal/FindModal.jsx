@@ -72,10 +72,10 @@ const FindModal = ({isMobile, lang, countries = [], className = ''}) => {
         <h2 className='text-primary-60 font-bold text-[1.5rem] xmd:text-[1rem] leading-[120%]'>
           <div
             className='hidden md:block'
-            dangerouslySetInnerHTML={{__html: lang.map.find_school}}
+            dangerouslySetInnerHTML={{__html: lang?.map?.find_school}}
           ></div>
           <span className='hidden xmd:block'>
-            {lang.map.find_school_mobile}
+            {lang?.map?.find_school_mobile}
           </span>
         </h2>
         {/* input tìm trường */}

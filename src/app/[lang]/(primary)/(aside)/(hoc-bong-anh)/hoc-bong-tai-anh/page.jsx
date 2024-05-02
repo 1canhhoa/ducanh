@@ -1,13 +1,9 @@
 import {getDictionary} from '@/app/[lang]/dictionaries'
-<<<<<<< HEAD
 import getData from '@/lib/getData'
-=======
->>>>>>> master
 import ScholarshipEngland from '@/sections/hoc-bong-anh-quoc/components/ScholarshipEngland'
 
 const ScholarshipEnglandPage = async ({params}) => {
   const t = await getDictionary(params.lang)
-<<<<<<< HEAD
   let resScholarshipTypes = await getData('/wp-json/wp/v2/scholarship-types')
   const resTags = await getData('/wp-json/wp/v2/tags')
   const resSuggestLinks = await getData('/wp-json/wp/v2/suggested-links')
@@ -25,6 +21,7 @@ const ScholarshipEnglandPage = async ({params}) => {
   const resFirstTab = await getData(
     '/wp-json/wp/v2' + resScholarshipTypes?.[0]?.acf?.api_slug,
   )
+
   return (
     <ScholarshipEngland
       lang={t}
@@ -35,9 +32,6 @@ const ScholarshipEnglandPage = async ({params}) => {
       dataRelativePosts={resRelativePosts}
     />
   )
-=======
-  return <ScholarshipEngland lang={t.scholarship} />
->>>>>>> master
 }
 
 export default ScholarshipEnglandPage
