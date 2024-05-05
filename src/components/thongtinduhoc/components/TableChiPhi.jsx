@@ -1,11 +1,4 @@
-import Link from 'next/link'
-
-export default async function TableChiPhi({
-  title,
-  dataAcf,
-  flex = false,
-  more = false,
-}) {
+export default async function TableChiPhi({title, dataAcf, flex = false}) {
   return (
     <div className='flex w-full flex-col items-start space-y-[1.5rem] mt-[3.6rem] xmd:mt-[2rem]'>
       <h2 className='sub24 font-bold text-center text-primary-50 xmd:text-start'>

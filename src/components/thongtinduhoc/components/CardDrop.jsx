@@ -8,15 +8,7 @@ import {
 } from '@/components/ui/accordion'
 import clsx from 'clsx'
 
-export default function CradDrop({
-  index,
-  only = false,
-  width,
-  column,
-  data,
-  noIcon = false,
-  className,
-}) {
+export default function CradDrop({index, only = false, width, column, data}) {
   return (
     <Accordion
       className={clsx(

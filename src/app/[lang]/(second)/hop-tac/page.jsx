@@ -1,5 +1,12 @@
 import HopTac from '@/components/hoptac'
 import {getDictionary} from '../../dictionaries'
+<<<<<<< HEAD
+
+export default async function page({params}) {
+  console.log('🚀 ~ HomePage ~ params:', params)
+  const t = await getDictionary(params?.lang)
+  return <HopTac t={t} />
+=======
 import getData from '@/lib/getData'
 
 export default async function page({params}) {
@@ -11,4 +18,5 @@ export default async function page({params}) {
       dataAcf={res?.acf}
     />
   )
+>>>>>>> master
 }

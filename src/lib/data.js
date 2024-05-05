@@ -169,39 +169,26 @@ export const country_truonglk = [
     tittle: 'Mỹ',
   },
   {
+<<<<<<< HEAD
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+=======
     id: 3,
     img: '/images/homepage/canada.svg',
     bg: '/images/homepage/bg-canada.png',
 
     tittle: 'Canada',
-  },
-  {
-    id: 3,
-    img: '/images/homepage/canada.svg',
-    bg: '/images/homepage/bg-canada.png',
-
-    tittle: 'Canada',
-  },
-  {
-    id: 4,
-    img: '/images/homepage/usa.svg',
-    bg: '/images/homepage/bg-usa.png',
-
-    tittle: 'Mỹ',
-  },
-  {
-    id: 3,
-    img: '/images/homepage/canada.svg',
-    bg: '/images/homepage/bg-canada.png',
-
-    tittle: 'Canada',
-  },
-  {
-    id: 3,
-    img: '/images/homepage/canada.svg',
-    bg: '/images/homepage/bg-canada.png',
-
-    tittle: 'Canada',
+>>>>>>> master
   },
   {
     id: 3,
@@ -218,6 +205,20 @@ export const country_truonglk = [
     tittle: 'Mỹ',
   },
   {
+<<<<<<< HEAD
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+=======
     id: 3,
     img: '/images/homepage/canada.svg',
     bg: '/images/homepage/bg-canada.png',
@@ -230,6 +231,7 @@ export const country_truonglk = [
     bg: '/images/homepage/bg-canada.png',
 
     tittle: 'Canada',
+>>>>>>> master
   },
   {
     id: 3,
@@ -246,12 +248,173 @@ export const country_truonglk = [
     tittle: 'Mỹ',
   },
   {
+<<<<<<< HEAD
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+=======
     id: 3,
     img: '/images/homepage/canada.svg',
     bg: '/images/homepage/bg-canada.png',
 
     tittle: 'Canada',
   },
+  {
+    id: 3,
+    img: '/images/homepage/canada.svg',
+    bg: '/images/homepage/bg-canada.png',
+
+    tittle: 'Canada',
+>>>>>>> master
+  },
+  {
+    id: 3,
+    img: '/images/homepage/canada.svg',
+    bg: '/images/homepage/bg-canada.png',
+
+    tittle: 'Canada',
+  },
+  {
+    id: 4,
+    img: '/images/homepage/usa.svg',
+    bg: '/images/homepage/bg-usa.png',
+
+    tittle: 'Mỹ',
+  },
+  {
+<<<<<<< HEAD
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+  },
+  {
+=======
+>>>>>>> master
+    id: 3,
+    img: '/images/homepage/canada.svg',
+    bg: '/images/homepage/bg-canada.png',
+
+    tittle: 'Canada',
+  },
+<<<<<<< HEAD
+  {
+    id: 4,
+    img: '/images/homepage/usa.svg',
+    bg: '/images/homepage/bg-usa.png',
+
+    tittle: 'Mỹ',
+  },
+  {
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+  },
+  {
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+  },
+  {
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+  },
+  {
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+  },
+  {
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+  },
+  {
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+  },
+=======
+>>>>>>> master
 ]
 export const data_table = [
   {
@@ -259,7 +422,11 @@ export const data_table = [
     paymentStatus: 'Paid',
     totalAmount: '$250.00',
     time: '20/2/2024',
+<<<<<<< HEAD
+    timeDetail: '10h - 12h',
+=======
     timeDetail: '10h-12h',
+>>>>>>> master
     place: 'online',
     status: 'full',
     country: 'Đức',
@@ -271,7 +438,11 @@ export const data_table = [
     paymentStatus: 'Pending',
     totalAmount: '$150.00',
     time: '20/2/2024',
+<<<<<<< HEAD
+    timeDetail: '10h - 12h',
+=======
     timeDetail: '10h-12h',
+>>>>>>> master
     place: 'TP HCM',
     status: 'full',
     country: 'Phần lan',
@@ -283,7 +454,11 @@ export const data_table = [
     paymentStatus: 'Unpaid',
     totalAmount: '$350.00',
     time: '20/2/2024',
+<<<<<<< HEAD
+    timeDetail: '10h - 12h',
+=======
     timeDetail: '10h-12h',
+>>>>>>> master
     place: 'Hà Nội',
     status: 'welcom',
     country: 'Úc',
@@ -295,7 +470,11 @@ export const data_table = [
     paymentStatus: 'Paid',
     totalAmount: '$450.00',
     time: '20/2/2024',
+<<<<<<< HEAD
+    timeDetail: '10h - 12h',
+=======
     timeDetail: '10h-12h',
+>>>>>>> master
     place: 'Vinh',
     status: 'welcom',
     country: 'Anh',
@@ -307,7 +486,11 @@ export const data_table = [
     paymentStatus: 'Paid',
     totalAmount: '$550.00',
     time: '20/2/2024',
+<<<<<<< HEAD
+    timeDetail: '10h - 12h',
+=======
     timeDetail: '10h-12h',
+>>>>>>> master
     place: 'TP HCM',
     status: 'welcom',
     country: 'Nhiều nước',
@@ -319,7 +502,11 @@ export const data_table = [
     paymentStatus: 'Pending',
     totalAmount: '$200.00',
     time: '20/2/2024',
+<<<<<<< HEAD
+    timeDetail: '10h - 12h',
+=======
     timeDetail: '10h-12h',
+>>>>>>> master
     place: 'online',
     status: 'welcom',
     country: 'Việt Nam',
@@ -331,7 +518,11 @@ export const data_table = [
     paymentStatus: 'Unpaid',
     totalAmount: '$300.00',
     time: '20/2/2024',
+<<<<<<< HEAD
+    timeDetail: '10h - 12h',
+=======
     timeDetail: '10h-12h',
+>>>>>>> master
     place: 'Hà Nội',
     status: 'welcom',
     country: 'Đức',
@@ -343,7 +534,11 @@ export const data_table = [
     paymentStatus: 'Unpaid',
     totalAmount: '$300.00',
     time: '20/2/2024',
+<<<<<<< HEAD
+    timeDetail: '10h - 12h',
+=======
     timeDetail: '10h-12h',
+>>>>>>> master
     place: 'online',
     status: 'welcom',
     country: 'Anh',
@@ -355,7 +550,11 @@ export const data_table = [
     paymentStatus: 'Unpaid',
     totalAmount: '$300.00',
     time: '20/2/2024',
+<<<<<<< HEAD
+    timeDetail: '10h - 12h',
+=======
     timeDetail: '10h-12h',
+>>>>>>> master
     place: 'Hà Nội',
     status: 'welcom',
     country: 'Việt Nam',
@@ -367,7 +566,11 @@ export const data_table = [
     paymentStatus: 'Unpaid',
     totalAmount: '$300.00',
     time: '20/2/2024',
+<<<<<<< HEAD
+    timeDetail: '10h - 12h',
+=======
     timeDetail: '10h-12h',
+>>>>>>> master
     place: 'online',
     status: 'welcom',
     country: 'Việt Nam',
@@ -377,11 +580,19 @@ export const data_table = [
 ]
 
 export const tintucduhoc = [
+<<<<<<< HEAD
+  {id: 0, tittle: 'Tất cả bài viết'},
+  {id: 1, tittle: 'Cẩm nang'},
+  {id: 2, tittle: 'Học Sinh Đức Anh'},
+  {id: 3, tittle: 'Thông tin học bổng'},
+  {id: 4, tittle: 'Việc làm định cư'},
+=======
   {id: 0, api: '/first-new-on-home', tittle: 'Tất cả bài viết'},
   {id: 1, api: '/posts-by-category/4', tittle: 'Cẩm nang'},
   {id: 2, api: '/posts-by-category/38', tittle: 'Học Sinh Đức Anh'},
   {id: 3, api: '/posts-by-category/39', tittle: 'Thông tin học bổng'},
   {id: 4, api: '/posts-by-category/40', tittle: 'Việc làm định cư'},
+>>>>>>> master
 ]
 export const buttonDuhoc = [
   {
@@ -425,7 +636,11 @@ export const buttonDuhoc = [
 export const hocsinhnoibat = [
   {
     id: 0,
+<<<<<<< HEAD
+    image: '/images/homepage/em-thao.png',
+=======
     image: '/images/homepage/man.png',
+>>>>>>> master
     person: 'Lê Minh',
     comment: 'sasasacsEm tin rằng tất cả mọi người có thể làm được giống em',
     info: 'Cựu học sinh Amsterdam',
@@ -433,7 +648,11 @@ export const hocsinhnoibat = [
   },
   {
     id: 0,
+<<<<<<< HEAD
+    image: '/images/homepage/em-thao.png',
+=======
     image: '/images/homepage/man1.png',
+>>>>>>> master
     person: 'Lê Minh',
     comment: 'Em tin rằng tất cả mọi người có thể làm được giống em',
     info: 'Cựu học sinh Amsterdam',
@@ -441,9 +660,15 @@ export const hocsinhnoibat = [
   },
   {
     id: 0,
+<<<<<<< HEAD
+    image: '/images/homepage/em-thao.png',
+    person: 'Lê Minh',
+    comment: 'acascascEm tin rằng tất cả mọi người có thể làm được giống em',
+=======
     image: '/images/homepage/man.png',
     person: 'Darwin Nunez',
     comment: 'Trấn động ông nông dân trồng mít lên tiếng cực gắt',
+>>>>>>> master
     info: 'Cựu học sinh Amsterdam',
     award: 'Học bổng toàn phần trường Deakin University',
   },
@@ -457,9 +682,31 @@ export const hocsinhnoibat = [
   },
   {
     id: 0,
+<<<<<<< HEAD
+    image: '/images/homepage/em-thao.png',
+    person: 'Lê Minh',
+    comment: 'acscascascEm tin rằng tất cả mọi người có thể làm được giống em',
+    info: 'Cựu học sinh Amsterdam',
+    award: 'Học bổng toàn phần trường Deakin University',
+  },
+  {
+    id: 0,
+    image: '/images/homepage/em-thao.png',
+    person: 'Lê Minh',
+    comment: 'Em tin rằng tất cả mọi người có thể làm được giống em',
+    info: 'Cựu học sinh Amsterdam',
+    award: 'Học bổng toàn phần trường Deakin University',
+  },
+  {
+    id: 0,
+    image: '/images/homepage/em-thao.png',
+    person: 'Lê Minh',
+    comment: 'sfasfasfaEm tin rằng tất cả mọi người có thể làm được giống em',
+=======
     image: '/images/homepage/man1.png',
     person: 'Darwin Nunez',
     comment: 'Trấn động ông nông dân trồng mít lên tiếng cực gắt',
+>>>>>>> master
     info: 'Cựu học sinh Amsterdam',
     award: 'Học bổng toàn phần trường Deakin University',
   },

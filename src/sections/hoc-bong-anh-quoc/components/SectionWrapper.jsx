@@ -23,14 +23,14 @@ const SectionWrapper = ({
     >
       <h1
         className={clsx(
-          'xmd:text-[1.375rem] text-[2.25rem] font-extrabold leading-[120%] text-primary-50',
+          'xmd:text-[1.375rem] text-[2.25rem] font-extrabold leading-[120%] text-primary-50 mb-[0.75rem]',
           {
             'xmd:ml-[0.75rem]': !mobileMargin,
           },
         )}
       >
         {title}
-        <span className='inline-block w-[0.625rem] h-[0.625rem] bg-secondary-40 ml-[0.5rem]'></span>
+        {/* <span className='inline-block w-[0.625rem] h-[0.625rem] bg-secondary-40 ml-[0.5rem]'></span> */}
       </h1>
       {children}
     </section>

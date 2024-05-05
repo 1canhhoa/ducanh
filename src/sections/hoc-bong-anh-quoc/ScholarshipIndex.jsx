@@ -1,6 +1,10 @@
 import AboutUnitedKingom from '@/sections/hoc-bong-anh-quoc/components/AboutUnitedKingom'
 import Reason from '@/sections/hoc-bong-anh-quoc/components/Reason'
+<<<<<<< HEAD
+import EducationSystem from '@/sections/hoc-bong-anh-quoc/components/PostPrimary'
+=======
 import EducationSystem from '@/sections/hoc-bong-anh-quoc/components/EducationSystem'
+>>>>>>> master
 import SecondarySchools from '@/sections/hoc-bong-anh-quoc/components/SecondarySchools'
 import TrainingInstitutes from '@/sections/hoc-bong-anh-quoc/components/TrainingInstitutes'
 import UniversitySchools from '@/sections/hoc-bong-anh-quoc/components/UniversitySchools'
@@ -58,7 +62,11 @@ const ScholarshipIndex = ({lang, isMobile}) => {
 
   return (
     <div className='w-full md:flex-1'>
+<<<<<<< HEAD
+      {/* {isMobile && <MobileTableOfContents list={IDs} />} */}
+=======
       {isMobile && <MobileTableOfContents list={IDs} />}
+>>>>>>> master
       <AboutUnitedKingom
         lang={scholarshipLang}
         id={IDs.about_united_kingdom.id}

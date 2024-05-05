@@ -7,6 +7,7 @@
 }
 
 @layer utilities {
+
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
@@ -218,10 +219,8 @@ body {
   line-height: 120%;
   letter-spacing: -0.0375rem;
   text-transform: uppercase;
-  background: var(
-    --LINEAR-L6,
-    linear-gradient(170deg, #2e6bc6 10.78%, #29a4ea 81.3%)
-  );
+  background: var(--LINEAR-L6,
+      linear-gradient(170deg, #2e6bc6 10.78%, #29a4ea 81.3%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -237,10 +236,8 @@ body {
   /* 4.5rem */
   letter-spacing: -0.0375rem;
   text-transform: uppercase;
-  background: var(
-    --LINEAR-L2,
-    linear-gradient(94deg, #cb2128 -1.03%, #cb2128 36.82%, #fc4d54 88.7%)
-  );
+  background: var(--LINEAR-L2,
+      linear-gradient(94deg, #cb2128 -1.03%, #cb2128 36.82%, #fc4d54 88.7%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -255,12 +252,14 @@ body {
   font-weight: 500;
   line-height: 170%;
 }
+
 .tulamhoso ul {
   list-style: initial;
   transform: translateX(1rem);
 }
 
 @media (max-width: 767px) {
+
   .tulamhoso p,
   .tulamhoso ul,
   .tulamhoso li {
@@ -270,9 +269,24 @@ body {
     font-weight: 500;
     line-height: 170%;
   }
+
   .tulamhoso ul {
     width: 95%;
     list-style: initial;
     transform: translateX(1rem);
   }
+}
+
+/* SIDEBAR BANNER HOMAPAGE */
+.custom-transition {
+  color: white;
+  font-weight: bold;
+  transition: opacity 0.5s cubic-bezier(0.01, 0.01, 0.01, 0.01);
+  opacity: 0;
+}
+
+.custom-transition:hover {
+  opacity: 1;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(1, 20.01, 1, 20.01);
 }

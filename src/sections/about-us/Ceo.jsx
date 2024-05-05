@@ -37,6 +37,7 @@ const Section2 = ({ title, subTitle }) => {
     </div>
   </div>
 }
+<<<<<<< HEAD
 const Ceo = ({ t }) => {
   return (
     <section className='flex flex-col w-max items-start xmd:space-y-[0.75rem] space-y-[2.5rem]'>
@@ -150,6 +151,44 @@ const Ceo = ({ t }) => {
               </div>
             </div>
           </div>
+=======
+const Ceo = ({ t, dataPersons }) => {
+  return (
+    <section className=' flex flex-col w-full items-center'>
+      <div className='  xmd:space-y-[0.75rem] space-y-[2.5rem]'>
+        <Title title={t.ceo} />
+
+
+        <div className="flex flex-col items-start space-y-[1.75rem]">
+
+
+          {dataPersons?.map((person, i) => (
+            <div key={i} className='flex items-start flex-col w-full xmd:w-[21.9375rem] xmd:pb-[0.6rem]  md:p-[1.25rem] rounded-[1.25rem] bg-white border border-[rgba(97,150,246,0.40)]  '>
+              <div className="flex-[1_0_0] flex items-start xmd:flex-col xmd:justify-end self-stretch xmd:space-y-[0.75rem] md:space-x-[1.25rem]">
+                <Section title={person?.name} subTitle={person?.position} />
+                <div className="xmd:hidden w-[0.0625rem] h-full bg-[rgba(97,150,246,0.20)]"></div>
+                <div className="xmd:px-[1rem] flex flex-col items-start xmd:space-y-[0.875rem] space-y-[1rem] grow-[1] shrink-0 basis-0">
+                  {person?.about_person?.map((p, j) => (
+                    <div className='flex flex-col items-start xmd:space-y-[0.875rem] space-y-[1rem]' key={j}>
+                      <div className="flex items-start xmd:flex-col self-stretch xmd:space-y-[0.875rem] md:space-x-[1.5rem]">
+                        <Section1 title={p?.label} />
+                        <div className=" flex flex-col items-start self-stretch xmd:space-y-[0.5rem] space-y-[0.375rem] grow-[1] shrink-0 basis-0">
+                          {p?.lists_award?.map((award, k) => (
+                            <div className='flex flex-col items-start self-stretch xmd:space-y-[0.5rem] space-y-[0.375rem]' key={k}>
+                              <Section2 title={award?.name_award} subTitle={award?.desc_short} />
+                              {p?.lists_award?.length - 1 !== k && <div className="xmd:w-full w-[45.8125rem] h-[0.0125rem] bg-[rgba(97,150,246,0.20)]"></div>}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      {person?.about_person?.length - 1 !== j && <div className="xmd:h-[0.375rem] h-[0.0125rem] xmd:bg-[#fafafa] w-full xmd:w-full bg-[rgba(97,150,246,0.20)]"></div>}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+>>>>>>> master
         </div>
 
       </div>

@@ -1,6 +1,7 @@
 import {Plus_Jakarta_Sans} from 'next/font/google'
 import '../globals.css'
 import Footer from '@/layout/footer/Footer'
+import SocialAction from '@/components/SocialAction/SocialAction'
 
 export async function generateStaticParams() {
   return ['vi', 'en'].map((lang) => ({lang}))
@@ -20,6 +21,7 @@ export default function RootLayout({children, params}) {
   return (
     <html lang={params.lang}>
       <body className={`${plus.className} ${plus.variable}`}>
+        <SocialAction />
         {children}
         <Footer />
       </body>
