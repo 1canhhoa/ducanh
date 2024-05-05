@@ -4,11 +4,7 @@ import * as React from 'react'
 import * as AccordionPrimitive from '@radix-ui/react-accordion'
 import {ChevronDown} from 'lucide-react'
 
-<<<<<<< HEAD
 import {cn} from '@/lib/utils'
-=======
-import { cn } from '@/lib/utils'
->>>>>>> master
 
 const Accordion = AccordionPrimitive.Root
 
@@ -22,7 +18,7 @@ const AccordionItem = React.forwardRef(({className, ...props}, ref) => (
 AccordionItem.displayName = 'AccordionItem'
 
 const AccordionTrigger = React.forwardRef(
-  ({className, children, ...props}, ref) => (
+  ({className, noIcon = false, children, ...props}, ref) => (
     <AccordionPrimitive.Header className='flex w-full'>
       <AccordionPrimitive.Trigger
         ref={ref}
@@ -33,7 +29,9 @@ const AccordionTrigger = React.forwardRef(
         {...props}
       >
         {children}
-        <ChevronDown className='h-4 w-4 shrink-0 transition-transform duration-200' />
+        {!noIcon && (
+          <ChevronDown className='h-4 w-4 shrink-0 transition-transform duration-200' />
+        )}
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   ),
