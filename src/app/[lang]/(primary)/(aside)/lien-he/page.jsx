@@ -9,6 +9,6 @@ export default async function ContactPage({ params, searchParams }) {
   const isMobile = viewport?.includes('mobile')
   const t = await getDictionary(params.lang)
   const data = await getData('/wp-json/wp/v2/pages/1337')
-  console.log({ datasv: data?.acf });
+
   return <PageLienHe data={data?.acf} t={t} />
 }

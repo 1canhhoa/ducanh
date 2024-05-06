@@ -11,7 +11,7 @@ import MobileTableOfContents from '@/sections/hoc-bong-anh-quoc/components/Mobil
 import ScholarshipEngland from '@/sections/hoc-bong-anh-quoc/components/ScholarshipEngland'
 import SuggestedSection from '@/sections/hoc-bong-anh-quoc/components/SuggestedSection'
 import JobSettled from '@/sections/hoc-bong-anh-quoc/components/JobSettled'
-const ScholarshipIndex = ({lang, isMobile}) => {
+const ScholarshipIndex = ({ lang, isMobile }) => {
   const scholarshipLang = lang.scholarship
   const IDs = {
     about_united_kingdom: {

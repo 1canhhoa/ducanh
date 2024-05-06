@@ -18,7 +18,8 @@ const WorkTime = ({ t, dataGioLamViec }) => {
                   Buổi Sáng
                 </div>
                 <div className="text-primary-50 xmd:body14 xmd:leading-[1.2] text-center text-[1rem] font-extrabold leading-[1.3rem]">
-                  {dataGioLamViec?.buoi_sang}
+
+                  {dataGioLamViec?.gio_sang}
                 </div>
               </div>
               <div className="flex items-start space-x-[1.25rem] ">
@@ -26,7 +27,8 @@ const WorkTime = ({ t, dataGioLamViec }) => {
                   Buổi Chiều
                 </div>
                 <div className="text-primary-50 xmd:body14 xmd:leading-[1.2] text-center text-[1rem] font-extrabold leading-[1.3rem]">
-                  {dataGioLamViec?.buoi_chieu}
+
+                  {dataGioLamViec?.gio_chieu}
                 </div>
               </div>
             </div>

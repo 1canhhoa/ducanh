@@ -3,6 +3,20 @@ import '../globals.css'
 import Footer from '@/layout/footer/Footer'
 import SocialAction from '@/components/SocialAction/SocialAction'
 import Head from 'next/head';
+import { Toaster } from "@/components/ui/sonner"
+
+// export default function RootLayout({ children }) {
+//   return (
+//     <html lang="en">
+//       <head />
+//       <body>
+//         <main>{children}</main>
+//         <Toaster />
+//       </body>
+//     </html>
+//   )
+// }
+
 export async function generateStaticParams() {
   return ['vi', 'en'].map((lang) => ({ lang }))
 }
@@ -23,7 +37,8 @@ export default function RootLayout({ children, params }) {
 
       <body className={`${plus.className} ${plus.variable}`}>
         <SocialAction />
-        {children}
+        <main>{children}</main>
+        <Toaster />
         <Footer />
       </body>
     </html>

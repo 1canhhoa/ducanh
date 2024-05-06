@@ -2,7 +2,7 @@ import Image from 'next/image'
 import ListNghe from './components/ListNghe'
 import RelatedPosts from '@/components/BaiVietLienQuan/RelatedPosts'
 
-export default function NgheHot({t, dataAcf}) {
+export default function NgheHot({ t, dataAcf }) {
   return (
     <section className='flex-1 lg:ml-[1.5rem]'>
       <div className='flex flex-col items-start mb-[2rem] xmd:px-[0.75rem]'>

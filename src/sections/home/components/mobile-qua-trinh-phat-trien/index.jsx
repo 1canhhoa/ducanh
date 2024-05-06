@@ -50,16 +50,16 @@ const QuaTrinhPhatTrien = ({ isMobile, dataQutrinhPhatTrienDucAnh }) => {
           </div>
           <div className="flex flex-col items-start space-y-[2.25rem]">
             <div dangerouslySetInnerHTML={{ __html: qua_trinh_phat_trien?.title }} />
-            <div className="flex z-[50] justify-between self-stretch items-center space-x-[0.9375rem]">
+            <div className="flex z-[0] justify-between self-stretch items-center space-x-[0.9375rem]">
 
               <Link href={'/phap-nhan'}>
-                <button className='w-max flex h-12 justify-center items-center gap-2.5 xmd:flex-[1_0_0]  px-[1.875rem] py-[0.9375rem] rounded-lg
+                <button className='w-max z-0 flex h-12 justify-center items-center gap-2.5 xmd:flex-[1_0_0]  px-[1.875rem] py-[0.9375rem] rounded-lg
                 text-white text-center text-sm not-italic font-bold leading-[120%] uppercase
                 bg-linear-l5
                 '><div className='w-max'>Về chúng tôi</div></button>
               </Link>
               <Link href={'/lien-he'}>
-                <button className='flex h-12 justify-center items-center flex-[1_0_0] border border-[color:var(--div-blue-6020,rgba(19,43,125,0.20))] px-[1.875rem] py-[0.9375rem] rounded-[0.5rem] border-solid
+                <button className='flex h-12 z-0 justify-center items-center flex-[1_0_0] border border-[color:var(--div-blue-6020,rgba(19,43,125,0.20))] px-[1.875rem] py-[0.9375rem] rounded-[0.5rem] border-solid
                 text-[0.875rem] not-italic font-bold leading-[1.2] uppercase
                 text_gradient  bg-clip-text bg-gradient-to-r from-[#2B46A8] from-[100%] to-[#082072] to-[0%]
                 '>

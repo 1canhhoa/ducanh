@@ -71,7 +71,7 @@ const DichVuDucAnh = ({ t, isMobile, dataDichVuTaiDucAnh }) => {
                   className={`grid overflow-hidden absolute w-[35rem] h-[30rem]  text-slate-600 text-sm
                       ${hover === i && !isMobile
                       ? "dichvu-popup dichvu-popup-active"
-                    : "dichvu-popup  pointer-events-none"
+                      : "dichvu-popup  pointer-events-none"
                     }`}
                 >
                   <div className="overflow-hidden">

@@ -1,4 +1,6 @@
+import React from 'react'
 import BannerHome from '@/sections/home/components/banner-home'
+import './style.css'
 import LichHoiThao from '@/sections/home/components/lich-hoi-thao'
 import QuaTrinhPhatTrien from '@/sections/home/components/qua-trinh-phat-trien'
 import DichVuDucAnh from '@/sections/home/components/dich-vu-duc-anh'
@@ -13,7 +15,6 @@ import MobileDichVuDucAnh from '@/sections/home/components/mobile-dich-vu-duc-an
 import MobileHocSinhTieuBieu from '@/sections/home/components/mobile-hoc-sinh-tieu-bieu'
 import MobileTinTucDuHoc from '@/sections/home/components/mobile-tin-tuc-du-hoc'
 import MobileTruongHocLienKet from '@/sections/home/components/mobile-truong-hoc-lien-ket'
-import './style.css'
 
 const IndexHome = ({
   t,

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import ItemCard from './components/ItemCard'
 import Link from 'next/link'
 
-export default function HopTac({t, dataAcf}) {
+export default function HopTac({ t, dataAcf }) {
   return (
     <section className='w-full text-center mb-[4.56rem] xmd:p-0 xlg:px-[1rem]'>
       <div className='flex flex-col items-start justify-start xmd:space-y-[1.5rem] space-y-[3rem] lg:w-[76.875rem] xmd:pl-[0.75rem] mx-auto'>

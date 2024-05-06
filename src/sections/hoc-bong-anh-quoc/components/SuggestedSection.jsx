@@ -30,12 +30,13 @@ const SuggestedSection = ({
           Tham khảo:
         </span>
         <ul className='ml-[0.44rem]'>
-          {Array.from({length: 3}).map((item, index) => (
+          {suggests?.map((item, index) => (
             <li
-              key={index}
+              key={item.id}
+              target='_blank'
               className='list-disc ml-[2rem] text-[0.875rem] font-medium leading-[150%] text-primary-50 underline'
             >
-              <a href='#'>Học tập tại Bắc Ireland</a>
+              <a href={item.link}>{item.name}</a>
             </li>
           ))}
         </ul>

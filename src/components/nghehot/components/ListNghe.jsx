@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function ListNghe({data, index}) {
+export default function ListNghe({ data, index }) {
   return (
     <>
       <div className='xmd:mb-[1rem] flex items-center space-x-[0.5rem] xmd:pl-[1rem] xmd:w-[21.9375rem] xmd:h-[2.9375rem] xmd:bg-gradient-to-r xmd:from-[#2E6BC6] xmd:to-[#29A4EA] xmd:rounded-t-[0.375rem]'>

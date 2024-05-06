@@ -29,8 +29,6 @@ import utdkingdom from "@/lib/json/utdkingdom.json"
 import marker_demo_search from "@/lib/json/marker_demo_search.json"
 import aus from "@/lib/json/aus.json"
 import Button from './Button'
-import { GeoJSON } from "react-leaflet";
-import Head from 'next/head';
 
 const arrayGeoCountry = [
   { title: 'vietnam', geojs: usa },
@@ -50,14 +48,7 @@ const arrayGeoCountry = [
   {
     title: 'australia', geojs: aus, states: ['AshmoreandCartierIslands', 'AustralianCapitalTerritory', 'CoralSeaIslandsTerritory', 'JervisBayTerritory', 'NewSouthWales', 'NorthernTerritory', 'Queensland'],
     center: [-23.7, 120], zoom: 4
-  },
-  // { title: 'south Korea', geojs: utdkingdom },
-  // { title: 'azerbaijan', geojs: usa },
-  // { title: 'japan', geojs: utdkingdom },
-  // { title: 'chile', geojs: usa },
-  // { title: 'china', geojs: utdkingdom },
-  // { title: 'belarus', geojs: usa },
-  // { title: 'russia', geojs: utdkingdom },
+  }
 ]
 
 
@@ -174,10 +165,6 @@ const Map = ({ isMobile }) => {
   console.log({ positionSearch })
   return (
     <div className='touch-manipulation relative flex flex-row w-screen md:w-[100rem] md:h-[100vh] md:rounded-3xl'>
-      <Head>
-        {/* Thẻ meta để vô hiệu hóa pinch zoom */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-      </Head>
       <div className='map w-full md:h-[100vh] md:rounded-3xl'>
         {map && <DisplayPosition zoomLevel={zoomLevel} map={map} />}
         <MapContainer
@@ -308,7 +295,7 @@ const Map = ({ isMobile }) => {
 
         </MapContainer>
       </div>
-
+      {/* BỘ LỌC */}
       <div className='z-[401] fixed md:-translate-y-1/2 md:top-1/2 md:left-[3rem] xmd:left-0 xmd:right-0 xmd:bottom-[0.75rem] xmd:mx-[0.75rem] flex md:w-[24.3125rem] bg-white flex-col justify-center items-start 
       gap-8 xmd:gap-2 p-6 rounded-2xl'>
         <div className='w-[15.3125rem] text-[color:var(--PRIMARY-60,#132B7D)] text-2xl not-italic font-bold leading-[120%]'>
@@ -483,56 +470,89 @@ const Map = ({ isMobile }) => {
                   Lựa chọn bậc học
                 </div>
                 <div className='flex flex-col items-start gap-[0.5625rem]'>
-                  <div className='flex items-center gap-4'>
+                  {/* <div className='flex items-center gap-4'>
                     <input
                       className='size-[1.5rem] bg-red-600 border-[1px] border-blue-400 '
                       type='checkbox'
                       id='vehicle1'
                       name='vehicle1'
                       value='Bike'
-                      // checked={checked1}
-                      // onChange={(event) => handleCheckboxChange(event, 1)}
                       checked={checkedId === 3}
                       onChange={() => handleCheckboxChange(3)}
                     />
                     <div className='text-[color:var(--greyscaletext-70,#313131)] text-base not-italic font-medium leading-[120%]'>
                       Du học cấp 3
                     </div>
+                  </div> */}
+
+
+
+
+                  <div
+                    className={'flex items-center mb-[0.6rem]'}
+                  >
+                    <input
+                      type='checkbox'
+                      name={'check1'}
+                      id={'check1'}
+                      checked={checkedId === 3}
+                      onChange={() => handleCheckboxChange(3)}
+                      className='size-[1.5rem] accent-primary-40 relative outline-none !border-none
+             after:absolute after:content-[""] after:size-[100%] after:bg-transparent
+            after:rounded-[0.1875rem] after:border-[0.1rem] after:border-primary-40'
+                    />
+                    <label
+                      htmlFor={'check1'}
+                      className='ml-[1rem] text-greyscaletext-70 text-[0.875rem] xmd:text-[0.8125rem] font-medium'
+                    >
+                      Du học cấp 3
+                    </label>
                   </div>
 
-                  <div className='flex items-center gap-4'>
+
+
+                  <div
+                    className={'flex items-center mb-[0.6rem]'}
+                  >
                     <input
-                      className='size-[1.5rem] bg-red-600 border-[1px] border-blue-400 '
                       type='checkbox'
-                      id='vehicle1'
-                      name='vehicle1'
-                      value='Bike'
-                      // checked={checked1}
-                      // onChange={(event) => handleCheckboxChange(event, 1)}
+                      name={'check2'}
+                      id={'check2'}
                       checked={checkedId === 4}
                       onChange={() => handleCheckboxChange(4)}
+                      className='size-[1.5rem] accent-primary-40 relative outline-none !border-none
+             after:absolute after:content-[""] after:size-[100%] after:bg-transparent
+            after:rounded-[0.1875rem] after:border-[0.1rem] after:border-primary-40'
                     />
-                    <div className='text-[color:var(--greyscaletext-70,#313131)] text-base not-italic font-medium leading-[120%]'>
+                    <label
+                      htmlFor={'check2'}
+                      className='ml-[1rem] text-greyscaletext-70 text-[0.875rem] xmd:text-[0.8125rem] font-medium'
+                    >
                       Du học đại học
-                    </div>
+                    </label>
                   </div>
 
-                  <div className='flex items-center gap-4'>
+                  <div
+                    className={'flex items-center mb-[0.6rem]'}
+                  >
                     <input
-                      className='size-[1.5rem] bg-red-600 border-[1px] border-blue-400 '
                       type='checkbox'
-                      id='vehicle1'
-                      name='vehicle1'
-                      value='Bike'
-                      // checked={checked1}
-                      // onChange={(event) => handleCheckboxChange(event, 1)}x
+                      name={'check3'}
+                      id={'check3'}
                       checked={checkedId === 5}
                       onChange={() => handleCheckboxChange(5)}
+                      className='size-[1.5rem] accent-primary-40 relative outline-none !border-none
+             after:absolute after:content-[""] after:size-[100%] after:bg-transparent
+            after:rounded-[0.1875rem] after:border-[0.1rem] after:border-primary-40'
                     />
-                    <div className='text-[color:var(--greyscaletext-70,#313131)] text-base not-italic font-medium leading-[120%]'>
+                    <label
+                      htmlFor={'check3'}
+                      className='ml-[1rem] text-greyscaletext-70 text-[0.875rem] xmd:text-[0.8125rem] font-medium'
+                    >
                       Du học sau đại học
-                    </div>
+                    </label>
                   </div>
+
                 </div>
               </div>
             </div>

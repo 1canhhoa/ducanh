@@ -6,7 +6,7 @@ export default function ChuanBi({text, dataAcf, isMobile}) {
     <main className='w-full'>
       <section className='w-full px-[11.56rem] xmd:px-[0.75rem] pt-[8rem] xmd:pt-[5rem]'>
         <h1 className='title xmd:mb32 relative w-fit xmd:mb-[1.75rem] mb-[2.05rem] xlg:pl-[5.3rem] xmd:pl-0'>
-          {text.chuabiduhoc.title}
+          {/* {text.chuabiduhoc.title} */}
           <div className='size-[0.625rem] bg-secondary-40 absolute bottom-[0.625rem] right-[-1.125rem]'></div>
         </h1>
         <div className='flex xmd:h-[37rem] xmd:w-[21.9375rem] xmd:mb-[1.75rem] mb-[5rem] xlg:h-[30.875rem] h-[28.875rem] pl-[3.69rem] pt-[6.19rem] xmd:pl-[1.25rem] xmd:pt-[2.06rem] xlg:w-full w-[76.875rem] flex-col items-start relative'>
@@ -25,7 +25,7 @@ export default function ChuanBi({text, dataAcf, isMobile}) {
             height={592}
           />
           <span className='w-[24.1875rem] xlg:w-[30rem] z-10 xmd:w-[19.375rem] text-white text-[1.25rem] xmd:text-[1.25rem] xlg:text-[1.5rem] font-bold leading-[1.5]'>
-            {text.chuabiduhoc.title_banner}
+            {/* {text.chuabiduhoc.title_banner} */}
           </span>
         </div>
         <div className='space-y-[2rem]'>

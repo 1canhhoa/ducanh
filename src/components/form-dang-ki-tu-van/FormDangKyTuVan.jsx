@@ -6,6 +6,8 @@ import Title from "../Title"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
 import { useState, useTransition } from 'react'
+import postContactForm7 from "@/lib/postContactForm7"
+import { toast } from "sonner"
 import {
   Form,
   FormControl,
@@ -18,8 +20,10 @@ import {
 import { Input } from "@/components/ui/input"
 import { formDktv } from "@/actions/formDktv"
 
-export default function FormDangKyTuVan({ type, t }) {
+export default function FormDangKyTuVan({ togglePopup, type, t }) {
   const [isPending, startTransition] = useTransition()
+  const large = (type === 'large')
+  const mini = (type === 'mini')
   const formSchema = z.object({
     name: z.string().min(1),
     email: z.string().min(5),
@@ -33,7 +37,7 @@ export default function FormDangKyTuVan({ type, t }) {
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: 'Okhubvn',
-      email: 'Okhubvn@gmail.com',
+      email: 'nhamvanhien31102002@gmail.com',
       phone: '0123456778',
       birthYear: '2021',
       city: 'hanoi',
@@ -41,23 +45,50 @@ export default function FormDangKyTuVan({ type, t }) {
     },
   })
 
-  function onSubmit(values) {
+  async function onSubmit(values) {
     console.log({ values });
-    startTransition(() => {
-      // formDktv(values)
-      //   .then((res) => {
+    try {
 
-      //   })
-      //   .catch((err) => {
-      //     throw new Error(err)
-      //   })
-    })
+      startTransition(async () => {
+        const formData = new FormData()
+        formData.append('name', values.name)
+        formData.append('email', values.email)
+        formData.append('phone', values.phone)
+        formData.append('birthYear', values.birthYear)
+        formData.append('city', values.city)
+        formData.append('content', values.content)
+        formData.append('_wpcf7_unit_tag', '1417')
+
+        const res = await postContactForm7(1417, formData)
+
+        console.log(res)
+        if (res.status === 'mail_sent') {
+          toast("Mail cảm ơn đã được gửi đến bạn", {
+            description: "Sunday, December 03, 2023 at 9:00 AM",
+            action: {
+              label: "Undo",
+              onClick: () => console.log("Undo"),
+            },
+          })
+          if (mini && togglePopup) {
+            togglePopup()
+          }
+        } else {
+          toast({
+            title: "Gửi mail thất bại",
+            description: "_____",
+          })
+        }
+      })
+    } catch (error) {
+      toast.error(lang.recruitment.rq_apply_failure)
+      console.log(error)
+    }
   }
 
 
 
-  const large = (type === 'large')
-  const mini = (type === 'mini')
+
   const className = {
     base: 'text-primary-60 font-feature-settings text-[0.75rem] xmd:leading-[1.2] font-bold uppercase ',
     input_large: `!border-b !border-l-0 !border-r-0 !border-t-0 w-full !rounded-none !pl-0 xmd:border-[#F1F3F7] border-[#6196F6]
@@ -68,7 +99,8 @@ export default function FormDangKyTuVan({ type, t }) {
   }
   return (
 
-    <div className={large ? "md:w-[39.8125rem] xmd:px-[0.75rem]" : " z-[100] flex flex-col items-start gap-3 self-stretch p-5 rounded-[0.625rem] bg-primary-10"}>
+    <div className={large ? "md:w-[39.8125rem] xmd:px-[0.75rem]" :
+      " z-[100] flex flex-col xmd:z-50 items-start gap-3 self-stretch p-5 rounded-[0.625rem] bg-primary-10"}>
       {mini && <div className="
       w-full text_gradient bg-gradient-to-b bg-clip-text
       from-[#082072] from-[100%] to-[#2B46A8] to-[0%]
@@ -92,12 +124,12 @@ export default function FormDangKyTuVan({ type, t }) {
                   <Input
                     {...field}
                     className={type === "large" ? `${className.input_large}` : `${className.input_mini}`}
-                    // disabled={isPending}
+                    disabled={isPending}
                     placeholder="Họ tên của bạn *"
                     type="text"
                   />
                 </FormControl>
-                <FormMessage />
+                {/* <FormMessage /> */}
               </FormItem>
             )}
           />
@@ -116,7 +148,7 @@ export default function FormDangKyTuVan({ type, t }) {
                     <Input
                       {...field}
                       className={type === "large" ? `${className.input_large}` : `${className.input_mini}`}
-
+                      disabled={isPending}
                       placeholder={large ? "your.email@gmail.com" : "Email của bạn *"}
                       type="email"
                     />
@@ -134,6 +166,7 @@ export default function FormDangKyTuVan({ type, t }) {
                   <FormControl>
                     <Input
                       {...field}
+                      disabled={isPending}
                       className={type === "large" ? `${className.input_large}` : `${className.input_mini}`}
                       placeholder="Số điện thoại của bạn *"
                       type="text"
@@ -159,7 +192,7 @@ export default function FormDangKyTuVan({ type, t }) {
                     <Input
                       {...field}
                       className={type === "large" ? `${className.input_large}` : `${className.input_mini}`}
-                      // disabled={isPending}
+                      disabled={isPending}
                       placeholder={type === "large" ? "yyyy" : "Năm Sinh *"}
                       type="text"
                     />
@@ -178,7 +211,7 @@ export default function FormDangKyTuVan({ type, t }) {
                     <Input
                       {...field}
                       className={type === "large" ? `${className.input_large}` : `${className.input_mini}`}
-                      // disabled={isPending}
+                      disabled={isPending}
                       placeholder="Thành phố bạn đang ở *"
                       type="text"
                     />
@@ -204,7 +237,7 @@ export default function FormDangKyTuVan({ type, t }) {
                     className={`!ring-0 ` + (type === "large" ? `!h-[0rem] !min-h-[2.75rem] ${className.input_large}` : `flex h-[8.0625rem] bg-white items-start gap-2.5 self-stretch px-5 py-[1.0625rem] rounded-[0.625rem]
                     placeholder:text-[color:var(--greyscaletext-20,#A9A9A9)] placeholder:text-base placeholder:font-medium placeholder:leading-[normal]
                     `)}
-                    // disabled={isPending}
+                    disabled={isPending}
                     placeholder={type === "large" ? "Nội dung" : "Bạn cần tư vấn về (du học – PTE – định cư – visa – hay vấn đề khác)?"}
                     type="text"
                   />

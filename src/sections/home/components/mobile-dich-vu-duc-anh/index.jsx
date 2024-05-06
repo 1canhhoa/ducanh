@@ -1,9 +1,9 @@
 'use client'
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Title from '@/components/Title'
 
-const DichVuDucAnh = ({t, isMobile, dataDichVuTaiDucAnh}) => {
+const DichVuDucAnh = ({ t, isMobile, dataDichVuTaiDucAnh }) => {
   const [active, setActive] = useState(-1)
   const [currentItem, setCurrentItem] = useState(dataDichVuTaiDucAnh)
   const [accordionOpen, setAccordionOpen] = useState(false)
@@ -33,53 +33,51 @@ const DichVuDucAnh = ({t, isMobile, dataDichVuTaiDucAnh}) => {
       </div>
       <div className='px-[0.75rem] w-full relative space-y-[0.75rem]'>
         {dataDichVuTaiDucAnh?.map((d, i) => (
+          <div
+            key={i}
+            className='flex bg-white flex-col items-start  self-stretch border shadow-[0px_3px_24px_0px_rgba(0,132,255,0.04),0px_0px_32px_0px_rgba(0,119,229,0.04)] pl-6 pr-4 py-4 rounded-2xl border-solid border-[rgba(52,104,205,0.40)]'
+          >
             <div
-              key={i}
-              className='flex bg-white flex-col items-start  self-stretch border shadow-[0px_3px_24px_0px_rgba(0,132,255,0.04),0px_0px_32px_0px_rgba(0,119,229,0.04)] pl-6 pr-4 py-4 rounded-2xl border-solid border-[rgba(52,104,205,0.40)]'
+              onClick={() => handleClick(i)}
+              className={' flex items-center gap-4 self-stretch '}
             >
-              <div
-                onClick={() => handleClick(i)}
-                className={' flex items-center gap-4 self-stretch '}
-              >
-                <div className='flex-[1_0_0] text-[color:var(--PRIMARY-50,var(--Xanh,#2B46A8))] text-lg not-italic font-bold leading-[160%]'>
-                  {d?.title}
-                </div>
-                <div className='flex items-center justify-center px-3 duration-100 ease-linear group-hover:scale-110'>
-                  <svg
-                    className={`duration-200 ease-linear ${
-                      accordionOpen && active === i ? 'rotate-180' : ''
+              <div className='flex-[1_0_0] text-[color:var(--PRIMARY-50,var(--Xanh,#2B46A8))] text-lg not-italic font-bold leading-[160%]'>
+                {d?.title}
+              </div>
+              <div className='flex items-center justify-center px-3 duration-100 ease-linear group-hover:scale-110'>
+                <svg
+                  className={`duration-200 ease-linear ${accordionOpen && active === i ? 'rotate-180' : ''
                     }`}
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='8'
-                    height='6'
-                    viewBox='0 0 8 6'
-                    fill='none'
-                  >
-                    <path
-                      d='M7 4.68677L4 1.68677L1 4.68677'
-                      stroke='#132B7D'
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='8'
+                  height='6'
+                  viewBox='0 0 8 6'
+                  fill='none'
+                >
+                  <path
+                    d='M7 4.68677L4 1.68677L1 4.68677'
+                    stroke='#132B7D'
                     strokeWidth='1.5'
                     strokeLinecap='round'
                     strokeLinejoin='round'
-                    />
-                  </svg>
-                </div>
+                  />
+                </svg>
               </div>
-              <div className={`grid duration-500 overflow-hidden  transition-all ease-in-out text-slate-600 text-sm 
-          ${
-            accordionOpen && active === i
-              ? 'mt-[1rem] grid-rows-[1fr] opacity-100'
-              : 'grid-rows-[0fr] opacity-0'
-          }`}
-              >
-                <div className='overflow-hidden'>
-                  Chúng tôi sẽ tư vấn chọn nước, trường, ngành học dựa trên
-                  nguyện vọng của DHS, đào tạo tiếng Anh, SAT, GMAT, GRE, tổ
-                  chức thi PTE A và đăng ký thi IELTS cho DHS nếu cần; đồng
-                  thời, hướng dẫn DHS chuẩn bị hồ sơ du học: học lực, ngoại
-                  khóa, luận, PS, video, tài chính…& trực tiếp hỗ trợ DHS hoàn
-                  thiện hồ sơ du học.
-                </div>
+            </div>
+            <div className={`grid duration-500 overflow-hidden  transition-all ease-in-out text-slate-600 text-sm 
+          ${accordionOpen && active === i
+                ? 'mt-[1rem] grid-rows-[1fr] opacity-100'
+                : 'grid-rows-[0fr] opacity-0'
+              }`}
+            >
+              <div className='overflow-hidden'>
+                Chúng tôi sẽ tư vấn chọn nước, trường, ngành học dựa trên
+                nguyện vọng của DHS, đào tạo tiếng Anh, SAT, GMAT, GRE, tổ
+                chức thi PTE A và đăng ký thi IELTS cho DHS nếu cần; đồng
+                thời, hướng dẫn DHS chuẩn bị hồ sơ du học: học lực, ngoại
+                khóa, luận, PS, video, tài chính…& trực tiếp hỗ trợ DHS hoàn
+                thiện hồ sơ du học.
+              </div>
             </div>
           </div>
         ))}

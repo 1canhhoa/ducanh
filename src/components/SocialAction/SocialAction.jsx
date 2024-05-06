@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import FormDangKyTuVan from '@/components/form-dang-ki-tu-van/FormDangKyTuVan.jsx'
+import FormDangKyTuVan from '@/components/form-dang-ki-tu-van/FormDangKyTuVan'
 import useClickOutSide from '@/hooks/useClickOutSide'
 const SocialAction = () => {
   const [sideRef, isOutSide] = useClickOutSide(false);
@@ -35,8 +35,9 @@ const SocialAction = () => {
         onClick={togglePopup}
         priority alt="ảnh" src={'/images/homepage/mess4.png'} width={56} height={56} className="w-full h-full cursor-pointer xmd:size-[2.5rem] size-[3.5rem]" />
       {isOpen && <div
-        className={`${isOpen && isPopupMounted ? 'opacity-100  translate-x-[-50%] scale-100' : 'opacity-0 translate-x-[-40%] scale-90'} duration-200 ease-linear translate-y-full  fixed w-[21.875rem] bottom-[37.9rem] right-[-2rem]`}>
-        <FormDangKyTuVan type='mini' />
+        className={`${isOpen && isPopupMounted ? 'opacity-100  md:translate-x-[-50%] scale-100' : 'opacity-0 md:translate-x-[-40%] scale-90'} 
+        xmd:w-full duration-200 ease-linear md:translate-y-full  fixed w-[21.875rem] xmd:right-0 xmd:bottom-0 md:bottom-[37.9rem] md:right-[-2rem]`}>
+        <FormDangKyTuVan type='mini' togglePopup={togglePopup} />
       </div>}
       <Image priority alt="ảnh" src={'/images/homepage/mess.png'} width={56} height={56} className="w-full h-full  xmd:size-[2.5rem] size-[3.5rem]" />
       <Image priority alt="ảnh" src={'/images/homepage/mess3.png'} width={56} height={56} className="w-full h-full xmd:size-[2.5rem] size-[3.5rem]" />

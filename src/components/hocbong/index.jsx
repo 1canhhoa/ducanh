@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Item from './components/Item'
 import RelatedPosts from '@/components/BaiVietLienQuan/RelatedPosts'
 
-export default function HocBong({t, isMobile, dataAcf}) {
+export default function HocBong({ t, isMobile, dataAcf }) {
   return (
     <section className='lg:flex-1 lg:ml-[1.5rem] xmd:w-full'>
       <div className='w-full flex flex-col items-start xmd:px-[0.75rem] xlg:space-y-[1.5rem]'>

@@ -9,7 +9,7 @@ const SlideTinTucNoiBat = ({ dataTintucs, loadingBaiviet }) => {
   return (
     <div>
       {!loadingBaiviet && <TinTucNoiBat data={timBaivietNoibat} />}
-     {loadingBaiviet && <Skeleton className={' w-[30.375rem] h-[37.625rem] rounded-[1rem] bg-greyscaletext-10'} />}
+      {loadingBaiviet && <Skeleton className={' w-[30.375rem] h-[37.625rem] rounded-[1rem] bg-greyscaletext-10'} />}
     </div>
 
   )

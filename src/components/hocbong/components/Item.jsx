@@ -2,9 +2,9 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import {useEffect, useRef, useState} from 'react'
+import { useEffect, useRef, useState } from 'react'
 
-export default function Item({text, data, index}) {
+export default function Item({ text, data, index }) {
   const [toggle, setToggle] = useState(false)
   const [height, setHeight] = useState(0)
   const [isActive, setIsActive] = useState(0)
@@ -19,16 +19,14 @@ export default function Item({text, data, index}) {
         onClick={() => {
           setToggle(!toggle)
         }}
-        className={`${
-          toggle
-            ? 'bg-gradient-to-r from-[#2E6BC6] to-[#29A4EA]'
-            : 'rounded-b-[0.5rem] bg-primary-5'
-        } w-full flex items-center justify-between py-[0.75rem] pl-[1rem] pr-[0.375rem] rounded-t-[0.5rem] transition-all duration-500`}
+        className={`${toggle
+          ? 'bg-gradient-to-r from-[#2E6BC6] to-[#29A4EA]'
+          : 'rounded-b-[0.5rem] bg-primary-5'
+          } w-full flex items-center justify-between py-[0.75rem] pl-[1rem] pr-[0.375rem] rounded-t-[0.5rem] transition-all duration-500`}
       >
         <span
-          className={`${
-            toggle ? 'text-white' : 'text-primary-40'
-          } text-[1rem] font-bold leading-[1.2] transition-all duration-700`}
+          className={`${toggle ? 'text-white' : 'text-primary-40'
+            } text-[1rem] font-bold leading-[1.2] transition-all duration-700`}
         >
           {index + 1}
           {'. '} {data?.title_hoc_bong}
@@ -50,10 +48,9 @@ export default function Item({text, data, index}) {
         )}
       </button>
       <div
-        style={{height: `${toggle ? `${height}px` : 0}`}}
-        className={`${
-          toggle ? 'p-[1rem]' : ''
-        } overflow-hidden w-full rounded-b-[0.5rem] bg-white flex flex-col transition-all duration-700`}
+        style={{ height: `${toggle ? `${height}px` : 0}` }}
+        className={`${toggle ? 'p-[1rem]' : ''
+          } overflow-hidden w-full rounded-b-[0.5rem] bg-white flex flex-col transition-all duration-700`}
       >
         <div
           ref={myElementRef}
@@ -67,11 +64,10 @@ export default function Item({text, data, index}) {
                   onClick={() => {
                     setIsActive(i)
                   }}
-                  className={`${
-                    isActive === i
-                      ? 'bg-primary-50 text-white'
-                      : 'text-primary-50 bg-primary-5'
-                  } flex-1 font-bold text-center text-[1rem] py-[0.75rem] rounded-[0.5rem]`}
+                  className={`${isActive === i
+                    ? 'bg-primary-50 text-white'
+                    : 'text-primary-50 bg-primary-5'
+                    } flex-1 font-bold text-center text-[1rem] py-[0.75rem] rounded-[0.5rem]`}
                 >
                   {e.title_danh_muc}
                 </button>
@@ -105,7 +101,7 @@ export default function Item({text, data, index}) {
                 </div>
                 <div
                   className='tulamhoso pl-[1rem]'
-                  dangerouslySetInnerHTML={{__html: e?.description}}
+                  dangerouslySetInnerHTML={{ __html: e?.description }}
                 />
               </div>
             </>

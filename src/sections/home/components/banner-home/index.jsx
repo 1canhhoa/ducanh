@@ -9,7 +9,7 @@ const BannerHome = ({ dataBanner }) => {
       <AsidePrimary />
 
       {/* SWIPER BANNER WEB */}
-      <SlideBanner dataBanner={dataBanner}/>
+      <SlideBanner dataBanner={dataBanner} />
     </div >
   )
 }

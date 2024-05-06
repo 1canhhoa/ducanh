@@ -1,0 +1,23 @@
+.auk-content>*:nth-child(even) {
+    margin-top: 1rem;
+}
+
+.auk-form-content p,
+.auk-form-content ol,
+.auk-form-content ul {
+    margin-bottom: 0.25rem;
+}
+
+.auk-form-content ol {
+    list-style: decimal;
+}
+
+.auk-form-content ul {
+    list-style: disc;
+}
+
+.auk-form-content ol li,
+.auk-form-content ul li {
+    margin-left: 1.75rem;
+    text-align: left;
+}

@@ -27,7 +27,6 @@ const HocSinhTieuBieu = ({ isMobile, dataHocSinhTieuBieu }) => {
 
   const handleNextSlide = () => {
     swiperRef.current?.slideNext()
-
   }
   const handlePrevSlide = () => {
     swiperRef.current?.slidePrev()

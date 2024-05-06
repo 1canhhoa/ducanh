@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function Future({text}) {
+export default function Future({ text }) {
   return (
     <section
       id='lien_he'

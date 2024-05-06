@@ -2,7 +2,7 @@ import { getDictionary } from '../dictionaries'
 import IndexHome from '@/sections/home/IndexHome'
 import getData from '@/lib/getData'
 export default async function HomePage({ searchParams, params }) {
-  console.log({ searchParams });
+  console.log({ searchParams })
   const t = await getDictionary(params.lang)
   const { categories } = await getData(`/wp-json/okhub/v1/first-new-on-home`)
   const posts = await getData(`/wp-json/okhub/v1/posts-by-category/54`)

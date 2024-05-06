@@ -21,17 +21,14 @@ const NavDown = ({ data_header }) => {
     localStorage.setItem('active_navdown_menu', JSON.stringify(`/${url}`));
     setActiveStorage(`/${url}`)
   };
-
-
-
-
-
-
-  console.log({ pathName, activeStorage })
   return (
     <ul className='flex items-center w-full justify-between'>
       {data_header?.nav_down?.map((d, i) => (
-        <HoverCard openDelay={0} closeDelay={0} key={i}>
+        <HoverCard
+          openDelay={0}
+          closeDelay={0}
+          key={i}
+        >
           <HoverCardTrigger asChild>
             {d?.children?.length > 0 ? (
               <li key={i} className={(activeStorage.includes(`/${d?.url}`) ? "text-[#BE3136]" : "text-primary-60") + " button1 hover:text-[#BE3136] duration-200 ease-linear uppercase cursor-pointer"}>
