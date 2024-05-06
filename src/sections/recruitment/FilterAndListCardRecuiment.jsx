@@ -16,6 +16,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import Pagination from '@/components/pagination/Pagination'
 const FilterAndListCardRecuiment = ({ t, isMobile }) => {
   const dataDropDown = ['UI/UX', 'ccount', 'Kế toán', 'Developer', 'Hành chính', 'Thiết Kế', 'Thực Tập Sinh', 'Thiết Kế', 'Thực Tập Sinh']
   return (
@@ -64,6 +65,7 @@ const FilterAndListCardRecuiment = ({ t, isMobile }) => {
         <CardRecuiment t={t} isMobile={isMobile} />
         <CardRecuiment t={t} isMobile={isMobile} />
       </div>
+      <Pagination />
     </div>
 
   )

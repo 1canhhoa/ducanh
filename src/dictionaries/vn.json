@@ -1,8 +1,19 @@
 {
   "hello": "xin chao okhub",
+  "view_more": "Xem thêm",
   "related_posts": "Bài viết liên quan",
+  "find_school_placeholder": "Tìm tên trường...",
+  "find_school_placeholder_bonus": "VD: Harvard, Cambridge,...",
+  "position": "Vị trí",
+  "home_page": {
+    "lich_hoi_thao": "Lịch hội thảo - Triển lãm du học",
+    "qua_trinh_phat_trien": "Quá trình phát triển của Đức Anh",
+    "dich_vu_duc_anh": "Dịch vụ tại Đức Anh",
+    "tin_tuc_du_hoc": "Tin tức du học",
+    "hoc_sinh_tieu_bieu": "Các học sinh tiêu biểu"
+  },
   "contact": {
-    "title": "Kết nối với chúng tôi",
+    "title": "Bạn cần thông  tin du học?",
     "firstAndLastName": "Họ và tên*",
     "email": "Email",
     "phone": "phone",
@@ -10,13 +21,13 @@
     "yourCity": "Thành phố bạn đang ở",
     "whatYouNeed": "Thông tin bạn cần tư vấn*",
     "sendNow": "Gửi ngay",
-    "officesAndCentersLanguage": "Công ty Tư vấn Du học và Dịch thuật Đức Anh",
+    "officesAndCentersLanguage": "Công ty TNHH Tư vấn Du học và Dịch thuật Đức Anh",
     "office": "Thông tin văn phòng",
     "centersLanguage": "Trung tâm ngoại ngữ"
   },
   "student": {
     "student": "Học viên",
-    "goAlong": "Đức Anh song hành cùng",
+    "goAlong": " song hành cùng",
     "outstandingStudents": "Các học sinh tiêu biểu",
     "viewDetail": "Xem chi tiết",
     "allStudent": "Tất cả học sinh",
@@ -35,12 +46,14 @@
     "time": "Thời gian",
     "applyNow": "Ứng tuyển ngay",
     "applyNowMobile": "Ứng tuyển",
-    "apply": "Ứng tuyển"
+    "apply": "Ứng tuyển",
+    "rq_apply_success": "Đã gửi yêu cầu ứng tuyển",
+    "rq_apply_failure": "Gửi yêu cầu ứng tuyển không thành công"
   },
   "about_us": {
     "legal": "Pháp nhân",
     "ceo": "Ban giám đốc",
-    "business": "4 lĩnh vực kinh doanh chính",
+    "business": "3 lĩnh vực kinh doanh chính",
     "credo": "Tôn chỉ",
     "achievement": "Thành tựu công ty",
     "office": "Văn phòng",
@@ -60,20 +73,14 @@
     "h2_reason_mb": "Vì sao du học tại Anh Quốc",
     "h2_education_system": "Hệ thống giáo dục đất nước",
     "h2_secondary_schools": "Các trường phổ thông tại Anh",
-    "h2_secondary_schools_mb": "Các trường phổ thông tại Anh Quốc",
     "h2_training_institutes": "Các viện đào tạo nghề tại Anh",
-
     "h2_related_posts": "Bài viết liên quan",
     "h2_scholarship_en": "Học bổng du học tại Anh",
-    "h2_job_settled": "Việc làm-Định cư tại Anh"
+    "h2_job_settled": "Việc làm-Định cư tại Anh",
+    "h2_university_schools": "Các trường Đại học tại Anh",
+    "h2_register_to_study": "Đăng ký xin học tại Anh",
+    "h2_visa_abroad_study": "Visa du học"
   },
-    "home_page": {
-      "lich_hoi_thao": "Lịch hội thảo - Triển lãm du học",
-      "qua_trinh_phat_trien": "Quá trình phát triển của Đức Anh",
-      "dich_vu_duc_anh": "Dịch vụ tại Đức Anh",
-      "tin_tuc_du_hoc": "Tin tức du học",
-      "hoc_sinh_tieu_bieu": "Các học sinh tiêu biểu"
-    },
   "information": {
     "title_1": "Lý do chọn Đức Anh",
     "text_title_1": {
@@ -212,128 +219,6 @@
       }
     }
   },
-  "lydochonducanh": {
-    "title": "Lý do chọn Đức Anh",
-    "label_yourself": {
-      "title": "TỰ  LÀM HỒ SƠ DU HỌC?",
-      "description1": "Có thể bạn từng có ý định tự làm hồ sơ du học, và chúng tôi hoàn toàn đồng ý rằng, việc tự làm hồ sơ khi bạn có đủ kiến thức, kinh nghiệm, hiểu biết cần… là một trải nghiệm thú vị.",
-      "description2": "Tuy nhiên, nếu bạn chọn tự làm hồ sơ khi có một trong các suy nghĩ dưới đây thì chúng tôi đề nghị các bạn xem xét lại:",
-      "note": "Tóm lại, thì bạn nên dùng dịch vụ tư vấn du học của các công ty có kinh nghiệm, có kiến thức… Họ sẽ đồng hành cùng bạn, để đảm bảo phần trăm thành công cao trong việc xin học, xin học bổng, visa du học và các việc liên quan khác."
-    },
-    "label_DAself": {
-      "title": "LÝ DO CHỌN CÔNG TY ĐỨC ANH ĐỂ LÀM HỒ SƠ DU HỌC",
-      "description1": "Hơn 23 năm qua, công ty Đức Anh đã giúp hàng chục ngàn học sinh, sinh viên xin học, xin học bổng và du học thành công ở 16 nước chúng tôi hợp tác cùng.",
-      "description2": "Khảo sát khách hàng của chúng tôi từ năm 2000 đến nay đã chỉ ra các lý do cơ bản mà du học sinh chọn công ty Đức Anh, thay vì công ty tư vấn du học khác, là:",
-      "note": "Thực tế chỉ ra rằng bằng kiến thức chuyên môn và kinh nghiệm của mình, Đức Anh hoàn toàn có thể giúp các bạn tránh được các rủi ro và toại nguyện ước mơ du học. Các bạn có thể tin tưởng ở chúng tôi!"
-    },
-    "label_banner": "Bằng kiến thức chuyên môn và kinh nghiệm của mình, Đức Anh hoàn toàn có thể giúp các bạn tránh được các rủi ro và toại nguyện ước mơ du học. Các bạn có thể tin tưởng ở chúng tôi!"
-  },
-  "dichvutaiducanh": "Dịch vụ tại Đức Anh",
-  "chuabiduhoc": {
-    "title": "Chuẩn bị cho du học",
-    "title_banner": "Phụ huynh và học sinh quan tâm đến du học cần chuẩn bị tốt ít nhất 8 yếu tố."
-  },
-  "hotro": {
-    "title": "Hỗ trợ du học sinh",
-    "description": "Câu hỏi chúng tôi thường xuyên gặp là: ",
-    "question": [
-      "Sau khi con tôi nhập học rồi thì thế nào?",
-      "Ai giúp đỡ khi cần?",
-      "Gia đình  muốn sang thăm con thì công ty có hỗ trợ không?"
-    ],
-    "title_banner": "Khi chọn công ty Đức Anh là đại diện, chúng tôi sẽ ở bên các bạn, chỉ cần các bạn hợp tác làm theo các chỉ dẫn của chúng tôi, không cần phải lo lắng.",
-    "huongdan": {
-      "title": "Hướng dẫn trước khi lên đường",
-      "truockhibay": {
-        "title": "Trước khi bay",
-        "description": "Giấy tờ mang theo, các loại thẻ, tiền, đồ dùng học tập, tư trang, đồ giải trí- lưu niệm."
-      },
-      "bay": {
-        "title": "Khi bay",
-        "description": "Giấy tờ mang theo, các loại thẻ, tiền, đồ dùng học tập, tư trang, đồ giải trí- lưu niệm."
-      },
-      "dennoi": {
-        "title": "Đến nơi",
-        "description": "Giấy tờ mang theo, các loại thẻ, tiền, đồ dùng học tập, tư trang, đồ giải trí- lưu niệm."
-      }
-    }
-  },
-  "quydoiGPA": {
-    "title": "Quy đổi điểm GPA",
-    "description": [
-      "Thang điểm GPA (Grade Point Average) là một phần quan trọng trong hệ thống giáo dục của nhiều quốc gia. Thang điểm này đánh giá năng lực học tập của sinh viên thông qua việc tính trung bình cộng các điểm số đã đạt được trong các môn học.",
-      "Có nhiều loại thang điểm GPA khác nhau, tùy thuộc vào quy định của từng trường, từng quốc gia hoặc khu vực. Đặc biệt với những bạn đang có ý định đi du học hoặc săn học bổng, thang điểm GPA là một nhân tố rất quan trọng giúp bạn nhập học hay giành được học bổng tại các trường mình muốn. Hãy cùng tham khảo bài viết dưới đây để giải đáp những câu hỏi, thắc mắc của các bạn về thang điểm GPA nhé."
-    ],
-    "letter_and_number": "Hệ chữ và hệ số điểm",
-    "popular_GPA_scores": {
-      "title": "3 thang điểm GPA phổ biến hiện nay",
-      "description": "Ngày nay, hầu hết các quốc gia trên thế giới đều sử dụng thang điểm 4 để tính điểm GPA. Tuy nhiên, mỗi quốc gia lại có quy định khác nhau về cách sử dụng thang điểm. Tại Việt Nam hiện nay, tính điểm GPA dựa vào 3 thang điểm sau: Thang điểm 10, thang điểm chữ và thang điểm 4. Cùng xem bài viết dưới đây để hiểu rõ hơn về các thang điểm này nhé."
-    },
-    "gpa_in_Vietnam": "Cách quy đổi thang điểm GPA tại Việt Nam",
-    "gpa_Vietnam_to_international": {
-      "title": "Cách quy đổi thang điểm GPA Việt Nam sang quốc tế",
-      "description": "Những bạn muốn chuyển đổi thang điểm 10 sang GPA để du học hoặc xin học bổng tại một số quốc gia trên thế giới thì có thể tham khảo bảng dưới đây. Đa số các trường Đại học tại Việt Nam hiện nay cũng sử dụng thang điểm quy đổi này."
-    },
-    "scholarships": {
-      "title": "Điều kiện điểm GPA nhận học bổng",
-      "description": "Để săn được học bổng tại mỗi quốc gia, mỗi trường học, mỗi chương trình học,… bạn cần phải đáp ứng nhiều yêu cầu khác nhau về điểm GPA. Có rất nhiều chính sách học bổng được đưa ra bởi các nước, tuy nhiên học bổng thường sẽ chia theo các mức sau:",
-      "note": [
-        "Ngoài ra, có một lưu ý nhỏ là điều kiện để nhận được học bổng còn phù thuộc vào một vài yếu tố khác như chứng chỉ ngoại ngữ quốc tế (Hầu như là Tiếng Anh), các loại giấy tờ, bằng cấp quan trọng hay chứng nhận tham gia các hoạt động ngoại khóa, các tổ chức tình nguyện quốc tế,…",
-        "Nếu bạn còn thắc mắc cần giải đáp về các điều kiện điểm GPA để đi du học các nước trên thế giới, đừng ngần ngại hãy liên hệ ngay với Đức Anh EduConnect để được giải đáp chi tiết, chính xác và nhanh chóng nhất nhé."
-      ]
-    },
-    "submitted_through_DucAnh": "Chi tiết về thủ tục xin học, xin học bổng, xin visa du học và các vấn đề liên quan, vui lòng liên hệ:"
-  },
-  "selectIndustry_and_program": {
-    "title": "Chọn ngành và chương trình học",
-    "reference": "HÃY THAM KHẢO:",
-    "fieldOfStudy": "Việc chọn ngành học của bạn phụ thuộc nhiều vào các yếu tố:",
-    "curriculum": "Việc lựa chọn chương trình học của bạn sẽ lệ thuộc nhiều vào các yếu tố:"
-  },
-  "lienHe": {
-    "title": "MỞ RA CÁNH CỬA",
-    "future": "TƯƠNG LAI",
-    "box": {
-      "title": "Bạn muốn tư vấn?",
-      "description": "Kết nối với Đức Anh để được tư vấn giải đáp. Chúng tôi sẽ đồng hành cùng bạn từ khi có mong muốn du học đến khi sau tốt nghiệp, tìm việc và định cư tại nước sở tại.",
-      "label": "Liên hệ tư vấn"
-    }
-  },
-  "cost": {
-    "title": "Chi phí du học",
-    "banner_title": "Khi du học hầu như không có gì là miễn phí và gần 100% các trường hợp là bạn phải trả trước khi được phục vụ. Cuộc sống ở nước ngoài khá là đắt đỏ so với Việt Nam, vì vậy, bạn cần tìm hiểu kỹ để lên kế hoạch tài chính cho du học một cách phù hợp nhất. Dưới đây là danh sách các loại chi phí chính mà bạn cần biết.",
-    "cost_Of_studyingAbroad": "Các loại chi phí liên quan đến du học",
-    "cost_estimation": "Dự toán chi phí du học ở một số nước:",
-    "note": [
-      "* Đơn vị tiền tệ: theo tiền tệ của nước đó, riêng Malaysia và Nhật theo USD.",
-      "* Đối với các phí cần nộp sang trường và đến các cơ quan hữu quan, học sinh sẽ nộp trực tiếp qua ngân hàng dưới sự hướng dẫn của Công ty Đức Anh."
-    ],
-    "chitieu": {
-      "title": "Cách chi tiêu",
-      "title_banner": "TIÊU ĐÚNG TIỀN VÀO ĐÚNG VIỆC",
-      "description": "Quản lý quỹ tiền phụ huynh chu cấp sao cho đến ngày cuối của tháng bạn vẫn đủ tiền, thậm chí dư ra một chút…là cả một nghệ thuật tính toán… Chắc chắn là bạn cần lên kế hoạch để khỏi “phá sản”, ảnh hưởng đến học tập và dạ dày của bạn. Các bạn nên chia nhỏ tiền thành các khoản được phép chi tiêu và tuân thủ nguyên tắc: Tiêu đúng tiền vào đúng việc.",
-      "khoanchi": [
-        {
-          "title": "Khoản chi tiêu bắt buộc",
-          "description": "Khoản chi tiêu bắt buộc: tiền ăn, thuê nhà, đi lại, bảo hiểm y tế, học phí, sách vở…"
-        },
-        {
-          "title": "Khoản chi tiêu lựa chọn",
-          "description": "Ăn tiệm, mua quần áo hay đồ dùng thêm, xem phim, thể thao…"
-        },
-        {
-          "title": "Quỹ rủi ro",
-          "description": "Đề phòng trót chi tiêu vào việc gì, hoặc bố mẹ gửi chậm, ốm đau…"
-        }
-      ],
-      "note": "Sinh viên cũng nên để ý tìm kiếm các giải pháp mua rẻ những đồ chất lượng tốt (sale/ mua qua các trang web giá rẻ…), sử dụng đồ tiết kiệm và có phương pháp, sử dụng các chính sách discount áp dụng cho sinh viên quốc tế…"
-    }
-  },
-  "job": {
-    "title": "Việc làm- Định cư tại Anh",
-    "description": "Với đa số các nước, sinh viên được phép ở lại làm việc nếu bạn xin được việc làm tại nước họ, hoặc định cư nếu bạn đủ tiêu chuẩn. Dưới đây là một số thông tin liên quan đến việc làm- định cư ở một số nước.",
-    "label": "Trong trường hợp bạn có nguyện vọng, và bạn là sinh viên nghiêm túc, công ty Đức Anh có thể tư vấn cho bạn về vấn đề việc làm hoặc định cư tại nước ngoài. Các sinh viên được khuyến khích ở lại nước ngoài làm việc một vài năm sau khi tốt nghiệp để có thêm kinh nghiệm thực tế và khi trở về Việt Nam phục vụ đất nước, kiến thức các bạn có được sẽ toàn diện và thực tế hơn, sự nghiệp của các bạn cũng sẽ thuận lợi hơn."
-  },
   "nghe_hot": {
     "title": "Nghề HOT",
     "banner": {
@@ -369,10 +254,64 @@
       "text1": "Các thí sinh cần ",
       "text2": "liên hệ",
       "text3": "với chúng tôi sớm nhất để kịp làm hồ sơ và xin học bổng du học cho các kỳ nhập học 2023-2024."
+    },
+    "search": "Tìm học bổng",
+    "xemthem": {
+      "title": "Xem chi tiết:",
+      "label": "Tại Đây"
     }
   },
   "study_abroad_guide": {
     "main_content": "Nội dung chính",
     "h2_related_posts": "Bài viết liên quan"
+  },
+  "map": {
+    "find_school": "Tìm trường cùng<br>Đức Anh Educonnect",
+    "find_school_mobile": "Tìm trường cùng Đức Anh Educonnect",
+    "select_country": "Chọn quốc gia",
+    "select_state_province": "Chọn bang/tỉnh",
+    "level_select_title": "Lựa chọn bậc học",
+    "search": "Tìm kiếm",
+    "find_school_text": "Tìm tên trường"
+  },
+  "form": {
+    "fullname": {
+      "label": "Họ và Tên",
+      "placeholder": "Họ và tên của bạn",
+      "message": "Họ và tên bao gồm tối thiểu 4 ký tự"
+    },
+    "gender": {
+      "label": "Giới tính",
+      "placeholder": "Giới tính của bạn",
+      "message": "Giới tính không được để trống",
+      "male": "Nam",
+      "female": "Nữ"
+    },
+    "yearOfBirth": {
+      "label": "Năm sinh",
+      "placeholder": "Năm sinh của bạn",
+      "message": "Năm sinh phải bao gồm 4 chữ số"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Email của bạn",
+      "message": "Email không được để trống",
+      "message2": "Email không hợp lệ"
+    },
+    "address": {
+      "label": "Nơi ở hiện tại",
+      "placeholder": "Nơi ở hiện tại của bạn",
+      "message": "Nơi ở hiện tại không được để trống"
+    },
+    "workplace_address": {
+      "label": "Nơi làm việc hiện tại",
+      "placeholder": "Nơi làm việc hiện tại của bạn",
+      "message": "Nơi làm việc hiện tại không được để trống"
+    },
+    "recruitment_position": {
+      "label": "Vị trí ứng tuyển",
+      "placeholder": "Vị trí ứng tuyển của bạn",
+      "message": "Vị trí ứng tuyển không được để trống"
+    }
   }
 }

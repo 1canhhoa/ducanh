@@ -1,4 +1,6 @@
+import React from 'react'
 import BannerHome from '@/sections/home/components/banner-home'
+import './style.css'
 import LichHoiThao from '@/sections/home/components/lich-hoi-thao'
 import QuaTrinhPhatTrien from '@/sections/home/components/qua-trinh-phat-trien'
 import DichVuDucAnh from '@/sections/home/components/dich-vu-duc-anh'
@@ -13,7 +15,6 @@ import MobileDichVuDucAnh from '@/sections/home/components/mobile-dich-vu-duc-an
 import MobileHocSinhTieuBieu from '@/sections/home/components/mobile-hoc-sinh-tieu-bieu'
 import MobileTinTucDuHoc from '@/sections/home/components/mobile-tin-tuc-du-hoc'
 import MobileTruongHocLienKet from '@/sections/home/components/mobile-truong-hoc-lien-ket'
-import './style.css'
 
 const IndexHome = ({
   t,
@@ -27,15 +28,14 @@ const IndexHome = ({
   isMobile,
   dataTintucs,
   dataBanner,
-  dataTruongLk
+  dataTruongLk,
+  dataCountryMobi
 }) => {
+
   return (
     <main className='relative w-full flex-col flex justify-center items-start xmd:bg-elevation-blue'>
-
-
-
       {isMobile && <section className='mx-auto w-full flex justify-center items-center md:mt-[10rem] mt-[3.65rem]'>
-        <MobileBannerHome dataBanner={dataBanner} isMobile={isMobile} />
+        <MobileBannerHome dataCountryMobi={dataCountryMobi} dataBanner={dataBanner} isMobile={isMobile} />
       </section>}
       {isMobile && <section className='mx-auto w-full flex justify-center items-center'>
         <MobileLichHoiThao
@@ -71,7 +71,7 @@ const IndexHome = ({
           t={t.home_page}
           isMobile={isMobile} />
       </section>}
-      {isMobile &&<section className='w-full'>
+      {isMobile && <section className='w-full'>
         <MobileTruongHocLienKet dataTruongLk={dataTruongLk} t={t.home_page} />
       </section>}
 
@@ -81,17 +81,17 @@ const IndexHome = ({
 
 
 
-      {!isMobile && <section className='mx-auto w-full flex justify-center items-center mt-[7.8rem]'>
+      {!isMobile && <section className='mx-auto w-full flex justify-center items-center mt-[8rem]'>
         <BannerHome dataBanner={dataBanner} isMobile={isMobile} />
       </section>}
       {!isMobile && <section className='mx-auto w-full flex justify-center items-center'>
         <LichHoiThao
           t={t.home_page}
-          isMobile={isMobile} 
+          isMobile={isMobile}
           dataLocations={dataLocations}
           dataCountries={dataCountries}
           dataLichHoithaos={dataLichHoithaos}
-          />
+        />
       </section>}
       {!isMobile && <section className='w-full'>
         <QuaTrinhPhatTrien
@@ -99,9 +99,9 @@ const IndexHome = ({
           isMobile={isMobile} />
       </section>}
       {!isMobile && <section className='w-full'>
-        <DichVuDucAnh 
-          t={t.home_page} 
-          dataDichVuTaiDucAnh={dataDichVuTaiDucAnh} 
+        <DichVuDucAnh
+          t={t.home_page}
+          dataDichVuTaiDucAnh={dataDichVuTaiDucAnh}
           isMobile={isMobile} />
       </section>}
       {!isMobile && <section className='w-full'>
@@ -110,6 +110,7 @@ const IndexHome = ({
           categories={categories}
           dataTintucs={dataTintucs} />
       </section>}
+
       {!isMobile && <section className='w-fit'>
         <HocSinhTieuBieu
           dataHocSinhTieuBieu={dataHocSinhTieuBieu}

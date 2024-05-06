@@ -29,7 +29,7 @@ const section = [
     href: 'chi_phi',
   },
 ]
-import {useRouter, usePathname, useSearchParams} from 'next/navigation'
+import {usePathname} from 'next/navigation'
 
 export default function NavDirectional2() {
   const pathname = usePathname()

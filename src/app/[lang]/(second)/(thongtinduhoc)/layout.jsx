@@ -1,6 +1,6 @@
 import NavDirectional from '@/layout/navDirectional/NavDirectional'
 
-export default function SecondLayout({children}) {
+export default function SecondLayout({ children }) {
   return (
     <>
       <NavDirectional />

@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react'
 import Image from 'next/image'
-
+import Link from 'next/link'
 const Section = ({ num, text, mobi }) => {
   return <div className={`${mobi ? "!bg-transparent" : ""} group relative bg-white flex items-center pb-5 justify-center shrink-0 
   w-[8.75rem] h-[8.8125rem] xmd:rounded-3xl
@@ -50,18 +50,22 @@ const QuaTrinhPhatTrien = ({ isMobile, dataQutrinhPhatTrienDucAnh }) => {
           </div>
           <div className="flex flex-col items-start space-y-[2.25rem]">
             <div dangerouslySetInnerHTML={{ __html: qua_trinh_phat_trien?.title }} />
-            <div className="flex z-[50] justify-between self-stretch items-center space-x-[0.9375rem]">
+            <div className="flex z-[0] justify-between self-stretch items-center space-x-[0.9375rem]">
 
-              <button className='w-max flex h-12 justify-center items-center gap-2.5 xmd:flex-[1_0_0]  px-[1.875rem] py-[0.9375rem] rounded-lg
-              text-white text-center text-sm not-italic font-bold leading-[120%] uppercase
-              bg-linear-l5
-              '><div className='w-max'>Về chúng tôi</div></button>
-              <button className='flex h-12 justify-center items-center flex-[1_0_0] border border-[color:var(--div-blue-6020,rgba(19,43,125,0.20))] px-[1.875rem] py-[0.9375rem] rounded-[0.5rem] border-solid
-              text-[0.875rem] not-italic font-bold leading-[1.2] uppercase
-              text_gradient  bg-clip-text bg-gradient-to-r from-[#2B46A8] from-[100%] to-[#082072] to-[0%]
-              '>
-                <div className='w-max'>Liên hệ tư vấn</div>
-              </button>
+              <Link href={'/phap-nhan'}>
+                <button className='w-max z-0 flex h-12 justify-center items-center gap-2.5 xmd:flex-[1_0_0]  px-[1.875rem] py-[0.9375rem] rounded-lg
+                text-white text-center text-sm not-italic font-bold leading-[120%] uppercase
+                bg-linear-l5
+                '><div className='w-max'>Về chúng tôi</div></button>
+              </Link>
+              <Link href={'/lien-he'}>
+                <button className='flex h-12 z-0 justify-center items-center flex-[1_0_0] border border-[color:var(--div-blue-6020,rgba(19,43,125,0.20))] px-[1.875rem] py-[0.9375rem] rounded-[0.5rem] border-solid
+                text-[0.875rem] not-italic font-bold leading-[1.2] uppercase
+                text_gradient  bg-clip-text bg-gradient-to-r from-[#2B46A8] from-[100%] to-[#082072] to-[0%]
+                '>
+                  <div className='w-max'>Liên hệ tư vấn</div>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -133,12 +137,12 @@ const QuaTrinhPhatTrien = ({ isMobile, dataQutrinhPhatTrienDucAnh }) => {
         <div className='flex z-[12] space-x-[1.7rem] items-start absolute top-[9.4rem] left-1/2 -translate-x-1/2'>
           <div className="flex flex-col space-y-[1.59rem]">
             {thanh_tuu_dat_duoc?.sau_o_thanh_tuu?.slice(0, 3).map((d, i) => (
-              <Section num={d?.num} mobi={i === 0 || i === 2 ? true : false} text={d?.text} />
+              <Section key={i} num={d?.num} mobi={i === 0 || i === 2 ? true : false} text={d?.text} />
             ))}
           </div>
           <div className=" flex flex-col space-y-[1.6rem] mt-[0.35rem]">
             {thanh_tuu_dat_duoc?.sau_o_thanh_tuu?.slice(-3).map((d, i) => (
-              <Section num={d?.num} mobi={i === 1 ? true : false} text={d?.text} />
+              <Section key={i} num={d?.num} mobi={i === 1 ? true : false} text={d?.text} />
             ))}
           </div>
         </div>

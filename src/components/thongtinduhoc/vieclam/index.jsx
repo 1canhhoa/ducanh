@@ -14,7 +14,7 @@ export default function Vieclam({text, dataAcf}) {
         {/* content / list */}
         <div className='w-full xmd:w-[21.9375rem] flex flex-col space-y-[1.5rem] items-start'>
           {dataAcf?.countries?.map((e, index) => (
-            <div className='flex xmd:flex-col w-full lg:space-x-[2.5rem]'>
+            <div key={index} className='flex xmd:flex-col w-full lg:space-x-[2.5rem]'>
               <span className='w-[16.3125rem] sub24 font-bold text-primary-50'>
                 {index + 1}.{e?.title}
               </span>

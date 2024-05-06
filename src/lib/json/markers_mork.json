@@ -1,0 +1,3729 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.1295164330653,
+          48.767410969723784
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.60381555322942,
+          48.75755102278538
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.53120236254159,
+          48.262083876389255
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.77488012700582,
+          47.75171140284212
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.81975368229519,
+          47.26674340570355
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.36231385689265,
+          48.59952855662101
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.7191262310796,
+          48.72795956738523
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.74686586647852,
+          48.668724383098464
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.61877340499285,
+          48.16240881729942
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.76617585449642,
+          48.23220173038334
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.21500671567804,
+          48.44341776329367
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.94938843463974,
+          48.56659485018426
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.84091745636817,
+          48.38838112523129
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.33229624369653,
+          48.1598795104874
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 3,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.25600306179567,
+          48.57381238826778
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.80918704635961,
+          48.47571030279488
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.25899379478275,
+          48.46166361698627
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.67161979997255,
+          48.19433649114873
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.73498417365911,
+          48.017688852970565
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.24820294670845,
+          48.01767383738144
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.8355296503782,
+          47.95393326914888
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.9360997940526,
+          47.71243041292729
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.3011946542384,
+          47.79069170537733
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.83561546539454,
+          48.116681773672184
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.21655945376679,
+          48.3070638387515
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.64513742933664,
+          47.854633940436344
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.84093240010792,
+          47.91849842664311
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.47056083573398,
+          47.96811835492113
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.81965189156588,
+          47.77647394601124
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.20588674923732,
+          47.762243034417224
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.05247062520723,
+          47.44117001764772
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.15241366558931,
+          47.42368869695986
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.43970497907432,
+          47.50650131951579
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.29493602712586,
+          47.91860842260232
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.61563556029131,
+          47.61171054496364
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.17019263121954,
+          47.56664674618156
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.4129396517974,
+          47.67173525890158
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.91181635659146,
+          47.60420260627288
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.46637342751967,
+          47.62672318922401
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.21258721254668,
+          47.49897829012818
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.1680429196395,
+          47.91860842260232
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.84734338647405,
+          46.90885853857441
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.28829313472266,
+          47.09113310745445
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.72699629255935,
+          47.28034136804115
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.702477555694,
+          47.36337938318937
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.13453782112751,
+          47.31810210029789
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.47750950074638,
+          47.39354266755274
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.66916621484548,
+          46.61133571066259
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.69918611227422,
+          46.58752885539337
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.14462904134635,
+          47.10545034261145
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.17803726102645,
+          46.70220556983895
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.90852491317165,
+          46.80139543921163
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.5967148628213,
+          47.17362466661038
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.4496993204612,
+          47.26438780194778
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.16240800697621,
+          47.12818483011176
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.98423083534763,
+          47.052365429038275
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.28041163164775,
+          46.923224706438816
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.74588011676133,
+          47.075122582474734
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.51202257899857,
+          46.89279330719879
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.95521891765875,
+          47.08270614151502
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.47636776890653,
+          47.22658871064621
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.07107283075032,
+          46.93843392734877
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.89514224953334,
+          46.82425948593183
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.38512947151227,
+          46.740377123512786
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.69693952141253,
+          46.60283312943605
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.30942354888654,
+          46.52626853358865
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.46757516447329,
+          46.48794571135468
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.96645186926735,
+          46.38817992113218
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.4653285740617,
+          46.319004286042826
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.77713862441172,
+          46.1958091606013
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.34283176856664,
+          46.0336954791417
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.22033496307192,
+          45.79351308864557
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.91966098594861,
+          46.4112190087489
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.68580344818582,
+          46.211223687977224
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.77489203400013,
+          45.88661022746683
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.38727918264217,
+          46.99922762273616
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.4986399149102,
+          46.63342871241903
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.4986399149102,
+          46.31131269923091
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.03317142979628,
+          46.88518275733435
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.02203535656957,
+          46.65636405486114
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.95521891720868,
+          46.27283854876333
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.60111116436312,
+          46.67928967368894
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.55656687145566,
+          46.4419226597457
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.44520613918795,
+          46.21892932979455
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.11337053279578,
+          46.732744972792574
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.09109838634207,
+          46.49561243724207
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.13564267924919,
+          46.211223687977224
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.64790204768187,
+          46.968839412043764
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.71471848704275,
+          46.72511174232355
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.69244634058902,
+          46.518606130552
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.61449382800143,
+          46.28053554108871
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 5,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.78153492640331,
+          46.087786361713995
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.11561712320739,
+          46.77089492202333
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.08220890352695,
+          46.518606130552
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.9396865419904,
+          46.541590097654534
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.17354407975319,
+          46.21892932979455
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.61674041841334,
+          46.28823145228512
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.23811392870212,
+          46.14182425423675
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.77264544358852,
+          46.010497449956404
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.17354407975319,
+          45.96407218981827
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          116.39255272295594,
+          35.49344901383046
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          114.06021772613843,
+          31.85527625582982
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          115.73658350510027,
+          31.85527625582982
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          118.8706586570749,
+          26.968871580088148
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          105.82415976862626,
+          27.87460261901724
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          109.39554773250336,
+          25.003512033489685
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          100.43063508848371,
+          33.935837600230315
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          108.30226570274317,
+          40.09824043950621
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          110.48882976226133,
+          37.31184466286139
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          116.39255272295594,
+          39.986642904006175
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          99.33735305872574,
+          29.853200034411643
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          102.25277180474927,
+          25.4650214361356
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          107.7191819535393,
+          32.96284021679298
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          113.47713397693241,
+          29.091767073095696
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          113.47713397693241,
+          24.00873387236537
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          127.23745845020755,
+          37.398644023319235
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          127.89084085629747,
+          37.964984756643744
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          128.69979050193348,
+          37.64541035085871
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          126.73964328366361,
+          36.827990952477904
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          126.84795571345762,
+          37.56189344322465
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          127.45797528651212,
+          36.053634324309215
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          127.707275455868,
+          37.17644707054028
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          128.66815544465618,
+          36.79938450800695
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          128.77776233023764,
+          36.2915061406174
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          128.00211785502228,
+          35.75297106290911
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          127.19305392975804,
+          35.423927997715666
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          128.74388135870197,
+          35.6708357847012
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          129.15667642928076,
+          37.15613700476989
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          129.148558935371,
+          36.33904340778514
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          140.5707334350501,
+          40.407131989558565
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          141.3595347741965,
+          43.074095640955335
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          141.22888062560565,
+          40.04037650175809
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          140.600884901171,
+          39.48140457552259
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          140.46867527497608,
+          38.22017238484821
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          139.70846992434457,
+          35.76543626776731
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          136.73375333492396,
+          35.84585337267997
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          133.792089152051,
+          34.794105633497054
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          131.24705384776865,
+          32.90015719923771
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          0.730512864985343,
+          48.906436482942865
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -0.33904547589378353,
+          51.63976868841627
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -0.45163056440767946,
+          51.11270618116771
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          5.515379126815304,
+          50.615295448209025
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          2.6444593697173673,
+          48.86942222425262
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -4.054353396843794,
+          40.699444006741544
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          11.989021716349356,
+          43.25171457199434
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          15.366574371758418,
+          41.039989869230766
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          17.39913127999384,
+          52.02756054749656
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          20.042571868654704,
+          46.549249088788116
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -6.271677627559768,
+          57.68733712359841
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          9.664350276452637,
+          62.16101388057359
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          15.808845663067245,
+          64.27178751029336
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          19.662173278401212,
+          66.27460264496622
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          25.181804727393853,
+          67.34077925369783
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          13.830109860598299,
+          60.61535208211413
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          25.702524675411865,
+          61.916864692254535
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          26.223244623429935,
+          65.16128994136878
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          23.71951804095653,
+          55.232156181979775
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          152.90732680465425,
+          -27.272006725202623
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          151.33380606637144,
+          -30.75710250300468
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          150.17989085829703,
+          -32.71964820251476
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          150.38969362340197,
+          -34.120486355461615
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          143.67600514005903,
+          -34.207285383202645
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          145.7740327911044,
+          -37.18828842061951
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          139.6897526030748,
+          -33.9466208429065
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          146.40344108641784,
+          -26.241667669308505
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          142.31228716688116,
+          -37.85388310505176
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          175.72698346989228,
+          -38.111206843231756
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          146.77420188547939,
+          -42.04250356161519
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          173.10444890608596,
+          -41.96455097913514
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          177.33943452826935,
+          -38.886684480557555
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          175.36847775529617,
+          -39.571081920380934
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          172.41204259583753,
+          -43.511477320495665
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          170.13524770292116,
+          -44.31928014060127
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 3
+      },
+      "geometry": {
+        "coordinates": [
+          168.5720750898725,
+          -45.66499112955892
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -119.62894829713423,
+          49.819104917040136
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -79.445347693288,
+          45.260195319159465
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -1.7232984837854985,
+          52.876784946371004
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          12.4074189795123,
+          43.64198083342046
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -100.76450373531596,
+          46.76972957795661
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -106.7679256664716,
+          43.95859452956367
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -101.32732454136143,
+          42.684793521472244
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -116.71109323994864,
+          41.52493623172137
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -111.95838421111675,
+          43.00574717205825
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -113.7719179194866,
+          40.39155528601802
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -120.96351710785052,
+          39.76953178999
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -118.6496982385513,
+          36.87561184861488
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -106.5177830860066,
+          40.39155528601802
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -93.38529761160314,
+          43.50673205170338
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -95.38643825532188,
+          46.726879873193866
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -88.88273116323627,
+          45.64455922683376
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -68.49611085535341,
+          45.60082303002483
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -78.18913584836545,
+          40.105173681933735
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -74.43699714139295,
+          40.58180274641873
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -71.43528617581482,
+          42.59278627105667
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -82.62916665161563,
+          35.767168576730825
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -86.06862713300703,
+          39.6733319124975
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6945539060286,
+          41.80523655769505
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -80.44041907254858,
+          26.18920853597521
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -83.25452310277782,
+          32.55982054942258
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -77.93899326790047,
+          36.47436664693237
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -85.19312810138048,
+          38.165134928894304
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -95.32390261020579,
+          39.6733319124975
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -106.45524744089049,
+          35.15594730429832
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -100.70196809019987,
+          35.258139780362185
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -95.01122438462471,
+          35.919246881282234
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -90.63372922649063,
+          35.30918776893641
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -90.88387180695501,
+          39.9615287415522
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -100.20168292926986,
+          39.91357987976306
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -110.3949930832119,
+          36.625078777934505
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -102.6405730888019,
+          25.23136730013782
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -96.82475809299454,
+          32.45434482802361
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -95.38643825532188,
+          29.77785890900536
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -87.31934003533141,
+          32.45434482802361
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -113.42155852482927,
+          33.58287665155929
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -105.93081405930748,
+          31.981857175048148
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -99.45576375860286,
+          31.279206510034598
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -99.88006779958934,
+          19.96160625607085
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -4.229512389965379,
+          38.20213461810587
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          37.46318334937098,
+          55.858076448979375
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          34.78134027106228,
+          38.426066494081624
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          45.26490866808754,
+          25.10992559524381
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          65.5006337135072,
+          36.294711745176215
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          54.40755552595718,
+          31.12640495813467
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          74.27757469706273,
+          26.64535876169016
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          80.61683239134169,
+          22.24926468922088
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          78.66640106166261,
+          16.151426542475534
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          105.24102792853938,
+          21.34378122677326
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          106.70385142579846,
+          11.417291970759592
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          139.0078703236066,
+          36.232985085091784
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          143.27443885727894,
+          43.60659512154842
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          143.1525368991742,
+          49.94113216633505
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          128.1585960522674,
+          36.232985085091784
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          127.82379708348856,
+          35.31500566594244
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          116.49791993588218,
+          39.717982035641825
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          118.78487589837897,
+          27.131806743157014
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          111.92400801088655,
+          33.518365656256904
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          97.82111290881778,
+          33.017565773095285
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          146.43042020191717,
+          -35.66508861570616
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          151.3027784894063,
+          -30.26693197970232
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          142.54413442499242,
+          -27.061172141672543
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          145.61836048733602,
+          -17.633405489031148
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          147.12647138584526,
+          -20.103102057397635
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          121.37257758054591,
+          -32.69054815099914
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          116.44221502773138,
+          -32.83687709455121
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          124.6208164388728,
+          -16.857860976336738
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          133.9014988912316,
+          -14.119170454905472
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          138.8318614440484,
+          -17.743929301081394
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          147.1844756511706,
+          -42.45673247297991
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          176.88001275312257,
+          -39.07131820188171
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          175.7779317119029,
+          -39.52020302684155
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          172.00765446563355,
+          -42.19570159624254
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          168.87542413796217,
+          -44.80372118154014
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          169.51347105656242,
+          -46.025174117520436
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -124.17145160329711,
+          56.52362069665858
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -73.30434812291622,
+          52.09893489729174
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -72.9421906729713,
+          48.15497417300614
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -95.75811001949761,
+          58.5130181197398
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -101.69749219859314,
+          53.97141519641042
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -132.6981699138734,
+          59.44612844738879
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -101.26290325865936,
+          50.789858109567916
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -114.59029741663042,
+          53.197478014481106
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -112.20005824699432,
+          50.789858109567916
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -110.24440801729199,
+          57.90247815139952
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -81.12694904172521,
+          50.7440469226583
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -62.584487604548144,
+          52.58569477143567
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford University",
+        "eduLevel": 5
+      },
+      "geometry": {
+        "coordinates": [
+          -90.54304274029161,
+          52.187835461535315
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

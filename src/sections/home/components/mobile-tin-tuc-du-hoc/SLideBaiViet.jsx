@@ -14,7 +14,7 @@ const SLideBaiViet = ({ setSwiper, dataTintucs, swiperRef, loadingBaiviet }) => 
               <BaiViet key={i} data={data} loadingBaiviet={loadingBaiviet} />
             ))}
             {loadingBaiviet && data.map((_, index) => (
-              <Skeleton className={'bg-greyscaletext-10 xmd:hidden w-[28.6875rem] h-[7.875rem]'} />
+              <Skeleton key={index} className={'bg-greyscaletext-10 xmd:hidden w-[28.6875rem] h-[7.875rem]'} />
             ))}
       </div>
     </div>

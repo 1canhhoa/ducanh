@@ -1,0 +1,35 @@
+@media (min-width: 767px) {
+  .text_dk {
+    writing-mode: vertical-lr;
+  }
+}
+.pagination_banner .swiper-pagination-bullet {
+  width: 0.5rem;
+  height: 0.25rem;
+  border-radius: 0.5625rem;
+  opacity: 0.5;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+.pagination_banner .swiper-pagination-bullet-active {
+  width: 2.0625rem;
+  height: 0.25rem;
+  opacity: 1;
+  border-radius: 0.5625rem;
+  background: #fff;
+}
+
+.mySwiper_danhgia .item::before {
+  content: '';
+  width: 2.75rem;
+  height: 2.25rem;
+  background-color: white;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+.mySwiper_danhgia .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}

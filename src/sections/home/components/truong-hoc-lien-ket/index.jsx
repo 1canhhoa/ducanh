@@ -1,6 +1,5 @@
 "use client"
 import Image from 'next/image'
-import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide, } from "swiper/react";
 import { Autoplay, FreeMode, Navigation } from 'swiper/modules'
 import "swiper/css";
@@ -41,7 +40,7 @@ const TruongLienKet = ({ dataTruongLk }) => {
             id="swiper_social"
           >
             {dataTruongLk?.country?.map((d, i) => (
-              <SwiperSlide className='!w-fit !pointer-events-none'>
+              <SwiperSlide key={i} className='!w-fit !pointer-events-none'>
                 <div key={i} className="duration-500 w-fit flex z-[100] flex-col space-y-[0.75rem] h-[9.1875rem] justify-center items-center  py-[1.4375rem] px-[2.65625rem]">
                   <Image loading='lazy' alt={`ảnh quốc gia ${d}`} src={d?.image} width={60} height={60} className="size-[3.625rem]" />
                   <div className="text-primary-60 text-center text-xl not-italic font-semibold leading-[150%] tracking-[-0.0125rem]">

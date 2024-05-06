@@ -1,6 +1,7 @@
+import Title from '@/components/Title'
 import Image from 'next/image'
 
-export default function ChiTieu({text}) {
+export default function ChiTieu({ text }) {
   return (
     <section className='w-full lg:mt-[4.8rem] xmd:px-[0.75rem] xlg:px-[5.3rem] px-[11.625rem] flex justify-start items-start lg:bg-background-elevation-10'>
       <div className='flex w-full flex-col items-start xlg:mt-[3rem] mt-[5.9rem] xmd:mt-[2.5rem] relative'>

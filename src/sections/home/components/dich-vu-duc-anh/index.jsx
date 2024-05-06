@@ -42,6 +42,7 @@ const DichVuDucAnh = ({ t, isMobile, dataDichVuTaiDucAnh }) => {
           {dataDichVuTaiDucAnh?.map((d, i) => {
             return (
               <button
+                key={i}
                 onMouseEnter={() => { setHover(i) }}
                 onMouseLeave={() => { setHover(0) }}
                 className=' z-[100] dichvuducanh2 absolute text-center flex-col'>
@@ -70,7 +71,7 @@ const DichVuDucAnh = ({ t, isMobile, dataDichVuTaiDucAnh }) => {
                   className={`grid overflow-hidden absolute w-[35rem] h-[30rem]  text-slate-600 text-sm
                       ${hover === i && !isMobile
                       ? "dichvu-popup dichvu-popup-active"
-                    : "dichvu-popup  pointer-events-none"
+                      : "dichvu-popup  pointer-events-none"
                     }`}
                 >
                   <div className="overflow-hidden">

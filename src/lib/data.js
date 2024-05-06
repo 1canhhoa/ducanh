@@ -252,6 +252,97 @@ export const country_truonglk = [
 
     tittle: 'Canada',
   },
+  {
+    id: 4,
+    img: '/images/homepage/usa.svg',
+    bg: '/images/homepage/bg-usa.png',
+
+    tittle: 'Mỹ',
+  },
+  {
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+  },
+  {
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+  },
+  {
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+  },
+  {
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+  },
+  {
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+  },
+  {
+    id: 5,
+    img: '/images/homepage/singapo.svg',
+    bg: '/images/homepage/bg-singapo.png',
+
+    tittle: 'Singapore',
+  },
+  {
+    id: 6,
+    img: '/images/homepage/switzerland.svg',
+    bg: '/images/homepage/bg-switzerland.png',
+
+    tittle: 'Thuỵ Sỹ',
+  },
 ]
 export const data_table = [
   {

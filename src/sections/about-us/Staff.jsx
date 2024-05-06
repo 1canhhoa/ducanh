@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 const Staff = ({ t }) => {
   return (
-    <section className=' flex xmd:flex-col-reverse xmd:px-[0.5rem] xmd:w-full md:w-[77rem] items-start xmd:space-y-[1.4375rem] md:space-x-[7.56rem] w-[21rem] xmd:relative'>
+    <section className=' flex mt-[8.13rem] xmd:mt-[0rem] xmd:flex-col-reverse xmd:px-[0.5rem] xmd:w-full md:w-[77rem] items-start xmd:space-y-[1.4375rem] md:space-x-[7.56rem] w-[21rem] xmd:relative'>
       <div className="xmd:mt-[1.4375rem]">
         <div className='xmd:absolute top-0'><Title title={t.staff} /></div>
         <div className="md:mt-[4.11rem] flex items-center xmd:space-x-[1.09rem] space-x-[2rem]">

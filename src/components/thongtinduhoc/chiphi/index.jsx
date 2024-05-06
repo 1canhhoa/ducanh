@@ -6,7 +6,7 @@ export default function ChiPhi({text, dataAcf}) {
   return (
     <section
       id='chi_phi'
-      className='w-full mt-[8.13rem] xmd:mt-[3rem] flex flex-col items-center'
+      className='w-full mt-[8.13rem] xmd:mt-[4rem] flex flex-col items-center'
     >
       <div className='lg:w-[76.875rem] w-full xmd:px-[0.75rem] flex flex-col items-start xlg:px-[5.3rem]'>
         <h1 className='title xmd:mb32 relative w-fit mb-[2.8rem] xmd:mb-[1.5rem]'>
@@ -42,7 +42,7 @@ export default function ChiPhi({text, dataAcf}) {
         />
         <div className='flex flex-col mt-[1.5rem]'>
           {text?.cost?.note?.map((e, index) => (
-            <span className='text-[0.875rem] font-medium leading-[1.7] text-primary-50'>
+            <span key={index} className='text-[0.875rem] font-medium leading-[1.7] text-primary-50'>
               {e}
             </span>
           ))}

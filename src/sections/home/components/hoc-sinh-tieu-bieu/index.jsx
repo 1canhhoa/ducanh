@@ -5,14 +5,13 @@ import { Swiper, SwiperSlide, } from "swiper/react";
 import { Navigation } from 'swiper/modules'
 import "swiper/css";
 import NavigationCustom from '@/components/navigationcustom';
-const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
+const HocSinhTieuBieu = ({ isMobile, dataHocSinhTieuBieu }) => {
   const [moveClass, setMoveClass] = useState('');
 
   const itemsRef = useRef([]);
   const [datHocsinh, setDatHocsinh] = useState(dataHocSinhTieuBieu);
   const [active, setActive] = useState(3);
   const [divHeight, setDivHeight] = useState(null);
-  console.log({ divHeight });
   const divRef = useRef(null);
   useEffect(() => {
     setDivHeight(document.querySelector(".text-item-" + active)?.clientHeight)
@@ -28,7 +27,6 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
 
   const handleNextSlide = () => {
     swiperRef.current?.slideNext()
-
   }
   const handlePrevSlide = () => {
     swiperRef.current?.slidePrev()
@@ -111,7 +109,7 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
       </div>
 
 
-      <div className="absolute bottom-0 left-0 ">
+      <div className="absolute w-full bottom-0 left-0 ">
         <Swiper
           speed={500}
           ref={swiperRef}
@@ -124,14 +122,14 @@ const HocSinhTieuBieu = ({ isMobile,dataHocSinhTieuBieu }) => {
           slidesPerView={4}
           loop={'true'}
           modules={[Navigation]}
-          className='w-[98rem] mySwiper h-full !pl-[20rem]'
+          className='w-full mySwiper h-full !pl-[20rem]'
         >
           {datHocsinh?.map((d, i) => (
-            <SwiperSlide>
-              <div onClick={() => setActive(i)} className='box_item_slide'>
+            <SwiperSlide key={i}>
+              <div onClick={() => setActive(i)} className={`box_item_slide `}>
                 <Image
                   key={i} loading='lazy' width={392} height={730} alt={`ảnh học sinh ${i}`}
-                  className="item_slide" src={d?.image?.url} />
+                  className={`item_slide item_slide${i}`} src={d?.image?.url} />
               </div>
             </SwiperSlide>
           ))}

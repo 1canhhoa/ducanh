@@ -3,7 +3,7 @@ import SectionWrapper from './SectionWrapper'
 import Structure1 from './Structure1'
 import Structure2 from './Structure2'
 import Paragraph from './Paragraph'
-const TrainingInstitutes = ({lang, id}) => {
+const TrainingInstitutes = ({ lang, id }) => {
   return (
     <SectionWrapper
       id={id}

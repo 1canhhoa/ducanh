@@ -2,45 +2,37 @@ import Title from '@/components/Title'
 import React from 'react'
 import Image from 'next/image'
 const Section = ({ title, subTitle }) => {
-  return <div className="flex justify-center xmd:w-full xmd:items-start pt-[1.125rem] xmd:pb-[0.05rem] pb-[1.10631rem] xmd:pr-[0.92rem] pr-[0.87513rem] xmd:pl-[1.25rem] pl-[0.8125rem] xmd:rounded-[0.75rem] rounded-[1rem] space-x-[0.25rem] bg-linear-l9  ">
-    <div className="flex flex-col xmd:justify-between xmd:w-full justify-center items-start xmd:space-y-[0.2rem] space-y-[0.0625rem]">
+  return <div className="flex w-[14.1875rem] relative justify-center xmd:w-full xmd:items-start pt-[1.125rem] pb-[1.10631rem] xmd:pr-[0.92rem] pr-[0.87513rem] 
+  xmd:pl-[1.25rem] pl-[0.8125rem] xmd:rounded-[0.75rem] rounded-[1rem] space-x-[0.25rem] bg-linear-l9  ">
+    <div className="flex pr-[0.7rem] flex-col xmd:justify-between xmd:w-full justify-center items-start xmd:space-y-[0.2rem] space-y-[0.0625rem]">
       <div className="body14 text-primary-5 font-feature-settings text-center">
         {subTitle}
       </div>
-      <div className='body16 w-max xmd:uppercase text-white font-semibold text-center'>
+      <div className='body16 w-max uppercase text-white font-semibold text-center'>
         {title}
       </div>
     </div>
     <Image priority alt="ảnh ngôi sao " src={'/images/about_us/star.png'} width={50} height={50}
-      className="w-[3.48738rem] h-[3.01869rem] xmd:w-[5.32181rem] xmd:h-[4.35606rem] shrink-0" />
+      className=" absolute xmd:bottom-[0.25rem] xmd:right-[1rem] right-[0.5rem] w-[3.48738rem] h-[3.01869rem] xmd:w-[5.32181rem] xmd:h-[4.35606rem] shrink-0" />
 
   </div>
 }
 const Section1 = ({ title }) => {
   return <div className="flex items-center w-[10.775rem] space-x-[0.5rem]">
-    <svg className='size-[0.75rem]' xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-      <rect y="6.5" width="6" height="6" fill="#2B46A8" />
-      <rect x="6" y="0.5" width="6" height="6" fill="#ED4343" />
-    </svg>
     <div className="text-[1rem] xmd:body16 font-bold leading-[1.2] text-secondary-60 tracking-[0.01rem]">
       {title}
     </div>
   </div>
 }
 const Section2 = ({ title, subTitle }) => {
-  return <div className="flex flex-col items-start self-stretch">
-    <div className="text-primary-40 font-feature-settings text-[0.875rem] font-bold xmd:leading-[1.3rem] leading-[1.25rem] capitalize">
-      {title}
-    </div>
-    <div className="text-greyscaletext-40 font-feature-settings text-[0.875rem] font-normal xmd:leading-[1.7rem] leading-[1.375rem]">
-      {subTitle}
-    </div>
+  return <div className="text-greyscaletext-40 font-feature-settings text-[0.875rem] font-normal xmd:leading-[1.7rem] leading-[1.375rem]">
+    {subTitle}
   </div>
 }
 const Ceo = ({ t, dataPersons }) => {
   return (
-    <section className=' flex flex-col w-full items-center'>
-      <div className='  xmd:space-y-[0.75rem] space-y-[2.5rem]'>
+    <section className=' flex mt-[8.13rem] xmd:mt-[0rem] flex-col w-full items-center'>
+      <div className=' md:w-[76.875rem] xmd:space-y-[0.75rem] space-y-[2.5rem]'>
         <Title title={t.ceo} />
 
 
@@ -51,7 +43,7 @@ const Ceo = ({ t, dataPersons }) => {
             <div key={i} className='flex items-start flex-col w-full xmd:w-[21.9375rem] xmd:pb-[0.6rem]  md:p-[1.25rem] rounded-[1.25rem] bg-white border border-[rgba(97,150,246,0.40)]  '>
               <div className="flex-[1_0_0] flex items-start xmd:flex-col xmd:justify-end self-stretch xmd:space-y-[0.75rem] md:space-x-[1.25rem]">
                 <Section title={person?.name} subTitle={person?.position} />
-                <div className="xmd:hidden w-[0.0625rem] h-full bg-[rgba(97,150,246,0.20)]"></div>
+                <div className=" min-w-[0.0625rem] h-full bg-[rgba(97,150,246,0.20)]"></div>
                 <div className="xmd:px-[1rem] flex flex-col items-start xmd:space-y-[0.875rem] space-y-[1rem] grow-[1] shrink-0 basis-0">
                   {person?.about_person?.map((p, j) => (
                     <div className='flex flex-col items-start xmd:space-y-[0.875rem] space-y-[1rem]' key={j}>

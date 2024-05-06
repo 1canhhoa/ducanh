@@ -4,9 +4,7 @@ import RecruitmentDetailsIndex from '@/sections/recruitmentDetails/RecruitmentDe
 
 const RecruitmentDetailsPage = async ({params}) => {
   const t = await getDictionary(params.lang)
-  const res = await getData(
-    '/wp-json/wp/v2/recruit/31',
-  )
+  const res = await getData('/wp-json/wp/v2/recruit/31')
   return (
     <RecruitmentDetailsIndex
       lang={t}

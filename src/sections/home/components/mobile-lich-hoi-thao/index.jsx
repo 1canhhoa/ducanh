@@ -5,7 +5,7 @@ import useSWR from 'swr'
 import "swiper/css";
 import Image from 'next/image'
 import Table from './Table'
-
+import Maptiler from '@/sections/maptiler'
 
 const Pagination = ({ className, content, slug, setCurrentPage }) => {
   return <div onClick={() => setCurrentPage(content)} className={'border border-[rgba(19,43,125,0.20)] text-primary-50 p-2.5 rounded-lg ' + (className ? className : '')}>
@@ -46,6 +46,35 @@ const LichHoiThao = ({ t, isMobile, dataCountries, dataLocations, dataLichHoitha
       sectionRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [isPopupMounted, setIsPopupMounted] = useState(false);
+
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+    setTimeout(() => {
+      setIsPopupMounted(!isPopupMounted); // Toggle trạng thái của việc hiển thị popup trong DOM
+    }, 200)
+  };
+  const togglePopupClose = () => {
+    setIsPopupMounted(!isPopupMounted); // Toggle trạng thái của việc hiển thị popup trong DOM
+    setTimeout(() => {
+      setIsOpen(!isOpen);
+    }, 200)
+  };
+  // hủy croll sau khi bật popup map
+  useEffect(() => {
+
+    if (isOpen) {
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.documentElement.style.overflow = 'initial';
+      document.body.style.overflow = 'initial';
+    }
+  }, [isOpen]);
 
   return (
     <div ref={sectionRef} className='flex flex-col w-fit items-start space-y-[1rem]'>
@@ -100,11 +129,25 @@ const LichHoiThao = ({ t, isMobile, dataCountries, dataLocations, dataLichHoitha
           </div>
 
           <Image loading='lazy' alt="ảnh map tìm đường mobi" src={'/images/homepage/map-timduong-mobi.png'} width={375} height={370} className="w-[23.4375rem] h-[23.14813rem]" />
-          <Image loading='lazy' className=" absolute bottom-[1.1rem] right-[1rem] w-[17.5rem] h-[4.5rem]" alt="ảnh button tìm đường mobile" src={'/images/homepage/button-timduong-mobi.png'} width={350} height={105} />
-          <Image loading='lazy' className="kinh-loop2 absolute bottom-[0.94rem] right-[-2.94rem] w-[2.46225rem] h-[2.61319rem]" alt="ảnh kính loop" src={'/images/homepage/search-timduong.png'} width={40} height={44} />
-          <div className='absolute z-50 bottom-[2.1rem] right-[6.8rem] text-white text-center text-[0.75rem] not-italic font-semibold leading-[150%] tracking-[-0.0075rem] uppercase'>
-            Tìm trường cùng Đức Anh
+          <div onClick={togglePopup} className='cursor-pointer'>
+            <Image loading='lazy' className=" absolute bottom-[1.1rem] right-[1rem] w-[17.5rem] h-[4.5rem]" alt="ảnh button tìm đường mobile" src={'/images/homepage/button-timduong-mobi.png'} width={350} height={105} />
+            <Image loading='lazy' className="kinh-loop2 absolute bottom-[0.94rem] right-[-2.94rem] w-[2.46225rem] h-[2.61319rem]" alt="ảnh kính loop" src={'/images/homepage/search-timduong.png'} width={40} height={44} />
+            <div className='absolute z-2 bottom-[2.1rem] right-[6.8rem] text-white text-center text-[0.75rem] not-italic font-semibold leading-[150%] tracking-[-0.0075rem] uppercase'>
+              Tìm trường cùng Đức Anh
+            </div>
           </div>
+          {isOpen && (
+            <div className={`bg-white h-screen z-[100] fixed top-0 left-0 duration-200 ease-linear  ${isOpen && isPopupMounted ? 'opacity-100 scale-100' : 'opacity-0 scale-75'}`}>
+              <div onClick={togglePopupClose} className="absolute z-[2000] top-[1.4rem] right-[1.4rem] cursor-pointer">
+                <div className="inline-flex items-start bg-white gap-2.5 p-2.5 rounded-lg">
+                  <svg className='size-[1.5rem]' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 21L12 12M12 12L3 3M12 12L21.0001 3M12 12L3 21.0001" stroke="#2B46A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <Maptiler isMobile={isMobile} />
+            </div>
+          )}
         </div>
       </div>
     </div>

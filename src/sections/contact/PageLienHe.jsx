@@ -1,21 +1,16 @@
-import ContactForm from "@/sections/contact/ContactForm";
+"use client"
 import Image from "next/image";
 import OfficeInformation from "@/components/OfficeInformation";
 import CentersLanguage from "@/components/CentersLanguage";
 import TitleAndLinkWebsite from "@/sections/contact/TitleAndLinkWebsite";
 import FormDangKyTuVan from "@/components/form-dang-ki-tu-van/FormDangKyTuVan";
-const TitleOfficeOrLanguage = ({ t }) => {
-  return <div className="flex items-center space-x-[0.5rem] mb-[1.5rem]">
-    <svg className='size-[0.5rem]' xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-      <rect y="4" width="4" height="4" fill="#2B46A8" />
-      <rect x="4" width="4" height="4" fill="#ED4343" />
-    </svg>
-    <div className="text-greyscaletext-70 text-[1rem] font-bold uppercase">
-      {t.contact.centersLanguage}
-    </div>
+const Title = ({ t, index }) => {
+  return <div className={(index === 0 ? '' : ' mb-[1.5rem]') + " text-greyscaletext-70 text-lg not-italic font-bold leading-[normal] uppercase"}>
+    {t}
   </div>
 }
-const PageLienHe = ({ t }) => {
+const PageLienHe = ({ t, data }) => {
+
   return (
     <div className="flex flex-col w-full items-start md:space-y-[6.6875rem]">
       <div className="flex xmd:flex-col items-start md:w-[68.6875rem] md:relative">
@@ -25,20 +20,18 @@ const PageLienHe = ({ t }) => {
       </div>
 
       <div className="xmd:px-[0.75rem] w-full flex flex-col items-start xmd:space-y-[2rem] space-y-[3rem]">
-        {/* title and webSite*/}
-        <TitleAndLinkWebsite t={t} />
 
-        {/* coponent chung với page about-us*/}
-        <div className="w-full">
-          <TitleOfficeOrLanguage t={t} />
-          <OfficeInformation t={t} />
+        <TitleAndLinkWebsite data={data?.lists_websibe} t={t} />
+        <div className=" space-y-[1.5rem]">
+          {data?.office_pte_lang?.map((d, i) => (
+            <div key={i} className="w-full">
+              <Title t={d?.title} index={i} />
+              <OfficeInformation listsPlace={d?.lists_place} t={t} />
+            </div>
+          ))}
         </div>
 
-        {/* centers language*/}
-        <div className="w-full">
-          <TitleOfficeOrLanguage t={t} />
-          <CentersLanguage t={t} />
-        </div>
+
       </div>
 
       {/* Background */}

@@ -51,7 +51,7 @@ export default function ChonnganhVaChuongtrinh({text, dataAcf}) {
       <div className='w-full space-y-[7.5rem] xmd:space-y-[3.63rem] xmd:px-[0.75rem] xlg:px-[5.3rem] px-[11.5625rem] pb-[6.25rem] bg-white flex flex-col items-center'>
         {dataAcf?.branch &&
           dataAcf?.branch?.map((e, index) => (
-            <div className='flex flex-col w-full items-start'>
+            <div key={index} className='flex flex-col w-full items-start'>
               <h2 className='desktop32 text-primary-50 flex mb-[1.5rem]'>
                 {e?.title}
               </h2>

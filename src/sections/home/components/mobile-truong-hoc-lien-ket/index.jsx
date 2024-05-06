@@ -43,9 +43,9 @@ const TruongLienKet = ({ dataTruongLk }) => {
           id="swiper_social"
         >
           {dataTruongLk?.country?.map((d, i) => (
-            <SwiperSlide className='!w-[6rem] !pointer-events-none'>
+            <SwiperSlide key={i} className='!w-[6rem] !pointer-events-none'>
 
-              <div key={i} className="flex flex-col space-y-[0.75rem] justify-center items-center  py-[1.4375rem]">
+              <div className="flex flex-col space-y-[0.75rem] justify-center items-center  py-[1.4375rem]">
                 <Image loading='lazy' alt={`ảnh quốc gia ${d}`} src={d?.image} width={60} height={60} className="size-[3.625rem]" />
                 <div className="text-primary-60 text-center xmd:text-[1rem] text-xl not-italic xmd:font-medium font-semibold leading-[150%] xmd:tracking-normal tracking-[-0.0125rem]">
                   {d?.title}
