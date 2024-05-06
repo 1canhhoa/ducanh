@@ -8,9 +8,9 @@ import SLideBaiViet from './SLideBaiViet'
 
 
 
-const TinTicDuHoc = ({ categories, dataTintucs }) => {  
+const TinTicDuHoc = ({ categories, dataTintucs }) => {
 
-  
+
   const swiperRef = useRef(null)
   const [loadingBaiviet, setLoadingBaiviet] = useState(false)
   const [dataTintucsClient, setDataTintucsClient] = useState([]);
@@ -50,11 +50,11 @@ const TinTicDuHoc = ({ categories, dataTintucs }) => {
         <Title title={'Tin tức du học'} />
         <div className='w-full no-scrollbar relative flex items-end gap-[0.75rem] self-stretch'>
           <div className=" flex items-start gap-[0.5rem] flex-[1_0_0]">
-            {categories?.filter((f) => f?.slug !== 'uncategorized' && f?.slug !== 'bai-viet-noi-bat' && f?.slug !== 'all-bai-viet' )?.map((t, i) => (
+            {categories?.filter((f) => f?.slug !== 'uncategorized' && f?.slug !== 'bai-viet-noi-bat' && f?.slug !== 'all-bai-viet')?.map((t, i) => (
               <button onClick={() => setApiUrl(t?.id)} key={i} className={`flex justify-center items-center 
-              py-[0.75rem] hover:bg-primary-5 duration-500 ease-in-out px-[1rem] 
+              py-[0.75rem] hover:bg-primary-60 duration-500 ease-in-out px-[1rem] 
               gap-[0.625rem] rounded-[0.5rem] border border-primary-20 `
-                + (apiUrl === t.id ? 'bg-primary-5 ' : '')}>
+                + (apiUrl === t.id ? 'bg-primary-60 ' : '')}>
                 <div className="text-greyscaletext-50 text-xs not-italic font-bold leading-[120%] uppercase">
                   {t?.name}
                 </div>

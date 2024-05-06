@@ -1,6 +1,6 @@
 
 import { cn } from '@/lib/utils';
-const Table = ({ isMobile,dataLichHoithaos }) => {
+const Table = ({ isMobile, dataLichHoithaos }) => {
   function catChuoiNgayThang(ngayThang) {
     var parts = ngayThang.split('/');
     var ngay = parts[0];
@@ -48,7 +48,7 @@ const Table = ({ isMobile,dataLichHoithaos }) => {
               </div>
             </th>
             <th className={cn(className.td_boder, " border-b border-r px-[1.5rem] ")}>
-              <div className={cn("", className.th_text)}> 
+              <div className={cn("", className.th_text)}>
                 Sự kiện
               </div>
             </th>
@@ -86,15 +86,17 @@ const Table = ({ isMobile,dataLichHoithaos }) => {
               <td className={cn(className.td_boder, " text-center border-b border-r  px-[1rem] text-[0.875rem] font-medium leading-[150%]")}>{data?.country_primary_category?.name}</td>
               <td className={cn(className.td_boder, " border-b border-r px-[1.5rem] text-primary-50 text-[0.875rem] font-semibold leading-[150%]")}>{data?.title} </td>
               <td className={cn(className.td_boder, " border-b text-sm not-italic font-semibold leading-[130%] ")}>
-                <button className='mx-auto  flex h-[2rem] items-center text-primary-40 border border-primary-40 px-[1rem] py-[0.625rem] rounded-[0.5rem] border-solid'>
-                  {!isMobile ? "chi tiết" :
-                    <>
-                      Xem chi tiết
-                      <span className="text-[1.2rem] ml-[0.3rem]">
-                        ➛
-                      </span>
-                    </>}
-                </button>
+                <a href={'landing-su-kien'}>
+                  <button href={'landing-su-kien'} className='mx-auto duration-200 ease-linear hover:bg-primary-50 hover:text-white flex h-[2rem] items-center text-primary-40 border border-primary-40 px-[1rem] py-[0.625rem] rounded-[0.5rem] border-solid'>
+                    {!isMobile ? "chi tiết" :
+                      <>
+                        Xem chi tiết
+                        <span className="text-[1.2rem] ml-[0.3rem]">
+                          ➛
+                        </span>
+                      </>}
+                  </button>
+                </a>
               </td>
             </tr>
           ))}

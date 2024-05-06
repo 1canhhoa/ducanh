@@ -9,9 +9,9 @@ export default function Quydoi({text, dataAcf}) {
           <h1 className='title relative w-fit xmd:mb32 mb-[2rem] xmd:mb-[1rem]'>
             {text?.quydoiGPA?.title}
           </h1>
-          {text.quydoiGPA?.description?.map((e, inedx) => (
+          {text.quydoiGPA?.description?.map((e, index) => (
             <span
-              key={inedx}
+              key={index}
               className='body16 font-semibold text-primary-50 mb-[0.5rem]'
             >
               {e}

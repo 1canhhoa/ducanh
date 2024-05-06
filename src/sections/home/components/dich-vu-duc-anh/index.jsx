@@ -42,6 +42,7 @@ const DichVuDucAnh = ({ t, isMobile, dataDichVuTaiDucAnh }) => {
           {dataDichVuTaiDucAnh?.map((d, i) => {
             return (
               <button
+                key={i}
                 onMouseEnter={() => { setHover(i) }}
                 onMouseLeave={() => { setHover(0) }}
                 className=' z-[100] dichvuducanh2 absolute text-center flex-col'>

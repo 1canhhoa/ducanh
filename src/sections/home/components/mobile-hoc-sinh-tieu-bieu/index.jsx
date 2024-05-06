@@ -37,7 +37,7 @@ const HocSinhTieuBieu = ({ isMobile, dataHocSinhTieuBieu }) => {
           className='w-[23.4375rem] mySwiper h-full'
         >
           {datHocsinh?.map((d, i) => (
-            <SwiperSlide>
+            <SwiperSlide key={i}>
               <div onClick={() => setActive(i)} className='box_item_slide'>
                 <Image
                   key={i} loading='lazy' width={392} height={730} alt={`ảnh học sinh ${i}`}

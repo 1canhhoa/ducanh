@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Search from './Search'
-import {useState} from 'react'
-const NavMobi = ({openNavMobile, data_header, setOpenNavMobile}) => {
+import { useState } from 'react'
+const NavMobi = ({ openNavMobile, data_header, setOpenNavMobile }) => {
   const [accordionOpen, setAccordionOpen] = useState(false)
   const [active, setActive] = useState(false)
   const handleClick = (i) => {
@@ -55,9 +55,9 @@ const NavMobi = ({openNavMobile, data_header, setOpenNavMobile}) => {
             <path
               d='M15 15L10 10M10 10L5 5M10 10L15 5M10 10L5 15'
               stroke='#A9A9A9'
-              stroke-width='2'
-              stroke-linecap='round'
-              stroke-linejoin='round'
+              strokeWidth='2'
+              strokeLinecap='round'
+              strokeLinejoin='round'
             />
           </svg>
         </div>
@@ -73,42 +73,40 @@ const NavMobi = ({openNavMobile, data_header, setOpenNavMobile}) => {
                     <div className="text-[color:var(--PRIMARY-60,#132B7D)] text-sm not-italic font-bold leading-[120%] uppercase">
                       {d?.title}
                     </div>
-                    <div className='flex w-5 h-5 justify-center items-center'>
-                      <svg
-                        className={`${
-                          accordionOpen && active === i
-                            ? 'rotate-180'
-                            : 'rotate-360'
+                    {/* <div className='flex w-5 h-5 justify-center items-center'> */}
+                    <svg
+                      className={`${accordionOpen && active === i
+                        ? 'rotate-180'
+                        : 'rotate-360'
                         } duration-200 ease-linear w-[0.525rem] h-[0.525rem]`}
-                        xmlns='http://www.w3.org/2000/svg'
-                        width='8'
-                        height='6'
-                        viewBox='0 0 8 6'
-                        fill='none'
-                      >
-                        <path
-                          d='M1 1.5L4 4.5L7 1.5'
-                          stroke='#132B7D'
-                          stroke-width='1.5'
-                          stroke-linecap='round'
-                          stroke-linejoin='round'
-                        />
-                      </svg>
-                    </div>
+                      xmlns='http://www.w3.org/2000/svg'
+                      width='8'
+                      height='6'
+                      viewBox='0 0 8 6'
+                      fill='none'
+                    >
+                      <path
+                        d='M1 1.5L4 4.5L7 1.5'
+                        stroke='#132B7D'
+                        strokeWidth='1.5'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                      />
+                    </svg>
+                    {/* </div> */}
                   </li>
                 </div>
                 <div
                   className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm 
-                        ${
-                          accordionOpen && active === i
-                            ? 'grid-rows-[1fr] opacity-100'
-                            : 'grid-rows-[0fr] opacity-0'
-                        }`}
+                        ${accordionOpen && active === i
+                      ? 'grid-rows-[1fr] opacity-100'
+                      : 'grid-rows-[0fr] opacity-0'
+                    }`}
                 >
                   <div className='overflow-hidden'>
                     <div className='flex-col pt-[0.7rem] flex items-start space-y-[1rem]'>
                       {d?.children && d?.children?.map((c, i) => (
-                        <Link href={c?.url}>
+                        <Link key={i} href={c?.url}>
                           <div onClick={handleClickItem}
                             key={i} className='text-sm font-light text-greyscaletext-50'>
                             {c?.title}

@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Harvard"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.1295164330653,
+          48.767410969723784
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Oxford University"
+      },
+      "geometry": {
+        "coordinates": [
+          -120.60381555322942,
+          48.75755102278538
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Cambridge"
+      },
+      "geometry": {
+        "coordinates": [
+          -121.53120236254159,
+          48.262083876389255
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Đại học Manchester"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.77488012700582,
+          47.75171140284212
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Stanford"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.81975368229519,
+          47.26674340570355
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Đại học quốc gia Singapore"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.81975368229519,
+          47.26674340570355
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eduLevel": 4,
+        "name": "Namsan"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.81975368229519,
+          47.26674340570355
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

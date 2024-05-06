@@ -2,7 +2,7 @@
   "hello": "xin chao okhub",
   "related_posts": "Bài viết liên quan",
   "contact": {
-    "title": "Kết nối với chúng tôi",
+    "title": "Bạn cần thông  tin du học?",
     "firstAndLastName": "Họ và tên*",
     "email": "Email",
     "phone": "phone",
@@ -10,7 +10,7 @@
     "yourCity": "Thành phố bạn đang ở",
     "whatYouNeed": "Thông tin bạn cần tư vấn*",
     "sendNow": "Gửi ngay",
-    "officesAndCentersLanguage": "Công ty Tư vấn Du học và Dịch thuật Đức Anh",
+    "officesAndCentersLanguage": "Công ty TNHH Tư vấn Du học và Dịch thuật Đức Anh",
     "office": "Thông tin văn phòng",
     "centersLanguage": "Trung tâm ngoại ngữ"
   },
@@ -62,7 +62,6 @@
     "h2_secondary_schools": "Các trường phổ thông tại Anh",
     "h2_secondary_schools_mb": "Các trường phổ thông tại Anh Quốc",
     "h2_training_institutes": "Các viện đào tạo nghề tại Anh",
-
     "h2_related_posts": "Bài viết liên quan",
     "h2_scholarship_en": "Học bổng du học tại Anh",
     "h2_job_settled": "Việc làm-Định cư tại Anh"

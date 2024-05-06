@@ -4,7 +4,7 @@ import './style.css'
 const DucanhCTG = ({ data, t }) => {
   console.log({ sasas: data?.img1 })
   return (
-    <div className='w-full ducanh-ctg'>
+    <div className='w-full mt-[8.13rem] xmd:mt-[0rem] ducanh-ctg'>
       <div className='mx-auto xmd:px-[0.75rem]  md:w-[77rem]'>
         <div className='text-primary-50 text-5xl xmd:text-[2rem] font-extrabold xmd:leading-[1.3] leading-[1.2] xmd:tracking-[-0.04rem] tracking-[-0.03rem]'>
           {t?.ducanhCtg}

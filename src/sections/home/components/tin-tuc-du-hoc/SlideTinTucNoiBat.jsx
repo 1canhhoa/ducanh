@@ -6,7 +6,6 @@ import { Skeleton } from '@/components/ui/skeleton';
 
 const SlideTinTucNoiBat = ({ dataTintucs, loadingBaiviet }) => {
   const timBaivietNoibat = dataTintucs?.find((f, i) => f?.categories?.find((c, i) => c.slug === 'bai-viet-noi-bat'))
-  console.log({ timBaivietNoibat });
   return (
     <div>
       {!loadingBaiviet && <TinTucNoiBat data={timBaivietNoibat} />}

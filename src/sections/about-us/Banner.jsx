@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 const Banner = ({ t }) => {
   return (
-    <section className=' flex flex-col w-full items-start '>
+    <section className=' flex flex-col mt-[8.13rem] xmd:mt-[0rem] w-full items-start '>
       <div className='mx-auto xmd:space-y-[0.75rem] space-y-[2.5rem]'>
         <Title title={t.legal} />
         <div className=" flex flex-col justify-end space-y-[2.875rem] xmd:space-y-[0.75rem]">

@@ -114,10 +114,10 @@ export default async function Footer() {
       <div className='flex xmd:flex-col-reverse xmd:space-y-[2.25rem] justify-start xmd:items-start items-end md:space-x-[12.3rem] md:ml-[3.75rem]'>
         <div className="inline-flex items-start xmd:mt-[2.25rem] space-x-[0.75rem]">
           <svg className='size-[1.5rem]' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <g clip-path="url(#clip0_401_23428)">
-              <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#F0FAFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M15.75 8.25H14.25C13.6533 8.25 13.081 8.48705 12.659 8.90901C12.2371 9.33097 12 9.90326 12 10.5V21" stroke="#F0FAFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M9 13.5H15" stroke="#F0FAFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <g clipPath="url(#clip0_401_23428)">
+              <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#F0FAFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M15.75 8.25H14.25C13.6533 8.25 13.081 8.48705 12.659 8.90901C12.2371 9.33097 12 9.90326 12 10.5V21" stroke="#F0FAFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M9 13.5H15" stroke="#F0FAFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </g>
             <defs>
               <clipPath id='clip0_401_23428'>
@@ -227,10 +227,10 @@ export default async function Footer() {
           <div className="flex h-[1.5rem] justify-center items-center space-x-[0.625rem] rounded-[0.625rem]">
             <div className="button2 text-white">Back to top</div>
             <svg className='xmd:hidden size-[1.5rem]' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M5 16L12 9L19 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M5 16L12 9L19 16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <svg className='md:hidden size-[1.5rem]' xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-              <path d="M12 19.1875V5.1875M12 5.1875L6 11.1875M12 5.1875L18 11.1875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12 19.1875V5.1875M12 5.1875L6 11.1875M12 5.1875L18 11.1875" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>

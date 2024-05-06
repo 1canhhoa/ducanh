@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Count from '@/components/count/Count'
-
+import Link from 'next/link'
 const Section = ({ num, text, active }) => {
   const [hover, setHover] = useState()
   return <div onMouseEnter={() => setHover(active)} onMouseLeave={() => setHover(-1)} className={`group relative bg-white flex xmd:items-center items-end pb-5 justify-center w-[16.375rem] h-[14.0625rem]  shrink-0 
@@ -55,25 +55,29 @@ const QuaTrinhPhatTrien = ({ isMobile, dataQutrinhPhatTrienDucAnh }) => {
     <div className='quatrinhphattrienducanh'>
       <div className="relative w-full justify-center items-center pt-[6rem]">
         {/* title */}
-        <div className="absolute top-[4rem] left-[5rem] inline-flex flex-col items-start space-y-[1.5rem]">
+        <div className="absolute z-[2] top-[4rem] left-[5rem] inline-flex flex-col items-start space-y-[1.5rem]">
           <div className="text-primary-60 text-[3rem] not-italic font-extrabold leading-[120%] tracking-[-0.03rem]">
             Quá trình phát triển của Đức Anh
           </div>
           <div className="flex flex-col items-start space-y-[1.8125rem]">
             <div dangerouslySetInnerHTML={{ __html: qua_trinh_phat_trien?.title }} />
-            <div className="flex z-[50] self-stretch items-center space-x-[0.9375rem]">
+            <div className="flex z-[2] self-stretch items-center space-x-[0.9375rem]">
 
-              <button className='w-max  flex h-12 justify-center items-center gap-2.5 px-[1.875rem] py-[0.9375rem] rounded-lg
-              text-white text-center text-sm not-italic font-bold leading-[120%] uppercase
-              bg-linear-l5
-              '><div className='w-max'>Về chúng tôi</div></button>
-              <button className='relative bg-linear-l5 group z-0 flex h-12 justify-center items-center border border-[color:var(--div-blue-6020,rgba(19,43,125,0.20))] px-[1.875rem] py-[0.9375rem] rounded-[0.5rem] border-solid
-              text-[0.875rem] not-italic font-bold leading-[1.5] uppercase
-
-              '>
-                <div className='absolute w-full h-full border group-hover:opacity-0 duration-300 ease-linear z-5 bg-white rounded-[0.5rem]'></div>
-                <div className='w-max group-hover:from-white group-hover:to-white text_gradient z-10 bg-clip-text bg-gradient-to-r from-[#2B46A8] from-[100%] to-[#082072] to-[0%]'>Liên hệ tư vấn</div>
-              </button>
+              <Link href={'/phap-nhan'}>
+                <button className='w-max  flex h-12 justify-center items-center gap-2.5 px-[1.875rem] py-[0.9375rem] rounded-lg
+                text-white text-center text-sm not-italic font-bold leading-[120%] uppercase
+                bg-linear-l5
+                '><div className='w-max'>Về chúng tôi</div></button>
+              </Link>
+              <Link href={'/lien-he'}>
+                <button className='relative duration-500 ease-linear bg-linear-l5 group z-0 flex h-12 justify-center items-center px-[1.875rem] py-[0.9375rem] rounded-[0.5rem] hover:border-white border border-primary-50
+                text-[0.875rem] not-italic font-bold leading-[1.5] uppercase
+  
+                '>
+                  <div className='absolute w-full h-full group-hover:opacity-0 duration-300 ease-linear z-5 bg-white rounded-[0.5rem]'></div>
+                  <div className='w-max group-hover:from-white group-hover:to-white text_gradient z-10 bg-clip-text bg-gradient-to-r from-[#2B46A8] from-[100%] to-[#082072] to-[0%]'>Liên hệ tư vấn</div>
+                </button>
+              </Link>
               {/* <Button className={'normal-case flex-1 w-[9.4375rem] px-[1.875rem] py-[0.9375rem] text-white text-sm not-italic font-bold leading-[120%] bg-linear-l5'}>Về chúng tôi</Button>
               <Button className={'normal-case flex-1 w-[9.4375rem] px-[1.875rem] py-[0.9375rem]   text-sm not-italic font-bold leading-[120%] text_gradient  bg-clip-text bg-gradient-to-r from-[#2B46A8] from-[100%] to-[#082072] to-[0%]'}>Liên hệ tư vấn</Button> */}
             </div>
@@ -104,7 +108,7 @@ const QuaTrinhPhatTrien = ({ isMobile, dataQutrinhPhatTrienDucAnh }) => {
           <Image alt="ảnh hiệu ứng Hover" className={`xmd:hidden absolute w-[3.96356rem] h-[3.91663rem] top-[28.57rem] left-[14.7rem] circle  opacity-100 size-[3.8rem] `} loading='lazy' src={'/images/homepage/hover-title.svg'} width={92} height={92} />
 
           {/* WEB */}
-          <Image className="xmd:hidden absolute -bottom-[1.1rem] z-[-1] left-28 w-[78.875rem] h-[9.1875rem]" loading='lazy' alt="ảnh sáng tam giác" src={'/images/homepage/bg-quatrinh1.png'} width={1300} height={150} />
+          <Image className="xmd:hidden absolute -bottom-[1rem] z-[-1] left-28 w-[78.875rem] h-[9.1875rem]" loading='lazy' alt="ảnh sáng tam giác" src={'/images/homepage/bg-quatrinh1.png'} width={1300} height={150} />
 
           {/* 5 ĐIỀU */}
           <div className="xmd:absolute xmd:top-[48.3rem] xmd:right-[0.5rem] z-[2] md:mb-20 flex md:w-[24.5625rem] md:h-[26.5625rem] flex-col items-start space-y-[1.875rem] shrink-0">
@@ -165,12 +169,12 @@ const QuaTrinhPhatTrien = ({ isMobile, dataQutrinhPhatTrienDucAnh }) => {
         <div className=' flex z-[12] space-x-[1.7rem] items-start absolute -top-[13.5rem] right-[15rem]  '>
           <div className="flex flex-col space-y-[2.19rem]">
             {thanh_tuu_dat_duoc?.sau_o_thanh_tuu?.slice(0, 3).map((d, i) => (
-              <Section num={d?.num} text={d?.text} active={i} />
+              <Section key={i} num={d?.num} text={d?.text} active={i} />
             ))}
           </div>
           <div className=" flex flex-col space-y-[2.19rem] mt-[5rem]">
             {thanh_tuu_dat_duoc?.sau_o_thanh_tuu?.slice(-3).map((d, i) => (
-              <Section num={d?.num} text={d?.text} active={i + 3} />
+              <Section key={i} num={d?.num} text={d?.text} active={i + 3} />
             ))}
           </div>
         </div>

@@ -42,7 +42,7 @@ export default function ChiPhi({text, dataAcf}) {
         />
         <div className='flex flex-col mt-[1.5rem]'>
           {text?.cost?.note?.map((e, index) => (
-            <span className='text-[0.875rem] font-medium leading-[1.7] text-primary-50'>
+            <span key={index} className='text-[0.875rem] font-medium leading-[1.7] text-primary-50'>
               {e}
             </span>
           ))}

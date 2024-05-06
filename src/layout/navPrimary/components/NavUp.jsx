@@ -1,17 +1,25 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Search from './Search'
+import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 const NavUp = ({ data_header }) => {
+  const [active, setActive] = useState(-1)
+  const pathName = usePathname()
+  const handleActive = (i) => {
+    setActive(i)
+  }
   return (
     <div className='flex items-center xlg:items-start xlg:flex-col lg:space-x-[4rem]'>
       <Search />
       {/* NAV,LANG AND SOCIAL */}
       <div className='flex items-center xlg:items-start xlg:flex-col space-x-[1rem]'>
         {data_header?.nav_up?.map((d, i) => (
-          <Link href={d?.url}>
+          <Link key={i} href={d?.url}>
             <div
+              onClick={() => handleActive(i)}
               key={i}
-              className='button2 hover:text-[#BE3136]  duration-200 ease-linear  uppercase text-primary-60 font-bold flex h-[2.25rem] justify-center items-center px-[0.5rem] py-[0.625rem]'
+              className={(pathName.includes(d?.url) ? 'text-[#BE3136] ' : 'text-primary-60') + ' button2 hover:text-[#BE3136]  duration-200 ease-linear  uppercase  font-bold flex h-[2.25rem] justify-center items-center px-[0.5rem] py-[0.625rem]'}
             >
               {d?.title}
             </div>

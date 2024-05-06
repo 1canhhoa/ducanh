@@ -27,6 +27,7 @@ export default function Huongdan({data, text}) {
             <div className='flex xmd:flex-row flex-col xmd:h-[10.5rem] xmd:space-x-[0.75rem] xmd:space-y-0 space-y-[1rem] w-[25.4375rem]'>
               {data?.map((e, index) => (
                 <button
+                  key={index}
                   onClick={() => {
                     if (indexActive === index) {
                       return
@@ -82,7 +83,7 @@ export default function Huongdan({data, text}) {
         >
           {data?.[indexActive] &&
             data?.[indexActive]?.content?.map((e, index) => (
-              <AccordionItem value={index + 1}>
+              <AccordionItem value={index + 1} key={index}>
                 <AccordionTrigger className='text-primary-50 h6'>
                   {e?.title_content}
                 </AccordionTrigger>

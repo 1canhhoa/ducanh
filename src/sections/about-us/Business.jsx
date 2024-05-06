@@ -24,17 +24,17 @@ const CardBuisiness = ({ d }) => {
 }
 const Business = ({ t, dataLinhvuc }) => {
   return (
-    <section className='flex flex-col w-full items-center'>
+    <section className='flex mt-[8.13rem] xmd:mt-[0rem] flex-col w-full items-center'>
       <div className=' md:mb-[3rem] xmd:px-[0.75rem] xmd:space-y-[0.75rem] space-y-[2.5rem]'>
         <Title title={t.business} />
         <div className="flex  flex-col items-start space-y-[5.25rem] xmd:space-y-[2rem]">
           {dataLinhvuc && dataLinhvuc?.map((d, i) => (
-          <>
-            <CardBuisiness d={d} key={i} />
+            <>
+              <CardBuisiness d={d} key={i} />
               {i != dataLinhvuc?.length - 1 && <div className="md:hidden mx-auto w-[21.9375rem] h-[0.0625rem] bg-[rgba(97,150,246,0.20)]">
-            </div >}
-          </>
-        ))}
+              </div >}
+            </>
+          ))}
         </div>
       </div>
       <Timestamp t={t} />

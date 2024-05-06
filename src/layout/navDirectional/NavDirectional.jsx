@@ -2,7 +2,7 @@
 
 import clsx from 'clsx'
 import Link from 'next/link'
-import {usePathname} from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 const ttdh = [
   {
@@ -51,9 +51,9 @@ export default function NavDirectional() {
   const pathname = usePathname()
 
   return (
-    <div className='fixed top-[8.88rem] z-[999] bg-white w-full'>
-      <div className='xmd:relative xmd:overflow-hidden xmd:w-[27.45242rem] xmd:h-[5.1rem]'>
-        <div className='xmd:absolute xmd:overflow-x-auto w-full'>
+    <div className='fixed top-[7.9rem] xmd:top-[4.5rem] z-[30] mx-auto w-full'>
+      <div className='xmd:relative xmd:overflow-hidden bg-white  mx-auto w-[94.0625rem] xmd:w-[27.45242rem] xmd:h-[5.1rem]'>
+        <div className='xmd:absolute xmd:overflow-x-auto no-scrollbar w-full'>
           <nav className='p-[0.625rem] rounded-[0.625rem] xmd:w-fit xmd:flex xmd:space-x-[0.73rem] lg:grid lg:grid-cols-5 bg-white shadow-[0px_0px_24px_0px_rgba(78,145,246,0.15)]'>
             {ttdh.map((e, index) => (
               <Link

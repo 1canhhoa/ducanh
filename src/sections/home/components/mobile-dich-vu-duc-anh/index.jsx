@@ -33,7 +33,6 @@ const DichVuDucAnh = ({t, isMobile, dataDichVuTaiDucAnh}) => {
       </div>
       <div className='px-[0.75rem] w-full relative space-y-[0.75rem]'>
         {dataDichVuTaiDucAnh?.map((d, i) => (
-          <div>
             <div
               key={i}
               className='flex bg-white flex-col items-start  self-stretch border shadow-[0px_3px_24px_0px_rgba(0,132,255,0.04),0px_0px_32px_0px_rgba(0,119,229,0.04)] pl-6 pr-4 py-4 rounded-2xl border-solid border-[rgba(52,104,205,0.40)]'
@@ -59,9 +58,9 @@ const DichVuDucAnh = ({t, isMobile, dataDichVuTaiDucAnh}) => {
                     <path
                       d='M7 4.68677L4 1.68677L1 4.68677'
                       stroke='#132B7D'
-                      stroke-width='1.5'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
+                    strokeWidth='1.5'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
                     />
                   </svg>
                 </div>
@@ -81,7 +80,6 @@ const DichVuDucAnh = ({t, isMobile, dataDichVuTaiDucAnh}) => {
                   khóa, luận, PS, video, tài chính…& trực tiếp hỗ trợ DHS hoàn
                   thiện hồ sơ du học.
                 </div>
-              </div>
             </div>
           </div>
         ))}

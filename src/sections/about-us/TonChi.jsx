@@ -4,7 +4,7 @@ import "./style.css"
 const TonChi = ({ t, dataTonchi, isMobile }) => {
   console.log({ lll: dataTonchi });
   return (
-    <div className='w-full'>
+    <div className='mt-[8.13rem] xmd:mt-[0rem] w-full'>
       <div className='mx-auto xmd:px-[0.75rem]  md:w-[77rem]'>
         <div className='text-primary-50 text-5xl xmd:text-[2rem] font-extrabold xmd:leading-[1.3] leading-[1.2] xmd:tracking-[-0.04rem] tracking-[-0.03rem]'>
           {t?.credo}
@@ -18,7 +18,7 @@ const TonChi = ({ t, dataTonchi, isMobile }) => {
         </div>
         <div className="mt-[2rem] flex flex-col xmd:space-y-[0.5rem] space-y-[1rem]">
           {dataTonchi?.lists_ton_chi?.map((d, i) => (
-            <div className=" text-[color:var(--PRIMARY-50,var(--Xanh,#2B46A8))] md:flex md:items-start md:text-base not-italic font-bold leading-[160%]">
+            <div key={i} className=" text-[color:var(--PRIMARY-50,var(--Xanh,#2B46A8))] md:flex md:items-start md:text-base not-italic font-bold leading-[160%]">
               <span className="min-w-max mr-[0.25rem]">{d?.name}</span>
               <span className="text-[color:var(--Xanh,#3F3F3F)] text-base not-italic font-normal leading-[160%]">{d?.concept}</span>
             </div>
