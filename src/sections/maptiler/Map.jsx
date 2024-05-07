@@ -349,7 +349,7 @@ const Map = ({ isMobile }) => {
             {/*SELECT*/}
 
             <div
-              className={`xmd:hidden  grid overflow-hidden w-full transition-all duration-[4000ms] ease-in-out text-slate-600 text-sm 
+              className={`xmd:hidden  grid overflow-hidden w-full transition-all duration-500 ease-in-out text-slate-600 text-sm 
                        ${accordionOpen
                   ? "grid-rows-[1fr] opacity-100"
                   : "xmd:grid-rows-[0fr] xmd:opacity-0"
@@ -458,7 +458,7 @@ const Map = ({ isMobile }) => {
 
           {/* CHECKED  */}
           <div
-            className={`xmd:hidden grid overflow-hidden w-full transition-all duration-[4000ms] ease-in-out text-slate-600 text-sm 
+            className={`xmd:hidden grid overflow-hidden w-full transition-all duration-500 ease-in-out text-slate-600 text-sm 
                     ${accordionOpen
                 ? "grid-rows-[1fr] opacity-100"
                 : "xmd:grid-rows-[0fr] xmd:opacity-0"
