@@ -3,20 +3,15 @@ import IndexHome from '@/sections/home/IndexHome'
 import getData from '@/lib/getData'
 export default async function HomePage({ searchParams, params }) {
   console.log({ searchParams })
+  const { viewport } = searchParams
+  const isMobile = viewport?.includes('mobile')
   const t = await getDictionary(params.lang)
   const { categories } = await getData(`/wp-json/okhub/v1/first-new-on-home`)
   const posts = await getData(`/wp-json/okhub/v1/posts-by-category/54`)
-
   const dataLocations = await getData(`/wp-json/okhub/v1/locations`)
   const dataCountries = await getData(`/wp-json/okhub/v1/countries`)
   const { events } = await getData(`/wp-json/okhub/v1/events?page=1&per_page=10`)
-
-  const { viewport } = searchParams
-  const isMobile = viewport?.includes('mobile')
-
-
   const dataCountryMobi = !isMobile ? null : (await getData('/wp-json/acf/v3/sidebar/1276'))?.acf['side-bar']
-
   const dataHomePage = await getData(`/wp-json/wp/v2/pages/44`)
   return (
     <IndexHome
