@@ -1,4 +1,4 @@
-
+"use client"
 import { cn } from '@/lib/utils';
 const Table = ({ isMobile, dataLichHoithaos }) => {
   function catChuoiNgayThang(ngayThang) {

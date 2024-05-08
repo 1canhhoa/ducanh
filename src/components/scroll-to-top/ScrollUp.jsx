@@ -1,25 +1,30 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
 function ScrollUp() {
-  const arrowRef = useRef()
+  const arrowRef = useRef();
 
   useEffect(() => {
     const handleClick = () => {
       window.scrollTo({
         top: 0,
         behavior: 'smooth'
-      })
+      });
+    };
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('click', (e) => {
+        if (e.target === arrowRef?.current) {
+          handleClick();
+        }
+      });
     }
 
-    window.addEventListener('click', (e) => {
-      if (e.target === arrowRef?.current) {
-        handleClick()
-      }
-    })
     return () => {
-      window.removeEventListener('click', handleClick)
-    }
-  }, [])
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('click', handleClick);
+      }
+    };
+  }, []);
   return (
 
     <div
