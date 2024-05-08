@@ -1,5 +1,6 @@
+"use client"
 import { cn } from '@/lib/utils';
-const Table = ({ isMobile,dataLichHoithaos }) => {
+const Table = ({ isMobile, dataLichHoithaos }) => {
 
   function layGioTuThoiGian(thoiGian) {
     const gio = thoiGian.split(' ')[1];

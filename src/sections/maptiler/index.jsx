@@ -1,10 +1,12 @@
 
-import Map from './Map'
-
+import dynamic from 'next/dynamic';
+const DynamicMap = dynamic(() => import('./Map'), {
+  ssr: false
+});
 const index = ({ isMobile }) => {
   return (
     <div>
-      <Map isMobile={isMobile} />
+      <DynamicMap isMobile={isMobile} />
     </div>
   )
 }

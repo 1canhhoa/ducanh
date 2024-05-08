@@ -3,8 +3,6 @@ import Maptiler from '@/sections/maptiler';
 import Title from '@/components/Title'
 import NavigationCustom from '@/components/navigationcustom'
 import { Button } from '@/components/ui/button'
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from 'swiper/modules'
 import { useEffect, useRef, useState } from 'react'
 import useSWR from 'swr'
 import "swiper/css";
@@ -66,15 +64,15 @@ const LichHoiThao = ({ t, isMobile, dataCountries, dataLocations, dataLichHoitha
   const [isPopupMounted, setIsPopupMounted] = useState(false);
 
   const togglePopup = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(true);
     setTimeout(() => {
-      setIsPopupMounted(!isPopupMounted); // Toggle trạng thái của việc hiển thị popup trong DOM
-    }, 200)
+      setIsPopupMounted(true);
+    }, 400)
   };
   const togglePopupClose = () => {
-    setIsPopupMounted(!isPopupMounted); // Toggle trạng thái của việc hiển thị popup trong DOM
+    setIsPopupMounted(false);
     setTimeout(() => {
-      setIsOpen(!isOpen);
+      setIsOpen(false);
     }, 200)
   };
   // hủy croll sau khi bật popup map
