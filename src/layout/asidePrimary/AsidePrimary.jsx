@@ -5,7 +5,7 @@ const AsidePrimary = async () => {
   const data = await getData(`/wp-json/acf/v3/sidebar/1276`)
   const dataBanner = data?.acf['side-bar']
   return (
-    <div className='flex  justify-start items-start mx-auto  flex-col md:border-[1px] md:rounded-[0.75rem] border-primary-10 '>
+    <div className='flex justify-start items-start mx-auto  flex-col md:border-[1px] md:rounded-[0.75rem] border-primary-10 '>
       <div
         className=' 
           bg-linear-l5 flex items-center w-full gap-[0.625rem] 
@@ -21,7 +21,7 @@ const AsidePrimary = async () => {
             <div
               className=' z-[2]
               flex items-center gap-[1rem] !overflow-hidden 
-              group w-[21.8125rem] h-[3.12rem] relative  px-[1.5rem] py-[0.5]rem]'
+              group w-[21.8125rem] h-[3.24rem] relative  px-[1.5rem] py-[0.5rem]'
             >
               <Image
                 priority
